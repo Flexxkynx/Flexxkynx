@@ -2,7 +2,8 @@
  * Sunset Valley+ | Strafenkatalog
  *
  * Paragraphen = echte kalifornische Gesetze:
- *   CVC = California Vehicle Code, PC = Penal Code, HS = Health & Safety Code
+ *   CVC = California Vehicle Code, PC = Penal Code, HS = Health & Safety Code,
+ *   USC = United States Code (Bundesrecht, Zuständigkeit USMS)
  * Klasse: I = Infraction (Ordnungswidrigkeit), M = Misdemeanor (Vergehen),
  *         F = Felony (Verbrechen)
  * fine   = Geldstrafe in $ (Server-Werte, frei anpassbar)
@@ -128,6 +129,23 @@ window.SVP_CATALOG = [
       { code: 'HS 11379.6',     title: 'Herstellung von Drogen (Drogenlabor)',               cls: 'F', fine: 12000, jail: 60, points: 0 },
       { code: 'HS 11364',       title: 'Besitz von Drogenutensilien',                        cls: 'M', fine: 300,  jail: 0,  points: 0 },
       { code: 'HS 11550(a)',    title: 'Unter Einfluss kontrollierter Substanzen',           cls: 'M', fine: 1000, jail: 5,  points: 0 },
+    ]
+  },
+  {
+    id: 'federal', name: 'Bundesrecht (U.S. Code)', items: [
+      { code: '18 USC 111',     title: 'Angriff auf / Behinderung eines Bundesbeamten',      cls: 'F', fine: 8000, jail: 35, points: 0 },
+      { code: '18 USC 912',     title: 'Amtsanmaßung (Vortäuschen Bundesbeamter)',           cls: 'F', fine: 5000, jail: 20, points: 0 },
+      { code: '18 USC 1001',    title: 'Falschaussage gegenüber Bundesbehörden',             cls: 'F', fine: 4000, jail: 15, points: 0 },
+      { code: '18 USC 1071',    title: 'Verstecken eines Flüchtigen (Harboring)',            cls: 'M', fine: 3000, jail: 15, points: 0 },
+      { code: '18 USC 1073',    title: 'Flucht zur Vermeidung von Strafverfolgung',          cls: 'F', fine: 5000, jail: 25, points: 0 },
+      { code: '18 USC 751',     title: 'Flucht aus dem Gewahrsam (Escape)',                  cls: 'F', fine: 6000, jail: 30, points: 0 },
+      { code: '18 USC 3146',    title: 'Nichterscheinen trotz Kaution (Bail Jumping)',       cls: 'F', fine: 4000, jail: 20, points: 0 },
+      { code: '18 USC 401',     title: 'Missachtung des Bundesgerichts (Contempt)',          cls: 'M', fine: 2000, jail: 10, points: 0 },
+      { code: '18 USC 1503',    title: 'Behinderung der Justiz (Obstruction of Justice)',    cls: 'F', fine: 6000, jail: 30, points: 0 },
+      { code: '18 USC 1512',    title: 'Zeugenbeeinflussung (Witness Tampering)',            cls: 'F', fine: 8000, jail: 40, points: 0 },
+      { code: '18 USC 1201',    title: 'Entführung (Bundesrecht)',                           cls: 'F', fine: 15000, jail: 80, points: 0 },
+      { code: '18 USC 922(g)',  title: 'Waffenbesitz trotz Verbot (z.B. vorbestraft)',       cls: 'F', fine: 6000, jail: 30, points: 0 },
+      { code: '18 USC 1361',    title: 'Beschädigung von Bundeseigentum',                    cls: 'M', fine: 2500, jail: 10, points: 0 },
     ]
   },
 ];

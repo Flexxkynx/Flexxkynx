@@ -1,8 +1,8 @@
 # Sunset Valley+ – Strafenkatalog für die Behörden
 
 A FiveM resource (standalone, no ESX/QBCore needed). It contains **only the penalty catalog**:
-about 95 offences with real California code sections (California Vehicle Code, Penal Code,
-Health & Safety Code), each with a class, fine, jail units (HE) and license points.
+about 110 offences with real California code sections (California Vehicle Code, Penal Code,
+Health & Safety Code, plus federal law / U.S. Code for the USMS), each with a class, fine, jail units (HE) and license points.
 A calculator adds up the penalty, and the "Kopieren" button produces a finished penalty notice.
 
 - The UI description as a prompt is in [`UI-PROMPT.md`](UI-PROMPT.md).
@@ -32,6 +32,7 @@ svp_chp_panel/
    add_ace group.chp  svp.mdt.chp  allow
    add_ace group.lspd svp.mdt.lspd allow
    add_ace group.lssd svp.mdt.lssd allow
+   add_ace group.usms svp.mdt.usms allow
    add_ace group.doj  svp.mdt.doj  allow
    add_principal identifier.license:XXXXXXXX group.chp
    ```
@@ -87,6 +88,7 @@ Config.Agencies = {
     { id = 'chp',  short = 'CHP',  name = 'California Highway Patrol',     ace = 'svp.mdt.chp',  color = '#c9a227' },
     { id = 'lspd', short = 'LSPD', name = 'Los Santos Police Department',  ace = 'svp.mdt.lspd', color = '#2f6fdb' },
     { id = 'lssd', short = 'LSSD', name = "Los Santos Sheriff's Department", ace = 'svp.mdt.lssd', color = '#3c8d4a' },
+    { id = 'usms', short = 'USMS', name = 'United States Marshals Service', ace = 'svp.mdt.usms', color = '#a8b2c1' },
     { id = 'doj',  short = 'DOJ',  name = 'Department of Justice',         ace = 'svp.mdt.doj',  color = '#8e44ad' },
 }
 
@@ -493,7 +495,7 @@ textarea { resize: none; }
     open({
       officer: 'Demo', serverName: 'Sunset Valley+', maxJail: 120, agencies: [
         { id: 'chp', short: 'CHP', name: 'California Highway Patrol', color: '#c9a227' },
-        { id: 'lspd', short: 'LSPD', name: 'Los Santos Police Department', color: '#2f6fdb' }]
+        { id: 'usms', short: 'USMS', name: 'United States Marshals Service', color: '#a8b2c1' }]
     });
   }
 })();
@@ -505,7 +507,8 @@ textarea { resize: none; }
  * Sunset Valley+ | Strafenkatalog
  *
  * Paragraphen = echte kalifornische Gesetze:
- *   CVC = California Vehicle Code, PC = Penal Code, HS = Health & Safety Code
+ *   CVC = California Vehicle Code, PC = Penal Code, HS = Health & Safety Code,
+ *   USC = United States Code (Bundesrecht, Zuständigkeit USMS)
  * Klasse: I = Infraction (Ordnungswidrigkeit), M = Misdemeanor (Vergehen),
  *         F = Felony (Verbrechen)
  * fine   = Geldstrafe in $ (Server-Werte, frei anpassbar)
@@ -631,6 +634,23 @@ window.SVP_CATALOG = [
       { code: 'HS 11379.6',     title: 'Herstellung von Drogen (Drogenlabor)',               cls: 'F', fine: 12000, jail: 60, points: 0 },
       { code: 'HS 11364',       title: 'Besitz von Drogenutensilien',                        cls: 'M', fine: 300,  jail: 0,  points: 0 },
       { code: 'HS 11550(a)',    title: 'Unter Einfluss kontrollierter Substanzen',           cls: 'M', fine: 1000, jail: 5,  points: 0 },
+    ]
+  },
+  {
+    id: 'federal', name: 'Bundesrecht (U.S. Code)', items: [
+      { code: '18 USC 111',     title: 'Angriff auf / Behinderung eines Bundesbeamten',      cls: 'F', fine: 8000, jail: 35, points: 0 },
+      { code: '18 USC 912',     title: 'Amtsanmaßung (Vortäuschen Bundesbeamter)',           cls: 'F', fine: 5000, jail: 20, points: 0 },
+      { code: '18 USC 1001',    title: 'Falschaussage gegenüber Bundesbehörden',             cls: 'F', fine: 4000, jail: 15, points: 0 },
+      { code: '18 USC 1071',    title: 'Verstecken eines Flüchtigen (Harboring)',            cls: 'M', fine: 3000, jail: 15, points: 0 },
+      { code: '18 USC 1073',    title: 'Flucht zur Vermeidung von Strafverfolgung',          cls: 'F', fine: 5000, jail: 25, points: 0 },
+      { code: '18 USC 751',     title: 'Flucht aus dem Gewahrsam (Escape)',                  cls: 'F', fine: 6000, jail: 30, points: 0 },
+      { code: '18 USC 3146',    title: 'Nichterscheinen trotz Kaution (Bail Jumping)',       cls: 'F', fine: 4000, jail: 20, points: 0 },
+      { code: '18 USC 401',     title: 'Missachtung des Bundesgerichts (Contempt)',          cls: 'M', fine: 2000, jail: 10, points: 0 },
+      { code: '18 USC 1503',    title: 'Behinderung der Justiz (Obstruction of Justice)',    cls: 'F', fine: 6000, jail: 30, points: 0 },
+      { code: '18 USC 1512',    title: 'Zeugenbeeinflussung (Witness Tampering)',            cls: 'F', fine: 8000, jail: 40, points: 0 },
+      { code: '18 USC 1201',    title: 'Entführung (Bundesrecht)',                           cls: 'F', fine: 15000, jail: 80, points: 0 },
+      { code: '18 USC 922(g)',  title: 'Waffenbesitz trotz Verbot (z.B. vorbestraft)',       cls: 'F', fine: 6000, jail: 30, points: 0 },
+      { code: '18 USC 1361',    title: 'Beschädigung von Bundeseigentum',                    cls: 'M', fine: 2500, jail: 10, points: 0 },
     ]
   },
 ];

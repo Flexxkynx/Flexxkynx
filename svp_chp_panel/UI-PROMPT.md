@@ -6,7 +6,7 @@ Copy this prompt into an AI tool (e.g. Claude, v0, Lovable) or hand it to a desi
 
 Create a NUI interface for a FiveM roleplay server called **"Sunset Valley+"**:
 a **penalty catalog (Strafenkatalog)** for the server's agencies (California Highway Patrol,
-LSPD, LSSD, DOJ). Technology: plain HTML, CSS and JavaScript (no framework), language German.
+LSPD, LSSD, U.S. Marshals Service, DOJ). Technology: plain HTML, CSS and JavaScript (no framework), language German.
 
 **Look & layout**
 - Looks like a police tablet: centred window (approx. 5 % top/bottom, 6 % left/right margin),
@@ -15,7 +15,7 @@ LSPD, LSSD, DOJ). Technology: plain HTML, CSS and JavaScript (no framework), lan
 - Dark theme: background `#0f1621`, panels `#162131` / `#1c2a3d`, lines `#2a3b52`,
   text `#e6edf5`, muted text `#8ea1b8`.
 - An accent color per agency, used for the header line, headings and the main button:
-  CHP gold `#c9a227`, LSPD blue `#2f6fdb`, LSSD green `#3c8d4a`, DOJ purple `#8e44ad`.
+  CHP gold `#c9a227`, LSPD blue `#2f6fdb`, LSSD green `#3c8d4a`, USMS silver `#a8b2c1`, DOJ purple `#8e44ad`.
 - Font: Segoe UI / Roboto; section numbers in a monospace font (Consolas) in light blue `#9fc3ff`.
 
 **Header**
@@ -31,7 +31,8 @@ Left column – catalog:
   a dropdown for category, a dropdown for class (Infraction / Misdemeanor / Felony).
 - Scrollable list, grouped by categories with a sticky heading in the accent color:
   Verkehrsverstöße (CVC), Fahrzeug & Dokumente (CVC), Alkohol, Unfall & Flucht (CVC),
-  Straftaten (Penal Code), Waffen (Penal Code), Betäubungsmittel (Health & Safety Code).
+  Straftaten (Penal Code), Waffen (Penal Code), Betäubungsmittel (Health & Safety Code),
+  Bundesrecht (U.S. Code) for the USMS.
 - Each row is a grid of: section (e.g. "CVC 23152(a)") | offence (🪪 icon if license
   suspension applies) | class badge (I = blue `#24466b`, M = brown/gold `#7a5b12`,
   F = red `#7a1f1f`) | fine in green ($) | jail in "HE" | points ("2 P"); "–" when empty.

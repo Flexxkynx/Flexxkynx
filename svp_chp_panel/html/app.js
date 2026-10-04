@@ -162,7 +162,7 @@
     open({
       officer: 'Demo', serverName: 'Sunset Valley+', maxJail: 120, agencies: [
         { id: 'chp', short: 'CHP', name: 'California Highway Patrol', color: '#c9a227' },
-        { id: 'lspd', short: 'LSPD', name: 'Los Santos Police Department', color: '#2f6fdb' }]
+        { id: 'usms', short: 'USMS', name: 'United States Marshals Service', color: '#a8b2c1' }]
     });
   }
 })();
