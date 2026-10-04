@@ -2,7 +2,7 @@
 
 A FiveM resource (standalone, no ESX/QBCore needed). It contains **only the penalty catalog**:
 231 offences with real code sections: 155 from the **California Penal Code**, plus California Vehicle Code,
-Health & Safety Code and federal law (U.S. Code) for the USMS. Each offence has with a class, fine, jail units (HE) and license points.
+Health & Safety Code and federal law (U.S. Code) for the USMS. Each offence has a class, fine, jail units (HE) and license points.
 A calculator adds up the penalty, and the "Kopieren" button produces a finished penalty notice.
 
 - The UI description as a prompt is in [`UI-PROMPT.md`](UI-PROMPT.md).
