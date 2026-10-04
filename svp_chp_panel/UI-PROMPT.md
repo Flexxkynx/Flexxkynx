@@ -4,57 +4,70 @@ Copy this prompt into an AI tool (e.g. Claude, v0, Lovable) or hand it to a desi
 
 ---
 
-Create a NUI interface for a FiveM roleplay server called **"Sunset Valley+"**:
-a **penalty catalog (Strafenkatalog)** for the server's agencies (California Highway Patrol,
-LSPD, LSSD, U.S. Marshals Service, DOJ). Technology: plain HTML, CSS and JavaScript (no framework), language German.
+Create a modern NUI interface for the FiveM roleplay server **"Sunset Valley+"**: a
+**penalty catalog (Strafenkatalog)** for the agencies CHP, LSPD, LSSD, USMS and DOJ.
+Technology: plain HTML, CSS and JavaScript (no framework), UI language German.
 
-**Look & layout**
-- Looks like a police tablet: centred window (approx. 5 % top/bottom, 6 % left/right margin),
-  rounded corners (18 px), dark frame with drop shadow, transparent page background
-  (it is laid over the game).
-- Dark theme: background `#0f1621`, panels `#162131` / `#1c2a3d`, lines `#2a3b52`,
-  text `#e6edf5`, muted text `#8ea1b8`.
-- An accent color per agency, used for the header line, headings and the main button:
+**Overall look**
+- A police tablet floating over the game: centred window (approx. 4.5 % top/bottom, 5 % left/right margin),
+  22 px rounded corners, dark bezel (several box-shadow rings) and a large drop shadow; the page background stays transparent.
+- Dark navy theme: background `#0b1220` with a soft radial glow in the agency color at the top left,
+  panels `#131e33` / `#1a2740`, lines `#24344f`, text `#e8eef7`, muted text `#8396b2`.
+- Fonts: **Inter** (UI) and **JetBrains Mono** (section numbers, numbers, ticket number).
+- Accent color per agency (header line, active elements, main button, emblem):
   CHP gold `#c9a227`, LSPD blue `#2f6fdb`, LSSD green `#3c8d4a`, USMS silver `#a8b2c1`, DOJ purple `#8e44ad`.
-- Font: Segoe UI / Roboto; section numbers in a monospace font (Consolas) in light blue `#9fc3ff`.
+- Class colors: Infraction blue `#3b82f6`, Misdemeanor amber `#f59e0b`, Felony red `#ef4444`.
+- Subtle animations: tablet pops in (scale + fade), items slide into the notice, a clicked row flashes briefly.
 
 **Header**
-- Dark blue gradient (`#0b2447` → `#19376d`) with a 3 px accent line underneath.
-- Left: round badge with the agency short name (e.g. "CHP") on the accent color,
-  next to it the full agency name in bold and below it "Sunset Valley+ · Strafenkatalog".
-- Right: a dropdown to switch agency and a close button "✕" (ESC also closes).
+- Dark blue gradient (`#0a1a36` → `#10264d` → `#0a1a36`), at the bottom a 2 px line in the
+  accent color that fades out at both ends.
+- Left: SVG shield emblem in the accent color with the agency short name in it,
+  next to it the agency name (bold, 18 px) and below it "Sunset Valley+ • Strafenkatalog".
+- Right: segmented control to switch agency (CHP | LSPD | LSSD | USMS | DOJ, active one filled with the accent color),
+  a clock (HH:MM), and a round close button "✕" (turns red on hover, ESC also closes).
 
-**Main area (two columns)**
+**Three-column layout**
 
-Left column – catalog:
-- Toolbar: search field ("Paragraph oder Tatbestand suchen… (z.B. 23152, Raub)"),
-  a dropdown for category, a dropdown for class (Infraction / Misdemeanor / Felony).
-- Scrollable list, grouped by categories with a sticky heading in the accent color:
-  Verkehrsverstöße (CVC), Fahrzeug & Dokumente (CVC), Alkohol, Unfall & Flucht (CVC),
-  Straftaten (Penal Code), Waffen (Penal Code), Betäubungsmittel (Health & Safety Code),
-  Bundesrecht (U.S. Code) for the USMS.
-- Each row is a grid of: section (e.g. "CVC 23152(a)") | offence (🪪 icon if license
-  suspension applies) | class badge (I = blue `#24466b`, M = brown/gold `#7a5b12`,
-  F = red `#7a1f1f`) | fine in green ($) | jail in "HE" | points ("2 P"); "–" when empty.
-- Hover highlights the row; offences already selected get a light accent tint.
-  Clicking adds the offence to the penalty notice.
+1. **Category sidebar (236 px)**: title "KATEGORIEN"; buttons with an emoji icon in a small tile,
+   name and a count badge. Active category: lighter background + 3 px accent line on the left.
+   Categories: Alle Tatbestände, Verkehrsverstöße (CVC), Fahrzeug & Dokumente (CVC), Alkohol, Unfall & Flucht (CVC),
+   Straftaten gegen Personen (PC), Sexualdelikte (PC), Eigentums- & Vermögensdelikte (PC),
+   Delikte gegen Staat & Justiz (PC), Öffentliche Ordnung (PC), Waffen & Sprengstoff (PC),
+   Betäubungsmittel (Health & Safety Code), Bundesrecht (U.S. Code).
 
-Right column (330 px wide) – "Strafbescheid" (penalty notice):
-- Fields: name of the person, license plate (optional).
-- List of selected offences (dashed border), each with section, short title and
-  − / count / + buttons. Empty state: "Tatbestände links anklicken."
-- Totals box: Geldstrafe (green, large), Haft in HE (capped at a maximum, "(max)" shown
-  when the cap applies), Punkte, and a red warning "⚠ Führerscheinentzug empfohlen" if needed.
-- Text field "Bemerkungen / Sachverhalt".
-- Buttons: "📋 Kopieren" (accent color, full width) copies a formatted penalty notice
-  to the clipboard, and a red trash-can button resets everything.
-- Small toast notification at the bottom centre (e.g. "In Zwischenablage kopiert").
+2. **Catalog list (flexible)**:
+   - Toolbar: search field with a magnifier icon and a `/` keyboard hint (pressing "/" focuses the search),
+     next to it a segmented control "Alle | Infraction | Misdemeanor | Felony".
+   - Column headings: PARAGRAPH, TATBESTAND, GELDSTRAFE, HAFT, PUNKTE.
+   - Sticky category headings in the accent color (uppercase, with a thin line to the right).
+   - Each offence is a card (rounded corners, 4 px gap) with a colored stripe on the left in the class color:
+     section as a monospace pill (light blue) | title (bold) with a small line underneath showing the class
+     in the class color and, if applicable, "🪪 Führerscheinentzug" | fine in green | jail "xx HE" | points |
+     round "+" button (shows "×2" etc. once added; turns accent-colored on hover).
+   - Selected rows get an accent border and a light tint. Footer: "31 von 231 Tatbeständen".
+
+3. **Penalty notice (360 px)**, slightly lighter background:
+   - Header card with an accent gradient: "STRAFBESCHEID" (uppercase, letter-spaced),
+     ticket number "Nr. SV-123456" (monospace) and date/time on the right.
+   - Two labeled fields side by side: PERSON (name), KENNZEICHEN (plate, uppercase, monospace).
+   - List of offences: section, short title, subtotal in green, quantity stepper "− 1 +".
+     Empty state: large ⚖️ icon with "Tatbestände links anklicken, um sie hinzuzufügen."
+   - Three stat tiles: GELDSTRAFE (large, green), HAFT (HE, capped at a maximum with ⚠),
+     PUNKTE.
+   - Red notice box "🪪 Führerscheinentzug empfohlen" if needed.
+   - Notes field, button "📋 Strafbescheid kopieren" (accent color, glow) and a red trash-can button.
+   - Toast at the bottom centre, e.g. "✓ Strafbescheid kopiert".
+
+**Responsive**: below 1500 px narrower columns; below 1300 px the category sidebar shows icons only.
 
 **Behaviour**
 - Opened via `window.postMessage({ action: 'open', officer, agencies, serverName, maxJail })`,
   closed via `{ action: 'close' }` or ESC/✕ → `fetch('https://<resource>/close')`.
-- The data comes from a `data.js` file with `window.SVP_CATALOG`
-  (categories with `code, title, cls, fine, jail, points, license`).
+- Data from `data.js` → `window.SVP_CATALOG` (categories with `id, icon, name, items[]`,
+  items with `code, title, cls, fine, jail, points, license`).
+- The copy button produces a formatted text notice (number, agency, date, officer, person,
+  offences, totals, notes).
 - In a normal browser (without FiveM) the UI opens automatically in demo mode.
 
 ---

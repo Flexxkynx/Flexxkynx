@@ -3,59 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title>Sunset Valley+ Strafenkatalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="tablet" class="hidden">
     <header>
       <div class="brand">
-        <div class="badge" id="badge">CHP</div>
+        <div class="emblem">
+          <svg viewBox="0 0 64 72" aria-hidden="true">
+            <path d="M32 2 L60 12 V34 C60 52 47 64 32 70 C17 64 4 52 4 34 V12 Z" class="shield"/>
+            <path d="M32 8 L54 16 V34 C54 49 44 58 32 63 C20 58 10 49 10 34 V16 Z" class="shield-inner"/>
+          </svg>
+          <span id="badge">CHP</span>
+        </div>
         <div>
           <div class="title" id="deptName">California Highway Patrol</div>
-          <div class="subtitle"><span id="serverName">Sunset Valley+</span> · Strafenkatalog</div>
+          <div class="subtitle"><span id="serverName">Sunset Valley+</span><span class="dot"></span>Strafenkatalog</div>
         </div>
       </div>
-      <div class="me">
-        <select id="agencySelect" title="Behörde"></select>
-        <button class="close" id="closeBtn" title="Schließen (ESC)">✕</button>
+      <div class="head-right">
+        <div class="agencies" id="agencyTabs"></div>
+        <div class="clock" id="clock">--:--</div>
+        <button class="icon-btn" id="closeBtn" title="Schließen (ESC)">✕</button>
       </div>
     </header>
 
-    <main>
-      <div class="catalog">
-        <div class="cat-list">
-          <div class="toolbar">
-            <input id="search" placeholder="Paragraph oder Tatbestand suchen… (z.B. 23152, Raub)">
-            <select id="catFilter"><option value="">Alle Kategorien</option></select>
-            <select id="clsFilter">
-              <option value="">Alle Klassen</option>
-              <option value="I">Infraction</option>
-              <option value="M">Misdemeanor</option>
-              <option value="F">Felony</option>
-            </select>
-          </div>
-          <div id="catalogTable"></div>
-        </div>
+    <div class="body">
+      <nav class="cats" id="catNav"></nav>
 
-        <aside class="ticket">
-          <h3>Strafbescheid</h3>
-          <input id="suspect" placeholder="Name der Person">
-          <input id="plate" placeholder="Kennzeichen (optional)">
-          <div id="ticketItems" class="ticket-items"><div class="empty">Tatbestände links anklicken.</div></div>
-          <div class="totals">
-            <div><span>Geldstrafe</span><b id="totFine">$0</b></div>
-            <div><span>Haft</span><b id="totJail">0 HE</b></div>
-            <div><span>Punkte</span><b id="totPoints">0</b></div>
-            <div id="licWarn" class="lic hidden">⚠ Führerscheinentzug empfohlen</div>
+      <section class="list">
+        <div class="toolbar">
+          <label class="search">
+            <span class="s-icon">⌕</span>
+            <input id="search" placeholder="Paragraph oder Tatbestand suchen… (z.B. 23152, Raub)">
+            <kbd>/</kbd>
+          </label>
+          <div class="seg" id="clsSeg">
+            <button data-cls="" class="on">Alle</button>
+            <button data-cls="I">Infraction</button>
+            <button data-cls="M">Misdemeanor</button>
+            <button data-cls="F">Felony</button>
           </div>
-          <textarea id="notes" rows="2" placeholder="Bemerkungen / Sachverhalt"></textarea>
-          <div class="btns">
-            <button id="copyBtn" class="primary">📋 Kopieren</button>
-            <button id="clearBtn" class="danger">🗑</button>
+        </div>
+        <div class="list-head">
+          <span>Paragraph</span><span>Tatbestand</span><span class="r">Geldstrafe</span><span class="r">Haft</span><span class="r">Punkte</span><span></span>
+        </div>
+        <div id="catalogTable"></div>
+        <div class="list-foot" id="resultCount"></div>
+      </section>
+
+      <aside class="ticket">
+        <div class="paper-head">
+          <div>
+            <div class="ph-title">Strafbescheid</div>
+            <div class="ph-sub" id="ticketNo">Nr. SV-000000</div>
           </div>
-        </aside>
-      </div>
-    </main>
+          <div class="ph-date" id="ticketDate"></div>
+        </div>
+        <div class="fields">
+          <label><span>Person</span><input id="suspect" placeholder="Vor- und Nachname"></label>
+          <label><span>Kennzeichen</span><input id="plate" placeholder="optional"></label>
+        </div>
+        <div id="ticketItems" class="ticket-items"></div>
+        <div class="stats">
+          <div class="stat"><span>Geldstrafe</span><b id="totFine">$0</b></div>
+          <div class="stat"><span>Haft</span><b id="totJail">0 HE</b></div>
+          <div class="stat"><span>Punkte</span><b id="totPoints">0</b></div>
+        </div>
+        <div id="licWarn" class="lic hidden">🪪 Führerscheinentzug empfohlen</div>
+        <textarea id="notes" rows="2" placeholder="Bemerkungen / Sachverhalt"></textarea>
+        <div class="btns">
+          <button id="copyBtn" class="primary">📋 Strafbescheid kopieren</button>
+          <button id="clearBtn" class="danger" title="Zurücksetzen">🗑</button>
+        </div>
+      </aside>
+    </div>
     <div id="toast" class="hidden"></div>
   </div>
 

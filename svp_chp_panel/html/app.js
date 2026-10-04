@@ -6,8 +6,12 @@
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const money = (n) => '$' + Number(n).toLocaleString('en-US');
   const CLS = { I: 'Infraction', M: 'Misdemeanor', F: 'Felony' };
+  const CATALOG = window.SVP_CATALOG;
 
-  const state = { officer: '', agency: null, agencies: [], maxJail: 120, ticket: new Map() };
+  const state = {
+    officer: '', agency: null, agencies: [], maxJail: 120,
+    cat: '', cls: '', ticket: new Map(), ticketNo: ''
+  };
 
   const post = (name, data = {}) => {
     if (!isFiveM) return Promise.resolve();
@@ -23,33 +27,56 @@
 
   // Alle Tatbestände nach Paragraph
   const byKey = {};
-  window.SVP_CATALOG.forEach((cat) => cat.items.forEach((it) => (byKey[it.code] = it)));
+  CATALOG.forEach((cat) => cat.items.forEach((it) => (byKey[it.code] = it)));
+  const total = Object.keys(byKey).length;
+
+  /* ---------- Kategorien (Seitenleiste) ---------- */
+  function renderCats() {
+    const btn = (id, icon, name, count) =>
+      `<button class="cat-btn${state.cat === id ? ' on' : ''}" data-cat="${id}">
+        <span class="ic">${icon}</span><span class="nm">${esc(name)}</span><span class="ct">${count}</span></button>`;
+    $('catNav').innerHTML = '<div class="cat-title">Kategorien</div>' + btn('', '📚', 'Alle Tatbestände', total) +
+      CATALOG.map((c) => btn(c.id, c.icon || '•', c.name, c.items.length)).join('');
+  }
+  $('catNav').addEventListener('click', (e) => {
+    const b = e.target.closest('.cat-btn'); if (!b) return;
+    state.cat = b.dataset.cat; renderCats(); renderCatalog();
+    $('catalogTable').scrollTop = 0;
+  });
+
+  $('clsSeg').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    state.cls = b.dataset.cls;
+    $('clsSeg').querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b));
+    renderCatalog();
+  });
 
   /* ---------- Katalog ---------- */
-  window.SVP_CATALOG.forEach((c) => $('catFilter').insertAdjacentHTML('beforeend', `<option value="${c.id}">${esc(c.name)}</option>`));
-
   function renderCatalog() {
     const q = $('search').value.trim().toLowerCase();
-    const cf = $('catFilter').value, kf = $('clsFilter').value;
-    let html = '';
-    window.SVP_CATALOG.forEach((cat) => {
-      if (cf && cat.id !== cf) return;
-      const items = cat.items.filter((it) => (!kf || it.cls === kf) &&
+    let html = '', hits = 0;
+    CATALOG.forEach((cat) => {
+      if (state.cat && cat.id !== state.cat) return;
+      const items = cat.items.filter((it) => (!state.cls || it.cls === state.cls) &&
         (!q || it.code.toLowerCase().includes(q) || it.title.toLowerCase().includes(q)));
       if (!items.length) return;
-      html += `<div class="cat-head">${esc(cat.name)}</div>`;
+      hits += items.length;
+      html += `<div class="cat-head">${cat.icon || ''} ${esc(cat.name)}</div>`;
       items.forEach((it) => {
-        html += `<div class="row${state.ticket.has(it.code) ? ' sel' : ''}" data-key="${esc(it.code)}" title="${CLS[it.cls]}${it.license ? ' · Führerscheinentzug' : ''}">
+        const n = state.ticket.get(it.code);
+        html += `<div class="row ${it.cls}${n ? ' sel' : ''}" data-key="${esc(it.code)}">
           <span class="code">${esc(it.code)}</span>
-          <span>${esc(it.title)}${it.license ? ' 🪪' : ''}</span>
-          <span class="cls ${it.cls}">${it.cls}</span>
+          <span class="t"><b>${esc(it.title)}</b>
+            <small><span class="tag ${it.cls}">${CLS[it.cls]}</span>${it.license ? '<span class="tag lw">🪪 Führerscheinentzug</span>' : ''}</small></span>
           <span class="num fine">${money(it.fine)}</span>
           <span class="num">${it.jail ? it.jail + ' HE' : '–'}</span>
-          <span class="num">${it.points ? it.points + ' P' : '–'}</span>
+          <span class="num">${it.points ? it.points : '–'}</span>
+          <span class="add">${n ? '×' + n : '+'}</span>
         </div>`;
       });
     });
-    $('catalogTable').innerHTML = html || '<div style="padding:20px;color:var(--muted)">Keine Treffer.</div>';
+    $('catalogTable').innerHTML = html || '<div class="no-hit">🔍<br>Keine Treffer für diese Suche.</div>';
+    $('resultCount').textContent = `${hits} von ${total} Tatbeständen`;
   }
 
   $('catalogTable').addEventListener('click', (e) => {
@@ -57,8 +84,10 @@
     const k = row.dataset.key;
     state.ticket.set(k, (state.ticket.get(k) || 0) + 1);
     renderTicket(); renderCatalog();
+    const again = $('catalogTable').querySelector(`.row[data-key="${CSS.escape(k)}"]`);
+    if (again) again.classList.add('flash');
   });
-  ['search', 'catFilter', 'clsFilter'].forEach((id) => $(id).addEventListener('input', renderCatalog));
+  $('search').addEventListener('input', renderCatalog);
 
   /* ---------- Strafbescheid ---------- */
   function totals() {
@@ -71,19 +100,29 @@
     return { fine, jail: Math.min(jail, state.maxJail), rawJail: jail, points, license };
   }
 
+  function newTicketNo() {
+    state.ticketNo = 'SV-' + String(Math.floor(Math.random() * 1e6)).padStart(6, '0');
+    $('ticketNo').textContent = 'Nr. ' + state.ticketNo;
+  }
+
   function renderTicket() {
     const box = $('ticketItems');
     if (!state.ticket.size) {
-      box.innerHTML = '<div class="empty">Tatbestände links anklicken.</div>';
+      box.innerHTML = '<div class="empty"><span class="big">⚖️</span>Tatbestände links anklicken,<br>um sie hinzuzufügen.</div>';
     } else {
-      box.innerHTML = [...state.ticket].map(([k, n]) => `<div class="ti" data-key="${esc(k)}">
-          <div class="t"><b class="code">${esc(k)}</b><small>${esc(byKey[k].title)}</small></div>
-          <button data-d="-1">−</button><span class="cnt">${n}</span><button data-d="1">+</button>
-        </div>`).join('');
+      box.innerHTML = [...state.ticket].map(([k, n]) => {
+        const it = byKey[k];
+        return `<div class="ti" data-key="${esc(k)}">
+          <div class="t"><b class="code">${esc(k)}</b><small>${esc(it.title)}</small></div>
+          <span class="sum">${money(it.fine * n)}</span>
+          <div class="qty"><button data-d="-1">−</button><span>${n}</span><button data-d="1">+</button></div>
+        </div>`;
+      }).join('');
     }
     const t = totals();
     $('totFine').textContent = money(t.fine);
-    $('totJail').textContent = t.jail + ' HE' + (t.rawJail > t.jail ? ' (max)' : '');
+    $('totJail').textContent = t.jail + ' HE' + (t.rawJail > t.jail ? ' ⚠' : '');
+    $('totJail').title = t.rawJail > t.jail ? `Begrenzt auf ${state.maxJail} HE (Summe: ${t.rawJail} HE)` : '';
     $('totPoints').textContent = t.points;
     $('licWarn').classList.toggle('hidden', !t.license);
   }
@@ -101,7 +140,7 @@
     const ag = state.agencies.find((a) => a.id === state.agency);
     const charges = [...state.ticket].map(([k, n]) => ` • ${n > 1 ? n + 'x ' : ''}${k} – ${byKey[k].title}`);
     return [
-      `=== STRAFBESCHEID | ${ag ? ag.name : 'Behörde'} | ${$('serverName').textContent} ===`,
+      `=== STRAFBESCHEID ${state.ticketNo} | ${ag ? ag.name : 'Behörde'} | ${$('serverName').textContent} ===`,
       `Datum: ${new Date().toLocaleString('de-DE')}`,
       `Beamter: ${state.officer || '-'}`,
       `Person: ${$('suspect').value || 'Unbekannt'}${$('plate').value ? ' | Kennzeichen: ' + $('plate').value.toUpperCase() : ''}`,
@@ -116,12 +155,12 @@
     const ta = document.createElement('textarea');
     ta.value = ticketText(); document.body.appendChild(ta); ta.select();
     document.execCommand('copy'); ta.remove();
-    toast('In Zwischenablage kopiert');
+    toast('✓ Strafbescheid kopiert');
   });
 
   $('clearBtn').addEventListener('click', () => {
     state.ticket.clear(); ['suspect', 'plate', 'notes'].forEach((id) => ($(id).value = ''));
-    renderTicket(); renderCatalog();
+    newTicketNo(); renderTicket(); renderCatalog();
   });
 
   /* ---------- Kopfzeile / Behörde ---------- */
@@ -129,23 +168,39 @@
     const ag = state.agencies.find((a) => a.id === id) || state.agencies[0];
     if (!ag) return;
     state.agency = ag.id;
-    $('badge').textContent = ag.short; $('badge').style.background = ag.color;
+    $('badge').textContent = ag.short;
     $('deptName').textContent = ag.name;
     document.documentElement.style.setProperty('--accent', ag.color);
+    $('agencyTabs').querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.id === ag.id));
   }
-  $('agencySelect').addEventListener('change', (e) => applyAgency(e.target.value));
+  $('agencyTabs').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (b) applyAgency(b.dataset.id);
+  });
+
+  const tick = () => {
+    const d = new Date();
+    $('clock').textContent = d.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+    $('ticketDate').innerHTML = d.toLocaleDateString('de-DE') + '<br>' + $('clock').textContent;
+  };
+  setInterval(tick, 10000);
 
   const close = () => { $('tablet').classList.add('hidden'); post('close'); };
   $('closeBtn').addEventListener('click', close);
-  document.addEventListener('keyup', (e) => e.key === 'Escape' && close());
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+    else if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+      e.preventDefault(); $('search').focus();
+    }
+  });
 
   function open(d) {
     state.officer = d.officer || ''; state.agencies = d.agencies || []; state.maxJail = d.maxJail || 120;
     $('serverName').textContent = d.serverName || 'Sunset Valley+';
-    $('agencySelect').innerHTML = state.agencies.map((a) => `<option value="${esc(a.id)}">${esc(a.short)}</option>`).join('');
-    const keep = state.agencies.some((a) => a.id === state.agency) ? state.agency : state.agencies[0]?.id;
-    $('agencySelect').value = keep; applyAgency(keep);
-    renderTicket();
+    $('agencyTabs').innerHTML = state.agencies.map((a) => `<button data-id="${esc(a.id)}" title="${esc(a.name)}">${esc(a.short)}</button>`).join('');
+    $('agencyTabs').classList.toggle('hidden', state.agencies.length < 2);
+    applyAgency(state.agencies.some((a) => a.id === state.agency) ? state.agency : state.agencies[0]?.id);
+    if (!state.ticketNo) newTicketNo();
+    tick(); renderTicket();
     $('tablet').classList.remove('hidden');
   }
 
@@ -154,15 +209,18 @@
     else if (data.action === 'close') $('tablet').classList.add('hidden');
   });
 
-  renderCatalog(); renderTicket();
+  renderCats(); renderCatalog(); renderTicket();
 
   // Vorschau im normalen Browser (ohne FiveM)
   if (!isFiveM) {
-    document.body.style.background = '#2b2f36';
+    document.body.style.background = 'radial-gradient(circle at 30% 20%, #3a4252, #1d2129)';
     open({
       officer: 'Demo', serverName: 'Sunset Valley+', maxJail: 120, agencies: [
         { id: 'chp', short: 'CHP', name: 'California Highway Patrol', color: '#c9a227' },
-        { id: 'usms', short: 'USMS', name: 'United States Marshals Service', color: '#a8b2c1' }]
+        { id: 'lspd', short: 'LSPD', name: 'Los Santos Police Department', color: '#2f6fdb' },
+        { id: 'lssd', short: 'LSSD', name: "Los Santos Sheriff's Department", color: '#3c8d4a' },
+        { id: 'usms', short: 'USMS', name: 'United States Marshals Service', color: '#a8b2c1' },
+        { id: 'doj', short: 'DOJ', name: 'Department of Justice', color: '#8e44ad' }]
     });
   }
 })();
