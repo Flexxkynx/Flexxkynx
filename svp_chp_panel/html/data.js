@@ -1,5 +1,5 @@
 /*
- * Sunset Valley+ | Strafenkatalog & Funkcodes
+ * Sunset Valley+ | Strafenkatalog
  *
  * Paragraphen = echte kalifornische Gesetze:
  *   CVC = California Vehicle Code, PC = Penal Code, HS = Health & Safety Code
@@ -128,59 +128,6 @@ window.SVP_CATALOG = [
       { code: 'HS 11379.6',     title: 'Herstellung von Drogen (Drogenlabor)',               cls: 'F', fine: 12000, jail: 60, points: 0 },
       { code: 'HS 11364',       title: 'Besitz von Drogenutensilien',                        cls: 'M', fine: 300,  jail: 0,  points: 0 },
       { code: 'HS 11550(a)',    title: 'Unter Einfluss kontrollierter Substanzen',           cls: 'M', fine: 1000, jail: 5,  points: 0 },
-    ]
-  },
-];
-
-/* Echte CHP-Funkcodes */
-window.SVP_CODES = [
-  {
-    name: '10-Codes (CHP)', items: [
-      ['10-1', 'Empfang schlecht'], ['10-2', 'Empfang gut'], ['10-3', 'Funkverkehr einstellen'],
-      ['10-4', 'Verstanden'], ['10-5', 'Weiterleiten (Relay)'], ['10-6', 'Beschäftigt'],
-      ['10-7', 'Außer Dienst'], ['10-8', 'Im Dienst / einsatzbereit'], ['10-9', 'Wiederholen'],
-      ['10-10', 'Außer Dienst – zu Hause'], ['10-12', 'Besucher / Offizielle anwesend'],
-      ['10-13', 'Wetter- / Straßenlage melden'], ['10-15', 'Gefangener in Gewahrsam'],
-      ['10-16', 'Gefangenen abholen'], ['10-19', 'Rückkehr zur Dienststelle'],
-      ['10-20', 'Standort'], ['10-21', 'Telefonisch melden'], ['10-22', 'Ignorieren / Aufheben'],
-      ['10-23', 'Bereithalten'], ['10-27', 'Führerscheinabfrage'], ['10-28', 'Halterabfrage (Kennzeichen)'],
-      ['10-29', 'Fahndungsabfrage'], ['10-33', 'Notfunkverkehr – Funkstille'],
-      ['10-35', 'Vertrauliche Information'], ['10-36', 'Uhrzeit'], ['10-39', 'Nachricht übermittelt'],
-      ['10-51', 'Abschleppwagen benötigt'], ['10-52', 'Rettungswagen benötigt'],
-      ['10-53', 'Straße blockiert'], ['10-55', 'Coroner-Fall (Leiche)'],
-      ['10-87', 'Treffen mit Beamten'], ['10-97', 'Am Einsatzort eingetroffen'],
-      ['10-98', 'Einsatz beendet'], ['10-99', 'Gesucht / gestohlen'],
-    ]
-  },
-  {
-    name: '11-Codes (CHP)', items: [
-      ['11-24', 'Verlassenes Fahrzeug'], ['11-25', 'Verkehrsgefahr / Hindernis'],
-      ['11-26', 'Liegengebliebenes Fahrzeug'], ['11-27', '10-27 mit festgehaltenem Fahrer'],
-      ['11-28', '10-28 mit festgehaltenem Fahrer'], ['11-29', '10-29 mit festgehaltenem Fahrer'],
-      ['11-41', 'Rettungswagen benötigt'], ['11-42', 'Kein Rettungswagen benötigt'],
-      ['11-44', 'Todesfall (Coroner)'], ['11-48', 'Transport bereitstellen'],
-      ['11-54', 'Verdächtiges Fahrzeug'], ['11-55', 'Beamter wird verfolgt'],
-      ['11-56', 'Beamter wird von gefährlichen Personen verfolgt'],
-      ['11-57', 'Unbekanntes Fahrzeug am Einsatzort'], ['11-58', 'Funk wird abgehört – Telefon nutzen'],
-      ['11-65', 'Ampel ausgefallen'], ['11-66', 'Ampel defekt'], ['11-78', 'Flugzeugunglück'],
-      ['11-79', 'Unfall – Rettungswagen unterwegs'], ['11-80', 'Unfall – schwere Verletzungen'],
-      ['11-81', 'Unfall – leichte Verletzungen'], ['11-82', 'Unfall – nur Sachschaden'],
-      ['11-83', 'Unfall – keine Details'], ['11-84', 'Verkehr regeln'],
-      ['11-85', 'Abschleppwagen benötigt'], ['11-86', 'Bombendrohung'],
-      ['11-87', 'Bombe gefunden'], ['11-98', 'Treffen'], ['11-99', 'BEAMTER BRAUCHT HILFE'],
-    ]
-  },
-  {
-    name: 'Codes & Begriffe', items: [
-      ['Code 1', 'Anfahrt nach Gelegenheit'], ['Code 2', 'Dringend – ohne Blaulicht/Sirene'],
-      ['Code 3', 'Notfall – mit Blaulicht und Sirene'], ['Code 4', 'Keine weitere Unterstützung nötig'],
-      ['Code 5', 'Observation – Bereich meiden'], ['Code 6', 'Fahrzeug verlassen zur Ermittlung'],
-      ['Code 7', 'Pause (Essen)'], ['Code 33', 'Notfall – Funkstille auf Kanal'],
-      ['SigAlert', 'Sperrung einer Fahrspur > 30 Min.'], ['Traffic Break', 'Verkehr verlangsamen / Rollende Sperre'],
-      ['PIT', 'Precision Immobilization Technique'], ['BOLO', 'Be On the Lookout – Fahndung'],
-      ['RP', 'Reporting Party – Anrufer'], ['GOA', 'Gone On Arrival – nicht mehr vor Ort'],
-      ['UTL', 'Unable To Locate – nicht auffindbar'], ['FTY', 'Failure To Yield – Anhalten verweigert'],
-      ['TC', 'Traffic Collision – Verkehrsunfall'], ['HBD', 'Has Been Drinking – getrunken'],
     ]
   },
 ];

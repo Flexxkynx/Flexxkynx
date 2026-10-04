@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 
 name 'svp_chp_panel'
-description 'California Highway Patrol MDT Panel - Sunset Valley+'
+description 'Strafenkatalog für die Behörden - Sunset Valley+'
 author 'Sunset Valley+'
 version '1.0.0'
 

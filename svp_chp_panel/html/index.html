@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Sunset Valley+ MDT</title>
+  <title>Sunset Valley+ Strafenkatalog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,101 +12,50 @@
         <div class="badge" id="badge">CHP</div>
         <div>
           <div class="title" id="deptName">California Highway Patrol</div>
-          <div class="subtitle"><span id="serverName">Sunset Valley+</span> · Mobile Data Terminal</div>
+          <div class="subtitle"><span id="serverName">Sunset Valley+</span> · Strafenkatalog</div>
         </div>
       </div>
       <div class="me">
         <select id="agencySelect" title="Behörde"></select>
-        <input id="callsign" maxlength="10" placeholder="Callsign" title="Callsign">
-        <select id="statusSelect" title="Status"></select>
         <button class="close" id="closeBtn" title="Schließen (ESC)">✕</button>
       </div>
     </header>
 
-    <div id="panicBar" class="hidden"></div>
-
-    <div class="body">
-      <nav>
-        <button class="tab active" data-tab="catalog">⚖ Strafenkatalog</button>
-        <button class="tab" data-tab="records">🗂 Akten</button>
-        <button class="tab" data-tab="units">🚓 Einheiten</button>
-        <button class="tab" data-tab="codes">📻 Funkcodes</button>
-        <button class="tab" data-tab="dispatch">💬 Funk-Log</button>
-        <div class="loc">📍 <span id="location">-</span></div>
-      </nav>
-
-      <main>
-        <!-- STRAFENKATALOG -->
-        <section id="tab-catalog" class="tab-page active">
-          <div class="catalog">
-            <div class="cat-list">
-              <div class="toolbar">
-                <input id="search" placeholder="Paragraph oder Tatbestand suchen… (z.B. 23152, Raub)">
-                <select id="catFilter"><option value="">Alle Kategorien</option></select>
-                <select id="clsFilter">
-                  <option value="">Alle Klassen</option>
-                  <option value="I">Infraction</option>
-                  <option value="M">Misdemeanor</option>
-                  <option value="F">Felony</option>
-                </select>
-              </div>
-              <div id="catalogTable"></div>
-            </div>
-
-            <aside class="ticket">
-              <h3>Strafbescheid</h3>
-              <input id="suspect" placeholder="Name der Person">
-              <input id="plate" placeholder="Kennzeichen (optional)">
-              <div id="ticketItems" class="ticket-items"><div class="empty">Tatbestände links anklicken.</div></div>
-              <div class="totals">
-                <div><span>Geldstrafe</span><b id="totFine">$0</b></div>
-                <div><span>Haft</span><b id="totJail">0 HE</b></div>
-                <div><span>Punkte</span><b id="totPoints">0</b></div>
-                <div id="licWarn" class="lic hidden">⚠ Führerscheinentzug empfohlen</div>
-              </div>
-              <textarea id="notes" rows="2" placeholder="Bemerkungen / Sachverhalt"></textarea>
-              <div class="btns">
-                <button id="copyBtn">📋 Kopieren</button>
-                <button id="saveBtn" class="primary">💾 Akte speichern</button>
-                <button id="clearBtn" class="danger">🗑</button>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <!-- AKTEN -->
-        <section id="tab-records" class="tab-page">
+    <main>
+      <div class="catalog">
+        <div class="cat-list">
           <div class="toolbar">
-            <input id="recSearch" placeholder="Nach Name oder Kennzeichen suchen…">
-            <button id="recBtn" class="primary">Suchen</button>
+            <input id="search" placeholder="Paragraph oder Tatbestand suchen… (z.B. 23152, Raub)">
+            <select id="catFilter"><option value="">Alle Kategorien</option></select>
+            <select id="clsFilter">
+              <option value="">Alle Klassen</option>
+              <option value="I">Infraction</option>
+              <option value="M">Misdemeanor</option>
+              <option value="F">Felony</option>
+            </select>
           </div>
-          <div id="recordList" class="records"></div>
-        </section>
+          <div id="catalogTable"></div>
+        </div>
 
-        <!-- EINHEITEN -->
-        <section id="tab-units" class="tab-page">
-          <table class="grid">
-            <thead><tr><th>Behörde</th><th>Callsign</th><th>Beamter</th><th>Status</th><th>Standort</th></tr></thead>
-            <tbody id="unitList"></tbody>
-          </table>
-        </section>
-
-        <!-- FUNKCODES -->
-        <section id="tab-codes" class="tab-page">
-          <div class="toolbar"><input id="codeSearch" placeholder="Code suchen… (z.B. 11-82, Abschlepp)"></div>
-          <div id="codeList" class="codes"></div>
-        </section>
-
-        <!-- FUNK-LOG -->
-        <section id="tab-dispatch" class="tab-page">
-          <div id="radioLog" class="radio"></div>
-          <div class="toolbar">
-            <input id="radioMsg" maxlength="200" placeholder="Nachricht an alle Einheiten… (z.B. 11-82 auf Route 68, Code 2)">
-            <button id="radioBtn" class="primary">Senden</button>
+        <aside class="ticket">
+          <h3>Strafbescheid</h3>
+          <input id="suspect" placeholder="Name der Person">
+          <input id="plate" placeholder="Kennzeichen (optional)">
+          <div id="ticketItems" class="ticket-items"><div class="empty">Tatbestände links anklicken.</div></div>
+          <div class="totals">
+            <div><span>Geldstrafe</span><b id="totFine">$0</b></div>
+            <div><span>Haft</span><b id="totJail">0 HE</b></div>
+            <div><span>Punkte</span><b id="totPoints">0</b></div>
+            <div id="licWarn" class="lic hidden">⚠ Führerscheinentzug empfohlen</div>
           </div>
-        </section>
-      </main>
-    </div>
+          <textarea id="notes" rows="2" placeholder="Bemerkungen / Sachverhalt"></textarea>
+          <div class="btns">
+            <button id="copyBtn" class="primary">📋 Kopieren</button>
+            <button id="clearBtn" class="danger">🗑</button>
+          </div>
+        </aside>
+      </div>
+    </main>
     <div id="toast" class="hidden"></div>
   </div>
 
