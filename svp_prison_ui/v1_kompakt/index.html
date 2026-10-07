@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HUD oben (useSHud = true) -->
+    <div id="prison-hud-minimal" class="hidden">
+        <div class="hud-row">
+            <span class="hud-label" id="hud-label-minimal">Haft</span>
+            <span class="hud-time" id="time-display-minimal">00:00</span>
+        </div>
+        <div class="hud-track"><div class="hud-fill" id="time-bar-minimal"></div></div>
+    </div>
+
+    <!-- HUD unten (useSHud = false) -->
+    <div id="prison-hud-alternative" class="hidden">
+        <div class="alt-time" id="time-display-alt">00:00</div>
+        <div class="alt-track"><div class="alt-fill" id="time-bar-alt"></div></div>
+        <div class="alt-meta">
+            <span id="hud-label-alt">Restzeit</span>
+            <span id="alt-percent">0 %</span>
+        </div>
+    </div>
+
+    <!-- Verwaltung -->
+    <div id="prisoner-management" class="hidden">
+        <div class="panel">
+            <header class="panel-head">
+                <h1 id="ui-title">Gefängnisverwaltung</h1>
+                <button class="close-btn" onclick="closeManagementUI()">
+                    <kbd>Esc</kbd>
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5"/></svg>
+                </button>
+            </header>
+
+            <div class="toolbar">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="current"><span id="tab-current">Inhaftiert</span><span class="count" id="count-current">0</span></button>
+                    <button class="tab-btn" data-tab="history"><span id="tab-history">Entlassungen</span><span class="count" id="count-history">0</span></button>
+                </div>
+                <label class="search">
+                    <svg width="13" height="13" viewBox="0 0 13 13"><circle cx="5.5" cy="5.5" r="4.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.7 8.7L12 12" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <input type="text" id="search" placeholder="Suchen …" autocomplete="off" spellcheck="false">
+                </label>
+            </div>
+
+            <div class="tab-content active" id="content-current">
+                <div class="list-head grid-current" id="head-current"></div>
+                <div class="prisoner-list" id="current-prisoners"></div>
+            </div>
+
+            <div class="tab-content" id="content-history">
+                <div class="list-head grid-history" id="head-history"></div>
+                <div class="prisoner-list" id="history-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

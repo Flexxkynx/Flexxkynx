@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Prison UI Vorschau</title>
+<style>
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+        font: 13px system-ui, sans-serif;
+        color: #ddd;
+        /* grober Ersatz für eine Spielszene */
+        background:
+            linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.35)),
+            linear-gradient(170deg, #6f8796 0%, #9aa59b 38%, #6d6a5c 62%, #3b3a35 100%);
+        overflow: hidden;
+    }
+    iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+    .bar {
+        position: fixed; left: 12px; bottom: 12px; z-index: 10;
+        display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+        max-width: 420px; padding: 8px; border-radius: 6px;
+        background: rgba(15,15,15,0.85);
+    }
+    .bar span { width: 100%; font-size: 11px; color: #888; margin: 4px 0 0; }
+    .bar button {
+        font: inherit; color: #ddd; background: #262626; border: 1px solid #3a3a3a;
+        border-radius: 4px; padding: 5px 9px; cursor: pointer;
+    }
+    .bar button.on { background: #ddd; color: #111; border-color: #ddd; }
+</style>
+</head>
+<body>
+<iframe id="frame" src="v1_kompakt/index.html"></iframe>
+
+<div class="bar">
+    <span>Variante</span>
+    <button data-v="original">Original</button>
+    <button data-v="v1_kompakt" class="on">1 · Kompakt</button>
+    <button data-v="v2_akte">2 · Akte</button>
+    <button data-v="v3_zweispaltig">3 · Zweispaltig</button>
+    <span>Anzeigen</span>
+    <button id="hud-top">HUD oben</button>
+    <button id="hud-bottom">HUD unten</button>
+    <button id="last-minute">Letzte Minute</button>
+    <button id="mgmt">Verwaltung</button>
+    <button id="mgmt-empty">Verwaltung (leer)</button>
+</div>
+
+<script>
+const frame = document.getElementById('frame');
+const send = (msg) => frame.contentWindow.postMessage(msg, '*');
+const min = 60 * 1000;
+const now = Date.now();
+
+const locale = {};
+const currentPrisoners = [
+    { identifier: 'char1:4f2a', name: 'Marco Vitale', reason: 'Bewaffneter Raubüberfall auf Fleeca Bank, Flucht vor der Polizei', jailedBy: 'Sgt. L. Hoffmann', timeRemaining: 84, totalTime: 120, jailedAt: now - 36 * min, canRelease: true },
+    { identifier: 'char1:91bd', name: 'Jenny Okafor', reason: 'Drogenbesitz (Klasse B)', jailedBy: 'Ofc. D. Brandt', timeRemaining: 12, totalTime: 30, jailedAt: now - 18 * min, canRelease: true },
+    { identifier: 'char2:07c1', name: 'Dmitri Volkov', reason: 'Körperverletzung, Widerstand gegen Vollstreckungsbeamte', jailedBy: 'Det. S. Klein', timeRemaining: 3, totalTime: 45, jailedAt: now - 42 * min, canRelease: false },
+    { identifier: 'char1:c3e9', name: 'Tobias "Tobi" Reuter', reason: 'Fahren ohne Fahrerlaubnis, Unfallflucht', jailedBy: 'Ofc. M. Yilmaz', timeRemaining: 190, totalTime: 240, jailedAt: now - 3 * 60 * min, canRelease: true }
+];
+const history = [
+    { playerName: 'Lena Schäfer', reason: 'Ladendiebstahl', jailedBy: 'Ofc. D. Brandt', totalTime: 15, jailedAt: now - 2 * 60 * min, releasedAt: now - 105 * min, releaseType: 'auto' },
+    { playerName: 'Kevin Albrecht', reason: 'Beamtenbeleidigung', jailedBy: 'Sgt. L. Hoffmann', totalTime: 20, jailedAt: now - 5 * 60 * min, releasedAt: now - 4 * 60 * min, releaseType: 'officer', releasedBy: 'Lt. A. Becker' },
+    { playerName: 'Ricardo Mendes', reason: 'Illegales Straßenrennen', jailedBy: 'Ofc. M. Yilmaz', totalTime: 60, jailedAt: now - 30 * 60 * min, releasedAt: now - 29 * 60 * min, releaseType: 'manual', releasedBy: 'Admin' },
+    { playerName: 'Sophie Wagner', reason: 'Fahrzeugdiebstahl', jailedBy: 'Det. S. Klein', totalTime: 90, jailedAt: now - 9 * 24 * 60 * min, releasedAt: now - 9 * 24 * 60 * min + 90 * min, releaseType: 'auto' }
+];
+
+let tick = null;
+let lastStyle = true;
+function startHud(useSHud, seconds, maxTime) {
+    lastStyle = useSHud;
+    clearInterval(tick);
+    send({ action: 'showPrisonHUD', show: true, useSHud, time: seconds, maxTime });
+    tick = setInterval(() => {
+        seconds = Math.max(0, seconds - 1);
+        send({ action: 'updatePrisonTime', time: seconds });
+    }, 1000);
+}
+
+document.querySelectorAll('[data-v]').forEach((b) => b.addEventListener('click', () => {
+    document.querySelectorAll('[data-v]').forEach((x) => x.classList.toggle('on', x === b));
+    clearInterval(tick);
+    frame.src = b.dataset.v + '/index.html';
+}));
+
+document.getElementById('hud-top').onclick = () => startHud(true, 754, 1200);
+document.getElementById('hud-bottom').onclick = () => startHud(false, 754, 1200);
+document.getElementById('last-minute').onclick = () => startHud(lastStyle, 47, 1200);
+document.getElementById('mgmt').onclick = () => send({ action: 'openManagementUI', locale, currentPrisoners, history });
+document.getElementById('mgmt-empty').onclick = () => send({ action: 'openManagementUI', locale, currentPrisoners: [], history: [] });
+</script>
+</body>
+</html>

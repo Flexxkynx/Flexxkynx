@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HUD oben (useSHud = true) -->
+    <div id="prison-hud-minimal" class="hidden">
+        <span class="hud-label">Haft</span>
+        <span class="hud-time" id="time-display-minimal">00:00</span>
+        <div class="hud-track"><div class="hud-fill" id="time-bar-minimal"></div></div>
+    </div>
+
+    <!-- HUD unten (useSHud = false) -->
+    <div id="prison-hud-alternative" class="hidden">
+        <div class="alt-label" id="alt-label">Verbleibende Haftzeit</div>
+        <div class="alt-time" id="time-display-alt">00:00</div>
+        <div class="alt-track"><div class="alt-fill" id="time-bar-alt"></div></div>
+    </div>
+
+    <!-- Verwaltung -->
+    <div id="prisoner-management" class="hidden">
+        <div class="folder">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="current"><span id="tab-current">Inhaftiert</span> <b id="count-current">0</b></button>
+                <button class="tab-btn" data-tab="history"><span id="tab-history">Entlassungen</span> <b id="count-history">0</b></button>
+            </div>
+
+            <div class="sheet">
+                <header class="sheet-head">
+                    <div>
+                        <h1 id="ui-title">Gefängnisverwaltung</h1>
+                        <div class="date" id="ui-date"></div>
+                    </div>
+                    <div class="head-right">
+                        <input type="text" id="search" placeholder="Suchen …" autocomplete="off" spellcheck="false">
+                        <button class="close-btn" onclick="closeManagementUI()">Esc&nbsp;&nbsp;✕</button>
+                    </div>
+                </header>
+
+                <div class="tab-content active" id="content-current">
+                    <div class="prisoner-list" id="current-prisoners"></div>
+                </div>
+
+                <div class="tab-content" id="content-history">
+                    <div class="prisoner-list" id="history-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
