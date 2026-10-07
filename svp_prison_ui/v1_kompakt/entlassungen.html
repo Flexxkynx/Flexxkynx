@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Verwaltung -->
+        <div id="prisoner-management">
+            <div class="panel">
+                <header class="panel-head">
+                    <h1 id="ui-title">Gefängnisverwaltung</h1>
+                    <button class="close-btn">
+                        <kbd>Esc</kbd>
+                        <svg width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+                </header>
+
+                <div class="toolbar">
+                    <div class="tabs">
+                        <button class="tab-btn" data-tab="current">
+                            <span id="tab-current">Inhaftiert</span><span class="count" id="count-current">4</span>
+                        </button>
+                        <button class="tab-btn active" data-tab="history">
+                            <span id="tab-history">Entlassungen</span><span class="count" id="count-history">4</span>
+                        </button>
+                    </div>
+                    <label class="search">
+                        <svg width="13" height="13" viewBox="0 0 13 13">
+                            <circle cx="5.5" cy="5.5" r="4.25" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                            <path d="M8.7 8.7L12 12" stroke="currentColor" stroke-width="1.5"></path>
+                        </svg>
+                        <input type="text" id="search" placeholder="Name, Grund oder Beamter …" autocomplete="off" spellcheck="false" />
+                    </label>
+                </div>
+
+                <div class="tab-content" id="content-current">
+                    <div class="list-head grid-current" id="head-current">
+                        <div>Häftling</div>
+                        <div>Restzeit</div>
+                        <div>Strafe</div>
+                        <div>Eingesperrt von</div>
+                        <div>Seit</div>
+                        <div></div>
+                    </div>
+                    <div class="prisoner-list" id="current-prisoners">
+                        <div class="row grid-current">
+                            <div class="cell">
+                                <span class="name">Marco Vitale</span>
+                                <span class="reason" title="Bewaffneter Raubüberfall auf Fleeca Bank, Flucht vor der Polizei"
+                                    >Bewaffneter Raubüberfall auf Fleeca Bank, Flucht vor der Polizei</span
+                                >
+                            </div>
+                            <div class="cell cell-time">
+                                <span class="num">1 h 24 min</span>
+                                <div class="bar"><span style="width: 30%"></span></div>
+                            </div>
+                            <div class="cell num muted">2 h</div>
+                            <div class="cell">Sgt. L. Hoffmann</div>
+                            <div class="cell muted" title="07.10.2026, 16:39">vor 36 Min.</div>
+                            <div class="cell cell-action"><button class="release-btn">Entlassen</button></div>
+                        </div>
+                        <div class="row grid-current">
+                            <div class="cell">
+                                <span class="name">Jenny Okafor</span>
+                                <span class="reason" title="Drogenbesitz (Klasse B)">Drogenbesitz (Klasse B)</span>
+                            </div>
+                            <div class="cell cell-time">
+                                <span class="num">12 min</span>
+                                <div class="bar"><span style="width: 60%"></span></div>
+                            </div>
+                            <div class="cell num muted">30 min</div>
+                            <div class="cell">Ofc. D. Brandt</div>
+                            <div class="cell muted" title="07.10.2026, 16:57">vor 18 Min.</div>
+                            <div class="cell cell-action"><button class="release-btn">Entlassen</button></div>
+                        </div>
+                        <div class="row grid-current ending">
+                            <div class="cell">
+                                <span class="name">Dmitri Volkov</span>
+                                <span class="reason" title="Körperverletzung, Widerstand gegen Vollstreckungsbeamte"
+                                    >Körperverletzung, Widerstand gegen Vollstreckungsbeamte</span
+                                >
+                            </div>
+                            <div class="cell cell-time">
+                                <span class="num">3 min</span>
+                                <div class="bar"><span style="width: 93%"></span></div>
+                            </div>
+                            <div class="cell num muted">45 min</div>
+                            <div class="cell">Det. S. Klein</div>
+                            <div class="cell muted" title="07.10.2026, 16:33">vor 42 Min.</div>
+                            <div class="cell cell-action"></div>
+                        </div>
+                        <div class="row grid-current">
+                            <div class="cell">
+                                <span class="name">Tobias "Tobi" Reuter</span>
+                                <span class="reason" title="Fahren ohne Fahrerlaubnis, Unfallflucht"
+                                    >Fahren ohne Fahrerlaubnis, Unfallflucht</span
+                                >
+                            </div>
+                            <div class="cell cell-time">
+                                <span class="num">3 h 10 min</span>
+                                <div class="bar"><span style="width: 21%"></span></div>
+                            </div>
+                            <div class="cell num muted">4 h</div>
+                            <div class="cell">Ofc. M. Yilmaz</div>
+                            <div class="cell muted" title="07.10.2026, 14:15">vor 3 Std.</div>
+                            <div class="cell cell-action"><button class="release-btn">Entlassen</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content active" id="content-history">
+                    <div class="list-head grid-history" id="head-history">
+                        <div>Häftling</div>
+                        <div>Strafe</div>
+                        <div>Eingesperrt von</div>
+                        <div>Entlassen</div>
+                        <div>Art</div>
+                    </div>
+                    <div class="prisoner-list" id="history-list">
+                        <div class="row grid-history">
+                            <div class="cell">
+                                <span class="name">Lena Schäfer</span>
+                                <span class="reason" title="Ladendiebstahl">Ladendiebstahl</span>
+                            </div>
+                            <div class="cell num muted">15 min</div>
+                            <div class="cell">
+                                Ofc. D. Brandt
+                                <span class="sub" title="07.10.2026, 15:15">vor 2 Std.</span>
+                            </div>
+                            <div class="cell muted" title="07.10.2026, 15:30">vor 1 Std.</div>
+                            <div class="cell">
+                                <span class="tag auto">Zeit abgesessen</span>
+                            </div>
+                        </div>
+                        <div class="row grid-history">
+                            <div class="cell">
+                                <span class="name">Kevin Albrecht</span>
+                                <span class="reason" title="Beamtenbeleidigung">Beamtenbeleidigung</span>
+                            </div>
+                            <div class="cell num muted">20 min</div>
+                            <div class="cell">
+                                Sgt. L. Hoffmann
+                                <span class="sub" title="07.10.2026, 12:15">vor 5 Std.</span>
+                            </div>
+                            <div class="cell muted" title="07.10.2026, 13:15">vor 4 Std.</div>
+                            <div class="cell">
+                                <span class="tag officer">Durch Beamten</span>
+                                <span class="sub">Lt. A. Becker</span>
+                            </div>
+                        </div>
+                        <div class="row grid-history">
+                            <div class="cell">
+                                <span class="name">Ricardo Mendes</span>
+                                <span class="reason" title="Illegales Straßenrennen">Illegales Straßenrennen</span>
+                            </div>
+                            <div class="cell num muted">1 h</div>
+                            <div class="cell">
+                                Ofc. M. Yilmaz
+                                <span class="sub" title="06.10.2026, 11:15">vor 1 Tag</span>
+                            </div>
+                            <div class="cell muted" title="06.10.2026, 12:15">vor 1 Tag</div>
+                            <div class="cell">
+                                <span class="tag manual">Manuell</span>
+                                <span class="sub">Admin</span>
+                            </div>
+                        </div>
+                        <div class="row grid-history">
+                            <div class="cell">
+                                <span class="name">Sophie Wagner</span>
+                                <span class="reason" title="Fahrzeugdiebstahl">Fahrzeugdiebstahl</span>
+                            </div>
+                            <div class="cell num muted">1 h 30 min</div>
+                            <div class="cell">
+                                Det. S. Klein
+                                <span class="sub" title="28.09.2026, 17:15">28.09.2026, 17:15</span>
+                            </div>
+                            <div class="cell muted" title="28.09.2026, 18:45">28.09.2026, 18:45</div>
+                            <div class="cell">
+                                <span class="tag auto">Zeit abgesessen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
