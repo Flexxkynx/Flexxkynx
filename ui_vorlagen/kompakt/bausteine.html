@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de" class="preview">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bausteine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sheet">
+
+        <section class="block">
+            <h2 class="block-title">Buttons</h2>
+            <div class="row">
+                <button class="btn btn-primary">Speichern</button>
+                <button class="btn">Abbrechen</button>
+                <button class="btn btn-ghost">Mehr</button>
+                <button class="btn btn-danger">Löschen</button>
+                <button class="btn" disabled>Gesperrt</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary btn-sm">Klein</button>
+                <button class="btn btn-sm">Klein</button>
+                <button class="btn btn-sm btn-icon" aria-label="Schließen">
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5"/></svg>
+                </button>
+                <span class="hint"><kbd>E</kbd> Interagieren</span>
+                <span class="hint"><kbd>Esc</kbd> Schließen</span>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="block-title">Status</h2>
+            <div class="row">
+                <span class="badge">Neutral</span>
+                <span class="badge badge-ok">Aktiv</span>
+                <span class="badge badge-warn">Ausstehend</span>
+                <span class="badge badge-err">Abgelehnt</span>
+            </div>
+            <div class="row">
+                <span class="dot dot-ok">Online</span>
+                <span class="dot dot-warn">Abwesend</span>
+                <span class="dot dot-err">Offline</span>
+            </div>
+            <div class="progress-group">
+                <div class="progress-label"><span>Fortschritt</span><span class="num">64 %</span></div>
+                <div class="progress"><span style="width: 64%"></span></div>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="block-title">Eingaben</h2>
+            <div class="form">
+                <label class="field">
+                    <span class="field-label">Name</span>
+                    <input class="input" type="text" value="Marco Vitale">
+                </label>
+                <label class="field">
+                    <span class="field-label">Kategorie</span>
+                    <select class="input">
+                        <option>Allgemein</option>
+                        <option>Wichtig</option>
+                    </select>
+                </label>
+                <label class="field field-wide">
+                    <span class="field-label">Notiz</span>
+                    <textarea class="input" rows="3">Hier steht ein längerer Text, der über mehrere Zeilen gehen kann.</textarea>
+                </label>
+                <label class="field">
+                    <span class="field-label">Suche</span>
+                    <span class="search">
+                        <svg width="13" height="13" viewBox="0 0 13 13"><circle cx="5.5" cy="5.5" r="4.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.7 8.7L12 12" stroke="currentColor" stroke-width="1.5"/></svg>
+                        <input type="text" placeholder="Suchen …">
+                    </span>
+                </label>
+                <label class="field">
+                    <span class="field-label">Fehler</span>
+                    <input class="input is-invalid" type="text" value="abc">
+                    <span class="field-error">Nur Zahlen erlaubt</span>
+                </label>
+                <div class="field field-wide row">
+                    <label class="check"><input type="checkbox" checked><span>Benachrichtigungen</span></label>
+                    <label class="check"><input type="checkbox"><span>Ton</span></label>
+                    <label class="switch"><input type="checkbox" checked><span class="switch-track"></span><span>Automatisch</span></label>
+                </div>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="block-title">Tabs</h2>
+            <nav class="tabs">
+                <button class="tab active">Übersicht <span class="count">12</span></button>
+                <button class="tab">Verlauf <span class="count">48</span></button>
+                <button class="tab">Einstellungen</button>
+            </nav>
+            <div class="segmented">
+                <button class="active">Tag</button>
+                <button>Woche</button>
+                <button>Monat</button>
+            </div>
+        </section>
+
+        <section class="block block-wide">
+            <h2 class="block-title">Tabelle</h2>
+            <table class="table">
+                <thead>
+                    <tr><th>Name</th><th>Rolle</th><th>Status</th><th class="right">Betrag</th><th></th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="cell-title">Marco Vitale</span><span class="cell-sub">ID 12</span></td>
+                        <td>Mechaniker</td>
+                        <td><span class="dot dot-ok">Online</span></td>
+                        <td class="right num">$ 12.400</td>
+                        <td class="right"><button class="btn btn-sm">Öffnen</button></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-title">Jenny Okafor</span><span class="cell-sub">ID 7</span></td>
+                        <td>Ärztin</td>
+                        <td><span class="dot dot-warn">Abwesend</span></td>
+                        <td class="right num">$ 3.150</td>
+                        <td class="right"><button class="btn btn-sm">Öffnen</button></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-title">Dmitri Volkov</span><span class="cell-sub">ID 31</span></td>
+                        <td>Taxifahrer</td>
+                        <td><span class="dot dot-err">Offline</span></td>
+                        <td class="right num">$ 890</td>
+                        <td class="right"><button class="btn btn-sm">Öffnen</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="block">
+            <h2 class="block-title">Dialog</h2>
+            <div class="dialog">
+                <h3 class="dialog-title">Eintrag löschen?</h3>
+                <p class="dialog-text">„Marco Vitale“ wird entfernt. Das lässt sich nicht rückgängig machen.</p>
+                <div class="dialog-actions">
+                    <button class="btn">Abbrechen</button>
+                    <button class="btn btn-danger">Löschen</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2 class="block-title">Leer</h2>
+            <div class="empty">
+                <p class="empty-title">Keine Einträge</p>
+                <p class="empty-text">Sobald etwas dazukommt, erscheint es hier.</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

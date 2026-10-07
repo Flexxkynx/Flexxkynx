@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de" class="preview">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="window">
+            <header class="window-head">
+                <div>
+                    <h1 class="window-title">Verwaltung</h1>
+                    <p class="window-sub">Stand 07.10.2026, 17:04</p>
+                </div>
+                <button class="btn btn-ghost btn-close"><kbd>Esc</kbd>
+                    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5"/></svg>
+                </button>
+            </header>
+
+            <nav class="tabs">
+                <button class="tab active">Mitglieder <span class="count">5</span></button>
+                <button class="tab">Verlauf <span class="count">48</span></button>
+                <button class="tab">Einstellungen</button>
+            </nav>
+
+            <div class="window-body split">
+                <aside class="side">
+                    <div class="side-search">
+                        <span class="search">
+                            <svg width="13" height="13" viewBox="0 0 13 13"><circle cx="5.5" cy="5.5" r="4.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.7 8.7L12 12" stroke="currentColor" stroke-width="1.5"/></svg>
+                            <input type="text" placeholder="Suchen …">
+                        </span>
+                    </div>
+                    <div class="list">
+                        <button class="list-item selected">
+                            <span class="li-top"><span class="li-title">Marco Vitale</span><span class="li-meta">Rang 4</span></span>
+                            <span class="li-sub">Werkstattleiter</span>
+                        </button>
+                        <button class="list-item">
+                            <span class="li-top"><span class="li-title">Jenny Okafor</span><span class="li-meta">Rang 3</span></span>
+                            <span class="li-sub">Mechanikerin</span>
+                        </button>
+                        <button class="list-item">
+                            <span class="li-top"><span class="li-title">Dmitri Volkov</span><span class="li-meta">Rang 2</span></span>
+                            <span class="li-sub">Mechaniker</span>
+                        </button>
+                        <button class="list-item">
+                            <span class="li-top"><span class="li-title">Tobias Reuter</span><span class="li-meta">Rang 1</span></span>
+                            <span class="li-sub">Azubi</span>
+                        </button>
+                        <button class="list-item">
+                            <span class="li-top"><span class="li-title">Lena Schäfer</span><span class="li-meta">Rang 1</span></span>
+                            <span class="li-sub">Azubi</span>
+                        </button>
+                    </div>
+                    <div class="side-foot"><kbd>↑</kbd><kbd>↓</kbd> auswählen</div>
+                </aside>
+
+                <main class="main">
+                    <span class="dot dot-ok">Im Dienst</span>
+                    <h2 class="main-title">Marco Vitale</h2>
+
+                    <div class="stat-row">
+                        <div class="stat">
+                            <span class="stat-label">Dienstzeit diese Woche</span>
+                            <span class="stat-value">14 h 20 min</span>
+                            <div class="progress"><span style="width: 72%"></span></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Aufträge</span>
+                            <span class="stat-value">37</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Umsatz</span>
+                            <span class="stat-value">$ 12.400</span>
+                        </div>
+                    </div>
+
+                    <dl class="facts">
+                        <div class="fact"><dt>Rang</dt><dd>Werkstattleiter (4)</dd></div>
+                        <div class="fact"><dt>Telefon</dt><dd class="num">555-0142</dd></div>
+                        <div class="fact"><dt>Eingestellt</dt><dd>12.08.2026</dd></div>
+                        <div class="fact"><dt>Zuletzt online</dt><dd>vor 5 Min.</dd></div>
+                    </dl>
+
+                    <div class="note">
+                        <span class="field-label">Notiz</span>
+                        <p>Zuständig für Tuning-Aufträge und die Einweisung der Azubis.</p>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn btn-danger">Entlassen</button>
+                        <span class="spacer"></span>
+                        <button class="btn">Degradieren</button>
+                        <button class="btn btn-primary">Befördern</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
