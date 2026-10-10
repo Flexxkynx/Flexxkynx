@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de" class="preview">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorlage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="window">
+            <header class="window-head">
+                <div>
+                    <span class="eyebrow">Garage</span>
+                    <h1 class="window-title">Parkhaus Pillbox Hill</h1>
+                </div>
+                <div class="head-right">
+                    <span class="head-stat">Stellplätze <b class="num">12 / 20</b></span>
+                    <button class="close"><kbd>Esc</kbd>
+                        <svg width="12" height="12" viewBox="0 0 12 12"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <div class="toolbar">
+                <nav class="tabs">
+                    <button class="tab active">Alle <span class="count">12</span></button>
+                    <button class="tab">Eingeparkt <span class="count">9</span></button>
+                    <button class="tab">Ausgeparkt <span class="count">3</span></button>
+                    <button class="tab">Geteilt <span class="count">0</span></button>
+                </nav>
+                <label class="search">
+                    <svg width="13" height="13" viewBox="0 0 13 13"><circle cx="5.5" cy="5.5" r="4.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.7 8.7L12 12" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <input type="text" placeholder="Name oder Kennzeichen suchen">
+                    <kbd>/</kbd>
+                </label>
+            </div>
+
+            <div class="body">
+                <aside class="side">
+                    <div class="list-head">
+                        <span>Fahrzeug</span><span>Kennzeichen</span><span class="right">Tank</span><span class="right">Status</span>
+                    </div>
+                    <div class="list">
+                        <button class="row selected">
+                            <span class="cell-name"><span class="name">Karin Sultan RS</span><span class="sub">Sportwagen</span></span>
+                            <span class="cell-plate mono">SV 4821</span>
+                            <span class="cell-num">72 %</span>
+                            <span class="cell-status"><span class="badge badge-ok">Eingeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Pfister Comet S2</span><span class="sub">Sportwagen</span></span>
+                            <span class="cell-plate mono">LS 0937</span>
+                            <span class="cell-num">100 %</span>
+                            <span class="cell-status"><span class="badge badge-ok">Eingeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Bravado Buffalo STX</span><span class="sub">Limousine</span></span>
+                            <span class="cell-plate mono">SV 1104</span>
+                            <span class="cell-num">38 %</span>
+                            <span class="cell-status"><span class="badge badge-warn">Ausgeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Declasse Granger</span><span class="sub">SUV</span></span>
+                            <span class="cell-plate mono">BC 7712</span>
+                            <span class="cell-num">64 %</span>
+                            <span class="cell-status"><span class="badge badge-err">Beschädigt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Übermacht Oracle</span><span class="sub">Coupé</span></span>
+                            <span class="cell-plate mono">LS 5560</span>
+                            <span class="cell-num">91 %</span>
+                            <span class="cell-status"><span class="badge badge-ok">Eingeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Vapid Dominator</span><span class="sub">Muscle Car</span></span>
+                            <span class="cell-plate mono">SV 2290</span>
+                            <span class="cell-num low">15 %</span>
+                            <span class="cell-status"><span class="badge badge-warn">Ausgeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Benefactor Schafter V12</span><span class="sub">Limousine</span></span>
+                            <span class="cell-plate mono">LS 8004</span>
+                            <span class="cell-num">83 %</span>
+                            <span class="cell-status"><span class="badge badge-ok">Eingeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Obey Tailgater S</span><span class="sub">Limousine</span></span>
+                            <span class="cell-plate mono">SV 3318</span>
+                            <span class="cell-num">57 %</span>
+                            <span class="cell-status"><span class="badge badge-ok">Eingeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Dinka Jester</span><span class="sub">Sportwagen</span></span>
+                            <span class="cell-plate mono">BC 0451</span>
+                            <span class="cell-num">100 %</span>
+                            <span class="cell-status"><span class="badge badge-ok">Eingeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Maibatsu Sanchez</span><span class="sub">Motorrad</span></span>
+                            <span class="cell-plate mono">SV 6620</span>
+                            <span class="cell-num">49 %</span>
+                            <span class="cell-status"><span class="badge badge-warn">Ausgeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Albany Emperor</span><span class="sub">Limousine</span></span>
+                            <span class="cell-plate mono">LS 1987</span>
+                            <span class="cell-num low">22 %</span>
+                            <span class="cell-status"><span class="badge badge-ok">Eingeparkt</span></span>
+                        </button>
+                        <button class="row">
+                            <span class="cell-name"><span class="name">Grotti Turismo</span><span class="sub">Sportwagen</span></span>
+                            <span class="cell-plate mono">LS 7001</span>
+                            <span class="cell-num">88 %</span>
+                            <span class="cell-status"><span class="badge badge-ok">Eingeparkt</span></span>
+                        </button>
+                    </div>
+                </aside>
+
+                <main class="detail">
+                    <div class="detail-head">
+                        <div>
+                            <span class="eyebrow">Sportwagen · Karin</span>
+                            <h2 class="detail-title">Karin Sultan RS</h2>
+                        </div>
+                        <span class="plate">SV 4821</span>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-label">Tank</span>
+                            <span class="stat-value">72<small>%</small></span>
+                            <div class="bar"><span style="width: 72%"></span></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Motor</span>
+                            <span class="stat-value">94<small>%</small></span>
+                            <div class="bar"><span style="width: 94%"></span></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Karosserie</span>
+                            <span class="stat-value">81<small>%</small></span>
+                            <div class="bar"><span style="width: 81%"></span></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Kilometerstand</span>
+                            <span class="stat-value">18.420<small>km</small></span>
+                            <span class="stat-note">+ 312 km diese Woche</span>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <section class="group">
+                            <h3 class="group-title">Fahrzeugdaten</h3>
+                            <dl class="kv">
+                                <div><dt>Halter</dt><dd>Lena Hoffmann</dd></div>
+                                <div><dt>Stellplatz</dt><dd>Ebene 2 · B-07</dd></div>
+                                <div><dt>Eingeparkt seit</dt><dd>06.10.2026, 22:14</dd></div>
+                                <div><dt>Versicherung</dt><dd>Vollkasko · bis 31.12.2026</dd></div>
+                                <div><dt>Schlüssel</dt><dd>2 · Jonas Weber</dd></div>
+                                <div><dt>Fahrgestellnr.</dt><dd class="mono">KRN8S41RS0021734</dd></div>
+                            </dl>
+                        </section>
+                        <section class="group">
+                            <h3 class="group-title">Tuning</h3>
+                            <dl class="kv kv-right">
+                                <div><dt>Motor</dt><dd>Stufe 3 / 4</dd></div>
+                                <div><dt>Getriebe</dt><dd>Stufe 2 / 3</dd></div>
+                                <div><dt>Bremsen</dt><dd>Stufe 2 / 3</dd></div>
+                                <div><dt>Federung</dt><dd>Stufe 1 / 4</dd></div>
+                                <div><dt>Turbo</dt><dd>Verbaut</dd></div>
+                                <div><dt>Panzerung</dt><dd>Keine</dd></div>
+                            </dl>
+                        </section>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn btn-primary">Ausparken <span class="btn-price">150 $</span></button>
+                        <button class="btn">Umbenennen</button>
+                        <button class="btn">Schlüssel teilen</button>
+                        <button class="btn" disabled>Abschleppen</button>
+                        <span class="spacer"></span>
+                        <button class="btn btn-danger">Verschrotten</button>
+                    </div>
+                </main>
+            </div>
+
+            <footer class="window-foot">
+                <span class="hints"><span class="hint"><kbd>↑</kbd><kbd>↓</kbd> Auswählen</span><span class="hint"><kbd>Enter</kbd> Ausparken</span><span class="hint"><kbd>Esc</kbd> Schließen</span></span>
+                <span class="head-stat">Kontostand <b class="num">24.860 $</b></span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

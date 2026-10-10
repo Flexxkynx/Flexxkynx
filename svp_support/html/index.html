@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="ui" id="ui">
+  <div class="panel" id="panel">
+
+    <header class="topbar">
+      <img class="brand-logo" src="logo.png" alt="Sunset Valley Roleplay" />
+      <div class="brand-text">
+        <h1>Support</h1>
+        <p id="subtitle">Anfrage an das Team</p>
+      </div>
+      <button class="icon-btn" id="closeBtn" type="button" title="Schließen (Esc)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </header>
+
+    <!-- ===== Formular ===== -->
+    <section class="view" id="viewForm">
+      <div class="field-group">
+        <label>Kategorie</label>
+        <div class="categories" id="categories"></div>
+      </div>
+
+      <div class="field-group">
+        <label for="description">Was ist los?</label>
+        <textarea id="description" maxlength="500" placeholder="Beschreibe dein Anliegen so genau wie möglich …"></textarea>
+        <div class="counter"><span id="descMin">mindestens 10 Zeichen</span><span><span id="descCount">0</span> / 500</span></div>
+      </div>
+
+      <div class="hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <p>Deine aktuelle Position wird automatisch mitgeschickt, damit ein Admin dich schneller findet.</p>
+      </div>
+
+      <button class="btn btn-primary btn-wide" id="submitBtn" disabled>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg>
+        Anfrage senden
+      </button>
+    </section>
+
+    <!-- ===== Status + Chat ===== -->
+    <section class="view view-case" id="viewCase" hidden>
+      <div class="status-card" id="statusCard">
+        <div class="status-tile"><span class="status-dot" id="statusDot"></span></div>
+        <div class="status-text">
+          <div class="status-title" id="statusTitle">Wartet auf einen Admin</div>
+          <div class="status-sub" id="statusSub">seit 0 Sek.</div>
+        </div>
+        <button class="btn btn-danger btn-sm" id="cancelBtn">Zurückziehen</button>
+      </div>
+
+      <div class="case-meta" id="caseMeta"></div>
+
+      <div class="chat-thread" id="chatThread"></div>
+
+      <div class="chat-form" id="chatForm">
+        <textarea id="chatInput" maxlength="300" rows="1" placeholder="Nachricht an den Admin …"></textarea>
+        <button class="btn btn-primary btn-send" id="chatSendBtn" title="Senden (Enter)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg>
+        </button>
+      </div>
+
+      <button class="btn btn-ghost btn-wide" id="newReportBtn" hidden>Neue Anfrage stellen</button>
+    </section>
+
+    <footer class="panel-foot">
+      <span><kbd>Esc</kbd> Schließen</span>
+      <span id="playerTag"></span>
+    </footer>
+
+  </div>
+
+  <div class="demobar" id="demobar" hidden>
+    <span class="demobar-label">Demo</span>
+    <button type="button" data-demo="claim">Admin übernimmt</button>
+    <button type="button" data-demo="reply">Admin antwortet</button>
+    <button type="button" data-demo="resolve">Fall erledigen</button>
+    <button type="button" data-demo="reset">Zurücksetzen</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
