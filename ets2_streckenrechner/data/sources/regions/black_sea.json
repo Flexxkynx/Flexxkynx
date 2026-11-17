@@ -1,0 +1,1044 @@
+{
+ "region": "Romania, Bulgaria, Turkey (RO, BG, TR) - Road to the Black Sea",
+ "cities": [
+  {
+   "name": "Timișoara",
+   "cc": "RO",
+   "lat": 45.754,
+   "lon": 21.226,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Timisoara",
+    "Timişoara",
+    "Temeswar",
+    "Temesvar"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Reșița",
+   "cc": "RO",
+   "lat": 45.301,
+   "lon": 21.889,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Resita",
+    "Reşiţa",
+    "Reschitz",
+    "Reschitza"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Hunedoara",
+   "cc": "RO",
+   "lat": 45.75,
+   "lon": 22.904,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Eisenmarkt",
+    "Vajdahunyad"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Cluj-Napoca",
+   "cc": "RO",
+   "lat": 46.771,
+   "lon": 23.624,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Cluj",
+    "Cluj Napoca",
+    "Klausenburg",
+    "Kolozsvar"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Târgu Mureș",
+   "cc": "RO",
+   "lat": 46.542,
+   "lon": 24.558,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Targu Mures",
+    "Tirgu Mures",
+    "Târgu Mureş",
+    "Neumarkt am Mieresch",
+    "Marosvasarhely"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Brașov",
+   "cc": "RO",
+   "lat": 45.657,
+   "lon": 25.601,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Brasov",
+    "Braşov",
+    "Kronstadt",
+    "Brasso"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bacău",
+   "cc": "RO",
+   "lat": 46.567,
+   "lon": 26.914,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Bacau"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Iași",
+   "cc": "RO",
+   "lat": 47.158,
+   "lon": 27.601,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Iasi",
+    "Iaşi",
+    "Jassy",
+    "Jasch"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Galați",
+   "cc": "RO",
+   "lat": 45.435,
+   "lon": 28.008,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Galati",
+    "Galaţi",
+    "Galatz"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Pitești",
+   "cc": "RO",
+   "lat": 44.857,
+   "lon": 24.869,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Pitesti",
+    "Piteşti"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Craiova",
+   "cc": "RO",
+   "lat": 44.319,
+   "lon": 23.796,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Krajowa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "București",
+   "cc": "RO",
+   "lat": 44.427,
+   "lon": 26.103,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Bucuresti",
+    "Bucureşti",
+    "Bucharest",
+    "Bukarest"
+   ],
+   "conf": "high",
+   "note": "English-locale map data shows 'Bucharest'"
+  },
+  {
+   "name": "Călărași",
+   "cc": "RO",
+   "lat": 44.2,
+   "lon": 27.331,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Calarasi",
+    "Călăraşi"
+   ],
+   "conf": "high",
+   "note": "small city in game (map city list contains calarasi)"
+  },
+  {
+   "name": "Cernavodă",
+   "cc": "RO",
+   "lat": 44.339,
+   "lon": 28.033,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Cernavoda"
+   ],
+   "conf": "high",
+   "note": "small city in game (nuclear plant)"
+  },
+  {
+   "name": "Constanța",
+   "cc": "RO",
+   "lat": 44.18,
+   "lon": 28.634,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Constanta",
+    "Constanţa",
+    "Konstanza",
+    "Constantza"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Mangalia",
+   "cc": "RO",
+   "lat": 43.817,
+   "lon": 28.583,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Mangalia"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Sofia",
+   "cc": "BG",
+   "lat": 42.698,
+   "lon": 23.322,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Sofija",
+    "Sofiya",
+    "Sofia BG",
+    "Sofiа"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Pernik",
+   "cc": "BG",
+   "lat": 42.605,
+   "lon": 23.038,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Pernik"
+   ],
+   "conf": "high",
+   "note": "in RttBS city list (2019); its map item now carries a combined West Balkans + Black Sea guard, so the area was reworked later"
+  },
+  {
+   "name": "Pirdop",
+   "cc": "BG",
+   "lat": 42.703,
+   "lon": 24.18,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Pirdop"
+   ],
+   "conf": "high",
+   "note": "small city in game (copper smelter)"
+  },
+  {
+   "name": "Karlovo",
+   "cc": "BG",
+   "lat": 42.643,
+   "lon": 24.807,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Karlowo"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Plovdiv",
+   "cc": "BG",
+   "lat": 42.142,
+   "lon": 24.75,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Plowdiw",
+    "Philippopel"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kozloduy",
+   "cc": "BG",
+   "lat": 43.778,
+   "lon": 23.725,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Kozloduj",
+    "Kosloduj"
+   ],
+   "conf": "high",
+   "note": "small city in game (nuclear plant)"
+  },
+  {
+   "name": "Pleven",
+   "cc": "BG",
+   "lat": 43.417,
+   "lon": 24.607,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Plewen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Veliko Tarnovo",
+   "cc": "BG",
+   "lat": 43.081,
+   "lon": 25.629,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Veliko Turnovo",
+    "Weliko Tarnowo",
+    "Tarnovo"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Ruse",
+   "cc": "BG",
+   "lat": 43.836,
+   "lon": 25.965,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Russe",
+    "Rousse"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Varna",
+   "cc": "BG",
+   "lat": 43.214,
+   "lon": 27.914,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Warna"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Burgas",
+   "cc": "BG",
+   "lat": 42.504,
+   "lon": 27.463,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Bourgas"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Edirne",
+   "cc": "TR",
+   "lat": 41.677,
+   "lon": 26.556,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Adrianopel",
+    "Adrianople"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Tekirdağ",
+   "cc": "TR",
+   "lat": 40.978,
+   "lon": 27.512,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Tekirdag",
+    "Rodosto"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "İstanbul",
+   "cc": "TR",
+   "lat": 41.008,
+   "lon": 28.978,
+   "dlc": "Road to the Black Sea",
+   "aliases": [
+    "Istanbul",
+    "Stambul",
+    "Konstantinopel",
+    "Constantinople"
+   ],
+   "conf": "high",
+   "note": "European side only; English-locale map data shows 'Istanbul'"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Timișoara",
+   "acc": "RO",
+   "b": "Reșița",
+   "bcc": "RO",
+   "km": 105,
+   "ferry": false,
+   "road": "DN58B / DN58",
+   "conf": "medium"
+  },
+  {
+   "a": "Timișoara",
+   "acc": "RO",
+   "b": "Hunedoara",
+   "bcc": "RO",
+   "km": 170,
+   "ferry": false,
+   "road": "A1 / DN68A / DN7 (via Lugoj, Coșava, Ilia, Deva)",
+   "conf": "medium",
+   "note": "in-game villages Coșava, Ilia, Șoimuș, Deva lie on this corridor"
+  },
+  {
+   "a": "Hunedoara",
+   "acc": "RO",
+   "b": "Cluj-Napoca",
+   "bcc": "RO",
+   "km": 180,
+   "ferry": false,
+   "road": "A1 / A10 / A3 (via Deva, Sebeș, Lancrăm, Turda)",
+   "conf": "medium",
+   "note": "in-game villages Sebeș, Lancrăm support the corridor"
+  },
+  {
+   "a": "Hunedoara",
+   "acc": "RO",
+   "b": "Brașov",
+   "bcc": "RO",
+   "km": 285,
+   "ferry": false,
+   "road": "A1 / DN1 (via Deva, Sibiu, Făgăraș)",
+   "conf": "low",
+   "note": "Sibiu is not an in-game city; no in-game village between Sebeș and Brașov is listed in map data, so this corridor is unconfirmed"
+  },
+  {
+   "a": "Hunedoara",
+   "acc": "RO",
+   "b": "Pitești",
+   "bcc": "RO",
+   "km": 300,
+   "ferry": false,
+   "road": "A1 / DN7 Olt valley (via Sibiu, Râmnicu Vâlcea)",
+   "conf": "low",
+   "note": "no in-game village on the Olt valley found in map data; unconfirmed"
+  },
+  {
+   "a": "Hunedoara",
+   "acc": "RO",
+   "b": "Craiova",
+   "bcc": "RO",
+   "km": 225,
+   "ferry": false,
+   "road": "DN66 (via Hațeg, Petroșani, Târgu Jiu, Vârț, Rovinari, Filiași)",
+   "conf": "low",
+   "note": "added: in-game villages Vârț, Rovinari, Filiași and a Hunedoara depot towards Petroșani suggest the Jiu valley road; Jiu gorge itself not verified"
+  },
+  {
+   "a": "Cluj-Napoca",
+   "acc": "RO",
+   "b": "Târgu Mureș",
+   "bcc": "RO",
+   "km": 105,
+   "ferry": false,
+   "road": "A3 / DN15 (E60) (via Luncani, Ungheni)",
+   "conf": "high"
+  },
+  {
+   "a": "Târgu Mureș",
+   "acc": "RO",
+   "b": "Brașov",
+   "bcc": "RO",
+   "km": 170,
+   "ferry": false,
+   "road": "DN13 / E60 (via Corunca, Sighișoara, Saschiz)",
+   "conf": "medium"
+  },
+  {
+   "a": "Târgu Mureș",
+   "acc": "RO",
+   "b": "Bacău",
+   "bcc": "RO",
+   "km": 290,
+   "ferry": false,
+   "road": "DN15 (via Reghin, Toplița, Borsec, Grințieș, Bistricioara, Poiana Largului, Bicaz, Piatra Neamț)",
+   "conf": "medium",
+   "note": "added: in-game villages Reghin, Toplița, Borsec, Grințieș, Bistricioara, Poiana Largului (Poiana Teiului viaduct viewpoint) lie on DN15; Piatra Neamț is not an in-game city"
+  },
+  {
+   "a": "Brașov",
+   "acc": "RO",
+   "b": "București",
+   "bcc": "RO",
+   "km": 170,
+   "ferry": false,
+   "road": "DN1 / A3 (via Ploiești)",
+   "conf": "high"
+  },
+  {
+   "a": "Brașov",
+   "acc": "RO",
+   "b": "Pitești",
+   "bcc": "RO",
+   "km": 135,
+   "ferry": false,
+   "road": "DN73 (via Bran, Câmpulung)",
+   "conf": "medium",
+   "note": "in-game village Bran, Bran Castle landmark and Piatra Craiului viewpoint confirm the DN73 corridor"
+  },
+  {
+   "a": "Brașov",
+   "acc": "RO",
+   "b": "Bacău",
+   "bcc": "RO",
+   "km": 175,
+   "ferry": false,
+   "road": "DN11 / E574 (Oituz pass, via Helegiu, Onești)",
+   "conf": "medium"
+  },
+  {
+   "a": "Bacău",
+   "acc": "RO",
+   "b": "Iași",
+   "bcc": "RO",
+   "km": 130,
+   "ferry": false,
+   "road": "DN2 / E85 / DN28 / E583 (via Roman, Târgu Frumos, Valea Lupului)",
+   "conf": "medium"
+  },
+  {
+   "a": "Bacău",
+   "acc": "RO",
+   "b": "București",
+   "bcc": "RO",
+   "km": 290,
+   "ferry": false,
+   "road": "DN2 / E85 (via Focșani, Buzău, Urziceni, Afumați)",
+   "conf": "medium"
+  },
+  {
+   "a": "Bacău",
+   "acc": "RO",
+   "b": "Galați",
+   "bcc": "RO",
+   "km": 180,
+   "ferry": false,
+   "road": "DN11A / DN25 (via Adjud, Tecuci)",
+   "conf": "low",
+   "note": "corridor assumed; no supporting village found"
+  },
+  {
+   "a": "Iași",
+   "acc": "RO",
+   "b": "Galați",
+   "bcc": "RO",
+   "km": 250,
+   "ferry": false,
+   "road": "DN24 / DN26 Prut valley (via Huși, Murgeni, Oancea)",
+   "conf": "medium",
+   "note": "in-game village Slobozia Oancea lies on DN26 north of Galați"
+  },
+  {
+   "a": "Galați",
+   "acc": "RO",
+   "b": "București",
+   "bcc": "RO",
+   "km": 235,
+   "ferry": false,
+   "road": "DN22B / DN2B / E85 (via Brăila, Ianca, Buzău, Urziceni)",
+   "conf": "medium"
+  },
+  {
+   "a": "Galați",
+   "acc": "RO",
+   "b": "Constanța",
+   "bcc": "RO",
+   "km": 225,
+   "ferry": true,
+   "road": "DN22B to Brăila, Danube ferry Brăila-Smârdan, DN22 / DN2A (via Măcin, Hârșova, Ovidiu)",
+   "conf": "high",
+   "note": "route needs the in-game Danube BAC river ferry Brăila-Smârdan (SCS blog 2019-11-06; wiki: only river ferry in Romania, no bridge to Smârdan); Galați has no road bridge to Dobruja"
+  },
+  {
+   "a": "Pitești",
+   "acc": "RO",
+   "b": "București",
+   "bcc": "RO",
+   "km": 115,
+   "ferry": false,
+   "road": "A1 / E70",
+   "conf": "high"
+  },
+  {
+   "a": "Pitești",
+   "acc": "RO",
+   "b": "Craiova",
+   "bcc": "RO",
+   "km": 120,
+   "ferry": false,
+   "road": "DN65 / E574 (via Slatina, Balș)",
+   "conf": "medium"
+  },
+  {
+   "a": "Craiova",
+   "acc": "RO",
+   "b": "Reșița",
+   "bcc": "RO",
+   "km": 265,
+   "ferry": false,
+   "road": "DN6 / E70 (via Filiași, Drobeta-Turnu Severin, Orșova, Mehadia, Buchin, Caransebeș)",
+   "conf": "medium",
+   "note": "in-game villages Filiași, Mehadia, Buchin and the City of Orșova viewpoint support the Iron Gates corridor"
+  },
+  {
+   "a": "Craiova",
+   "acc": "RO",
+   "b": "București",
+   "bcc": "RO",
+   "km": 230,
+   "ferry": false,
+   "road": "DN6 (via Caracal, Alexandria)",
+   "conf": "low",
+   "note": "no in-game village on this corridor found; may not exist, the in-game route is probably via Pitești"
+  },
+  {
+   "a": "Craiova",
+   "acc": "RO",
+   "b": "Kozloduy",
+   "bcc": "BG",
+   "km": 195,
+   "ferry": false,
+   "road": "DN56 / New Europe Bridge Calafat-Vidin / I-1 / II-11 (via Lom)",
+   "conf": "medium",
+   "note": "New Europe Bridge is an in-game landmark, so the Calafat-Vidin crossing exists; Calafat and Vidin are not in-game cities; Vidin-Kozloduy leg not verified"
+  },
+  {
+   "a": "București",
+   "acc": "RO",
+   "b": "Cernavodă",
+   "bcc": "RO",
+   "km": 160,
+   "ferry": false,
+   "road": "A2 / E81 (via Răzvani/Lehliu, Fetești)",
+   "conf": "high"
+  },
+  {
+   "a": "București",
+   "acc": "RO",
+   "b": "Călărași",
+   "bcc": "RO",
+   "km": 125,
+   "ferry": false,
+   "road": "A2 / DN21 (via Lehliu)",
+   "conf": "medium"
+  },
+  {
+   "a": "București",
+   "acc": "RO",
+   "b": "Ruse",
+   "bcc": "BG",
+   "km": 70,
+   "ferry": false,
+   "road": "DN5 / E70 / E85, Giurgiu-Ruse Friendship Bridge",
+   "conf": "high",
+   "note": "Giurgiu is a hidden border town, not a map city"
+  },
+  {
+   "a": "Călărași",
+   "acc": "RO",
+   "b": "Cernavodă",
+   "bcc": "RO",
+   "km": 65,
+   "ferry": false,
+   "road": "DN3B / A2 (via Borcea, Fetești)",
+   "conf": "medium",
+   "note": "in-game village Borcea and the Cernavodă Bridge viewpoint lie on this link"
+  },
+  {
+   "a": "Cernavodă",
+   "acc": "RO",
+   "b": "Constanța",
+   "bcc": "RO",
+   "km": 60,
+   "ferry": false,
+   "road": "A2 / E81",
+   "conf": "high"
+  },
+  {
+   "a": "Constanța",
+   "acc": "RO",
+   "b": "Mangalia",
+   "bcc": "RO",
+   "km": 45,
+   "ferry": false,
+   "road": "DN39 / E87",
+   "conf": "high"
+  },
+  {
+   "a": "Mangalia",
+   "acc": "RO",
+   "b": "Varna",
+   "bcc": "BG",
+   "km": 110,
+   "ferry": false,
+   "road": "E87 (via 2 Mai, Vama Veche-Durankulak, Balchik)",
+   "conf": "medium"
+  },
+  {
+   "a": "Ruse",
+   "acc": "BG",
+   "b": "Veliko Tarnovo",
+   "bcc": "BG",
+   "km": 105,
+   "ferry": false,
+   "road": "I-5 / E85 (via Polsko Kosovo, Byala)",
+   "conf": "high"
+  },
+  {
+   "a": "Ruse",
+   "acc": "BG",
+   "b": "Varna",
+   "bcc": "BG",
+   "km": 200,
+   "ferry": false,
+   "road": "I-2 / E70 (via Razgrad, Shumen)",
+   "conf": "medium"
+  },
+  {
+   "a": "Varna",
+   "acc": "BG",
+   "b": "Veliko Tarnovo",
+   "bcc": "BG",
+   "km": 225,
+   "ferry": false,
+   "road": "A2 Hemus / I-4 (via Shumen)",
+   "conf": "medium"
+  },
+  {
+   "a": "Varna",
+   "acc": "BG",
+   "b": "Burgas",
+   "bcc": "BG",
+   "km": 130,
+   "ferry": false,
+   "road": "I-9 / E87 (coastal, via Staro Oryahovo, Obzor, Pomorie)",
+   "conf": "high"
+  },
+  {
+   "a": "Burgas",
+   "acc": "BG",
+   "b": "Plovdiv",
+   "bcc": "BG",
+   "km": 255,
+   "ferry": false,
+   "road": "A1 Trakia / E773",
+   "conf": "high"
+  },
+  {
+   "a": "Burgas",
+   "acc": "BG",
+   "b": "Edirne",
+   "bcc": "TR",
+   "km": 160,
+   "ferry": false,
+   "road": "I-9 / II-79 / I-7 (via Debelt, Sredets, Elhovo), Lesovo-Hamzabeyli crossing",
+   "conf": "medium",
+   "note": "in-game villages Debelt and Sredets lie on II-79 and Kuzucu on the Turkish side; Hamzabeyli exists as a hidden border city in game files"
+  },
+  {
+   "a": "Plovdiv",
+   "acc": "BG",
+   "b": "Sofia",
+   "bcc": "BG",
+   "km": 145,
+   "ferry": false,
+   "road": "A1 Trakia / E80",
+   "conf": "high"
+  },
+  {
+   "a": "Plovdiv",
+   "acc": "BG",
+   "b": "Edirne",
+   "bcc": "TR",
+   "km": 190,
+   "ferry": false,
+   "road": "A1 / A4 Maritsa / E80 (via Haskovo, Svilengrad), Kapitan Andreevo-Kapıkule",
+   "conf": "medium",
+   "note": "Kapıkule exists as hidden border city in game files"
+  },
+  {
+   "a": "Plovdiv",
+   "acc": "BG",
+   "b": "Karlovo",
+   "bcc": "BG",
+   "km": 60,
+   "ferry": false,
+   "road": "II-64",
+   "conf": "medium"
+  },
+  {
+   "a": "Karlovo",
+   "acc": "BG",
+   "b": "Pirdop",
+   "bcc": "BG",
+   "km": 65,
+   "ferry": false,
+   "road": "I-6 (via Zlatitsa)",
+   "conf": "medium"
+  },
+  {
+   "a": "Pirdop",
+   "acc": "BG",
+   "b": "Sofia",
+   "bcc": "BG",
+   "km": 85,
+   "ferry": false,
+   "road": "I-6",
+   "conf": "medium"
+  },
+  {
+   "a": "Karlovo",
+   "acc": "BG",
+   "b": "Veliko Tarnovo",
+   "bcc": "BG",
+   "km": 150,
+   "ferry": false,
+   "road": "I-6 / I-5 Shipka pass (via Kazanlak, Gabrovo)",
+   "conf": "low",
+   "note": "Shipka pass road in game not verified; no supporting village found"
+  },
+  {
+   "a": "Sofia",
+   "acc": "BG",
+   "b": "Pernik",
+   "bcc": "BG",
+   "km": 30,
+   "ferry": false,
+   "road": "A6 Lyulin / E79",
+   "conf": "high"
+  },
+  {
+   "a": "Sofia",
+   "acc": "BG",
+   "b": "Pleven",
+   "bcc": "BG",
+   "km": 170,
+   "ferry": false,
+   "road": "A2 Hemus / I-3 (via Botevgrad, Zlatna Panega)",
+   "conf": "medium"
+  },
+  {
+   "a": "Sofia",
+   "acc": "BG",
+   "b": "Kozloduy",
+   "bcc": "BG",
+   "km": 195,
+   "ferry": false,
+   "road": "I-81 Petrohan pass / I-1 / II-11 (via Kostinbrod, Montana, Lom)",
+   "conf": "medium",
+   "note": "in-game villages Kostinbrod, Petrohan, Montana show the in-game road uses the Petrohan pass, not Vratsa; Montana-Kozloduy leg not verified"
+  },
+  {
+   "a": "Kozloduy",
+   "acc": "BG",
+   "b": "Pleven",
+   "bcc": "BG",
+   "km": 130,
+   "ferry": false,
+   "road": "II-11 / II-13 (via Oryahovo/Knezha)",
+   "conf": "low",
+   "note": "corridor assumed; no supporting village found"
+  },
+  {
+   "a": "Pleven",
+   "acc": "BG",
+   "b": "Veliko Tarnovo",
+   "bcc": "BG",
+   "km": 120,
+   "ferry": false,
+   "road": "I-3 / E83 / I-4",
+   "conf": "medium"
+  },
+  {
+   "a": "Edirne",
+   "acc": "TR",
+   "b": "İstanbul",
+   "bcc": "TR",
+   "km": 235,
+   "ferry": false,
+   "road": "O-3 / E80 (via Çatalca: Ahmediye, Muratbey)",
+   "conf": "high"
+  },
+  {
+   "a": "Edirne",
+   "acc": "TR",
+   "b": "Tekirdağ",
+   "bcc": "TR",
+   "km": 145,
+   "ferry": false,
+   "road": "D.100 / D.110 (via Babaeski, Muratlı)",
+   "conf": "medium"
+  },
+  {
+   "a": "Tekirdağ",
+   "acc": "TR",
+   "b": "İstanbul",
+   "bcc": "TR",
+   "km": 135,
+   "ferry": false,
+   "road": "D.110 / D.100",
+   "conf": "high"
+  },
+  {
+   "a": "Timișoara",
+   "acc": "RO",
+   "b": "Szeged",
+   "bcc": "HU",
+   "km": 160,
+   "ferry": false,
+   "road": "A1 / M43 (via Arad, Nădlac-Csanádpalota)",
+   "conf": "medium",
+   "note": "Nădlac exists as hidden border city in game files; Arad is not an in-game city (village Aradul Nou is)"
+  },
+  {
+   "a": "Hunedoara",
+   "acc": "RO",
+   "b": "Szeged",
+   "bcc": "HU",
+   "km": 275,
+   "ferry": false,
+   "road": "M43 / A1 / DN7 (via Nădlac, Arad, Fântânele, Lipova, Săcămaș, Ilia, Deva)",
+   "conf": "medium",
+   "note": "added: in-game villages Fântânele, Lipova, Săcămaș along the Mureș valley show a direct Arad-Deva road that bypasses Timișoara"
+  },
+  {
+   "a": "Cluj-Napoca",
+   "acc": "RO",
+   "b": "Debrecen",
+   "bcc": "HU",
+   "km": 220,
+   "ferry": false,
+   "road": "DN1 / E60 / 42 (via Gilău, Oradea, Borș-Ártánd)",
+   "conf": "medium",
+   "note": "Ártánd exists as hidden border city in game files; Oradea is not an in-game city; villages Borod, Tileagd, Uileacu de Criș, Sântion carry a Black Sea + Going East guard"
+  },
+  {
+   "a": "Sofia",
+   "acc": "BG",
+   "b": "Niš",
+   "bcc": "RS",
+   "km": 160,
+   "ferry": false,
+   "road": "A6 / E80 (Kalotina-Gradina, Dimitrovgrad, Pirot)",
+   "conf": "medium",
+   "note": "Gradina-Kalotina crossing is listed among West Balkans border crossings (trucksimulator.wiki.gg Border crossing)"
+  },
+  {
+   "a": "Craiova",
+   "acc": "RO",
+   "b": "Niš",
+   "bcc": "RS",
+   "km": 295,
+   "ferry": false,
+   "road": "DN56 / New Europe Bridge Calafat-Vidin / I-1 / Kula / Vrška Čuka-Zaječar / Boljevac / Paraćin / A1",
+   "conf": "medium",
+   "note": "Vrshka Chuka-Vrashka Chuka (BG-RS) is listed among West Balkans border crossings; Vidin/Kula/Zaječar are not in-game cities"
+  },
+  {
+   "a": "Timișoara",
+   "acc": "RO",
+   "b": "Beograd",
+   "bcc": "RS",
+   "km": 165,
+   "ferry": false,
+   "road": "DN59 / R10 / E70 (Moravița-Vatin, Vršac, Pančevo)",
+   "conf": "medium",
+   "note": "Vatin-Moravița crossing on R10/DN59 is listed among West Balkans crossings; in-game villages Vršac and Pančevo on the Serbian side; English-locale map shows 'Belgrade'"
+  },
+  {
+   "a": "Pernik",
+   "acc": "BG",
+   "b": "Skopje",
+   "bcc": "MK",
+   "km": 200,
+   "ferry": false,
+   "road": "I-6 / E871 (via Radomir, Kyustendil, Gyueshevo-Deve Bair, Kriva Palanka, Kumanovo)",
+   "conf": "medium",
+   "note": "Deve Bair-Gyueshevo crossing listed among West Balkans crossings"
+  },
+  {
+   "a": "Pernik",
+   "acc": "BG",
+   "b": "Thessaloniki",
+   "bcc": "GR",
+   "km": 260,
+   "ferry": false,
+   "road": "A3 Struma / E79 (via Dupnitsa, Blagoevgrad, Sandanski, Kulata-Promachonas)",
+   "conf": "medium",
+   "note": "Kulata-Promachonas is a Greece DLC border crossing (SCS blog Aug 2024)"
+  },
+  {
+   "a": "Edirne",
+   "acc": "TR",
+   "b": "Kavala",
+   "bcc": "GR",
+   "km": 310,
+   "ferry": false,
+   "road": "D550 / D110 / A2 Egnatia (via Uzunköprü, İpsala-Kipoi, Alexandroupoli, Komotini, Xanthi)",
+   "conf": "low",
+   "note": "İpsala-Kipoi is the confirmed Greece DLC crossing (SCS blog; wiki lists it on A2/D110); Edirne-İpsala D550 leg not verified; no Pazarkule-Kastanies crossing found; Greece DLC city list has no Alexandroupoli/Komotini, Kavala is the nearest Greek city"
+  },
+  {
+   "a": "Tekirdağ",
+   "acc": "TR",
+   "b": "Kavala",
+   "bcc": "GR",
+   "km": 330,
+   "ferry": false,
+   "road": "D110 / E84 / A2 Egnatia (via Malkara, Keşan, İpsala-Kipoi, Alexandroupoli, Komotini, Xanthi)",
+   "conf": "medium",
+   "note": "İpsala-Kipoi, the largest Greece DLC crossing, is listed on A2/D110; D110 is the Tekirdağ-Keşan-İpsala road"
+  },
+  {
+   "a": "Plovdiv",
+   "acc": "BG",
+   "b": "Kavala",
+   "bcc": "GR",
+   "km": 290,
+   "ferry": false,
+   "road": "A1 / I-8 / I-5 / II-59 / Makaza-Nymfaia / A2 Egnatia (via Haskovo, Kardzhali, Momchilgrad, Komotini, Xanthi)",
+   "conf": "low",
+   "note": "Makaza-Nymfaia crossing is a Greece DLC mountain-pass crossing (SCS blog Jul 2024); the Bulgarian approach road and its junction with the Plovdiv-Edirne corridor are not verified"
+  }
+ ],
+ "changes": [
+  "City list checked against the web: one guide gives 16 cities in Romania, 11 in Bulgaria and 3 in Türkiye (30 in total), which matches the dataset's list exactly. The wiki's Road to the Black Sea page lists Bacău, Brașov, București, Cluj-Napoca, Constanța, Craiova, Mangalia and Reșița among the Romanian cities. No SCS rework of Romania, Bulgaria or Türkiye turned up through update 1.61 (Sep 2026) or the Iceland DLC. No city added or removed.",
+  "Radio-only candidates not added: Arad, Baia Mare, Oradea, Piatra Neamț and Sibiu (RO), and Yambol/Ямбол (BG). No search found evidence that any of them is in vanilla; the Romanian names only turned up in ProMods and fan Romania maps. The wiki's list of Bulgarian scenery villages (Debelt, German, Kostinbrod, Montana, Petrohan, Pomorie, Razgrad, Ruzhintsi, Sredets, Staro Oryahovo, Zlatitsa, Zlatna Panega) does not include Yambol. No listed_as_village entries to remove.",
+  "Galați-Constanța: set ferry=true and conf high. The route needs the in-game BAC river ferry Brăila-Smârdan (SCS blog post of 2019-11-06 on the Brăila ferry; the wiki calls it the only ferry crossing in Romania, with no bridge to Smârdan). The earlier version had ferry=false even though its note described the ferry.",
+  "Sofia-Niš: conf low->medium, km 155->160, road text now via Kalotina-Gradina. The wiki's border crossing list names Gradina-Kalotina as a West Balkans crossing.",
+  "Craiova-Niš: conf low->medium. The wiki lists Vrshka Chuka-Vrashka Chuka (BG-RS) as a West Balkans crossing, which confirms the Vidin-Kula-Zaječar route rather than the Iron Gates.",
+  "Timișoara-Beograd: conf low->medium. The wiki lists Vatin-Moravița on R10/DN59 as a West Balkans crossing.",
+  "Pernik-Skopje: conf low->medium, km 190->200, road text via Radomir and Kyustendil. The wiki lists Deve Bair-Gyueshevo as a West Balkans crossing.",
+  "Pernik-Thessaloniki: conf low->medium, km 285->260. SCS blog posts on the Greece border crossings (Jul/Aug 2024) describe Kulata-Promachonas as a Greece DLC crossing.",
+  "Edirne-Kavala: re-routed via the confirmed İpsala-Kipoi crossing (the SCS blog calls it the largest Greece DLC crossing; the wiki lists it on A2/D110), km 300->310, conf stays low. No search result mentioned a Pazarkule-Kastanies crossing. The Greece DLC city list (Argostoli, Athens, Chania, Chios, Heraklion, Ioannina, Kalamata, Kavala, Lamia, Larissa, Mytilene, Patras, Rhodes, Thessaloniki, Trikala) confirms Kavala as the nearest Greek city; Alexandroupoli and Komotini are not cities.",
+  "Added cross-border edge Tekirdağ-Kavala via D110 (Malkara, Keşan) and İpsala-Kipoi, 330 km, conf medium. The crossing sits on D110, which starts at Tekirdağ.",
+  "Added cross-border edge Plovdiv-Kavala via Haskovo, Kardzhali and the Makaza-Nymfaia crossing, 290 km, conf low. The SCS blog and the wiki list Makaza as a BG-GR crossing in the Greece DLC; the Bulgarian approach road is not verified.",
+  "Kept unchanged because the web neither confirmed nor disproved them: Hunedoara-Brașov (via Sibiu), Hunedoara-Pitești (Olt valley), Craiova-București (via Alexandria) and Karlovo-Veliko Tarnovo (Shipka pass). Searches found no in-game village evidence for Sibiu, Făgăraș, Râmnicu Vâlcea, Alexandria, Caracal, Kazanlak or Gabrovo.",
+  "Graph check: all 30 cities are connected; 61 edges, 3 of them new or rerouted Greek links."
+ ],
+ "sources": "13 WebSearch queries. Pages seen: trucksimulator.wiki.gg pages Euro_Truck_Simulator_2:_Road_to_the_Black_Sea, Border_crossing (West Balkans crossings Vatin-Moravița, Gradina-Kalotina, Vrshka Chuka, Deve Bair-Gyueshevo; Greece crossings Kipi-İpsala, Makaza), List_of_villages_in_Bulgaria, Cities/Euro_Truck_Simulator_2, Kavala and the Greece city navbox, File:Road_to_the_Black_Sea_River_Ferry, Chihiu; SCS blog posts https://blog.scssoft.com/2019/11/road-to-black-sea-braila-ferry.html, https://blog.scssoft.com/2019/08/road-to-black-sea-romanian-cities.html, https://blog.scssoft.com/2024/07/greece-border-crossings.html, https://blog.scssoft.com/2024/08/greece-border-crossings-2.html, https://blog.scssoft.com/2024/11/greece-big-cities.html; gamepressure West Balkans border crossing article; racinggames.gg articles on ETS2 1.59 and 1.61 (no Romania rework); Steam discussion https://steamcommunity.com/app/227300/discussions/0/3934517363283130273 and a DLC guide giving 16 RO / 11 BG / 3 TR cities. Real coordinates and road km come from general geographic knowledge."
+}

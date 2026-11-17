@@ -1,0 +1,431 @@
+{
+ "region": "Austria, Switzerland, Liechtenstein (AT, CH, LI)",
+ "cities": [
+  {
+   "name": "Wien",
+   "cc": "AT",
+   "lat": 48.208,
+   "lon": 16.373,
+   "dlc": "Base",
+   "aliases": [
+    "Vienna",
+    "Vienne",
+    "Wien"
+   ],
+   "conf": "high",
+   "note": "Reworked in 1.44 (Austria rework; SCS blog Feb 2022 Vienna preview)"
+  },
+  {
+   "name": "Linz",
+   "cc": "AT",
+   "lat": 48.306,
+   "lon": 14.286,
+   "dlc": "Base",
+   "aliases": [
+    "Linz an der Donau"
+   ],
+   "conf": "high",
+   "note": "Reworked in 1.44 (SCS blog Mar 2022 Linz & Innsbruck preview); Unterweitersdorf, Mauthausen, Pyburg, Rems are village labels nearby, not cities"
+  },
+  {
+   "name": "Salzburg",
+   "cc": "AT",
+   "lat": 47.809,
+   "lon": 13.055,
+   "dlc": "Base",
+   "aliases": [
+    "Salzburg"
+   ],
+   "conf": "high",
+   "note": "Reworked in 1.44; Bischofshofen, Saalfelden am Steinernen Meer, Leogang and Wals are village labels, not cities"
+  },
+  {
+   "name": "Graz",
+   "cc": "AT",
+   "lat": 47.071,
+   "lon": 15.439,
+   "dlc": "Base",
+   "aliases": [
+    "Graz"
+   ],
+   "conf": "high",
+   "note": "Base game (free addition in 1.11.1 per fandom wiki summary); included in the 1.44 Austria rework area"
+  },
+  {
+   "name": "Klagenfurt am Wörthersee",
+   "cc": "AT",
+   "lat": 46.624,
+   "lon": 14.308,
+   "dlc": "Base",
+   "aliases": [
+    "Klagenfurt",
+    "Klagenfurt am Woerthersee",
+    "Klagenfurt am Worthersee",
+    "Celovec"
+   ],
+   "conf": "high",
+   "note": "Base game (free addition in 1.11.1 per fandom wiki summary); trucksimulator.wiki.gg has a city page for it"
+  },
+  {
+   "name": "Innsbruck",
+   "cc": "AT",
+   "lat": 47.269,
+   "lon": 11.404,
+   "dlc": "Base",
+   "aliases": [
+    "Innsbruck"
+   ],
+   "conf": "high",
+   "note": "Reworked in 1.44"
+  },
+  {
+   "name": "Zürich",
+   "cc": "CH",
+   "lat": 47.377,
+   "lon": 8.54,
+   "dlc": "Base",
+   "aliases": [
+    "Zurich",
+    "Zuerich",
+    "Zürich"
+   ],
+   "conf": "high",
+   "note": "Reworked in the Switzerland rework (1.50, released 14 May 2024). Kloten is an inaccessible village label, not a city"
+  },
+  {
+   "name": "Bern",
+   "cc": "CH",
+   "lat": 46.948,
+   "lon": 7.447,
+   "dlc": "Base",
+   "aliases": [
+    "Berne"
+   ],
+   "conf": "high",
+   "note": "Reworked in 1.50"
+  },
+  {
+   "name": "Genève",
+   "cc": "CH",
+   "lat": 46.204,
+   "lon": 6.143,
+   "dlc": "Base",
+   "aliases": [
+    "Geneva",
+    "Genf",
+    "Geneve",
+    "Ginevra"
+   ],
+   "conf": "high",
+   "note": "Reworked in 1.50; Carouge, Meyrin, Vernier, Plan-les-Ouates, Versoix are village labels"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Wien",
+   "acc": "AT",
+   "b": "Linz",
+   "bcc": "AT",
+   "km": 185,
+   "ferry": false,
+   "road": "A1 / E60",
+   "conf": "high"
+  },
+  {
+   "a": "Linz",
+   "acc": "AT",
+   "b": "Salzburg",
+   "bcc": "AT",
+   "km": 132,
+   "ferry": false,
+   "road": "A1 / E55-E60",
+   "conf": "high"
+  },
+  {
+   "a": "Wien",
+   "acc": "AT",
+   "b": "Graz",
+   "bcc": "AT",
+   "km": 200,
+   "ferry": false,
+   "road": "A2 / E59-E66",
+   "conf": "high"
+  },
+  {
+   "a": "Graz",
+   "acc": "AT",
+   "b": "Klagenfurt am Wörthersee",
+   "bcc": "AT",
+   "km": 137,
+   "ferry": false,
+   "road": "A2 / E66",
+   "conf": "high"
+  },
+  {
+   "a": "Salzburg",
+   "acc": "AT",
+   "b": "Klagenfurt am Wörthersee",
+   "bcc": "AT",
+   "km": 223,
+   "ferry": false,
+   "road": "A10 Tauern / E55",
+   "conf": "high",
+   "note": "Via Bischofshofen and Villach (A10/A2); neither is an in-game city (wiki: Austria has 6 accessible cities)"
+  },
+  {
+   "a": "Salzburg",
+   "acc": "AT",
+   "b": "Innsbruck",
+   "bcc": "AT",
+   "km": 185,
+   "ferry": false,
+   "road": "A1 / A8 (DE) / A93 (DE) / A12",
+   "conf": "medium",
+   "note": "Via Deutsches Eck (Rosenheim, not a city). The 1.44 map also has a slower Austrian inland road via Saalfelden/Leogang (village labels)"
+  },
+  {
+   "a": "Linz",
+   "acc": "AT",
+   "b": "Graz",
+   "bcc": "AT",
+   "km": 220,
+   "ferry": false,
+   "road": "A9 Pyhrn / E57",
+   "conf": "medium",
+   "note": "St. Michael (A9/S6) is a village label on this corridor"
+  },
+  {
+   "a": "Innsbruck",
+   "acc": "AT",
+   "b": "Zürich",
+   "bcc": "CH",
+   "km": 290,
+   "ferry": false,
+   "road": "A12 / S16 Arlberg / A14 / A1 (CH) / E60",
+   "conf": "medium",
+   "note": "Village labels Bregenz, Höchst (AT) and St. Margrethen (CH) show the game route crosses the Rhine near Lake Constance; Liechtenstein has no city. No in-game city between"
+  },
+  {
+   "a": "Bern",
+   "acc": "CH",
+   "b": "Zürich",
+   "bcc": "CH",
+   "km": 125,
+   "ferry": false,
+   "road": "A1 / E25-E60",
+   "conf": "high"
+  },
+  {
+   "a": "Bern",
+   "acc": "CH",
+   "b": "Genève",
+   "bcc": "CH",
+   "km": 160,
+   "ferry": false,
+   "road": "A12 / A9 / A1 / E62",
+   "conf": "high",
+   "note": "Merged from Bern-Lausanne (100) + Lausanne-Genève (63): Lausanne is not a vanilla city"
+  },
+  {
+   "a": "Salzburg",
+   "acc": "AT",
+   "b": "München",
+   "bcc": "DE",
+   "km": 145,
+   "ferry": false,
+   "road": "A1 / A8 / E52",
+   "conf": "high"
+  },
+  {
+   "a": "Innsbruck",
+   "acc": "AT",
+   "b": "München",
+   "bcc": "DE",
+   "km": 165,
+   "ferry": false,
+   "road": "A12 / A93 / A8 (Kufstein)",
+   "conf": "high"
+  },
+  {
+   "a": "Linz",
+   "acc": "AT",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 300,
+   "ferry": false,
+   "road": "A8 Innkreis / A3 (DE) / E56",
+   "conf": "medium",
+   "note": "Via Passau and Regensburg, not known as vanilla cities (no source found listing them after the Germany rework); split if either is a city"
+  },
+  {
+   "a": "Linz",
+   "acc": "AT",
+   "b": "Praha",
+   "bcc": "CZ",
+   "km": 270,
+   "ferry": false,
+   "road": "S10 / D3 / E55",
+   "conf": "medium",
+   "note": "České Budějovice not a vanilla city (from memory). Unterweitersdorf on the S10 is an accessible village label"
+  },
+  {
+   "a": "Wien",
+   "acc": "AT",
+   "b": "Brno",
+   "bcc": "CZ",
+   "km": 135,
+   "ferry": false,
+   "road": "A5 / D52 / E461",
+   "conf": "high"
+  },
+  {
+   "a": "Wien",
+   "acc": "AT",
+   "b": "Bratislava",
+   "bcc": "SK",
+   "km": 80,
+   "ferry": false,
+   "road": "A4 / A6 / E58",
+   "conf": "high"
+  },
+  {
+   "a": "Wien",
+   "acc": "AT",
+   "b": "Győr",
+   "bcc": "HU",
+   "km": 120,
+   "ferry": false,
+   "road": "A4 / M1 / E60",
+   "conf": "medium"
+  },
+  {
+   "a": "Graz",
+   "acc": "AT",
+   "b": "Maribor",
+   "bcc": "SI",
+   "km": 68,
+   "ferry": false,
+   "road": "A9 / A1 (SI) / E57",
+   "conf": "medium"
+  },
+  {
+   "a": "Klagenfurt am Wörthersee",
+   "acc": "AT",
+   "b": "Ljubljana",
+   "bcc": "SI",
+   "km": 88,
+   "ferry": false,
+   "road": "A11 Karawanken / A2 (SI) / E61",
+   "conf": "medium"
+  },
+  {
+   "a": "Klagenfurt am Wörthersee",
+   "acc": "AT",
+   "b": "Venezia",
+   "bcc": "IT",
+   "km": 255,
+   "ferry": false,
+   "road": "A2 / A23 / A4 (IT) / E55",
+   "conf": "low",
+   "note": "Via Villach (village, not city), Tarvisio and Udine (Udine not confirmed as a city; split there if it is)"
+  },
+  {
+   "a": "Innsbruck",
+   "acc": "AT",
+   "b": "Verona",
+   "bcc": "IT",
+   "km": 275,
+   "ferry": false,
+   "road": "A13 Brenner / A22 / E45",
+   "conf": "low",
+   "note": "Trento is listed only as a village on the wiki's Italian villages list; Bolzano not found as a city"
+  },
+  {
+   "a": "Zürich",
+   "acc": "CH",
+   "b": "Milano",
+   "bcc": "IT",
+   "km": 280,
+   "ferry": false,
+   "road": "A4 / A2 Gotthard / A9 (IT) / E35",
+   "conf": "medium",
+   "note": "Gotthard route via Luzern and Lugano, which are not cities in the game"
+  },
+  {
+   "a": "Genève",
+   "acc": "CH",
+   "b": "Lyon",
+   "bcc": "FR",
+   "km": 150,
+   "ferry": false,
+   "road": "A40 / A42 / E21-E611",
+   "conf": "high"
+  },
+  {
+   "a": "Zürich",
+   "acc": "CH",
+   "b": "Strasbourg",
+   "bcc": "FR",
+   "km": 227,
+   "ferry": false,
+   "road": "A3 (CH) / A35 (FR) / E25-E60",
+   "conf": "medium",
+   "note": "Merged from Basel-Zürich (87) + Basel-Strasbourg (140): Basel is not a vanilla city. Wiki Strasbourg page says the A35 heads south toward Zürich"
+  },
+  {
+   "a": "Bern",
+   "acc": "CH",
+   "b": "Strasbourg",
+   "bcc": "FR",
+   "km": 238,
+   "ferry": false,
+   "road": "A1 / A2 (CH) / A35 (FR) / E25",
+   "conf": "low",
+   "note": "Merged from Basel-Bern (98) + Basel-Strasbourg (140): Basel is not a vanilla city. Assumes the A2 Basel-Bern branch exists in game"
+  },
+  {
+   "a": "Zürich",
+   "acc": "CH",
+   "b": "Stuttgart",
+   "bcc": "DE",
+   "km": 215,
+   "ferry": false,
+   "road": "A4 (CH) / A81 (DE) / E41",
+   "conf": "low",
+   "note": "Via Schaffhausen and Singen; not verified"
+  },
+  {
+   "a": "Genève",
+   "acc": "CH",
+   "b": "Torino",
+   "bcc": "IT",
+   "km": 255,
+   "ferry": false,
+   "road": "A40 (FR) Mont Blanc tunnel / T1 / A5 (IT) / E25",
+   "conf": "medium",
+   "note": "SCS showed the Mont Blanc tunnel in Switzerland rework footage. Aosta is not a city"
+  },
+  {
+   "a": "Bern",
+   "acc": "CH",
+   "b": "Torino",
+   "bcc": "IT",
+   "km": 360,
+   "ferry": false,
+   "road": "A12 / A9 / H21 / T2 Great St Bernard tunnel / A5 (IT) / E27",
+   "conf": "medium",
+   "note": "Merged from Bern-Lausanne (100) + Lausanne-Torino (260): Lausanne is not a vanilla city. T2 Great St Bernard tunnel was added to the base game in 1.50 (wiki T2 page)"
+  }
+ ],
+ "changes": [
+  "Removed city Basel (CH): trucksimulator.wiki.gg Switzerland page states 'There are three cities in Switzerland featured in Euro Truck Simulator 2' (after the 1.50 rework); fandom wiki lists only Bern, Genève, Zürich; ProMods forum users note Basel appears only in ProMods; map-data villages list records Basel as an inaccessible village label.",
+  "Removed city Lausanne (CH): same evidence, only three Swiss cities in vanilla (Bern, Genève, Zürich); no wiki city page for Lausanne found.",
+  "Rewired Basel edges: Basel-Zürich + Basel-Strasbourg merged into Zürich-Strasbourg (227 km, A3/A35; wiki Strasbourg page says the A35 runs south toward Zürich); Basel-Bern + Basel-Strasbourg merged into Bern-Strasbourg (238 km, low confidence).",
+  "Rewired Lausanne edges: Bern-Lausanne + Lausanne-Genève merged into Bern-Genève (160 km); Bern-Lausanne + Lausanne-Torino merged into Bern-Torino (360 km via the Great St Bernard tunnel, T2 added to base game in 1.50 per wiki T2 page; confidence medium).",
+  "Genève-Torino: confidence raised low->medium and road labelled Mont Blanc tunnel/T1: SCS showed the Mont Blanc tunnel in Switzerland rework footage (gamepressure 'Roof of Europe' article).",
+  "Candidates rejected: Villach and Grödig (AT) not added; wiki says Austria has six accessible cities (Wien, Linz, Salzburg, Graz, Klagenfurt, Innsbruck), Villach not on it. Airolo and Vaduz (CH/LI) not added; only three Swiss cities in vanilla and no source shows Liechtenstein having a city (radio tool includes ProMods).",
+  "Graz and Klagenfurt notes: restored the base-game 1.11.1 origin, which the fandom wiki summary supports (1.11.1 brought Austria to six cities).",
+  "Confirmed: Austria rework shipped in 1.44 (SCS blog previews Feb/Mar 2022); Switzerland rework in 1.50 (14 May 2024). No city name, DLC or coordinate changes needed for the remaining 9 cities. Liechtenstein has no city."
+ ],
+ "sources": "WebSearch (11 calls). trucksimulator.wiki.gg/wiki/Switzerland (snippet: three Swiss cities in ETS2, reworked in 1.50); truck-simulator.fandom.com (Swiss cities Bern, Genève, Zürich; Graz/Klagenfurt added in 1.11.1); promods.net/viewtopic.php?p=240491 (Basel as a ProMods location, vanilla has 'only those three north cities'); trucksimulator.wiki.gg/wiki/Cities/Euro_Truck_Simulator_2 and List_of_villages_in_Austria (six accessible Austrian cities, 22 villages); blog.scssoft.com/2022/02/austria-rework-vienna.html and /2022/03/austria-rework-linz-innsbruck.html (1.44 Austria rework); trucksimulator.wiki.gg/wiki/T2_(Italy) (Great St Bernard tunnel added in 1.50); gamepressure.com/newsroom/ets2-devs-boast-of-revamped-roads-around-the-roof-of-europe/zb6140 (Mont Blanc tunnel shown); truck-simulator.fandom.com/wiki/Strasbourg (A35 south toward Zürich); truck-simulator.fandom.com/wiki/List_of_villages_in_Italy (Trento as village); trucksimulator.wiki.gg/wiki/Patch_Notes/Euro_Truck_Simulator_2/Update_1.50."
+}

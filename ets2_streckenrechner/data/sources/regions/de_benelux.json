@@ -1,0 +1,1385 @@
+{
+ "region": "Germany and Benelux (DE, NL, BE, LU)",
+ "cities": [
+  {
+   "name": "Berlin",
+   "cc": "DE",
+   "lat": 52.52,
+   "lon": 13.405,
+   "dlc": "Base",
+   "aliases": [
+    "Berlin"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bremen",
+   "cc": "DE",
+   "lat": 53.079,
+   "lon": 8.801,
+   "dlc": "Base",
+   "aliases": [
+    "Bremen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Dortmund",
+   "cc": "DE",
+   "lat": 51.514,
+   "lon": 7.465,
+   "dlc": "Base",
+   "aliases": [
+    "Dortmund"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Dresden",
+   "cc": "DE",
+   "lat": 51.05,
+   "lon": 13.738,
+   "dlc": "Base",
+   "aliases": [
+    "Dresden"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Duisburg",
+   "cc": "DE",
+   "lat": 51.435,
+   "lon": 6.763,
+   "dlc": "Base",
+   "aliases": [
+    "Duisburg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Düsseldorf",
+   "cc": "DE",
+   "lat": 51.227,
+   "lon": 6.774,
+   "dlc": "Base",
+   "aliases": [
+    "Dusseldorf",
+    "Duesseldorf"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Erfurt",
+   "cc": "DE",
+   "lat": 50.978,
+   "lon": 11.029,
+   "dlc": "Base",
+   "aliases": [
+    "Erfurt"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Frankfurt am Main",
+   "cc": "DE",
+   "lat": 50.11,
+   "lon": 8.682,
+   "dlc": "Base",
+   "aliases": [
+    "Frankfurt",
+    "Frankfurt/Main",
+    "Frankfurt a.M."
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Hamburg",
+   "cc": "DE",
+   "lat": 53.551,
+   "lon": 9.994,
+   "dlc": "Base",
+   "aliases": [
+    "Hamburg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Hannover",
+   "cc": "DE",
+   "lat": 52.376,
+   "lon": 9.732,
+   "dlc": "Base",
+   "aliases": [
+    "Hanover",
+    "Hannover"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kassel",
+   "cc": "DE",
+   "lat": 51.313,
+   "lon": 9.48,
+   "dlc": "Base",
+   "aliases": [
+    "Kassel",
+    "Cassel"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kiel",
+   "cc": "DE",
+   "lat": 54.323,
+   "lon": 10.123,
+   "dlc": "Base",
+   "aliases": [
+    "Kiel"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Köln",
+   "cc": "DE",
+   "lat": 50.938,
+   "lon": 6.96,
+   "dlc": "Base",
+   "aliases": [
+    "Cologne",
+    "Koln",
+    "Koeln"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Leipzig",
+   "cc": "DE",
+   "lat": 51.34,
+   "lon": 12.375,
+   "dlc": "Base",
+   "aliases": [
+    "Leipzig"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Magdeburg",
+   "cc": "DE",
+   "lat": 52.121,
+   "lon": 11.628,
+   "dlc": "Base",
+   "aliases": [
+    "Magdeburg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Mannheim",
+   "cc": "DE",
+   "lat": 49.488,
+   "lon": 8.466,
+   "dlc": "Base",
+   "aliases": [
+    "Mannheim"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "München",
+   "cc": "DE",
+   "lat": 48.137,
+   "lon": 11.576,
+   "dlc": "Base",
+   "aliases": [
+    "Munich",
+    "Munchen",
+    "Muenchen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Nürnberg",
+   "cc": "DE",
+   "lat": 49.452,
+   "lon": 11.077,
+   "dlc": "Base",
+   "aliases": [
+    "Nuremberg",
+    "Nurnberg",
+    "Nuernberg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Osnabrück",
+   "cc": "DE",
+   "lat": 52.28,
+   "lon": 8.047,
+   "dlc": "Base",
+   "aliases": [
+    "Osnabruck",
+    "Osnabrueck"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Rostock",
+   "cc": "DE",
+   "lat": 54.092,
+   "lon": 12.099,
+   "dlc": "Base",
+   "aliases": [
+    "Rostock"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Stuttgart",
+   "cc": "DE",
+   "lat": 48.776,
+   "lon": 9.183,
+   "dlc": "Base",
+   "aliases": [
+    "Stuttgart"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Travemünde",
+   "cc": "DE",
+   "lat": 53.962,
+   "lon": 10.871,
+   "dlc": "Base",
+   "aliases": [
+    "Travemunde",
+    "Travemuende",
+    "Luebeck-Travemuende",
+    "Lübeck",
+    "Luebeck"
+   ],
+   "conf": "high",
+   "note": "Ferry port city (Lübeck-Travemünde)."
+  },
+  {
+   "name": "Werlte",
+   "cc": "DE",
+   "lat": 52.851,
+   "lon": 7.682,
+   "dlc": "Base",
+   "aliases": [
+    "Werlte"
+   ],
+   "conf": "high",
+   "note": "Krone factory town (added with update 1.45, tied to the Krone Trailer Pack, a non-map DLC). DLC field set to Base because the enum only lists map DLCs."
+  },
+  {
+   "name": "Winsen",
+   "cc": "DE",
+   "lat": 53.358,
+   "lon": 10.212,
+   "dlc": "Base",
+   "aliases": [
+    "Winsen (Luhe)",
+    "Winsen an der Luhe"
+   ],
+   "conf": "high",
+   "note": "Feldbinder factory town southeast of Hamburg, added in update 1.48 for Feldbinder Trailer Pack owners (non-map DLC). Wiki page name is \"Winsen\". DLC field set to Base because the enum only lists map DLCs."
+  },
+  {
+   "name": "Amsterdam",
+   "cc": "NL",
+   "lat": 52.37,
+   "lon": 4.895,
+   "dlc": "Base",
+   "aliases": [
+    "Amsterdam",
+    "IJmuiden"
+   ],
+   "conf": "high",
+   "note": "Includes IJmuiden ferry port."
+  },
+  {
+   "name": "Rotterdam",
+   "cc": "NL",
+   "lat": 51.922,
+   "lon": 4.479,
+   "dlc": "Base",
+   "aliases": [
+    "Rotterdam",
+    "Europoort"
+   ],
+   "conf": "high",
+   "note": "Includes Europoort ferry port."
+  },
+  {
+   "name": "Groningen",
+   "cc": "NL",
+   "lat": 53.219,
+   "lon": 6.567,
+   "dlc": "Base",
+   "aliases": [
+    "Groningen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Eindhoven",
+   "cc": "NL",
+   "lat": 51.441,
+   "lon": 5.478,
+   "dlc": "Base",
+   "aliases": [
+    "Eindhoven"
+   ],
+   "conf": "high",
+   "note": "New city in the Benelux Rework (update 1.59, 6 May 2026), DAF factory; free base-map update."
+  },
+  {
+   "name": "Brussel",
+   "cc": "BE",
+   "lat": 50.847,
+   "lon": 4.357,
+   "dlc": "Base",
+   "aliases": [
+    "Brussels",
+    "Brüssel",
+    "Bruessel",
+    "Bruxelles"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Liège",
+   "cc": "BE",
+   "lat": 50.633,
+   "lon": 5.567,
+   "dlc": "Base",
+   "aliases": [
+    "Liege",
+    "Lüttich",
+    "Luettich",
+    "Luik"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Antwerpen",
+   "cc": "BE",
+   "lat": 51.219,
+   "lon": 4.402,
+   "dlc": "Base",
+   "aliases": [
+    "Antwerp",
+    "Anvers"
+   ],
+   "conf": "high",
+   "note": "New city in the Benelux Rework (update 1.59, 6 May 2026); wiki uses the name Antwerpen."
+  },
+  {
+   "name": "Luxembourg",
+   "cc": "LU",
+   "lat": 49.611,
+   "lon": 6.13,
+   "dlc": "Base",
+   "aliases": [
+    "Luxemburg",
+    "Luxembourg City",
+    "Letzebuerg"
+   ],
+   "conf": "high"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Kiel",
+   "bcc": "DE",
+   "km": 97,
+   "road": "A7 / A215",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Travemünde",
+   "bcc": "DE",
+   "km": 88,
+   "road": "A1 / A226",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kiel",
+   "acc": "DE",
+   "b": "Travemünde",
+   "bcc": "DE",
+   "km": 80,
+   "road": "B76 / B202",
+   "ferry": false,
+   "conf": "low",
+   "note": "Not sure the game models a direct Kiel-Lübeck road."
+  },
+  {
+   "a": "Travemünde",
+   "acc": "DE",
+   "b": "Rostock",
+   "bcc": "DE",
+   "km": 140,
+   "road": "A20",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rostock",
+   "acc": "DE",
+   "b": "Berlin",
+   "bcc": "DE",
+   "km": 230,
+   "road": "A19 / A24",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Berlin",
+   "bcc": "DE",
+   "km": 290,
+   "road": "A24",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Bremen",
+   "bcc": "DE",
+   "km": 125,
+   "road": "A1",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Hannover",
+   "bcc": "DE",
+   "km": 155,
+   "road": "A7",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Winsen",
+   "bcc": "DE",
+   "km": 35,
+   "road": "A1 / A39",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Winsen",
+   "acc": "DE",
+   "b": "Hannover",
+   "bcc": "DE",
+   "km": 135,
+   "road": "A39 / A7",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Winsen confirmed in game (1.48); exact link to A7 not verified."
+  },
+  {
+   "a": "Bremen",
+   "acc": "DE",
+   "b": "Hannover",
+   "bcc": "DE",
+   "km": 125,
+   "road": "A27 / A7",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Bremen",
+   "acc": "DE",
+   "b": "Osnabrück",
+   "bcc": "DE",
+   "km": 120,
+   "road": "A1",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Bremen",
+   "acc": "DE",
+   "b": "Groningen",
+   "bcc": "NL",
+   "km": 180,
+   "road": "A28 / A7 / E22",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Werlte",
+   "acc": "DE",
+   "b": "Bremen",
+   "bcc": "DE",
+   "km": 105,
+   "road": "B213 / A1",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Werlte",
+   "acc": "DE",
+   "b": "Osnabrück",
+   "bcc": "DE",
+   "km": 90,
+   "road": "B213 / A1",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Werlte",
+   "acc": "DE",
+   "b": "Groningen",
+   "bcc": "NL",
+   "km": 110,
+   "road": "A31 / A7",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Osnabrück",
+   "acc": "DE",
+   "b": "Dortmund",
+   "bcc": "DE",
+   "km": 115,
+   "road": "A1",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Osnabrück",
+   "acc": "DE",
+   "b": "Hannover",
+   "bcc": "DE",
+   "km": 140,
+   "road": "A30 / A2",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Osnabrück",
+   "acc": "DE",
+   "b": "Amsterdam",
+   "bcc": "NL",
+   "km": 255,
+   "road": "A30 / A1 (NL)",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Hannover",
+   "acc": "DE",
+   "b": "Magdeburg",
+   "bcc": "DE",
+   "km": 150,
+   "road": "A2",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Hannover",
+   "acc": "DE",
+   "b": "Kassel",
+   "bcc": "DE",
+   "km": 165,
+   "road": "A7",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Hannover",
+   "acc": "DE",
+   "b": "Dortmund",
+   "bcc": "DE",
+   "km": 210,
+   "road": "A2",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Magdeburg",
+   "acc": "DE",
+   "b": "Berlin",
+   "bcc": "DE",
+   "km": 155,
+   "road": "A2 / A10",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Magdeburg",
+   "acc": "DE",
+   "b": "Leipzig",
+   "bcc": "DE",
+   "km": 125,
+   "road": "A14",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Berlin",
+   "acc": "DE",
+   "b": "Leipzig",
+   "bcc": "DE",
+   "km": 190,
+   "road": "A9",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Berlin",
+   "acc": "DE",
+   "b": "Dresden",
+   "bcc": "DE",
+   "km": 195,
+   "road": "A13",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Leipzig",
+   "acc": "DE",
+   "b": "Dresden",
+   "bcc": "DE",
+   "km": 115,
+   "road": "A14",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Leipzig",
+   "acc": "DE",
+   "b": "Erfurt",
+   "bcc": "DE",
+   "km": 130,
+   "road": "A9 / A4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Leipzig",
+   "acc": "DE",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 280,
+   "road": "A9",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Dresden",
+   "acc": "DE",
+   "b": "Erfurt",
+   "bcc": "DE",
+   "km": 215,
+   "road": "A4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Dresden",
+   "acc": "DE",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 310,
+   "road": "A4 / A72 / A9",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Chemnitz and Hof; separate corridor from Leipzig."
+  },
+  {
+   "a": "Erfurt",
+   "acc": "DE",
+   "b": "Kassel",
+   "bcc": "DE",
+   "km": 150,
+   "road": "A4 / A7",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Erfurt",
+   "acc": "DE",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 215,
+   "road": "A71 / A73",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Erfurt",
+   "acc": "DE",
+   "b": "Frankfurt am Main",
+   "bcc": "DE",
+   "km": 260,
+   "road": "A4 / A7 / A5",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Kirchheimer Dreieck, bypasses Kassel."
+  },
+  {
+   "a": "Kassel",
+   "acc": "DE",
+   "b": "Frankfurt am Main",
+   "bcc": "DE",
+   "km": 190,
+   "road": "A7 / A5",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kassel",
+   "acc": "DE",
+   "b": "Dortmund",
+   "bcc": "DE",
+   "km": 165,
+   "road": "A44",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kassel",
+   "acc": "DE",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 295,
+   "road": "A7 / A3",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Fulda and Würzburg; unsure the game models A7 south of Kirchheim fully."
+  },
+  {
+   "a": "Frankfurt am Main",
+   "acc": "DE",
+   "b": "Köln",
+   "bcc": "DE",
+   "km": 190,
+   "road": "A3",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Frankfurt am Main",
+   "acc": "DE",
+   "b": "Mannheim",
+   "bcc": "DE",
+   "km": 80,
+   "road": "A5 / A67",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Frankfurt am Main",
+   "acc": "DE",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 225,
+   "road": "A3",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Mannheim",
+   "acc": "DE",
+   "b": "Stuttgart",
+   "bcc": "DE",
+   "km": 135,
+   "road": "A6 / A81",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Mannheim",
+   "acc": "DE",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 235,
+   "road": "A6",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Stuttgart",
+   "acc": "DE",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 210,
+   "road": "A81 / A6",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Stuttgart",
+   "acc": "DE",
+   "b": "München",
+   "bcc": "DE",
+   "km": 230,
+   "road": "A8",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "München",
+   "acc": "DE",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 170,
+   "road": "A9",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Köln",
+   "acc": "DE",
+   "b": "Düsseldorf",
+   "bcc": "DE",
+   "km": 40,
+   "road": "A3 / A57",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Düsseldorf",
+   "acc": "DE",
+   "b": "Duisburg",
+   "bcc": "DE",
+   "km": 30,
+   "road": "A59 / A3",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Duisburg",
+   "acc": "DE",
+   "b": "Dortmund",
+   "bcc": "DE",
+   "km": 60,
+   "road": "A40 / A2",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Köln",
+   "acc": "DE",
+   "b": "Dortmund",
+   "bcc": "DE",
+   "km": 95,
+   "road": "A1",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Duisburg",
+   "acc": "DE",
+   "b": "Amsterdam",
+   "bcc": "NL",
+   "km": 205,
+   "road": "A3 / A12 / A2 (NL)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Oberhausen, Arnhem, Utrecht."
+  },
+  {
+   "a": "Duisburg",
+   "acc": "DE",
+   "b": "Eindhoven",
+   "bcc": "NL",
+   "km": 120,
+   "road": "A40 / A67 (NL)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Venlo; Eindhoven is a 1.59 addition, exact road links not verified."
+  },
+  {
+   "a": "Köln",
+   "acc": "DE",
+   "b": "Liège",
+   "bcc": "BE",
+   "km": 125,
+   "road": "A4 / E40 (BE A3)",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Amsterdam",
+   "acc": "NL",
+   "b": "Rotterdam",
+   "bcc": "NL",
+   "km": 75,
+   "road": "A4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Amsterdam",
+   "acc": "NL",
+   "b": "Groningen",
+   "bcc": "NL",
+   "km": 185,
+   "road": "A6 / A7",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Amsterdam",
+   "acc": "NL",
+   "b": "Eindhoven",
+   "bcc": "NL",
+   "km": 125,
+   "road": "A2",
+   "ferry": false,
+   "conf": "high",
+   "note": "A2 motorway named as part of the 1.59 Benelux Rework."
+  },
+  {
+   "a": "Rotterdam",
+   "acc": "NL",
+   "b": "Eindhoven",
+   "bcc": "NL",
+   "km": 110,
+   "road": "A16 / A58",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Rotterdam",
+   "acc": "NL",
+   "b": "Antwerpen",
+   "bcc": "BE",
+   "km": 100,
+   "road": "A16 / E19",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Antwerpen",
+   "acc": "BE",
+   "b": "Brussel",
+   "bcc": "BE",
+   "km": 45,
+   "road": "A1 / E19",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Antwerpen",
+   "acc": "BE",
+   "b": "Eindhoven",
+   "bcc": "NL",
+   "km": 90,
+   "road": "E34 / A67",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Eindhoven",
+   "acc": "NL",
+   "b": "Liège",
+   "bcc": "BE",
+   "km": 115,
+   "road": "A2 / E25",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Maastricht on A2/E25; A2 included in the 1.59 rework, Maastricht is not a city."
+  },
+  {
+   "a": "Brussel",
+   "acc": "BE",
+   "b": "Liège",
+   "bcc": "BE",
+   "km": 95,
+   "road": "E40 / A3",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Liège",
+   "acc": "BE",
+   "b": "Luxembourg",
+   "bcc": "LU",
+   "km": 160,
+   "road": "E25 / A26",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Brussel",
+   "acc": "BE",
+   "b": "Luxembourg",
+   "bcc": "LU",
+   "km": 215,
+   "road": "E411 / A4",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Namur and Arlon."
+  },
+  {
+   "a": "Brussel",
+   "acc": "BE",
+   "b": "Lille",
+   "bcc": "FR",
+   "km": 115,
+   "road": "E429 / A8 / A27",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Antwerpen",
+   "acc": "BE",
+   "b": "Lille",
+   "bcc": "FR",
+   "km": 135,
+   "road": "E17",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Gent (~60 km + ~75 km); E17 corridor not verified in 1.59."
+  },
+  {
+   "a": "Luxembourg",
+   "acc": "LU",
+   "b": "Metz",
+   "bcc": "FR",
+   "km": 65,
+   "road": "A3 / A31",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Luxembourg",
+   "acc": "LU",
+   "b": "Mannheim",
+   "bcc": "DE",
+   "km": 230,
+   "road": "A13 / A8 / A6",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Saarbrücken and Kaiserslautern; assumed."
+  },
+  {
+   "a": "Luxembourg",
+   "acc": "LU",
+   "b": "Köln",
+   "bcc": "DE",
+   "km": 190,
+   "road": "A1 / A60 / A1 (DE)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Trier and the Eifel; unsure the game models it."
+  },
+  {
+   "a": "Mannheim",
+   "acc": "DE",
+   "b": "Metz",
+   "bcc": "FR",
+   "km": 210,
+   "road": "A6 / A4 (FR)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Saarbrücken."
+  },
+  {
+   "a": "Mannheim",
+   "acc": "DE",
+   "b": "Strasbourg",
+   "bcc": "FR",
+   "km": 145,
+   "road": "A5 / A35",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Stuttgart",
+   "acc": "DE",
+   "b": "Strasbourg",
+   "bcc": "FR",
+   "km": 155,
+   "road": "A8 / A5",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Mannheim",
+   "acc": "DE",
+   "b": "Basel",
+   "bcc": "CH",
+   "km": 260,
+   "road": "A5",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Stuttgart",
+   "acc": "DE",
+   "b": "Zürich",
+   "bcc": "CH",
+   "km": 205,
+   "road": "A81 / A4 (CH)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Singen and Schaffhausen; reviewer unsure this crossing is modelled in game."
+  },
+  {
+   "a": "München",
+   "acc": "DE",
+   "b": "Salzburg",
+   "bcc": "AT",
+   "km": 145,
+   "road": "A8",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "München",
+   "acc": "DE",
+   "b": "Innsbruck",
+   "bcc": "AT",
+   "km": 165,
+   "road": "A8 / A93 / A12 (AT)",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Nürnberg",
+   "acc": "DE",
+   "b": "Linz",
+   "bcc": "AT",
+   "km": 300,
+   "road": "A3 / A8 (AT)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Regensburg and Passau."
+  },
+  {
+   "a": "Nürnberg",
+   "acc": "DE",
+   "b": "Plzeň",
+   "bcc": "CZ",
+   "km": 225,
+   "road": "A6 / D5",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Dresden",
+   "acc": "DE",
+   "b": "Praha",
+   "bcc": "CZ",
+   "km": 150,
+   "road": "A17 / D8",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Dresden",
+   "acc": "DE",
+   "b": "Wrocław",
+   "bcc": "PL",
+   "km": 270,
+   "road": "A4 / A4 (PL)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Görlitz and Legnica are not Going East! cities to the reviewer's knowledge, so no split needed."
+  },
+  {
+   "a": "Berlin",
+   "acc": "DE",
+   "b": "Szczecin",
+   "bcc": "PL",
+   "km": 150,
+   "road": "A11 / A6 (PL)",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Berlin",
+   "acc": "DE",
+   "b": "Poznań",
+   "bcc": "PL",
+   "km": 270,
+   "road": "A12 / A2 (PL)",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Kiel",
+   "acc": "DE",
+   "b": "Odense",
+   "bcc": "DK",
+   "km": 245,
+   "road": "A215 / A7 / E45 / E20",
+   "ferry": false,
+   "conf": "low",
+   "note": "Replaces Kiel-Kolding: Kolding is not a Scandinavia DLC city to the reviewer's knowledge (DK cities: Aalborg, Esbjerg, Frederikshavn, Gedser, Hirtshals, København, Odense). Via Flensburg and the Kolding junction."
+  },
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Esbjerg",
+   "bcc": "DK",
+   "km": 300,
+   "road": "A7 / E45 / E20",
+   "ferry": false,
+   "conf": "low",
+   "note": "Replaces Hamburg-Kolding (see Kiel-Odense note). Via Flensburg and the Kolding junction; A7 bypasses Kiel city."
+  },
+  {
+   "a": "Kiel",
+   "acc": "DE",
+   "b": "Oslo",
+   "bcc": "NO",
+   "km": 670,
+   "road": "Color Line",
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Kiel",
+   "acc": "DE",
+   "b": "Göteborg",
+   "bcc": "SE",
+   "km": 450,
+   "road": "Stena Line",
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Kiel",
+   "acc": "DE",
+   "b": "Klaipėda",
+   "bcc": "LT",
+   "km": 700,
+   "road": "DFDS",
+   "ferry": true,
+   "conf": "medium",
+   "note": "Needs Beyond the Baltic Sea."
+  },
+  {
+   "a": "Travemünde",
+   "acc": "DE",
+   "b": "Trelleborg",
+   "bcc": "SE",
+   "km": 225,
+   "road": "TT-Line",
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Travemünde",
+   "acc": "DE",
+   "b": "Malmö",
+   "bcc": "SE",
+   "km": 250,
+   "road": "Finnlines",
+   "ferry": true,
+   "conf": "medium"
+  },
+  {
+   "a": "Travemünde",
+   "acc": "DE",
+   "b": "Liepāja",
+   "bcc": "LV",
+   "km": 640,
+   "road": "Stena Line",
+   "ferry": true,
+   "conf": "high",
+   "note": "Listed on the wiki ferry table (Base + Beyond the Baltic Sea, ~26h30m)."
+  },
+  {
+   "a": "Travemünde",
+   "acc": "DE",
+   "b": "Helsinki",
+   "bcc": "FI",
+   "km": 1100,
+   "road": "Finnlines",
+   "ferry": true,
+   "conf": "high",
+   "note": "Listed on the wiki ferry table (Base + Beyond the Baltic Sea, ~29h30m)."
+  },
+  {
+   "a": "Rostock",
+   "acc": "DE",
+   "b": "Trelleborg",
+   "bcc": "SE",
+   "km": 170,
+   "road": "TT-Line / Stena",
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Rostock",
+   "acc": "DE",
+   "b": "Gedser",
+   "bcc": "DK",
+   "km": 45,
+   "road": "Scandlines",
+   "ferry": true,
+   "conf": "high",
+   "note": "Listed on the wiki ferry table (~1h45m)."
+  },
+  {
+   "a": "Amsterdam",
+   "acc": "NL",
+   "b": "Newcastle-upon-Tyne",
+   "bcc": "GB",
+   "km": 510,
+   "road": "DFDS (IJmuiden)",
+   "ferry": true,
+   "conf": "high",
+   "note": "IJmuiden ferry location kept and refreshed in the 1.59 Amsterdam rework (SCS blog, Apr 2026)."
+  },
+  {
+   "a": "Rotterdam",
+   "acc": "NL",
+   "b": "Felixstowe",
+   "bcc": "GB",
+   "km": 200,
+   "road": "Euro Lines (Europoort - Harwich (Felixstowe))",
+   "ferry": true,
+   "conf": "high",
+   "note": "Base-game ferry, shown in game as Harwich (Felixstowe) - Europoort, ~8h."
+  },
+  {
+   "a": "Rotterdam",
+   "acc": "NL",
+   "b": "Grimsby",
+   "bcc": "GB",
+   "km": 370,
+   "road": "Euro Lines (Europoort - Hull (Grimsby))",
+   "ferry": true,
+   "conf": "high",
+   "note": "Base-game ferry, shown in game as Hull (Grimsby) - Europoort, ~11h."
+  }
+ ],
+ "changes": [
+  "City list verified, no additions or removals. trucksimulator.wiki.gg (Benelux page) says Benelux has 8 cities in ETS2: the 6 original ones (Amsterdam, Rotterdam, Groningen, Brussel, Liège, Luxembourg) plus Antwerpen and Eindhoven, added in update 1.59 (6 May 2026). The SCS blog and news coverage say the Germany Rework (updates 1.47 to 1.53) rebuilt existing cities, with Berlin the last one, and added no new German cities. No search found a German city added in updates 1.54 to 1.62.",
+  "Radio-only candidates rejected. None of Aurach, Bad Oeynhausen, Bonn, Bremerhaven, Burg a. Fehmarn, Flensburg, Forst (Lausitz), Freiburg, Fürth, Halle, Heilbronn, Koblenz, Mainz, Oberhausen, Passau, Puttgarden, Sangerhausen, Uelzen, Ulm, Wiesbaden, Arnhem, Maastricht, Zwolle or Brugge appears in any vanilla source. Bremerhaven is listed on the wiki page of German scenery towns (Scenery_towns/Euro_Truck_Simulator_2/Germany), so it is not a city. The wiki's count of 8 Benelux cities rules out Arnhem, Maastricht, Zwolle and Brugge. These are most likely ProMods cities.",
+  "Winsen: confidence raised from low to high. The SCS blog post 'Germany Rework: Winsen Feldbinder factory' (June 2023) and the wiki page trucksimulator.wiki.gg/wiki/Winsen show it was added in update 1.48 as the Feldbinder factory town southeast of Hamburg, given free to Feldbinder Trailer Pack owners. The display name is 'Winsen'. DLC stays 'Base' because the enum has no value for trailer packs; this is explained in the city note. Hamburg-Winsen raised to high, Winsen-Hannover raised to medium.",
+  "Werlte: confidence raised from medium to high. Wiki sources say it is the Krone factory town, added in update 1.45 and tied to the Krone Trailer Pack (a non-map DLC), and that it lies on the A1 between Bremen and Osnabrück. DLC stays 'Base' as above, with a note.",
+  "Eindhoven and Antwerpen: confidence raised from medium to high. Both are confirmed as new cities in the 1.59 Benelux Rework by the SCS blog posts 'Project Benelux Rework' (Feb 2025), the Eindhoven/DAF post (Feb 2026) and the Antwerp post (Dec 2025), and by the wiki's Benelux page, which uses the name 'Antwerpen'.",
+  "Amsterdam-Eindhoven (A2): confidence raised to high, and Eindhoven-Liège raised from low to medium. Coverage of the 1.59 rework names the A2 and E40 motorways as new corridors. Maastricht is not a city, so no split is needed.",
+  "Rotterdam-Grimsby ferry: confidence raised from low to high, and the road label set to the in-game route name. The wiki ferry table lists 'Hull (Grimsby) - Europoort', base game, about 11h.",
+  "Rotterdam-Felixstowe ferry: confidence raised to high, and the road label set to the in-game route name. The wiki ferry table lists 'Harwich (Felixstowe) - Europoort', base game, about 8h.",
+  "Travemünde-Helsinki ferry: confidence raised from low to high. The wiki ferry table lists it for Base plus Beyond the Baltic Sea, about 29h30m. Travemünde-Liepāja raised to high on the same table (about 26h30m).",
+  "Amsterdam-Newcastle ferry: confidence raised to high. The SCS blog post 'Benelux Rework: Amsterdam & IJmuiden ferry' (Apr 2026) says the IJmuiden ferry location was kept and refreshed.",
+  "Rostock-Gedser: kept at high confidence and a note added. The wiki ferry table lists it at about 1h45m.",
+  "Kept unchanged because nothing disproved them: Kiel-Klaipėda (no search result confirmed it), Kiel-Oslo, Kiel-Göteborg, Travemünde-Trelleborg, Travemünde-Malmö and Rostock-Trelleborg, and the low-confidence road links Kiel-Travemünde, Luxembourg-Köln, Luxembourg-Mannheim, Stuttgart-Zürich, Kassel-Nürnberg, Antwerpen-Lille, Kiel-Odense and Hamburg-Esbjerg. A script check found all 32 cities connected and no duplicate edges."
+ ],
+ "sources": "SCS blog: Germany Rework posts (blog.scssoft.com/2024/10/153-update-germany-rework.html, /2024/09/euro-truck-simulator-2-151-update.html, /2023/06/germany-rework-winsen-felbinder-factory.html); Benelux rework posts (blog.scssoft.com/2025/02/project-benelux-rework.html, /2025/12/project-benelux-rework-antwerp.html, /2026/02/project-benelux-rework-eindhoven-daf.html, /2026/04/benelux-rework-amsterdam-ijmuiden-ferry.html, /2026/05/euro-truck-simulator-2-159-update.html); trucksimulator.wiki.gg pages Benelux (8 cities, Antwerpen and Eindhoven new in 1.59), Winsen, Scenery_towns/Euro_Truck_Simulator_2/Germany (Bremerhaven listed as a scenery town), Ferry/Euro_Truck_Simulator_2 (Europoort-Harwich (Felixstowe), Europoort-Hull (Grimsby), Travemünde-Helsinki, Travemünde-Liepāja, Rostock-Gedser); traxion.gg and racinggames.gg coverage of 1.59 (A2 and E40 corridors) and of 1.61 and 1.62 (no new German cities); gamepressure.com guide to ETS2 ports. 14 of 14 searches used."
+}

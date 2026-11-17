@@ -1,0 +1,570 @@
+{
+ "region": "Greece (GR) incl. islands Crete, Rhodes, Lesbos, Chios, Kefalonia. Greece DLC, released 4 Dec 2024",
+ "cities": [
+  {
+   "name": "Athens",
+   "cc": "GR",
+   "lat": 37.984,
+   "lon": 23.728,
+   "dlc": "Greece",
+   "aliases": [
+    "Athen",
+    "Athina",
+    "Athína",
+    "Αθήνα",
+    "Piraeus",
+    "Piräus",
+    "Athens (Piraeus)"
+   ],
+   "conf": "high",
+   "note": "The wiki's Greece nav box uses 'Athens'. The ferry brochure shows the port as 'Athens (Piraeus)'."
+  },
+  {
+   "name": "Thessaloniki",
+   "cc": "GR",
+   "lat": 40.64,
+   "lon": 22.944,
+   "dlc": "Greece",
+   "aliases": [
+    "Thessaloníki",
+    "Saloniki",
+    "Salonica",
+    "Salonik",
+    "Θεσσαλονίκη"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Patras",
+   "cc": "GR",
+   "lat": 38.246,
+   "lon": 21.735,
+   "dlc": "Greece",
+   "aliases": [
+    "Patra",
+    "Pátra",
+    "Patrai",
+    "Πάτρα"
+   ],
+   "conf": "high",
+   "note": "The wiki uses 'Patras'. Ferry port to Ancona, Bari and Argostoli."
+  },
+  {
+   "name": "Ioannina",
+   "cc": "GR",
+   "lat": 39.665,
+   "lon": 20.853,
+   "dlc": "Greece",
+   "aliases": [
+    "Ioánnina",
+    "Janina",
+    "Yannina",
+    "Giannena",
+    "Ιωάννινα"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Larissa",
+   "cc": "GR",
+   "lat": 39.639,
+   "lon": 22.419,
+   "dlc": "Greece",
+   "aliases": [
+    "Larisa",
+    "Lárisa",
+    "Λάρισα"
+   ],
+   "conf": "high",
+   "note": "The wiki's 15-city list and wikiwiki.jp use 'Larissa'."
+  },
+  {
+   "name": "Trikala",
+   "cc": "GR",
+   "lat": 39.555,
+   "lon": 21.768,
+   "dlc": "Greece",
+   "aliases": [
+    "Tríkala",
+    "Τρίκαλα"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Lamia",
+   "cc": "GR",
+   "lat": 38.9,
+   "lon": 22.434,
+   "dlc": "Greece",
+   "aliases": [
+    "Lamía",
+    "Λαμία"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kalamata",
+   "cc": "GR",
+   "lat": 37.039,
+   "lon": 22.114,
+   "dlc": "Greece",
+   "aliases": [
+    "Kalamáta",
+    "Καλαμάτα"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kavala",
+   "cc": "GR",
+   "lat": 40.937,
+   "lon": 24.413,
+   "dlc": "Greece",
+   "aliases": [
+    "Kavála",
+    "Kawala",
+    "Καβάλα"
+   ],
+   "conf": "high",
+   "note": "Ferry port; wikiwiki.jp lists it with a ferry port."
+  },
+  {
+   "name": "Heraklion",
+   "cc": "GR",
+   "lat": 35.339,
+   "lon": 25.144,
+   "dlc": "Greece",
+   "aliases": [
+    "Iraklio",
+    "Irakleio",
+    "Iráklion",
+    "Iraklion",
+    "Candia",
+    "Ηράκλειο"
+   ],
+   "conf": "high",
+   "note": "Crete"
+  },
+  {
+   "name": "Chania",
+   "cc": "GR",
+   "lat": 35.514,
+   "lon": 24.018,
+   "dlc": "Greece",
+   "aliases": [
+    "Chaniá",
+    "Hania",
+    "Khania",
+    "Xania",
+    "Souda",
+    "Χανιά"
+   ],
+   "conf": "high",
+   "note": "Crete. The ferry port is separate from the city; route ID chania_b_piraeus."
+  },
+  {
+   "name": "Rhodes",
+   "cc": "GR",
+   "lat": 36.434,
+   "lon": 28.217,
+   "dlc": "Greece",
+   "aliases": [
+    "Rhodos",
+    "Rodos",
+    "Ródos",
+    "Rhodes Town",
+    "Ρόδος"
+   ],
+   "conf": "high",
+   "note": "Rhodes island"
+  },
+  {
+   "name": "Chios",
+   "cc": "GR",
+   "lat": 38.368,
+   "lon": 26.136,
+   "dlc": "Greece",
+   "aliases": [
+    "Chíos",
+    "Hios",
+    "Khios",
+    "Χίος"
+   ],
+   "conf": "high",
+   "note": "Chios island"
+  },
+  {
+   "name": "Mytilene",
+   "cc": "GR",
+   "lat": 39.107,
+   "lon": 26.555,
+   "dlc": "Greece",
+   "aliases": [
+    "Mytilini",
+    "Mitilini",
+    "Mytilíni",
+    "Lesbos",
+    "Lesvos",
+    "Μυτιλήνη"
+   ],
+   "conf": "high",
+   "note": "Lesbos island. The internal ferry ID spells it 'mitilini'."
+  },
+  {
+   "name": "Argostoli",
+   "cc": "GR",
+   "lat": 38.176,
+   "lon": 20.489,
+   "dlc": "Greece",
+   "aliases": [
+    "Argostóli",
+    "Kefalonia",
+    "Kephalonia",
+    "Kefalonia Argostoli",
+    "Αργοστόλι"
+   ],
+   "conf": "high",
+   "note": "Kefalonia island"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Athens",
+   "acc": "GR",
+   "b": "Patras",
+   "bcc": "GR",
+   "km": 215,
+   "road": "A8 / E55 / E65 (Olympia Odos)",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Athens",
+   "acc": "GR",
+   "b": "Lamia",
+   "bcc": "GR",
+   "km": 210,
+   "road": "A1 / E75",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Athens",
+   "acc": "GR",
+   "b": "Kalamata",
+   "bcc": "GR",
+   "km": 240,
+   "road": "A8 + A7 / E65 (Moreas) via Corinth, Tripoli",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Lamia",
+   "acc": "GR",
+   "b": "Larissa",
+   "bcc": "GR",
+   "km": 145,
+   "road": "A1 / E75",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Larissa",
+   "acc": "GR",
+   "b": "Thessaloniki",
+   "bcc": "GR",
+   "km": 155,
+   "road": "A1 / E75",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Larissa",
+   "acc": "GR",
+   "b": "Trikala",
+   "bcc": "GR",
+   "km": 62,
+   "road": "EO6 / E92",
+   "ferry": false,
+   "conf": "medium",
+   "note": "SCS road-network blog: the E92 links the west and east coasts through Trikala."
+  },
+  {
+   "a": "Lamia",
+   "acc": "GR",
+   "b": "Trikala",
+   "bcc": "GR",
+   "km": 135,
+   "road": "EO30 via Karditsa",
+   "ferry": false,
+   "conf": "low",
+   "note": "A second corridor through Karditsa. Not confirmed in game."
+  },
+  {
+   "a": "Trikala",
+   "acc": "GR",
+   "b": "Ioannina",
+   "bcc": "GR",
+   "km": 140,
+   "road": "EO6 / E92 via Kalambaka, then A2 Egnatia",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Ioannina",
+   "acc": "GR",
+   "b": "Thessaloniki",
+   "bcc": "GR",
+   "km": 260,
+   "road": "A2 / E90 Egnatia Odos",
+   "ferry": false,
+   "conf": "medium",
+   "note": "SCS road-network blog: the E90 crosses Greece from the west through Thessaloniki."
+  },
+  {
+   "a": "Ioannina",
+   "acc": "GR",
+   "b": "Patras",
+   "bcc": "GR",
+   "km": 220,
+   "road": "A5 / E55 Ionia Odos + Rio-Antirrio bridge",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Patras",
+   "acc": "GR",
+   "b": "Kalamata",
+   "bcc": "GR",
+   "km": 215,
+   "road": "EO9 / E55 via Pyrgos",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Thessaloniki",
+   "acc": "GR",
+   "b": "Kavala",
+   "bcc": "GR",
+   "km": 165,
+   "road": "A2 / E90 Egnatia Odos",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Chania",
+   "acc": "GR",
+   "b": "Heraklion",
+   "bcc": "GR",
+   "km": 140,
+   "road": "VOAK / EO90 / E75",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Athens",
+   "acc": "GR",
+   "b": "Heraklion",
+   "bcc": "GR",
+   "km": 320,
+   "ferry": true,
+   "road": "Ferry Piraeus - Heraklion",
+   "conf": "high",
+   "note": "Route ID piraeus_heraklion (dlc_greece) appears in a Steam ferry-ID list."
+  },
+  {
+   "a": "Athens",
+   "acc": "GR",
+   "b": "Chania",
+   "bcc": "GR",
+   "km": 290,
+   "ferry": true,
+   "road": "Ferry Piraeus - Chania (Souda)",
+   "conf": "high",
+   "note": "Route IDs piraeus_chania_b / chania_b_piraeus (dlc_greece). The brochure lists 'Athens (Piraeus),Chania,09h00'."
+  },
+  {
+   "a": "Athens",
+   "acc": "GR",
+   "b": "Rhodes",
+   "bcc": "GR",
+   "km": 430,
+   "ferry": true,
+   "road": "Ferry Piraeus - Rhodes",
+   "conf": "high",
+   "note": "Route IDs piraeus_rhodes / rhodes_piraeus (dlc_greece)."
+  },
+  {
+   "a": "Athens",
+   "acc": "GR",
+   "b": "Chios",
+   "bcc": "GR",
+   "km": 280,
+   "ferry": true,
+   "road": "Ferry Piraeus - Chios",
+   "conf": "high",
+   "note": "Route ID piraeus_chios_b (dlc_greece). The brochure lists 'Athens (Piraeus),Chios,09h00'."
+  },
+  {
+   "a": "Kavala",
+   "acc": "GR",
+   "b": "Mytilene",
+   "bcc": "GR",
+   "km": 230,
+   "ferry": true,
+   "road": "Ferry Kavala - Mytilene",
+   "conf": "medium",
+   "note": "An earlier Steam post confirms this route; it did not appear in the route-ID snippet seen in this review."
+  },
+  {
+   "a": "Kavala",
+   "acc": "GR",
+   "b": "Chios",
+   "bcc": "GR",
+   "km": 310,
+   "ferry": true,
+   "road": "Ferry Kavala - Chios",
+   "conf": "high",
+   "note": "Route ID chios_b_kavala (dlc_greece)."
+  },
+  {
+   "a": "Chios",
+   "acc": "GR",
+   "b": "Mytilene",
+   "bcc": "GR",
+   "km": 100,
+   "ferry": true,
+   "road": "Ferry Chios - Mytilene",
+   "conf": "high",
+   "note": "Route ID chios_mitilini (dlc_greece)."
+  },
+  {
+   "a": "Patras",
+   "acc": "GR",
+   "b": "Argostoli",
+   "bcc": "GR",
+   "km": 130,
+   "ferry": true,
+   "road": "Ferry Patras - Argostoli",
+   "conf": "medium",
+   "note": "Route ID patras_b_argostoli (dlc_greece). The brochure lists 'Argostoli,Patras,4h00'. The mainland port is Patras, not Kyllini."
+  },
+  {
+   "a": "Argostoli",
+   "acc": "GR",
+   "b": "Ioannina",
+   "bcc": "GR",
+   "km": 260,
+   "ferry": true,
+   "road": "Ferry Argostoli - Igoumenitsa (about 180 km by sea) + A2 Igoumenitsa - Ioannina (about 80 km)",
+   "conf": "low",
+   "note": "A community route-ID list has argostoli_igoumenitsb. Igoumenitsa is a port, not a city, so this edge is collapsed onto Ioannina, the nearest city."
+  },
+  {
+   "a": "Patras",
+   "acc": "GR",
+   "b": "Bari",
+   "bcc": "IT",
+   "km": 560,
+   "ferry": true,
+   "road": "Ferry Patras - Bari",
+   "conf": "medium",
+   "note": "Route ID patras_bari (dlc_greece) appears in a Steam ferry-ID list."
+  },
+  {
+   "a": "Patras",
+   "acc": "GR",
+   "b": "Ancona",
+   "bcc": "IT",
+   "km": 1000,
+   "ferry": true,
+   "road": "Ferry Patras - Ancona",
+   "conf": "medium",
+   "note": "Route ID patras_ancona (dlc_greece). The brochure lists 'Ancona,Patras,25h00'."
+  },
+  {
+   "a": "Ioannina",
+   "acc": "GR",
+   "b": "Gjirokastër",
+   "bcc": "AL",
+   "km": 88,
+   "road": "EO20 / E853 via Kakavia border",
+   "ferry": false,
+   "conf": "low",
+   "note": "SCS blog part 1 confirms the Kakavia crossing. Gjirokastër as an in-game city is unverified; Vlorë and Fier are confirmed AL cities. If Gjirokastër is not a city, link to Vlorë (about 210 km)."
+  },
+  {
+   "a": "Thessaloniki",
+   "acc": "GR",
+   "b": "Skopje",
+   "bcc": "MK",
+   "km": 240,
+   "road": "A1 / E75 via Evzoni - Bogorodica (Gevgelija)",
+   "ferry": false,
+   "conf": "high",
+   "note": "SCS blog part 2 confirms the Bogorodica-Evzoni crossing on the E75. The wiki's MK page names only Bitola and Skopje as cities, so there is no intermediate city to split at."
+  },
+  {
+   "a": "Thessaloniki",
+   "acc": "GR",
+   "b": "Pernik",
+   "bcc": "BG",
+   "km": 290,
+   "road": "A25 / E79 via Promachonas - Kulata, Struma motorway",
+   "ferry": false,
+   "conf": "medium",
+   "note": "The wiki confirms the Kulata-Promachonas crossing in the Greece DLC. The BG endpoint city is assumed; Sofia is about 30 km further."
+  },
+  {
+   "a": "Kavala",
+   "acc": "GR",
+   "b": "Plovdiv",
+   "bcc": "BG",
+   "km": 285,
+   "road": "A2 / E90 to Komotini, then Nymfaia - Makaza border, Kardzhali, Asenovgrad",
+   "ferry": false,
+   "conf": "low",
+   "note": "Added. SCS blog part 1 confirms the Makaza-Nimphaia crossing. The BG endpoint is assumed to be Plovdiv, the nearest Road to the Black Sea city."
+  },
+  {
+   "a": "Kavala",
+   "acc": "GR",
+   "b": "Tekirdağ",
+   "bcc": "TR",
+   "km": 335,
+   "road": "A2 / E90 via Alexandroupoli, Kipoi - İpsala, Keşan, D110",
+   "ferry": false,
+   "conf": "medium",
+   "note": "SCS blog part 2 and the wiki confirm the Ipsala-Kipoi crossing (A2 / D110), the largest crossing in the DLC."
+  },
+  {
+   "a": "Kavala",
+   "acc": "GR",
+   "b": "Edirne",
+   "bcc": "TR",
+   "km": 300,
+   "road": "A2 / E90 Egnatia via Alexandroupoli, then Kastanies/Pazarkule border (or via İpsala and D550, about 330 km)",
+   "ferry": false,
+   "conf": "low",
+   "note": "The Kastanies crossing is unconfirmed. Of the 6 DLC crossings, 5 are identified (Kakavia, Makaza, Kulata, Ipsala, Evzoni); the sixth is unknown. Not disproved, so kept."
+  }
+ ],
+ "changes": [
+  "City list confirmed unchanged: 15 cities (Argostoli, Athens, Chania, Chios, Heraklion, Ioannina, Kalamata, Kavala, Lamia, Larissa, Mytilene, Patras, Rhodes, Thessaloniki, Trikala), per the trucksimulator.wiki.gg Greece nav box, and the '15 cities' count matches Giant Bomb and the SCS press. Candidates file had no radio_only or village entries. No cities added or removed.",
+  "Greece DLC release date confirmed as 4 Dec 2024 (SCS blog and Gamepressure). English spellings Athens, Patras and Larissa confirmed by the wiki and wikiwiki.jp.",
+  "Athens: added alias 'Athens (Piraeus)', the spelling in the ferry brochure quoted on Steam.",
+  "Removed the Kalamata-Chania ferry. A previous agent guessed it with no source, the real route does not exist, and the Greek ferry route IDs listed on Steam (piraeus_heraklion, piraeus_rhodes, piraeus_chania_b, piraeus_chios_b, chios_b_kavala, chios_mitilini, patras_ancona, patras_bari, patras_b_argostoli, argostoli_igoumenitsb) link Chania only to Piraeus and include no Kalamata route.",
+  "Patras-Argostoli ferry: low -> medium. Route ID patras_b_argostoli and brochure line 'Argostoli,Patras,4h00' confirm the mainland port is Patras, not Kyllini.",
+  "Patras-Bari and Patras-Ancona ferries: low -> medium, from route IDs patras_bari and patras_ancona (dlc_greece) and brochure line 'Ancona,Patras,25h00'.",
+  "Ferries Athens-Heraklion, Athens-Chania, Athens-Rhodes, Athens-Chios, Kavala-Chios and Chios-Mytilene: medium -> high, each matches a dlc_greece route ID in the Steam list.",
+  "Added a low-confidence ferry edge Argostoli-Ioannina, about 260 km: ferry to Igoumenitsa port (route ID argostoli_igoumenitsb) plus about 80 km on the A2. Igoumenitsa is not a city, so the edge is collapsed onto Ioannina.",
+  "Thessaloniki-Skopje: medium -> high. SCS blog 'Greece: Border Crossings 2' (Aug 2024) confirms the Bogorodica-Evzoni crossing on the E75, and the wiki's North Macedonia page names only Bitola and Skopje, so no split is needed.",
+  "Thessaloniki-Pernik: low -> medium. The wiki border-crossing page lists Kulata-Promachonas in the Greece DLC; the BG endpoint city is still assumed.",
+  "Kavala-Tekirdağ: low -> medium. SCS blog and the wiki confirm the Ipsala-Kipoi crossing (A2/D110), the largest crossing in the DLC.",
+  "Added the edge Kavala-Plovdiv (BG), about 285 km, via the Makaza-Nimphaia crossing confirmed in SCS blog 'Greece: Border Crossings' (Jul 2024). Low confidence because the BG endpoint is assumed.",
+  "Ioannina-Gjirokastër: km 70 -> 88 (real distance Ioannina-Kakavia about 60 + Kakavia-Gjirokastër about 28). SCS blog confirms the Kakavia crossing, but Gjirokastër as an in-game city stays unverified, so confidence stays low.",
+  "Kavala-Edirne kept at low: SCS says the DLC has 6 border crossings; 5 are identified (Kakavia, Makaza, Kulata, Ipsala, Evzoni) and the sixth is unknown, so the Kastanies crossing is neither confirmed nor disproved.",
+  "Not resolved within the search budget: whether a Niki-Medžitlija crossing to Bitola (MK) exists, whether Gjirokastër (AL) is an in-game city, and whether Igoumenitsa also has Italy ferries in game."
+ ],
+ "sources": "WebSearch (14 calls) result text: trucksimulator.wiki.gg/wiki/Cities/Euro_Truck_Simulator_2 and the Greece nav box (15 cities); blog.scssoft.com/2024/11/greece-big-cities.html; blog.scssoft.com/2024/11/greece-coastal-and-islands-cities-ports.html; blog.scssoft.com/2024/12/ (release 4 Dec 2024); gamepressure.com/games/euro-truck-simulator-2-greece/z76809; wikiwiki.jp/ets2steam/DLC/Greece; blog.scssoft.com/2024/07/greece-border-crossings.html (Kakavia, Makaza-Nimphaia); blog.scssoft.com/2024/08/greece-border-crossings-2.html (Ipsala-Kipoi, Bogorodica-Evzoni, 'six border crossings'); trucksimulator.wiki.gg/wiki/Border_crossing (Kulata-Promachonas, Kipi-İpsala A2/D110); blog.scssoft.com/2024/08/greece-road-network-highways-junctions.html (E90, E92); steamcommunity.com/app/227300/discussions/0/591766810822470608 (ferry route IDs with dlc_greece tags); steamcommunity.com/app/227300/discussions/0/3431201960395400105 (ferry brochure lines: Argostoli,Patras,4h00; Athens (Piraeus),Chania/Chios; Ancona,Patras,25h00); trucksimulator.wiki.gg/wiki/North_Macedonia (Bitola, Skopje); trucksimulator.wiki.gg West Balkans city list (Vlorë, Fier, Durrës; Gjirokastër not found)."
+}

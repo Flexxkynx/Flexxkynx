@@ -1,0 +1,1235 @@
+{
+ "region": "France (FR, mainland + Corsica)",
+ "cities": [
+  {
+   "name": "Calais",
+   "cc": "FR",
+   "lat": 50.951,
+   "lon": 1.858,
+   "dlc": "Base",
+   "aliases": [
+    "Calais"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Lille",
+   "cc": "FR",
+   "lat": 50.629,
+   "lon": 3.057,
+   "dlc": "Base",
+   "aliases": [
+    "Lille",
+    "Rijsel",
+    "Ryssel"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Paris",
+   "cc": "FR",
+   "lat": 48.857,
+   "lon": 2.352,
+   "dlc": "Base",
+   "aliases": [
+    "Paris"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Reims",
+   "cc": "FR",
+   "lat": 49.258,
+   "lon": 4.032,
+   "dlc": "Base",
+   "aliases": [
+    "Rheims",
+    "Reims"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Metz",
+   "cc": "FR",
+   "lat": 49.12,
+   "lon": 6.176,
+   "dlc": "Base",
+   "aliases": [
+    "Metz"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Strasbourg",
+   "cc": "FR",
+   "lat": 48.573,
+   "lon": 7.752,
+   "dlc": "Base",
+   "aliases": [
+    "Straßburg",
+    "Strassburg",
+    "Strasburg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Dijon",
+   "cc": "FR",
+   "lat": 47.322,
+   "lon": 5.041,
+   "dlc": "Base",
+   "aliases": [
+    "Dijon"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Lyon",
+   "cc": "FR",
+   "lat": 45.764,
+   "lon": 4.836,
+   "dlc": "Base",
+   "aliases": [
+    "Lyons",
+    "Lyon"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bordeaux",
+   "cc": "FR",
+   "lat": 44.838,
+   "lon": -0.579,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Bordeaux"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bourges",
+   "cc": "FR",
+   "lat": 47.081,
+   "lon": 2.399,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Bourges"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Brest",
+   "cc": "FR",
+   "lat": 48.39,
+   "lon": -4.486,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Brest"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Clermont-Ferrand",
+   "cc": "FR",
+   "lat": 45.778,
+   "lon": 3.087,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Clermont Ferrand",
+    "Clermont"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "La Rochelle",
+   "cc": "FR",
+   "lat": 46.16,
+   "lon": -1.151,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Rochelle",
+    "LaRochelle"
+   ],
+   "conf": "high",
+   "note": "Confirmed as an in-game VLF city in game-extracted map data"
+  },
+  {
+   "name": "Le Havre",
+   "cc": "FR",
+   "lat": 49.494,
+   "lon": 0.108,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Havre",
+    "LeHavre"
+   ],
+   "conf": "high",
+   "note": "No ferry port at Le Havre in the game data"
+  },
+  {
+   "name": "Le Mans",
+   "cc": "FR",
+   "lat": 48.006,
+   "lon": 0.199,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Le Mans",
+    "LeMans"
+   ],
+   "conf": "high",
+   "note": "Confirmed as an in-game VLF city in game-extracted map data"
+  },
+  {
+   "name": "Limoges",
+   "cc": "FR",
+   "lat": 45.834,
+   "lon": 1.262,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Limoges"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Marseille",
+   "cc": "FR",
+   "lat": 43.297,
+   "lon": 5.37,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Marseilles",
+    "Marsella"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Montpellier",
+   "cc": "FR",
+   "lat": 43.611,
+   "lon": 3.877,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Montpellier",
+    "Montpelier"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Nantes",
+   "cc": "FR",
+   "lat": 47.218,
+   "lon": -1.554,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Nantes"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Nice",
+   "cc": "FR",
+   "lat": 43.71,
+   "lon": 7.262,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Nizza"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Rennes",
+   "cc": "FR",
+   "lat": 48.117,
+   "lon": -1.678,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Rennes"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Roscoff",
+   "cc": "FR",
+   "lat": 48.726,
+   "lon": -3.986,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Roscoff"
+   ],
+   "conf": "high",
+   "note": "Small port town; its only in-game ferry line is to Plymouth (Gallia Ferries)"
+  },
+  {
+   "name": "Toulouse",
+   "cc": "FR",
+   "lat": 43.605,
+   "lon": 1.444,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Toulouse",
+    "Tolosa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Civaux",
+   "cc": "FR",
+   "lat": 46.446,
+   "lon": 0.665,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Civaux"
+   ],
+   "conf": "high",
+   "note": "Nuclear plant town"
+  },
+  {
+   "name": "Golfech",
+   "cc": "FR",
+   "lat": 44.108,
+   "lon": 0.849,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Golfech"
+   ],
+   "conf": "high",
+   "note": "Nuclear plant town; no entrance sign in game"
+  },
+  {
+   "name": "Paluel",
+   "cc": "FR",
+   "lat": 49.836,
+   "lon": 0.633,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Paluel"
+   ],
+   "conf": "high",
+   "note": "Nuclear plant town on the Normandy coast"
+  },
+  {
+   "name": "Saint-Alban-du-Rhône",
+   "cc": "FR",
+   "lat": 45.418,
+   "lon": 4.757,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Saint-Alban-du-Rhone",
+    "Saint Alban",
+    "St-Alban",
+    "Alban"
+   ],
+   "conf": "high",
+   "note": "Nuclear plant town; the in-game label is the full name Saint-Alban-du-Rhône (confirmed in game-extracted data)"
+  },
+  {
+   "name": "Saint-Laurent",
+   "cc": "FR",
+   "lat": 47.717,
+   "lon": 1.6,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "St-Laurent",
+    "Saint Laurent",
+    "Saint-Laurent-Nouan",
+    "Saint-Laurent-des-Eaux"
+   ],
+   "conf": "high",
+   "note": "Nuclear plant (Saint-Laurent-des-Eaux) on the Loire between Orléans and Blois; the in-game label is 'Saint-Laurent'; coordinates are for Saint-Laurent-Nouan"
+  },
+  {
+   "name": "Bayonne",
+   "cc": "FR",
+   "lat": 43.493,
+   "lon": -1.475,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Baiona",
+    "Bayonne"
+   ],
+   "conf": "high",
+   "note": "Added in update 1.40 (2021) as a free addition to Vive la France; the game data tags it with the VLF DLC guard"
+  },
+  {
+   "name": "Lacq",
+   "cc": "FR",
+   "lat": 43.411,
+   "lon": -0.623,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Lacq"
+   ],
+   "conf": "high",
+   "note": "Added in update 1.40 (2021); the game data tags it with the VLF DLC guard"
+  },
+  {
+   "name": "Ajaccio",
+   "cc": "FR",
+   "lat": 41.919,
+   "lon": 8.739,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Aiacciu"
+   ],
+   "conf": "high",
+   "note": "Corsica, free addition in update 1.36 for VLF owners; has an in-game ferry port"
+  },
+  {
+   "name": "Bastia",
+   "cc": "FR",
+   "lat": 42.697,
+   "lon": 9.451,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Bastia"
+   ],
+   "conf": "high",
+   "note": "Corsica (1.36); no ferry port in the game data"
+  },
+  {
+   "name": "Bonifacio",
+   "cc": "FR",
+   "lat": 41.387,
+   "lon": 9.159,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Bunifaziu"
+   ],
+   "conf": "high",
+   "note": "Corsica (1.36)"
+  },
+  {
+   "name": "Calvi",
+   "cc": "FR",
+   "lat": 42.567,
+   "lon": 8.757,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Calvi"
+   ],
+   "conf": "high",
+   "note": "Corsica (1.36)"
+  },
+  {
+   "name": "L'Île-Rousse",
+   "cc": "FR",
+   "lat": 42.634,
+   "lon": 8.938,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "L'Ile-Rousse",
+    "Ile Rousse",
+    "Ile-Rousse",
+    "LIle-Rousse",
+    "Isula Rossa"
+   ],
+   "conf": "high",
+   "note": "Corsica (1.36); the in-game spelling L'Île-Rousse is confirmed in game-extracted data"
+  },
+  {
+   "name": "Porto-Vecchio",
+   "cc": "FR",
+   "lat": 41.591,
+   "lon": 9.279,
+   "dlc": "Vive la France !",
+   "aliases": [
+    "Porto Vecchio",
+    "Portivechju"
+   ],
+   "conf": "high",
+   "note": "Corsica (1.36); ferry port to Marseille"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Calais",
+   "acc": "FR",
+   "b": "Lille",
+   "bcc": "FR",
+   "km": 112,
+   "road": "A16 / A25",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Calais",
+   "acc": "FR",
+   "b": "Reims",
+   "bcc": "FR",
+   "km": 275,
+   "road": "A26 / E15",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Lille",
+   "acc": "FR",
+   "b": "Paris",
+   "bcc": "FR",
+   "km": 225,
+   "road": "A1 / E15",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Lille",
+   "acc": "FR",
+   "b": "Reims",
+   "bcc": "FR",
+   "km": 200,
+   "road": "A1 / A26",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via the A1/A26 junction near Arras; may be the same corridor as Calais-Reims in game"
+  },
+  {
+   "a": "Paris",
+   "acc": "FR",
+   "b": "Reims",
+   "bcc": "FR",
+   "km": 145,
+   "road": "A4 / E50",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Reims",
+   "acc": "FR",
+   "b": "Metz",
+   "bcc": "FR",
+   "km": 190,
+   "road": "A4 / E50",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Metz",
+   "acc": "FR",
+   "b": "Strasbourg",
+   "bcc": "FR",
+   "km": 165,
+   "road": "A4 / E25",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Metz",
+   "acc": "FR",
+   "b": "Dijon",
+   "bcc": "FR",
+   "km": 265,
+   "road": "A31 / E21",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Reims",
+   "acc": "FR",
+   "b": "Dijon",
+   "bcc": "FR",
+   "km": 285,
+   "road": "A26 / A5 / A31",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Paris",
+   "acc": "FR",
+   "b": "Dijon",
+   "bcc": "FR",
+   "km": 315,
+   "road": "A6 / A38",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Strasbourg",
+   "acc": "FR",
+   "b": "Dijon",
+   "bcc": "FR",
+   "km": 330,
+   "road": "A35 / A36 / A39",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Mulhouse and Besançon; neither is an in-game city (confirmed against game data)"
+  },
+  {
+   "a": "Dijon",
+   "acc": "FR",
+   "b": "Lyon",
+   "bcc": "FR",
+   "km": 195,
+   "road": "A31 / A6 / E15",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Lyon",
+   "acc": "FR",
+   "b": "Saint-Alban-du-Rhône",
+   "bcc": "FR",
+   "km": 55,
+   "road": "A7 / E15",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Saint-Alban-du-Rhône",
+   "acc": "FR",
+   "b": "Marseille",
+   "bcc": "FR",
+   "km": 265,
+   "road": "A7 / E714",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Saint-Alban-du-Rhône",
+   "acc": "FR",
+   "b": "Montpellier",
+   "bcc": "FR",
+   "km": 250,
+   "road": "A7 / A9 / E15",
+   "ferry": false,
+   "conf": "medium",
+   "note": "The A7 to Marseille and the A9 to Montpellier split at Orange"
+  },
+  {
+   "a": "Marseille",
+   "acc": "FR",
+   "b": "Montpellier",
+   "bcc": "FR",
+   "km": 170,
+   "road": "A7 / A54 / A9",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Marseille",
+   "acc": "FR",
+   "b": "Nice",
+   "bcc": "FR",
+   "km": 200,
+   "road": "A8 / E80",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Montpellier",
+   "acc": "FR",
+   "b": "Toulouse",
+   "bcc": "FR",
+   "km": 245,
+   "road": "A9 / A61 / E80",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Montpellier",
+   "acc": "FR",
+   "b": "Clermont-Ferrand",
+   "bcc": "FR",
+   "km": 330,
+   "road": "A750 / A75 / E11",
+   "ferry": false,
+   "conf": "high",
+   "note": "Crosses the Millau Viaduct, which is in VLF"
+  },
+  {
+   "a": "Toulouse",
+   "acc": "FR",
+   "b": "Golfech",
+   "bcc": "FR",
+   "km": 95,
+   "road": "A62 / E72",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Golfech",
+   "acc": "FR",
+   "b": "Bordeaux",
+   "bcc": "FR",
+   "km": 160,
+   "road": "A62 / E72",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Edge split at Golfech, which lies just off the A62"
+  },
+  {
+   "a": "Toulouse",
+   "acc": "FR",
+   "b": "Lacq",
+   "bcc": "FR",
+   "km": 215,
+   "road": "A64 / E80",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Lacq",
+   "acc": "FR",
+   "b": "Bayonne",
+   "bcc": "FR",
+   "km": 90,
+   "road": "A64 / E80",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Bordeaux",
+   "acc": "FR",
+   "b": "Bayonne",
+   "bcc": "FR",
+   "km": 185,
+   "road": "A63 / E5 / E70",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Toulouse",
+   "acc": "FR",
+   "b": "Limoges",
+   "bcc": "FR",
+   "km": 290,
+   "road": "A20 / E9",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Clermont-Ferrand",
+   "acc": "FR",
+   "b": "Lyon",
+   "bcc": "FR",
+   "km": 165,
+   "road": "A89 / E70",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Clermont-Ferrand",
+   "acc": "FR",
+   "b": "Bourges",
+   "bcc": "FR",
+   "km": 190,
+   "road": "A71 / E11",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Clermont-Ferrand",
+   "acc": "FR",
+   "b": "Limoges",
+   "bcc": "FR",
+   "km": 180,
+   "road": "A89 / N141",
+   "ferry": false,
+   "conf": "low",
+   "note": "Unsure whether the game models a direct Clermont-Limoges road"
+  },
+  {
+   "a": "Bourges",
+   "acc": "FR",
+   "b": "Paris",
+   "bcc": "FR",
+   "km": 245,
+   "road": "A71 / A10",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Limoges",
+   "acc": "FR",
+   "b": "Bourges",
+   "bcc": "FR",
+   "km": 200,
+   "road": "A20 / A71",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Vierzon"
+  },
+  {
+   "a": "Limoges",
+   "acc": "FR",
+   "b": "Civaux",
+   "bcc": "FR",
+   "km": 100,
+   "road": "N147",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Limoges",
+   "acc": "FR",
+   "b": "Bordeaux",
+   "bcc": "FR",
+   "km": 220,
+   "road": "A89 / N21",
+   "ferry": false,
+   "conf": "low",
+   "note": "Route via Périgueux; not sure the game models it"
+  },
+  {
+   "a": "Civaux",
+   "acc": "FR",
+   "b": "Bordeaux",
+   "bcc": "FR",
+   "km": 275,
+   "road": "N147 / A10 / E5",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Civaux is about 35 km off the A10 at Poitiers; Poitiers-Bordeaux alone is about 250 km"
+  },
+  {
+   "a": "Civaux",
+   "acc": "FR",
+   "b": "Saint-Laurent",
+   "bcc": "FR",
+   "km": 230,
+   "road": "A10 / E5",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Poitiers and Tours, which are not cities in game (confirmed against game data)"
+  },
+  {
+   "a": "Civaux",
+   "acc": "FR",
+   "b": "La Rochelle",
+   "bcc": "FR",
+   "km": 170,
+   "road": "N11 / A10",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Poitiers and Niort"
+  },
+  {
+   "a": "Saint-Laurent",
+   "acc": "FR",
+   "b": "Paris",
+   "bcc": "FR",
+   "km": 165,
+   "road": "A10 / E5",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Saint-Laurent",
+   "acc": "FR",
+   "b": "Le Mans",
+   "bcc": "FR",
+   "km": 175,
+   "road": "A10 / A28",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Tours/Orléans area; the wiki notes a minor road links Le Mans towards Orléans (an unfinished non-city location), so a road from the Loire corridor to Le Mans exists"
+  },
+  {
+   "a": "La Rochelle",
+   "acc": "FR",
+   "b": "Bordeaux",
+   "bcc": "FR",
+   "km": 185,
+   "road": "A837 / A10",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "La Rochelle",
+   "acc": "FR",
+   "b": "Nantes",
+   "bcc": "FR",
+   "km": 135,
+   "road": "D137 / A83",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Nantes",
+   "acc": "FR",
+   "b": "Rennes",
+   "bcc": "FR",
+   "km": 110,
+   "road": "N137",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Nantes",
+   "acc": "FR",
+   "b": "Le Mans",
+   "bcc": "FR",
+   "km": 185,
+   "road": "A11 / E501",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Nantes",
+   "acc": "FR",
+   "b": "Brest",
+   "bcc": "FR",
+   "km": 300,
+   "road": "N165 / E60",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Southern Brittany corridor via Vannes, Lorient and Quimper"
+  },
+  {
+   "a": "Rennes",
+   "acc": "FR",
+   "b": "Brest",
+   "bcc": "FR",
+   "km": 245,
+   "road": "N12 / E50",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rennes",
+   "acc": "FR",
+   "b": "Le Mans",
+   "bcc": "FR",
+   "km": 155,
+   "road": "A81 / E50",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rennes",
+   "acc": "FR",
+   "b": "Le Havre",
+   "bcc": "FR",
+   "km": 275,
+   "road": "A84 / A13 / A29 (Pont de Normandie)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Added by the reviewer from memory of the VLF Normandy layout (Caen, not a city, lies between); not verified"
+  },
+  {
+   "a": "Roscoff",
+   "acc": "FR",
+   "b": "Brest",
+   "bcc": "FR",
+   "km": 62,
+   "road": "D58 / N12",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Roscoff",
+   "acc": "FR",
+   "b": "Rennes",
+   "bcc": "FR",
+   "km": 215,
+   "road": "D58 / N12",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Joins the N12 at Morlaix"
+  },
+  {
+   "a": "Le Mans",
+   "acc": "FR",
+   "b": "Paris",
+   "bcc": "FR",
+   "km": 210,
+   "road": "A11 / E50",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Le Mans",
+   "acc": "FR",
+   "b": "Le Havre",
+   "bcc": "FR",
+   "km": 230,
+   "road": "A28 / A13 / A131",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Via Alençon and Rouen"
+  },
+  {
+   "a": "Le Havre",
+   "acc": "FR",
+   "b": "Paris",
+   "bcc": "FR",
+   "km": 200,
+   "road": "A13 / E5",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Le Havre",
+   "acc": "FR",
+   "b": "Paluel",
+   "bcc": "FR",
+   "km": 70,
+   "road": "D925 / A29",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Paluel",
+   "acc": "FR",
+   "b": "Calais",
+   "bcc": "FR",
+   "km": 230,
+   "road": "D925 / A28 / A16",
+   "ferry": false,
+   "conf": "low",
+   "note": "Coastal route via Dieppe and Abbeville; exact in-game corridor uncertain"
+  },
+  {
+   "a": "Ajaccio",
+   "acc": "FR",
+   "b": "Bastia",
+   "bcc": "FR",
+   "km": 150,
+   "road": "T20",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Bastia",
+   "acc": "FR",
+   "b": "L'Île-Rousse",
+   "bcc": "FR",
+   "km": 80,
+   "road": "T20 / T30",
+   "ferry": false,
+   "conf": "medium",
+   "note": "About 70 km via Saint-Florent or 95 km via Ponte-Leccia in reality"
+  },
+  {
+   "a": "L'Île-Rousse",
+   "acc": "FR",
+   "b": "Calvi",
+   "bcc": "FR",
+   "km": 25,
+   "road": "T30 / D151",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Calvi",
+   "acc": "FR",
+   "b": "Ajaccio",
+   "bcc": "FR",
+   "km": 160,
+   "road": "D81",
+   "ferry": false,
+   "conf": "low",
+   "note": "West-coast road; not sure it is modelled in game"
+  },
+  {
+   "a": "Bastia",
+   "acc": "FR",
+   "b": "Porto-Vecchio",
+   "bcc": "FR",
+   "km": 145,
+   "road": "T10",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Porto-Vecchio",
+   "acc": "FR",
+   "b": "Bonifacio",
+   "bcc": "FR",
+   "km": 28,
+   "road": "T10",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Bonifacio",
+   "acc": "FR",
+   "b": "Ajaccio",
+   "bcc": "FR",
+   "km": 140,
+   "road": "T40",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Marseille",
+   "acc": "FR",
+   "b": "Porto-Vecchio",
+   "bcc": "FR",
+   "km": 390,
+   "road": "Ferry (Gallia Ferries / Euro Lines, 14h)",
+   "ferry": true,
+   "conf": "high",
+   "note": "Confirmed by the ETS2 wiki ferry table: Porto-Vecchio - Marseille, 14 h, Euro Lines / Gallia Ferries, Vive la France"
+  },
+  {
+   "a": "Ajaccio",
+   "acc": "FR",
+   "b": "Sassari",
+   "bcc": "IT",
+   "km": 160,
+   "road": "Ferry Ajaccio - Porto Torres (Eolo Lines, 3h30)",
+   "ferry": true,
+   "conf": "high",
+   "note": "Confirmed by the ETS2 wiki ferry table (Eolo Lines, 3h30); the Corsica wiki page says this link needs Italia as well as Vive la France"
+  },
+  {
+   "a": "Calais",
+   "acc": "FR",
+   "b": "Dover",
+   "bcc": "GB",
+   "km": 42,
+   "road": "Ferry",
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Calais",
+   "acc": "FR",
+   "b": "Dover",
+   "bcc": "GB",
+   "km": 55,
+   "road": "Eurotunnel train (Calais-Folkestone terminal)",
+   "ferry": true,
+   "conf": "high",
+   "note": "The Folkestone train terminal belongs to the in-game city Dover; Folkestone is not a city"
+  },
+  {
+   "a": "Roscoff",
+   "acc": "FR",
+   "b": "Plymouth",
+   "bcc": "GB",
+   "km": 170,
+   "road": "Ferry",
+   "ferry": true,
+   "conf": "high",
+   "note": "Confirmed: ETS2 wiki Roscoff page and in-game shipping table (Plymouth - Roscoff 7h00); Gallia Ferries at Roscoff, Euro Lines at Plymouth"
+  },
+  {
+   "a": "Lille",
+   "acc": "FR",
+   "b": "Brussel",
+   "bcc": "BE",
+   "km": 115,
+   "road": "A27 / E42 / E429",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Vanilla Belgium (post-1.59 Benelux rework) has Antwerpen, Brussel and Liège per game data, so no Belgian city lies in between"
+  },
+  {
+   "a": "Metz",
+   "acc": "FR",
+   "b": "Luxembourg",
+   "bcc": "LU",
+   "km": 65,
+   "road": "A31 / E25",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Strasbourg",
+   "acc": "FR",
+   "b": "Zürich",
+   "bcc": "CH",
+   "km": 225,
+   "road": "A35 / E25 (CH: A3)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Replaces Strasbourg-Basel; Basel is not an in-game city. Via Mulhouse and Basel"
+  },
+  {
+   "a": "Strasbourg",
+   "acc": "FR",
+   "b": "Bern",
+   "bcc": "CH",
+   "km": 235,
+   "road": "A35 / E25 (CH: A2 / A1)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Basel, which is not an in-game city; check the exact Swiss corridor with the CH agent"
+  },
+  {
+   "a": "Strasbourg",
+   "acc": "FR",
+   "b": "Stuttgart",
+   "bcc": "DE",
+   "km": 150,
+   "road": "A4 (DE: A5 / A8)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Karlsruhe is not an in-game city (confirmed), so no split is needed"
+  },
+  {
+   "a": "Metz",
+   "acc": "FR",
+   "b": "Mannheim",
+   "bcc": "DE",
+   "km": 205,
+   "road": "A4 / A320 (DE: A6)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Via Saarbrücken, which is not an in-game city (confirmed)"
+  },
+  {
+   "a": "Lyon",
+   "acc": "FR",
+   "b": "Genève",
+   "bcc": "CH",
+   "km": 150,
+   "road": "A42 / A40",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Lyon",
+   "acc": "FR",
+   "b": "Torino",
+   "bcc": "IT",
+   "km": 310,
+   "road": "A43 / Fréjus tunnel / A32",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Nice",
+   "acc": "FR",
+   "b": "Genova",
+   "bcc": "IT",
+   "km": 195,
+   "road": "A8 / A10 / E80",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Ventimiglia and Sanremo are not in-game cities (confirmed)"
+  },
+  {
+   "a": "Montpellier",
+   "acc": "FR",
+   "b": "Barcelona",
+   "bcc": "ES",
+   "km": 340,
+   "road": "A9 / AP-7 / E15",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Perpignan and Girona are not in-game cities (confirmed)"
+  },
+  {
+   "a": "Bayonne",
+   "acc": "FR",
+   "b": "Bilbao",
+   "bcc": "ES",
+   "km": 150,
+   "road": "A63 / AP-8 / E70",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Donostia/San Sebastián is not an in-game city (confirmed), so no split is needed"
+  }
+ ],
+ "changes": [
+  "Removed ferry Roscoff - Bilbao (ES): the ETS2 wiki ferry table and the in-game shipping-lines table quoted on Steam list Roscoff only with Plymouth (7h00); Bilbao and Santander are served from Plymouth (Plymouth - Bilbao 17h56, Plymouth - Santander 18h00, Eolo Lines at the Spanish end). Gallia Ferries is only Roscoff-based, and no Roscoff-Bilbao/Santander line is in the game (it also does not run in reality)",
+  "City list verified, no additions or removals: the wiki says VLF has 23 cities (15 at release + 6 Corsica in 1.36 + 2 in 1.40, i.e. Bayonne and Lacq) plus 5 towns (the nuclear-plant towns), which with the 8 base-game French cities gives the dataset's 36",
+  "Rejected radio_only candidates Cherbourg, Narbonne, Pau, Perpignan, Roudant and St Helier as ProMods-only (none appears in any vanilla city list or SCS patch note found); Orléans exists only as an unfinished non-city location in VLF per the wiki ('planned but left unfinished due to time constraints'), so it is not added",
+  "No SCS France rework or new French city in updates 1.50-1.59 (the 1.50 Switzerland rework and the 1.59 Benelux rework of 6 May 2026 do not add French cities), so the base/VLF split stays",
+  "Confirmed and annotated ferries Marseille - Porto-Vecchio (14h, Euro Lines / Gallia Ferries, VLF) and Ajaccio - Porto Torres/Sassari (Eolo Lines, 3h30; the Corsica wiki page says it also needs Italia). No Livorno or Bastia ferry is found in the game data, so none was added",
+  "Annotated Roscoff (its only ferry is Plymouth) and the Saint-Laurent - Le Mans edge (wiki: Le Mans is reached by a minor road from the Orléans area)"
+ ],
+ "sources": "WebSearch (11 queries): trucksimulator.wiki.gg Vive la France! page (23 cities = 15 + 6 Corsica in 1.36 + 2 in 1.40, plus 5 towns), https://trucksimulator.wiki.gg/wiki/Vive_la_France! ; Orléans page (unfinished location), https://trucksimulator.wiki.gg/wiki/Orl%C3%A9ans ; ferry table, https://trucksimulator.wiki.gg/wiki/Ferry/Euro_Truck_Simulator_2 (Porto-Vecchio - Marseille 14h; Ajaccio - Porto Torres 3.5h; Plymouth - Bilbao/Santander ~18h; Roscoff - Plymouth 7h) ; Corsica page https://truck-simulator.fandom.com/wiki/Corse ; Roscoff page https://trucksimulator.wiki.gg/wiki/Roscoff ; Gallia Ferries page https://trucksimulator.wiki.gg/wiki/Gallia_Ferries ; Steam discussion with the in-game shipping table https://steamcommunity.com/app/227300/discussions/0/3431201960395400105 ; SCS blog 1.59 (Benelux rework, 6 May 2026) https://blog.scssoft.com/2026/05/euro-truck-simulator-2-159-update.html ; 1.50 patch notes (Switzerland rework) https://trucksimulator.wiki.gg/wiki/Patch_Notes/Euro_Truck_Simulator_2/Update_1.50 ; SCS VLF blog label https://blog.scssoft.com/search/label/Vive%20la%20France%21 (Bayonne/Lacq as a free 1.40 VLF addition). Road km are still real-world estimates, because no source gives the in-game road graph."
+}

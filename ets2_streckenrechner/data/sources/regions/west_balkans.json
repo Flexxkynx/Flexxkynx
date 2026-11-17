@@ -1,0 +1,1109 @@
+{
+ "region": "West Balkans (SI, HR, BA, RS, ME, AL, MK, XK)",
+ "cities": [
+  {
+   "name": "Ljubljana",
+   "cc": "SI",
+   "lat": 46.051,
+   "lon": 14.506,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Laibach",
+    "Ljubljana"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Maribor",
+   "cc": "SI",
+   "lat": 46.555,
+   "lon": 15.646,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Marburg",
+    "Marburg an der Drau"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Koper",
+   "cc": "SI",
+   "lat": 45.548,
+   "lon": 13.73,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Capodistria",
+    "Gafers"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Novo Mesto",
+   "cc": "SI",
+   "lat": 45.804,
+   "lon": 15.169,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Novo mesto",
+    "Rudolfswert",
+    "Neustadtl"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Zagreb",
+   "cc": "HR",
+   "lat": 45.813,
+   "lon": 15.978,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Agram"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Rijeka",
+   "cc": "HR",
+   "lat": 45.327,
+   "lon": 14.442,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Fiume",
+    "Sankt Veit am Flaum"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Zadar",
+   "cc": "HR",
+   "lat": 44.119,
+   "lon": 15.231,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Zara"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Split",
+   "cc": "HR",
+   "lat": 43.508,
+   "lon": 16.44,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Spalato"
+   ],
+   "conf": "high",
+   "note": "Ferry port (Ancona, ~10 h per wiki ferry table)"
+  },
+  {
+   "name": "Osijek",
+   "cc": "HR",
+   "lat": 45.554,
+   "lon": 18.695,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Esseg",
+    "Eszek"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Sarajevo",
+   "cc": "BA",
+   "lat": 43.856,
+   "lon": 18.413,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Sarajewo",
+    "Sarajevo"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Banja Luka",
+   "cc": "BA",
+   "lat": 44.772,
+   "lon": 17.191,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Banjaluka",
+    "Banja Luka",
+    "Бања Лука"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bihać",
+   "cc": "BA",
+   "lat": 44.817,
+   "lon": 15.871,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Bihac",
+    "Bihatsch"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Mostar",
+   "cc": "BA",
+   "lat": 43.343,
+   "lon": 17.808,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Mostar"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Tuzla",
+   "cc": "BA",
+   "lat": 44.538,
+   "lon": 18.676,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Tuzla"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Zenica",
+   "cc": "BA",
+   "lat": 44.203,
+   "lon": 17.908,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Zenica",
+    "Zenitza"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Karakaj",
+   "cc": "BA",
+   "lat": 44.405,
+   "lon": 19.128,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Karakaj",
+    "Zvornik",
+    "Каракај"
+   ],
+   "conf": "high",
+   "note": "Industrial suburb north of Zvornik; in-game city name is Karakaj"
+  },
+  {
+   "name": "Beograd",
+   "cc": "RS",
+   "lat": 44.817,
+   "lon": 20.457,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Belgrade",
+    "Belgrad",
+    "Beograd",
+    "Београд"
+   ],
+   "conf": "medium",
+   "note": "City confirmed (game def id beograd, def name Београд); English map label 'Belgrade', Latin local spelling Beograd"
+  },
+  {
+   "name": "Novi Sad",
+   "cc": "RS",
+   "lat": 45.267,
+   "lon": 19.833,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Neusatz",
+    "Ujvidek"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kragujevac",
+   "cc": "RS",
+   "lat": 44.012,
+   "lon": 20.911,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Kragujevac"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Niš",
+   "cc": "RS",
+   "lat": 43.321,
+   "lon": 21.896,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Nis",
+    "Nisch",
+    "Nish"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Prishtinë",
+   "cc": "XK",
+   "lat": 42.663,
+   "lon": 21.165,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Pristina",
+    "Priština",
+    "Prishtina",
+    "Prishtine",
+    "Pristina Kosovo"
+   ],
+   "conf": "medium",
+   "note": "Game def name is 'Prishtinë'; English map label 'Pristina'"
+  },
+  {
+   "name": "Podgorica",
+   "cc": "ME",
+   "lat": 42.441,
+   "lon": 19.263,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Podgoritza",
+    "Titograd"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Nikšić",
+   "cc": "ME",
+   "lat": 42.773,
+   "lon": 18.944,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Niksic",
+    "Nikschitsch"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bijelo Polje",
+   "cc": "ME",
+   "lat": 43.038,
+   "lon": 19.748,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Bijelo Polje",
+    "Bjelo Polje"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Tiranë",
+   "cc": "AL",
+   "lat": 41.328,
+   "lon": 19.819,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Tirana",
+    "Tirane"
+   ],
+   "conf": "medium",
+   "note": "Game def name is 'Tiranë'; English map label 'Tirana'"
+  },
+  {
+   "name": "Durrës",
+   "cc": "AL",
+   "lat": 41.323,
+   "lon": 19.441,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Durres",
+    "Durazzo",
+    "Durrazo"
+   ],
+   "conf": "high",
+   "note": "Ferry port (Bari ~9 h, Ancona ~18 h per wiki ferry table)"
+  },
+  {
+   "name": "Fier",
+   "cc": "AL",
+   "lat": 40.724,
+   "lon": 19.556,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Fier"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Vlorë",
+   "cc": "AL",
+   "lat": 40.467,
+   "lon": 19.49,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Vlore",
+    "Vlora",
+    "Valona"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Skopje",
+   "cc": "MK",
+   "lat": 41.998,
+   "lon": 21.425,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Skopie",
+    "Skoplje",
+    "Uskub"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bitola",
+   "cc": "MK",
+   "lat": 41.031,
+   "lon": 21.334,
+   "dlc": "West Balkans",
+   "aliases": [
+    "Monastir",
+    "Bitolj"
+   ],
+   "conf": "high",
+   "note": "Listed under west_balkans in the game's city-DLC map; its map items carry dlcGuard 22 (= Greece + West Balkans), i.e. the area was reworked for the Greek border link"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Ljubljana",
+   "acc": "SI",
+   "b": "Koper",
+   "bcc": "SI",
+   "km": 107,
+   "road": "A1",
+   "ferry": false,
+   "conf": "high",
+   "note": "Passes Kozina junction (in-game village)"
+  },
+  {
+   "a": "Ljubljana",
+   "acc": "SI",
+   "b": "Maribor",
+   "bcc": "SI",
+   "km": 128,
+   "road": "A1 / E57",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Ljubljana",
+   "acc": "SI",
+   "b": "Novo Mesto",
+   "bcc": "SI",
+   "km": 72,
+   "road": "A2 / E70",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Novo Mesto",
+   "acc": "SI",
+   "b": "Zagreb",
+   "bcc": "HR",
+   "km": 78,
+   "road": "A2 (SI) / A3 (HR) / E70",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Ljubljana",
+   "acc": "SI",
+   "b": "Rijeka",
+   "bcc": "HR",
+   "km": 115,
+   "road": "A1 Postojna - Ilirska Bistrica - Rupa - A7",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Ljubljana",
+   "acc": "SI",
+   "b": "Klagenfurt am Wörthersee",
+   "bcc": "AT",
+   "km": 87,
+   "road": "A2 / E61 Karawanken tunnel",
+   "ferry": false,
+   "conf": "high",
+   "note": "Karawanks Tunnel landmark is in game"
+  },
+  {
+   "a": "Ljubljana",
+   "acc": "SI",
+   "b": "Trieste",
+   "bcc": "IT",
+   "km": 95,
+   "road": "A1 / A3 via Divača - Fernetiči",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Koper",
+   "acc": "SI",
+   "b": "Trieste",
+   "bcc": "IT",
+   "km": 22,
+   "road": "H5 / SS202",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Maribor",
+   "acc": "SI",
+   "b": "Graz",
+   "bcc": "AT",
+   "km": 67,
+   "road": "A1 / A9 / E57",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rijeka",
+   "acc": "HR",
+   "b": "Koper",
+   "bcc": "SI",
+   "km": 80,
+   "road": "Rupa - Starod - Kozina - A1",
+   "ferry": false,
+   "conf": "low",
+   "note": "Kozina is an in-game village; exact border road modelled uncertain"
+  },
+  {
+   "a": "Rijeka",
+   "acc": "HR",
+   "b": "Trieste",
+   "bcc": "IT",
+   "km": 75,
+   "road": "Rupa - Kozina - Pesek",
+   "ferry": false,
+   "conf": "low",
+   "note": "Inferred from Kozina village; could duplicate IT agent edge"
+  },
+  {
+   "a": "Rijeka",
+   "acc": "HR",
+   "b": "Zagreb",
+   "bcc": "HR",
+   "km": 162,
+   "road": "A6 / A1 via Karlovac",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rijeka",
+   "acc": "HR",
+   "b": "Zadar",
+   "bcc": "HR",
+   "km": 225,
+   "road": "D8 coastal road via Senj",
+   "ferry": false,
+   "conf": "low",
+   "note": "Rijeka-Zadar connection implied by achievement; Senj village suggests coastal D8 rather than A1 Lika section"
+  },
+  {
+   "a": "Zagreb",
+   "acc": "HR",
+   "b": "Zadar",
+   "bcc": "HR",
+   "km": 265,
+   "road": "D1 via Karlovac - Slunj - Plitvice - Gračac",
+   "ferry": false,
+   "conf": "low",
+   "note": "In-game villages Lučko, Blato, Karlovac, Donje Taborište, Slunj, Grabovac, Plitvička Jezera lie on D1 (wiki: Plitvička Jezera road heads north to Bihać/Zagreb and south to Zadar); whether A1 Lika motorway exists is unverified"
+  },
+  {
+   "a": "Zagreb",
+   "acc": "HR",
+   "b": "Bihać",
+   "bcc": "BA",
+   "km": 165,
+   "road": "D1 via Karlovac - Slunj - Plitvice - Izačić",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Pritoka (BA) village near Bihać in game"
+  },
+  {
+   "a": "Bihać",
+   "acc": "BA",
+   "b": "Zadar",
+   "bcc": "HR",
+   "km": 165,
+   "road": "Izačić - Plitvice - D1 Korenica - Gračac",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Zadar",
+   "acc": "HR",
+   "b": "Split",
+   "bcc": "HR",
+   "km": 158,
+   "road": "A1 / E65",
+   "ferry": false,
+   "conf": "high",
+   "note": "Bibinje and Dugopolje villages in game"
+  },
+  {
+   "a": "Split",
+   "acc": "HR",
+   "b": "Mostar",
+   "bcc": "BA",
+   "km": 160,
+   "road": "A1 to Ploče, Metković - Čapljina - M17",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Čapljina and Buna villages in game"
+  },
+  {
+   "a": "Split",
+   "acc": "HR",
+   "b": "Nikšić",
+   "bcc": "ME",
+   "km": 335,
+   "road": "A1 / D8 via Pelješac Bridge - Dubrovnik - Trebinje - Bileća",
+   "ferry": false,
+   "conf": "low",
+   "note": "Dubrovnik and Trebinje are scenery towns, Pelješac and Tuđman bridges are landmarks; coastline achievement Rijeka-Zadar-Split-Nikšić"
+  },
+  {
+   "a": "Mostar",
+   "acc": "BA",
+   "b": "Sarajevo",
+   "bcc": "BA",
+   "km": 128,
+   "road": "M17 / A1 / E73",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Mostar",
+   "acc": "BA",
+   "b": "Nikšić",
+   "bcc": "ME",
+   "km": 185,
+   "road": "M6 via Stolac - Trebinje - Bileća",
+   "ferry": false,
+   "conf": "low",
+   "note": "Stolac and Trebinje villages in game; exact routing uncertain"
+  },
+  {
+   "a": "Sarajevo",
+   "acc": "BA",
+   "b": "Zenica",
+   "bcc": "BA",
+   "km": 70,
+   "road": "A1 / E73",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Sarajevo",
+   "acc": "BA",
+   "b": "Tuzla",
+   "bcc": "BA",
+   "km": 120,
+   "road": "M18 via Semizovac - Olovo - Kladanj",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Bihać",
+   "acc": "BA",
+   "b": "Zenica",
+   "bcc": "BA",
+   "km": 268,
+   "road": "M5 via Bosanski Petrovac - Jajce - Donji Vakuf - Travnik - Vitez",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Villages Bosanski Petrovac, Jezero, Jajce, Donji Vakuf, Vitez in game; real distance may be nearer 250 km"
+  },
+  {
+   "a": "Bihać",
+   "acc": "BA",
+   "b": "Sarajevo",
+   "bcc": "BA",
+   "km": 316,
+   "road": "M5 then A1 from Lašva",
+   "ferry": false,
+   "conf": "low",
+   "note": "Same corridor as Bihać-Zenica, branching at Lašva junction ~15 km before Zenica"
+  },
+  {
+   "a": "Banja Luka",
+   "acc": "BA",
+   "b": "Zagreb",
+   "bcc": "HR",
+   "km": 188,
+   "road": "M16 Gradiška - A3 / E70 via Okučani",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Wiki Zagreb page: A3 turns south-east towards Osijek and Banja Luka"
+  },
+  {
+   "a": "Banja Luka",
+   "acc": "BA",
+   "b": "Tuzla",
+   "bcc": "BA",
+   "km": 170,
+   "road": "Banja Luka - Doboj - Lukavac (M4)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Doboj, Lukavac and Husino villages in game; Banja Luka-Doboj link assumed"
+  },
+  {
+   "a": "Banja Luka",
+   "acc": "BA",
+   "b": "Zenica",
+   "bcc": "BA",
+   "km": 185,
+   "road": "via Doboj, M17",
+   "ferry": false,
+   "conf": "low",
+   "note": "Assumed; alternative real route via Jajce (M16) not verified"
+  },
+  {
+   "a": "Zenica",
+   "acc": "BA",
+   "b": "Tuzla",
+   "bcc": "BA",
+   "km": 145,
+   "road": "M17 to Doboj, M4 via Lukavac",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Tuzla",
+   "acc": "BA",
+   "b": "Karakaj",
+   "bcc": "BA",
+   "km": 55,
+   "road": "M18 via Memići",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Karakaj",
+   "acc": "BA",
+   "b": "Beograd",
+   "bcc": "RS",
+   "km": 150,
+   "road": "Zvornik - Loznica - Šabac",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Steam thread 'Karakaj border crossing' describes the Serbia-to-Bosnia route through it; Loznica is an unsigned Serbian village in the wiki list"
+  },
+  {
+   "a": "Zagreb",
+   "acc": "HR",
+   "b": "Osijek",
+   "bcc": "HR",
+   "km": 280,
+   "road": "A3 / A5 via Sredanci - Đakovo",
+   "ferry": false,
+   "conf": "low",
+   "note": "Assumed motorway routing; wiki Zagreb page says A3 heads south-east towards Osijek"
+  },
+  {
+   "a": "Zagreb",
+   "acc": "HR",
+   "b": "Beograd",
+   "bcc": "RS",
+   "km": 390,
+   "road": "A3 (HR) / A3 (RS) / E70",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Main Zagreb-Belgrade motorway assumed modelled; passes no in-game city"
+  },
+  {
+   "a": "Osijek",
+   "acc": "HR",
+   "b": "Novi Sad",
+   "bcc": "RS",
+   "km": 115,
+   "road": "D2 via Nemetin - Vukovar - Ilok - Bačka Palanka",
+   "ferry": false,
+   "conf": "low",
+   "note": "Nemetin and Vukovar villages in game; continuation to Novi Sad not verified"
+  },
+  {
+   "a": "Osijek",
+   "acc": "HR",
+   "b": "Pécs",
+   "bcc": "HU",
+   "km": 90,
+   "road": "D7 / M6 via Beli Manastir - Mohács",
+   "ferry": false,
+   "conf": "low",
+   "note": "Border link not verified"
+  },
+  {
+   "a": "Novi Sad",
+   "acc": "RS",
+   "b": "Beograd",
+   "bcc": "RS",
+   "km": 95,
+   "road": "A1 / E75",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Novi Sad",
+   "acc": "RS",
+   "b": "Szeged",
+   "bcc": "HU",
+   "km": 140,
+   "road": "A1 / E75 via Subotica - Horgoš - M5",
+   "ferry": false,
+   "conf": "high",
+   "note": "Feketić village on A1 in game; West Balkans release notes name the large Horgoš crossing"
+  },
+  {
+   "a": "Beograd",
+   "acc": "RS",
+   "b": "Timișoara",
+   "bcc": "RO",
+   "km": 165,
+   "road": "E70 via Pančevo - Vršac - Vatin",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Pančevo and Vršac villages in game"
+  },
+  {
+   "a": "Beograd",
+   "acc": "RS",
+   "b": "Kragujevac",
+   "bcc": "RS",
+   "km": 140,
+   "road": "A1 / E75 to Batočina",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Beograd",
+   "acc": "RS",
+   "b": "Niš",
+   "bcc": "RS",
+   "km": 238,
+   "road": "A1 / E75",
+   "ferry": false,
+   "conf": "high",
+   "note": "Main motorway bypasses Kragujevac (Batočina exit ~25 km away)"
+  },
+  {
+   "a": "Kragujevac",
+   "acc": "RS",
+   "b": "Niš",
+   "bcc": "RS",
+   "km": 145,
+   "road": "Batočina - A1 / E75",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Beograd",
+   "acc": "RS",
+   "b": "Bijelo Polje",
+   "bcc": "ME",
+   "km": 315,
+   "road": "A2 to Preljina, Čačak - Užice - Zlatibor - Prijepolje (E763)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Međuvršje and Užice villages in game; continuation to Montenegro assumed"
+  },
+  {
+   "a": "Niš",
+   "acc": "RS",
+   "b": "Skopje",
+   "bcc": "MK",
+   "km": 205,
+   "road": "A1 / E75 via Leskovac - Vranje - Kumanovo",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Leskovac, Džep and Dupljane are in-game villages beside this corridor"
+  },
+  {
+   "a": "Niš",
+   "acc": "RS",
+   "b": "Prishtinë",
+   "bcc": "XK",
+   "km": 122,
+   "road": "Prokuplje - Kuršumlija - Merdarë - Podujevë",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Prokuplje village in game"
+  },
+  {
+   "a": "Niš",
+   "acc": "RS",
+   "b": "Sofia",
+   "bcc": "BG",
+   "km": 158,
+   "road": "A4 / E80 via Pirot - Dimitrovgrad - Gradina/Kalotina border - I8 (A6)",
+   "ferry": false,
+   "conf": "high",
+   "note": "Wiki border-crossing list has Gradinje (RS) - Kalotina (BG) on A4 / I8, so the direct E80 corridor is in game; real Niš-Sofia road distance ~155-160 km. Previous 370 km routing via Zaječar was wrong"
+  },
+  {
+   "a": "Beograd",
+   "acc": "RS",
+   "b": "Sofia",
+   "bcc": "BG",
+   "km": 450,
+   "road": "A1 to Paraćin, then Zaječar - Vrška Čuka/Vrashka Chuka border (R36 / II12) - Montana - Petrohan",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Wiki border-crossing list confirms Vrshka Chuka (RS) - Vrashka Chuka (BG) R36 / II12; Paraćin village page says its road runs east toward Bulgaria. Longer than Beograd-Niš-Sofia (238+158)"
+  },
+  {
+   "a": "Skopje",
+   "acc": "MK",
+   "b": "Pernik",
+   "bcc": "BG",
+   "km": 185,
+   "road": "Kumanovo - Kriva Palanka - Deve Bair / Gyueshevo - Kyustendil (E871)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Inferred only: Pernik's map items carry a mixed West Balkans dlcGuard; no web evidence found for an in-game MK-BG crossing; could instead be a Serbian link (Strezimirovci-Tran)"
+  },
+  {
+   "a": "Prishtinë",
+   "acc": "XK",
+   "b": "Skopje",
+   "bcc": "MK",
+   "km": 88,
+   "road": "R6 / M3 / E65 via Hani i Elezit",
+   "ferry": false,
+   "conf": "high",
+   "note": "Çagllavicë village in game"
+  },
+  {
+   "a": "Prishtinë",
+   "acc": "XK",
+   "b": "Bijelo Polje",
+   "bcc": "ME",
+   "km": 195,
+   "road": "Fushë Kosovë - Pejë - Kulla pass - Rožaje - Berane",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Achievement Through the Serpentines: Pristina - Bijelo Polje; Fushë Kosovë, Pejë, Rožaje villages in game"
+  },
+  {
+   "a": "Bijelo Polje",
+   "acc": "ME",
+   "b": "Podgorica",
+   "bcc": "ME",
+   "km": 120,
+   "road": "E65 / E80 via Kolašin, Moračica Bridge",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Bijelo Polje",
+   "acc": "ME",
+   "b": "Nikšić",
+   "bcc": "ME",
+   "km": 180,
+   "road": "Ribarevina - Pljevlja - Đurđevića Tara Bridge - Žabljak - Šavnik",
+   "ferry": false,
+   "conf": "low",
+   "note": "Đurđevića Tara bridge landmark, Budečevica and Ribarevina villages in game; exact routing guessed"
+  },
+  {
+   "a": "Podgorica",
+   "acc": "ME",
+   "b": "Nikšić",
+   "bcc": "ME",
+   "km": 55,
+   "road": "M18",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Podgorica",
+   "acc": "ME",
+   "b": "Tiranë",
+   "bcc": "AL",
+   "km": 160,
+   "road": "Hani i Hotit - Shkodër - SH1",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Mahala (ME), Luz and Kamëz (AL) villages in game"
+  },
+  {
+   "a": "Tiranë",
+   "acc": "AL",
+   "b": "Durrës",
+   "bcc": "AL",
+   "km": 38,
+   "road": "A1 / SH2 via Kashar - Vorë",
+   "ferry": false,
+   "conf": "high",
+   "note": "Vorë village (wiki page) in game"
+  },
+  {
+   "a": "Durrës",
+   "acc": "AL",
+   "b": "Fier",
+   "bcc": "AL",
+   "km": 88,
+   "road": "SH4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Fier",
+   "acc": "AL",
+   "b": "Vlorë",
+   "bcc": "AL",
+   "km": 38,
+   "road": "SH8",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Tiranë",
+   "acc": "AL",
+   "b": "Skopje",
+   "bcc": "MK",
+   "km": 295,
+   "road": "Elbasan - Qafë Thanë - Struga - Kičevo - Gostivar - A2",
+   "ferry": false,
+   "conf": "low",
+   "note": "Elbasan (AL) and Podmolje, Izvor, Gostivar (MK) villages in game"
+  },
+  {
+   "a": "Tiranë",
+   "acc": "AL",
+   "b": "Bitola",
+   "bcc": "MK",
+   "km": 210,
+   "road": "Elbasan - Qafë Thanë - Struga - Ohrid - Resen",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Skopje",
+   "acc": "MK",
+   "b": "Bitola",
+   "bcc": "MK",
+   "km": 235,
+   "road": "A2 Gostivar - Kičevo - Ohrid - Resen (A3)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Villages on western route (Gostivar, Izvor, Podmolje, Dihovo) in game; no evidence for Veles-Prilep route"
+  },
+  {
+   "a": "Fier",
+   "acc": "AL",
+   "b": "Bitola",
+   "bcc": "MK",
+   "km": 250,
+   "road": "Rrogozhinë - Papër - Elbasan - Qafë Thanë - Struga - Ohrid",
+   "ferry": false,
+   "conf": "low",
+   "note": "Papër and Elbasan villages in game"
+  },
+  {
+   "a": "Skopje",
+   "acc": "MK",
+   "b": "Thessaloniki",
+   "bcc": "GR",
+   "km": 235,
+   "road": "A1 / E75 via Veles - Gevgelija - Evzoni",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Bitola",
+   "acc": "MK",
+   "b": "Thessaloniki",
+   "bcc": "GR",
+   "km": 190,
+   "road": "Medžitlija - Florina - Edessa",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Bitola's map items carry dlcGuard 22 (Greece + West Balkans), pointing to a border link built with the Greece DLC (six border crossings into Greece per SCS); exact Greek-side routing not verified"
+  },
+  {
+   "a": "Fier",
+   "acc": "AL",
+   "b": "Ioannina",
+   "bcc": "GR",
+   "km": 190,
+   "road": "SH4 via Levan - Tepelenë - Gjirokastër - Kakavia",
+   "ferry": false,
+   "conf": "medium",
+   "note": "SCS blog (Greece border crossings, Jul 2024) confirms the Kakavia Albania-Greece crossing in game. Gjirokastër is NOT an in-game city, so Ioannina links to Fier/Vlorë. Real Fier-Levan-Tepelenë-Gjirokastër-Kakavia-Ioannina ~190 km"
+  },
+  {
+   "a": "Vlorë",
+   "acc": "AL",
+   "b": "Ioannina",
+   "bcc": "GR",
+   "km": 205,
+   "road": "SH8 to Levan, SH4 via Tepelenë - Gjirokastër - Kakavia - E853",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Greece DLC review names the Vlora-Ioannina road as a standout route; shares the SH4 corridor with Fier-Ioannina from Levan junction"
+  },
+  {
+   "a": "Split",
+   "acc": "HR",
+   "b": "Ancona",
+   "bcc": "IT",
+   "km": 220,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "high",
+   "note": "Game ferry route ancona_split; trucksimulator.wiki.gg ferry table (Italia + West Balkans) 10 h, €315"
+  },
+  {
+   "a": "Durrës",
+   "acc": "AL",
+   "b": "Bari",
+   "bcc": "IT",
+   "km": 230,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "high",
+   "note": "Game ferry route bari_durres; trucksimulator.wiki.gg ferry table (Italia + West Balkans) 9 h, €420"
+  },
+  {
+   "a": "Durrës",
+   "acc": "AL",
+   "b": "Ancona",
+   "bcc": "IT",
+   "km": 560,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "high",
+   "note": "Game ferry route ancona_durres; trucksimulator.wiki.gg ferry table (Italia + West Balkans) 18 h, €615"
+  }
+ ],
+ "changes": [
+  "City list confirmed: the trucksimulator.wiki.gg West Balkans page says the DLC adds 30 cities, and the dataset has exactly 30 (SI 4, HR 5, BA 7, RS 4, XK 1, ME 3, AL 4, MK 2). The Slovenia list (Koper, Ljubljana, Maribor, Novo Mesto) and the Montenegro list (Bijelo Polje, Nikšić, Podgorica) match the wiki. Tiranë, Durrës, Fier, Vlorë, Zagreb, Niš, Kragujevac, Tuzla and Pristina have their own wiki city pages. No cities added or removed.",
+  "No West Balkans map changes found in updates 1.57 (Scandinavia refresh), 1.58 (physics and route advisor), 1.59 (Benelux rework, May 2026) or 1.60 (visuals, June 2026), so the city list stands as of Nov 2026.",
+  "Candidate 'Villach' (radio_only under SI) rejected for this region: it is an Austrian city (AT region), not a Slovenian one.",
+  "Gjirokastër (AL) is NOT an in-game city. It is not one of the 30 West Balkans cities, the Greece DLC adds only Greek cities, and the wiki search found no Gjirokastër entry (it lies on the road between Tepelenë and Kakavia). The Greece dataset's Ioannina-Gjirokastër edge should be replaced by Ioannina-Fier and Ioannina-Vlorë.",
+  "Fier-Ioannina: km 200 -> 190, conf low -> medium. The SCS blog 'Greece border crossings' (Jul 2024) confirms the Kakavia Albania-Greece crossing is in the game.",
+  "Added edge Vlorë-Ioannina (205 km, medium). The mezha.media Greece DLC review names the Vlora-Ioannina road as the best route in the game.",
+  "Niš-Sofia: km 370 -> 158, road changed to A4/E80 via Pirot - Dimitrovgrad - Gradina/Kalotina, conf low -> high. The wiki border-crossing list includes Gradinje (RS) - Kalotina (BG) on A4 / I8, and the real Niš-Sofia road distance is about 155-160 km. The old 370 km route via Zaječar was not the direct link.",
+  "Beograd-Sofia: conf low -> medium, road named. The wiki border-crossing list confirms Vrshka Chuka (RS) - Vrashka Chuka (BG) on R36 / II12, and the Paraćin village page says its road runs east toward Bulgaria.",
+  "Ferries Split-Ancona (10 h, €315), Durrës-Ancona (18 h, €615) and Durrës-Bari (9 h, €420) confirmed by the trucksimulator.wiki.gg ferry table (Italia + West Balkans). No Zadar or other Croatian ferry found. City and ferry notes updated.",
+  "Karakaj-Beograd: conf low -> medium. A Steam discussion titled 'Karakaj border crossing' describes driving the Serbia-to-Bosnia route through it.",
+  "Novi Sad-Szeged: conf medium -> high. The West Balkans release notes (SteamDB) name the large-scale Horgoš crossing.",
+  "Skopje-Pernik kept at low conf: no web evidence was found for an in-game North Macedonia-Bulgaria crossing, but it is not disproved. The release notes count 10 new crossings to existing countries (HU, BG, RO, AT, IT).",
+  "All other cities and edges kept unchanged (not disproved)."
+ ],
+ "sources": "WebSearch (15 calls, one over the 14 budget): https://trucksimulator.wiki.gg/wiki/Euro_Truck_Simulator_2:_West_Balkans (30 cities; SI/ME lists); https://trucksimulator.wiki.gg/wiki/Border_Crossing (Gradinje-Kalotina A4/I8, Vrshka Chuka R36/II12); https://trucksimulator.wiki.gg/wiki/Scenery_towns/Euro_Truck_Simulator_2/Serbia; https://trucksimulator.wiki.gg/wiki/Para%C4%87in; https://trucksimulator.wiki.gg/wiki/Zagreb; https://trucksimulator.wiki.gg/wiki/Plitvi%C4%8Dka_Jezera; https://trucksimulator.wiki.gg/wiki/Tiran%C3%AB; https://trucksimulator.wiki.gg/wiki/Vor%C3%AB; https://trucksimulator.wiki.gg/wiki/Ferry/Euro_Truck_Simulator_2; https://blog.scssoft.com/2024/07/greece-border-crossings.html (Kakavia); https://mezha.media/en/reviews/euro-truck-simulator-2-greece-greece-has-everything (Vlora-Ioannina road); https://steamdb.info/patchnotes/10115311 (Horgoš; 10 crossings to HU/BG/RO/AT/IT); https://steamcommunity.com/app/227300/discussions/0/3880472899726114481 (Karakaj border crossing); https://blog.scssoft.com/2025/11/euro-truck-simulator-2-157-update.html; https://trucksimulator.wiki.gg/wiki/Patch_Notes/Euro_Truck_Simulator_2/Update_1.58; https://blog.scssoft.com/2026/05/euro-truck-simulator-2-159-update.html; https://blog.scssoft.com/2026/06/euro-truck-simulator-2-160-update.html. Real-world distances (Niš-Sofia, Fier/Vlorë-Ioannina) are estimated from road geography plus the E80/A4 search results. Copy written to /tmp/claude-0/-home-user-Flexxkynx/34de412e-1e38-564f-9444-7301e077a9f7/scratchpad/work/round2/west_balkans.final.json (it lacks the later conf changes for Karakaj-Beograd and Novi Sad-Szeged; this output is authoritative)."
+}

@@ -1,0 +1,659 @@
+{
+ "region": "Great Britain (GB: England, Scotland, Wales)",
+ "cities": [
+  {
+   "name": "Aberdeen",
+   "cc": "GB",
+   "lat": 57.149,
+   "lon": -2.094,
+   "dlc": "Base",
+   "aliases": [
+    "Aberdeen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Birmingham",
+   "cc": "GB",
+   "lat": 52.48,
+   "lon": -1.903,
+   "dlc": "Base",
+   "aliases": [
+    "Birmingham"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Cambridge",
+   "cc": "GB",
+   "lat": 52.205,
+   "lon": 0.122,
+   "dlc": "Base",
+   "aliases": [
+    "Cambridge"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Cardiff",
+   "cc": "GB",
+   "lat": 51.481,
+   "lon": -3.179,
+   "dlc": "Base",
+   "aliases": [
+    "Cardiff",
+    "Caerdydd"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Carlisle",
+   "cc": "GB",
+   "lat": 54.892,
+   "lon": -2.934,
+   "dlc": "Base",
+   "aliases": [
+    "Carlisle"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Dover",
+   "cc": "GB",
+   "lat": 51.127,
+   "lon": 1.313,
+   "dlc": "Base",
+   "aliases": [
+    "Dover",
+    "Douvres",
+    "Folkestone"
+   ],
+   "conf": "high",
+   "note": "The Eurotunnel terminal (Folkestone) is part of Dover's area. Folkestone is not a separate vanilla city: it appears only in the ProMods-mixed radio list. It is kept as an alias for lookup."
+  },
+  {
+   "name": "Edinburgh",
+   "cc": "GB",
+   "lat": 55.953,
+   "lon": -3.189,
+   "dlc": "Base",
+   "aliases": [
+    "Edinburgh",
+    "Edinburg",
+    "Edimburgo"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Felixstowe",
+   "cc": "GB",
+   "lat": 51.963,
+   "lon": 1.351,
+   "dlc": "Base",
+   "aliases": [
+    "Felixstowe",
+    "Harwich"
+   ],
+   "conf": "high",
+   "note": "The wiki ferry table labels the port 'Harwich (Felixstowe)'."
+  },
+  {
+   "name": "Glasgow",
+   "cc": "GB",
+   "lat": 55.861,
+   "lon": -4.251,
+   "dlc": "Base",
+   "aliases": [
+    "Glasgow"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Grimsby",
+   "cc": "GB",
+   "lat": 53.567,
+   "lon": -0.08,
+   "dlc": "Base",
+   "aliases": [
+    "Grimsby",
+    "Hull"
+   ],
+   "conf": "high",
+   "note": "The wiki ferry table labels the port 'Hull (Grimsby)'. Hull is not a separate vanilla city."
+  },
+  {
+   "name": "Liverpool",
+   "cc": "GB",
+   "lat": 53.408,
+   "lon": -2.991,
+   "dlc": "Base",
+   "aliases": [
+    "Liverpool"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "London",
+   "cc": "GB",
+   "lat": 51.507,
+   "lon": -0.128,
+   "dlc": "Base",
+   "aliases": [
+    "London",
+    "Londres",
+    "Londen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Manchester",
+   "cc": "GB",
+   "lat": 53.48,
+   "lon": -2.242,
+   "dlc": "Base",
+   "aliases": [
+    "Manchester"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Newcastle-upon-Tyne",
+   "cc": "GB",
+   "lat": 54.978,
+   "lon": -1.618,
+   "dlc": "Base",
+   "aliases": [
+    "Newcastle",
+    "Newcastle upon Tyne",
+    "Newcastle-upon-Tyne"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Plymouth",
+   "cc": "GB",
+   "lat": 50.375,
+   "lon": -4.143,
+   "dlc": "Base",
+   "aliases": [
+    "Plymouth"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Sheffield",
+   "cc": "GB",
+   "lat": 53.381,
+   "lon": -1.47,
+   "dlc": "Base",
+   "aliases": [
+    "Sheffield"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Southampton",
+   "cc": "GB",
+   "lat": 50.91,
+   "lon": -1.404,
+   "dlc": "Base",
+   "aliases": [
+    "Southampton"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Swansea",
+   "cc": "GB",
+   "lat": 51.621,
+   "lon": -3.944,
+   "dlc": "Base",
+   "aliases": [
+    "Swansea",
+    "Abertawe"
+   ],
+   "conf": "high",
+   "note": "Dead end at the western end of the M4; one road edge is expected."
+  }
+ ],
+ "roads": [
+  {
+   "a": "Dover",
+   "acc": "GB",
+   "b": "London",
+   "bcc": "GB",
+   "km": 125,
+   "ferry": false,
+   "road": "M20 / A20 (M2/A2)",
+   "conf": "high"
+  },
+  {
+   "a": "London",
+   "acc": "GB",
+   "b": "Southampton",
+   "bcc": "GB",
+   "km": 125,
+   "ferry": false,
+   "road": "M3",
+   "conf": "high"
+  },
+  {
+   "a": "Southampton",
+   "acc": "GB",
+   "b": "Dover",
+   "bcc": "GB",
+   "km": 235,
+   "ferry": false,
+   "road": "south coast A road (A27/A259)",
+   "conf": "medium",
+   "note": "A wiki snippet from an earlier run says a Southampton-Dover A road was added after release. The exact routing is unverified."
+  },
+  {
+   "a": "Southampton",
+   "acc": "GB",
+   "b": "Plymouth",
+   "bcc": "GB",
+   "km": 250,
+   "ferry": false,
+   "road": "A31/A35/A38",
+   "conf": "low",
+   "note": "Unsure whether vanilla ETS2 has a direct south-west coastal road; Plymouth may only connect via the M5. Not checked on the web."
+  },
+  {
+   "a": "London",
+   "acc": "GB",
+   "b": "Cambridge",
+   "bcc": "GB",
+   "km": 100,
+   "ferry": false,
+   "road": "M11",
+   "conf": "high"
+  },
+  {
+   "a": "London",
+   "acc": "GB",
+   "b": "Felixstowe",
+   "bcc": "GB",
+   "km": 135,
+   "ferry": false,
+   "road": "A12 / A14",
+   "conf": "medium"
+  },
+  {
+   "a": "Cambridge",
+   "acc": "GB",
+   "b": "Felixstowe",
+   "bcc": "GB",
+   "km": 115,
+   "ferry": false,
+   "road": "A14",
+   "conf": "high"
+  },
+  {
+   "a": "Cambridge",
+   "acc": "GB",
+   "b": "Birmingham",
+   "bcc": "GB",
+   "km": 160,
+   "ferry": false,
+   "road": "A14 / M6",
+   "conf": "medium"
+  },
+  {
+   "a": "Cambridge",
+   "acc": "GB",
+   "b": "Sheffield",
+   "bcc": "GB",
+   "km": 205,
+   "ferry": false,
+   "road": "A14 / A1(M) / M18",
+   "conf": "low",
+   "note": "A1 corridor assumed; in-game routing unverified."
+  },
+  {
+   "a": "London",
+   "acc": "GB",
+   "b": "Birmingham",
+   "bcc": "GB",
+   "km": 190,
+   "ferry": false,
+   "road": "M40 / M1-M6",
+   "conf": "high"
+  },
+  {
+   "a": "London",
+   "acc": "GB",
+   "b": "Sheffield",
+   "bcc": "GB",
+   "km": 270,
+   "ferry": false,
+   "road": "M1",
+   "conf": "medium"
+  },
+  {
+   "a": "London",
+   "acc": "GB",
+   "b": "Cardiff",
+   "bcc": "GB",
+   "km": 240,
+   "ferry": false,
+   "road": "M4",
+   "conf": "high"
+  },
+  {
+   "a": "London",
+   "acc": "GB",
+   "b": "Plymouth",
+   "bcc": "GB",
+   "km": 380,
+   "ferry": false,
+   "road": "M4 / M5 / A38 (junction near Bristol)",
+   "conf": "medium",
+   "note": "Shares the M5/A38 section with Plymouth-Cardiff and Plymouth-Birmingham. Bristol is not a vanilla city: it was previewed in Sep 2026 for the unreleased UK rework."
+  },
+  {
+   "a": "Birmingham",
+   "acc": "GB",
+   "b": "Cardiff",
+   "bcc": "GB",
+   "km": 170,
+   "ferry": false,
+   "road": "M5 / M50",
+   "conf": "medium"
+  },
+  {
+   "a": "Birmingham",
+   "acc": "GB",
+   "b": "Plymouth",
+   "bcc": "GB",
+   "km": 330,
+   "ferry": false,
+   "road": "M5 / A38",
+   "conf": "high"
+  },
+  {
+   "a": "Cardiff",
+   "acc": "GB",
+   "b": "Plymouth",
+   "bcc": "GB",
+   "km": 265,
+   "ferry": false,
+   "road": "M4 / M5 / A38",
+   "conf": "high"
+  },
+  {
+   "a": "Cardiff",
+   "acc": "GB",
+   "b": "Swansea",
+   "bcc": "GB",
+   "km": 65,
+   "ferry": false,
+   "road": "M4",
+   "conf": "high"
+  },
+  {
+   "a": "Birmingham",
+   "acc": "GB",
+   "b": "Manchester",
+   "bcc": "GB",
+   "km": 140,
+   "ferry": false,
+   "road": "M6",
+   "conf": "high"
+  },
+  {
+   "a": "Birmingham",
+   "acc": "GB",
+   "b": "Liverpool",
+   "bcc": "GB",
+   "km": 160,
+   "ferry": false,
+   "road": "M6 / M62",
+   "conf": "medium"
+  },
+  {
+   "a": "Birmingham",
+   "acc": "GB",
+   "b": "Sheffield",
+   "bcc": "GB",
+   "km": 140,
+   "ferry": false,
+   "road": "M42 / M1",
+   "conf": "medium"
+  },
+  {
+   "a": "Manchester",
+   "acc": "GB",
+   "b": "Liverpool",
+   "bcc": "GB",
+   "km": 55,
+   "ferry": false,
+   "road": "M62",
+   "conf": "high"
+  },
+  {
+   "a": "Manchester",
+   "acc": "GB",
+   "b": "Sheffield",
+   "bcc": "GB",
+   "km": 110,
+   "ferry": false,
+   "road": "M62 / M1",
+   "conf": "low",
+   "note": "Assumes the motorway route via M62/M1; the direct real-world A57 is about 60 km."
+  },
+  {
+   "a": "Sheffield",
+   "acc": "GB",
+   "b": "Grimsby",
+   "bcc": "GB",
+   "km": 120,
+   "ferry": false,
+   "road": "M18 / M180",
+   "conf": "medium"
+  },
+  {
+   "a": "Sheffield",
+   "acc": "GB",
+   "b": "Newcastle-upon-Tyne",
+   "bcc": "GB",
+   "km": 210,
+   "ferry": false,
+   "road": "M1 / A1(M)",
+   "conf": "medium",
+   "note": "Passes the Leeds area. Leeds is a planned UK-rework city, not in the game as of 1.62."
+  },
+  {
+   "a": "Manchester",
+   "acc": "GB",
+   "b": "Carlisle",
+   "bcc": "GB",
+   "km": 195,
+   "ferry": false,
+   "road": "M61 / M6",
+   "conf": "high"
+  },
+  {
+   "a": "Liverpool",
+   "acc": "GB",
+   "b": "Carlisle",
+   "bcc": "GB",
+   "km": 200,
+   "ferry": false,
+   "road": "M58 / M6",
+   "conf": "medium"
+  },
+  {
+   "a": "Carlisle",
+   "acc": "GB",
+   "b": "Newcastle-upon-Tyne",
+   "bcc": "GB",
+   "km": 95,
+   "ferry": false,
+   "road": "A69",
+   "conf": "medium"
+  },
+  {
+   "a": "Carlisle",
+   "acc": "GB",
+   "b": "Glasgow",
+   "bcc": "GB",
+   "km": 155,
+   "ferry": false,
+   "road": "M6 / A74(M) / M74",
+   "conf": "high"
+  },
+  {
+   "a": "Carlisle",
+   "acc": "GB",
+   "b": "Edinburgh",
+   "bcc": "GB",
+   "km": 155,
+   "ferry": false,
+   "road": "A7 or A74(M)/A702",
+   "conf": "low",
+   "note": "Not sure a separate Carlisle-Edinburgh road exists in vanilla."
+  },
+  {
+   "a": "Newcastle-upon-Tyne",
+   "acc": "GB",
+   "b": "Edinburgh",
+   "bcc": "GB",
+   "km": 195,
+   "ferry": false,
+   "road": "A1",
+   "conf": "high"
+  },
+  {
+   "a": "Glasgow",
+   "acc": "GB",
+   "b": "Edinburgh",
+   "bcc": "GB",
+   "km": 75,
+   "ferry": false,
+   "road": "M8",
+   "conf": "high"
+  },
+  {
+   "a": "Edinburgh",
+   "acc": "GB",
+   "b": "Aberdeen",
+   "bcc": "GB",
+   "km": 200,
+   "ferry": false,
+   "road": "M90 / A90",
+   "conf": "high"
+  },
+  {
+   "a": "Glasgow",
+   "acc": "GB",
+   "b": "Aberdeen",
+   "bcc": "GB",
+   "km": 235,
+   "ferry": false,
+   "road": "M80 / M9 / A9 / A90",
+   "conf": "medium",
+   "note": "Joins the Edinburgh-Aberdeen road near Perth, which is not a vanilla city."
+  },
+  {
+   "a": "Dover",
+   "acc": "GB",
+   "b": "Calais",
+   "bcc": "FR",
+   "km": 42,
+   "ferry": true,
+   "road": "Ferry Dover-Calais",
+   "conf": "high",
+   "note": "Wiki: base game, about 1h31m."
+  },
+  {
+   "a": "Dover",
+   "acc": "GB",
+   "b": "Calais",
+   "bcc": "FR",
+   "km": 50,
+   "ferry": true,
+   "road": "Eurotunnel train shuttle (Folkestone-Calais)",
+   "conf": "high",
+   "note": "Train shuttle from the Folkestone terminal near Dover (about 10 km by road from Dover)."
+  },
+  {
+   "a": "Felixstowe",
+   "acc": "GB",
+   "b": "Rotterdam",
+   "bcc": "NL",
+   "km": 210,
+   "ferry": true,
+   "road": "Ferry Harwich (Felixstowe) - Europoort (Rotterdam)",
+   "conf": "high",
+   "note": "Wiki: base game, Euro Lines, 8h 0m, EUR 960. Real Felixstowe-Rotterdam sea route is about 214 km."
+  },
+  {
+   "a": "Grimsby",
+   "acc": "GB",
+   "b": "Rotterdam",
+   "bcc": "NL",
+   "km": 370,
+   "ferry": true,
+   "road": "Ferry Hull (Grimsby) - Europoort (Rotterdam)",
+   "conf": "high",
+   "note": "Wiki: base game, Euro Lines, 11h 0m, EUR 995."
+  },
+  {
+   "a": "Newcastle-upon-Tyne",
+   "acc": "GB",
+   "b": "Amsterdam",
+   "bcc": "NL",
+   "km": 520,
+   "ferry": true,
+   "road": "Ferry Newcastle - IJmuiden (Amsterdam)",
+   "conf": "high",
+   "note": "Wiki: base game, Euro Lines, 16h 30m, EUR 1,212. The IJmuiden terminal was rebuilt in the 1.59 Benelux rework (SCS blog, 2 Apr 2026), and SCS says the ferry is the link to the UK. The km figure is the approximate real North Shields-IJmuiden sea distance."
+  },
+  {
+   "a": "Grimsby",
+   "acc": "GB",
+   "b": "Esbjerg",
+   "bcc": "DK",
+   "km": 620,
+   "ferry": true,
+   "road": "Ferry Hull (Grimsby) - Esbjerg",
+   "conf": "high",
+   "note": "Wiki: Hull (Grimsby) - Esbjerg, 19h, Euro Lines / Polaris Lines, requires the Scandinavia DLC."
+  },
+  {
+   "a": "Plymouth",
+   "acc": "GB",
+   "b": "Roscoff",
+   "bcc": "FR",
+   "km": 190,
+   "ferry": true,
+   "road": "Ferry Plymouth-Roscoff",
+   "conf": "high",
+   "note": "Wiki: base game + Vive la France!, 7h 0m, EUR 910, Euro Lines (Plymouth) / Gallia Ferries (Roscoff)."
+  },
+  {
+   "a": "Plymouth",
+   "acc": "GB",
+   "b": "Santander",
+   "bcc": "ES",
+   "km": 650,
+   "ferry": true,
+   "road": "Ferry Plymouth-Santander",
+   "conf": "high",
+   "note": "Wiki: base game + Iberia, 18h 0m, EUR 1,176, Euro Lines (Plymouth) / Eolo Lines (Santander)."
+  }
+ ],
+ "changes": [
+  "City list unchanged: the 18 cities stay. The UK rework was announced on 19 Oct 2025 (SCS blog) and has not shipped as of Nov 2026. Updates 1.58 (Feb 2026, physics), 1.59 (May 2026, Benelux rework), 1.60 (Jun 2026, lighting and radio), 1.61 (17 Sep 2026, livestock trailer and proximity exploration) and 1.62 (5 Nov 2026, garages and DAF editions) contain no UK map rework. Leeds, Inverness (previewed 3 Jul 2026), Bristol (previewed Sep 2026) and the Edinburgh rebuild are therefore not added.",
+  "The radio_only candidates are not added: Belfast, Lisburn, Londonderry, Inverness, Perth, Oban, Fort William, Ullapool, Portree, Broadford, Thurso, Wick, Kirkwall, Stromness, Birsay, Evie, Fraserburgh, Dumfries, Stranraer, Holyhead, Fishguard, Canterbury, Chelmsford, Croydon, Portsmouth, Folkestone, St Helier and Trinity. Searches and the wiki's UK city list show only the 18 base cities. These names are ProMods cities or unreleased UK-rework cities. Folkestone is added as an alias of Dover, for its Eurotunnel terminal.",
+  "Added ferry Newcastle-upon-Tyne - Amsterdam (IJmuiden), 520 km, conf high. The wiki ferry table lists Newcastle - IJmuiden (Amsterdam) as a base-game route (16h30m, EUR 1,212, Euro Lines). The SCS blog of 2 Apr 2026 shows the IJmuiden ferry rebuilt in the Benelux rework as the link to the UK.",
+  "Grimsby-Esbjerg ferry: conf low -> high, km 650 -> 620. The wiki lists Hull (Grimsby) - Esbjerg (19h, Euro Lines / Polaris Lines, requires Scandinavia DLC).",
+  "Plymouth-Roscoff ferry: conf low -> high. The wiki lists Plymouth - Roscoff (7h, EUR 910) for the base game + Vive la France!.",
+  "Plymouth-Santander ferry: conf low -> high. The wiki lists Plymouth - Santander (18h, EUR 1,176) for the base game + Iberia. Portsmouth-Santander exists only in a mod.",
+  "Grimsby-Rotterdam ferry: conf medium -> high. The wiki lists Hull (Grimsby) - Europoort (Rotterdam) (11h, EUR 995, base game).",
+  "Felixstowe-Rotterdam ferry: km 200 -> 210 (real sea route about 214 km). The wiki confirms Harwich (Felixstowe) - Europoort (8h, EUR 960, base game). This also confirms the Harwich and Hull port-label aliases, so those notes are updated.",
+  "Notes updated on London-Plymouth (Bristol) and Sheffield-Newcastle (Leeds): both cities are UK-rework previews, not current vanilla cities. Road edges are not changed: no web evidence was found for or against them."
+ ],
+ "sources": "WebSearch (14 calls). SCS blog: blog.scssoft.com/2025/10/project-uk-rework.html (UK rework announced, free future update). blog.scssoft.com/2026/07/uk-rework-project-inverness.html (Inverness preview). traxion.gg/euro-truck-simulator-2-showcases-reworked-bristol-city (Bristol preview, Sep 2026). blog.scssoft.com/2026/02/euro-truck-simulator-2-158-update.html, blog.scssoft.com/2026/05/euro-truck-simulator-2-159-update.html (Benelux rework), blog.scssoft.com/2026/06/euro-truck-simulator-2-160-update.html, patched.gg/games/euro-truck-simulator-2/euro-truck-simulator-2-161-update-release (17 Sep 2026), ixbt.games/en/news/2026/11/06/... and racinggames.gg/article/euro-truck-simulator-2-update-162-rebuilds-every-garage-ahead-of-iceland (1.62 on 5 Nov 2026 is about garages; no UK rework). trucksimulator.wiki.gg/wiki/United_Kingdom and /wiki/Cities/Euro_Truck_Simulator_2 (UK base cities). trucksimulator.wiki.gg/wiki/Ferry/Euro_Truck_Simulator_2 (Dover-Calais; Harwich (Felixstowe)-Europoort 8h; Hull (Grimsby)-Europoort 11h; Newcastle-IJmuiden (Amsterdam) 16h30m, base game; Hull (Grimsby)-Esbjerg 19h, Scandinavia; Plymouth-Roscoff 7h, Vive la France!; Plymouth-Santander 18h, Iberia). blog.scssoft.com/2026/04/benelux-rework-amsterdam-ijmuiden-ferry.html (IJmuiden ferry to the UK). racinggames.gg Iceland DLC article (Iceland ferries run from Hirtshals, Rotterdam and Alesund, none from GB). allmods.net Iberian Ferries Plus (Portsmouth-Santander is mod-only)."
+}

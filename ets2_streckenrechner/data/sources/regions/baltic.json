@@ -1,0 +1,1600 @@
+{
+ "region": "FI, EE, LV, LT, RU (Beyond the Baltic Sea plus the Finnish part of Nordic Horizons)",
+ "cities": [
+  {
+   "name": "Helsinki",
+   "cc": "FI",
+   "lat": 60.17,
+   "lon": 24.938,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Helsingfors"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kotka",
+   "cc": "FI",
+   "lat": 60.467,
+   "lon": 26.946,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Kouvola",
+   "cc": "FI",
+   "lat": 60.868,
+   "lon": 26.704,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Lahti",
+   "cc": "FI",
+   "lat": 60.983,
+   "lon": 25.656,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Lahtis"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Loviisa",
+   "cc": "FI",
+   "lat": 60.457,
+   "lon": 26.225,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Lovisa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Naantali",
+   "cc": "FI",
+   "lat": 60.468,
+   "lon": 22.026,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Nådendal",
+    "Nadendal"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Olkiluoto",
+   "cc": "FI",
+   "lat": 61.236,
+   "lon": 21.441,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Eurajoki"
+   ],
+   "conf": "high",
+   "note": "nuclear plant site on a peninsula, coordinates are for the plant"
+  },
+  {
+   "name": "Pori",
+   "cc": "FI",
+   "lat": 61.485,
+   "lon": 21.797,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Björneborg",
+    "Bjorneborg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Tampere",
+   "cc": "FI",
+   "lat": 61.498,
+   "lon": 23.761,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Tammerfors"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Turku",
+   "cc": "FI",
+   "lat": 60.452,
+   "lon": 22.267,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Åbo",
+    "Abo"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Ivalo",
+   "cc": "FI",
+   "lat": 68.658,
+   "lon": 27.54,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Inari"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Joensuu",
+   "cc": "FI",
+   "lat": 62.601,
+   "lon": 29.763,
+   "dlc": "Nordic Horizons",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Jyväskylä",
+   "cc": "FI",
+   "lat": 62.242,
+   "lon": 25.747,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Jyvaskyla",
+    "Jyvaeskylae"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kajaani",
+   "cc": "FI",
+   "lat": 64.227,
+   "lon": 27.728,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Kajana"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kokkola",
+   "cc": "FI",
+   "lat": 63.838,
+   "lon": 23.131,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Karleby"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kuopio",
+   "cc": "FI",
+   "lat": 62.893,
+   "lon": 27.679,
+   "dlc": "Nordic Horizons",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Kuusamo",
+   "cc": "FI",
+   "lat": 65.965,
+   "lon": 29.189,
+   "dlc": "Nordic Horizons",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Lappeenranta",
+   "cc": "FI",
+   "lat": 61.059,
+   "lon": 28.188,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Villmanstrand"
+   ],
+   "conf": "high",
+   "note": "Truck Simulator Wiki Finland landmarks page lists it in the Nordic Horizons group"
+  },
+  {
+   "name": "Mikkeli",
+   "cc": "FI",
+   "lat": 61.688,
+   "lon": 27.272,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Sankt Michel",
+    "St. Michel"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Oulu",
+   "cc": "FI",
+   "lat": 65.012,
+   "lon": 25.465,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Uleåborg",
+    "Uleaborg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Rovaniemi",
+   "cc": "FI",
+   "lat": 66.503,
+   "lon": 25.729,
+   "dlc": "Nordic Horizons",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Tornio",
+   "cc": "FI",
+   "lat": 65.848,
+   "lon": 24.147,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Torneå",
+    "Tornea",
+    "Haparanda"
+   ],
+   "conf": "high",
+   "note": "The in-game twin city Tornio/Haparanda appears as one city named Tornio (SCS blog). The SE agent must not add Haparanda separately. A wiki.gg page named Haparanda exists, so the SE agent should double-check"
+  },
+  {
+   "name": "Vaasa",
+   "cc": "FI",
+   "lat": 63.096,
+   "lon": 21.616,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Vasa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Tallinn",
+   "cc": "EE",
+   "lat": 59.437,
+   "lon": 24.754,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Reval"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Tartu",
+   "cc": "EE",
+   "lat": 58.378,
+   "lon": 26.729,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Dorpat"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Estonia navigation (6 cities: Kunda, Narva, Paldiski, Pärnu, Tallinn, Tartu)"
+  },
+  {
+   "name": "Narva",
+   "cc": "EE",
+   "lat": 59.377,
+   "lon": 28.19,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Estonia navigation"
+  },
+  {
+   "name": "Pärnu",
+   "cc": "EE",
+   "lat": 58.385,
+   "lon": 24.497,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Parnu",
+    "Paernu",
+    "Pernau"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Paldiski",
+   "cc": "EE",
+   "lat": 59.351,
+   "lon": 24.054,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Baltischport"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Estonia navigation"
+  },
+  {
+   "name": "Kunda",
+   "cc": "EE",
+   "lat": 59.497,
+   "lon": 26.53,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Rīga",
+   "cc": "LV",
+   "lat": 56.949,
+   "lon": 24.105,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Riga"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Ventspils",
+   "cc": "LV",
+   "lat": 57.39,
+   "lon": 21.564,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Windau"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Latvia list (6 cities)"
+  },
+  {
+   "name": "Liepāja",
+   "cc": "LV",
+   "lat": 56.505,
+   "lon": 21.011,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Liepaja",
+    "Libau"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Latvia list (6 cities)"
+  },
+  {
+   "name": "Daugavpils",
+   "cc": "LV",
+   "lat": 55.874,
+   "lon": 26.536,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Dünaburg",
+    "Duenaburg",
+    "Dunaburg"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Latvia list and GamePressure"
+  },
+  {
+   "name": "Rēzekne",
+   "cc": "LV",
+   "lat": 56.51,
+   "lon": 27.333,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Rezekne",
+    "Rositten"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Latvia list and wiki.gg page"
+  },
+  {
+   "name": "Valmiera",
+   "cc": "LV",
+   "lat": 57.541,
+   "lon": 25.427,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Wolmar"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Latvia list and wiki.gg page"
+  },
+  {
+   "name": "Vilnius",
+   "cc": "LT",
+   "lat": 54.687,
+   "lon": 25.28,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Wilna",
+    "Vilna"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kaunas",
+   "cc": "LT",
+   "lat": 54.898,
+   "lon": 23.904,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Kauen",
+    "Kowno"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Klaipėda",
+   "cc": "LT",
+   "lat": 55.704,
+   "lon": 21.144,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Klaipeda",
+    "Memel"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Šiauliai",
+   "cc": "LT",
+   "lat": 55.934,
+   "lon": 23.315,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Siauliai",
+    "Schaulen"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Lithuania list (7 cities)"
+  },
+  {
+   "name": "Panevėžys",
+   "cc": "LT",
+   "lat": 55.734,
+   "lon": 24.357,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Panevezys",
+    "Ponewesch"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Mažeikiai",
+   "cc": "LT",
+   "lat": 56.317,
+   "lon": 22.336,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Mazeikiai",
+    "Moscheiken"
+   ],
+   "conf": "high",
+   "note": "Confirmed by wiki.gg Mažeikiai page (BtBS, oil refinery)"
+  },
+  {
+   "name": "Utena",
+   "cc": "LT",
+   "lat": 55.498,
+   "lon": 25.603,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Utenen"
+   ],
+   "conf": "high",
+   "note": "Confirmed by Truck Simulator Wiki Lithuania list and GamePressure; A6 runs through it"
+  },
+  {
+   "name": "Sankt-Peterburg",
+   "cc": "RU",
+   "lat": 59.939,
+   "lon": 30.316,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Saint Petersburg",
+    "St. Petersburg",
+    "St Petersburg",
+    "Sankt Petersburg",
+    "Petersburg",
+    "Leningrad"
+   ],
+   "conf": "high",
+   "note": "The city is confirmed. The in-game spelling 'Sankt-Peterburg' is from memory (medium)"
+  },
+  {
+   "name": "Vyborg",
+   "cc": "RU",
+   "lat": 60.71,
+   "lon": 28.749,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Wyborg",
+    "Wiborg",
+    "Viipuri",
+    "Выборг"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Sosnovy Bor",
+   "cc": "RU",
+   "lat": 59.9,
+   "lon": 29.086,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Sosnovyy Bor",
+    "Sosnowy Bor",
+    "Sosnovyi Bor"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Luga",
+   "cc": "RU",
+   "lat": 58.737,
+   "lon": 29.846,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Pskov",
+   "cc": "RU",
+   "lat": 57.819,
+   "lon": 28.332,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Pleskau",
+    "Pskow"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kaliningrad",
+   "cc": "RU",
+   "lat": 54.71,
+   "lon": 20.511,
+   "dlc": "Beyond the Baltic Sea",
+   "aliases": [
+    "Königsberg",
+    "Koenigsberg",
+    "Konigsberg"
+   ],
+   "conf": "high"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Turku",
+   "acc": "FI",
+   "b": "Naantali",
+   "bcc": "FI",
+   "km": 16,
+   "road": "40 / 189",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Turku",
+   "acc": "FI",
+   "b": "Helsinki",
+   "bcc": "FI",
+   "km": 165,
+   "road": "E18 / 1",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Turku",
+   "acc": "FI",
+   "b": "Tampere",
+   "bcc": "FI",
+   "km": 160,
+   "road": "9 / E63",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Turku",
+   "acc": "FI",
+   "b": "Olkiluoto",
+   "bcc": "FI",
+   "km": 105,
+   "road": "E8 via Rauma",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Olkiluoto sits on a short spur off E8, so the Turku–Pori route is split here"
+  },
+  {
+   "a": "Olkiluoto",
+   "acc": "FI",
+   "b": "Pori",
+   "bcc": "FI",
+   "km": 50,
+   "road": "E8",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Pori",
+   "acc": "FI",
+   "b": "Tampere",
+   "bcc": "FI",
+   "km": 112,
+   "road": "11",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Tampere",
+   "acc": "FI",
+   "b": "Helsinki",
+   "bcc": "FI",
+   "km": 175,
+   "road": "E12 / 3",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Tampere",
+   "acc": "FI",
+   "b": "Lahti",
+   "bcc": "FI",
+   "km": 130,
+   "road": "12",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Helsinki",
+   "acc": "FI",
+   "b": "Lahti",
+   "bcc": "FI",
+   "km": 105,
+   "road": "E75 / 4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Helsinki",
+   "acc": "FI",
+   "b": "Loviisa",
+   "bcc": "FI",
+   "km": 90,
+   "road": "E18 / 7",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Loviisa",
+   "acc": "FI",
+   "b": "Kotka",
+   "bcc": "FI",
+   "km": 45,
+   "road": "E18 / 7",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Loviisa",
+   "acc": "FI",
+   "b": "Kouvola",
+   "bcc": "FI",
+   "km": 70,
+   "road": "6",
+   "ferry": false,
+   "conf": "low",
+   "note": "Road 6 leaves E18 at Koskenkylä next to Loviisa. Not verified that the game models it"
+  },
+  {
+   "a": "Kotka",
+   "acc": "FI",
+   "b": "Kouvola",
+   "bcc": "FI",
+   "km": 50,
+   "road": "15",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Lahti",
+   "acc": "FI",
+   "b": "Kouvola",
+   "bcc": "FI",
+   "km": 60,
+   "road": "12",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kotka",
+   "acc": "FI",
+   "b": "Vyborg",
+   "bcc": "RU",
+   "km": 130,
+   "road": "E18 via Hamina, Vaalimaa/Torfyanovka border",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kouvola",
+   "acc": "FI",
+   "b": "Lappeenranta",
+   "bcc": "FI",
+   "km": 80,
+   "road": "6",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Lappeenranta",
+   "acc": "FI",
+   "b": "Vyborg",
+   "bcc": "RU",
+   "km": 65,
+   "road": "13 / A-124 via Nuijamaa border",
+   "ferry": false,
+   "conf": "low",
+   "note": "not verified that this border crossing exists in game"
+  },
+  {
+   "a": "Lappeenranta",
+   "acc": "FI",
+   "b": "Joensuu",
+   "bcc": "FI",
+   "km": 220,
+   "road": "6 via Imatra",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Lappeenranta",
+   "acc": "FI",
+   "b": "Mikkeli",
+   "bcc": "FI",
+   "km": 100,
+   "road": "13",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Lahti",
+   "acc": "FI",
+   "b": "Mikkeli",
+   "bcc": "FI",
+   "km": 135,
+   "road": "4 / 5 via Heinola",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Kouvola",
+   "acc": "FI",
+   "b": "Mikkeli",
+   "bcc": "FI",
+   "km": 105,
+   "road": "15 / 5 via Mäntyharju",
+   "ferry": false,
+   "conf": "low",
+   "note": "different route from Lahti–Mikkeli. Unsure which one the game models"
+  },
+  {
+   "a": "Lahti",
+   "acc": "FI",
+   "b": "Jyväskylä",
+   "bcc": "FI",
+   "km": 170,
+   "road": "E75 / 4",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Tampere",
+   "acc": "FI",
+   "b": "Jyväskylä",
+   "bcc": "FI",
+   "km": 150,
+   "road": "9 / E63",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Jyväskylä",
+   "acc": "FI",
+   "b": "Kuopio",
+   "bcc": "FI",
+   "km": 145,
+   "road": "9 / E63",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Mikkeli",
+   "acc": "FI",
+   "b": "Kuopio",
+   "bcc": "FI",
+   "km": 165,
+   "road": "5",
+   "ferry": false,
+   "conf": "medium",
+   "note": "E63 does not run on road 5 between Mikkeli and Kuopio (it uses road 9 via Jyväskylä)"
+  },
+  {
+   "a": "Kuopio",
+   "acc": "FI",
+   "b": "Joensuu",
+   "bcc": "FI",
+   "km": 135,
+   "road": "9 (former 17)",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Kuopio",
+   "acc": "FI",
+   "b": "Kajaani",
+   "bcc": "FI",
+   "km": 170,
+   "road": "5 / E63",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Joensuu",
+   "acc": "FI",
+   "b": "Kajaani",
+   "bcc": "FI",
+   "km": 250,
+   "road": "6",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Kajaani",
+   "acc": "FI",
+   "b": "Oulu",
+   "bcc": "FI",
+   "km": 180,
+   "road": "22",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Kajaani",
+   "acc": "FI",
+   "b": "Kuusamo",
+   "bcc": "FI",
+   "km": 230,
+   "road": "5 / E63 via Hyrynsalmi, Suomussalmi",
+   "ferry": false,
+   "conf": "low",
+   "note": "real road distance is about 225-235 km"
+  },
+  {
+   "a": "Jyväskylä",
+   "acc": "FI",
+   "b": "Oulu",
+   "bcc": "FI",
+   "km": 340,
+   "road": "E75 / 4",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Tampere",
+   "acc": "FI",
+   "b": "Vaasa",
+   "bcc": "FI",
+   "km": 245,
+   "road": "E12 / 3 via Seinäjoki",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Pori",
+   "acc": "FI",
+   "b": "Vaasa",
+   "bcc": "FI",
+   "km": 185,
+   "road": "E8",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Vaasa",
+   "acc": "FI",
+   "b": "Kokkola",
+   "bcc": "FI",
+   "km": 120,
+   "road": "E8",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Kokkola",
+   "acc": "FI",
+   "b": "Oulu",
+   "bcc": "FI",
+   "km": 200,
+   "road": "E8",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Oulu",
+   "acc": "FI",
+   "b": "Tornio",
+   "bcc": "FI",
+   "km": 130,
+   "road": "E4 / E8 via Kemi",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Oulu",
+   "acc": "FI",
+   "b": "Rovaniemi",
+   "bcc": "FI",
+   "km": 225,
+   "road": "E75 / 4 via Kemi",
+   "ferry": false,
+   "conf": "medium",
+   "note": "shares the Oulu–Kemi section with Oulu–Tornio"
+  },
+  {
+   "a": "Tornio",
+   "acc": "FI",
+   "b": "Rovaniemi",
+   "bcc": "FI",
+   "km": 130,
+   "road": "E8 to Kemi, then E75",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Oulu",
+   "acc": "FI",
+   "b": "Kuusamo",
+   "bcc": "FI",
+   "km": 215,
+   "road": "20",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Rovaniemi",
+   "acc": "FI",
+   "b": "Kuusamo",
+   "bcc": "FI",
+   "km": 190,
+   "road": "81",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Rovaniemi",
+   "acc": "FI",
+   "b": "Ivalo",
+   "bcc": "FI",
+   "km": 290,
+   "road": "E75 / 4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Tornio",
+   "acc": "FI",
+   "b": "Luleå",
+   "bcc": "SE",
+   "km": 130,
+   "road": "E4",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Haparanda is merged into Tornio in game"
+  },
+  {
+   "a": "Tornio",
+   "acc": "FI",
+   "b": "Karesuando",
+   "bcc": "SE",
+   "km": 310,
+   "road": "E8 via Pello, Kolari, Muonio to Kaaresuvanto, bridge to Karesuando",
+   "ferry": false,
+   "conf": "low",
+   "note": "split of former Tornio–Tromsø edge. wiki.gg: Karesuando is a Nordic Horizons city in Sweden whose roads run south to Kiruna and north towards Finland and Norway. Whether the game models E8 along the Finnish side (vs Swedish road 99 via Pajala) is not verified"
+  },
+  {
+   "a": "Karesuando",
+   "acc": "SE",
+   "b": "Tromsø",
+   "bcc": "NO",
+   "km": 300,
+   "road": "E8 via Kaaresuvanto, Kilpisjärvi, Skibotn",
+   "ferry": false,
+   "conf": "low",
+   "note": "split of former Tornio–Tromsø edge (both endpoints foreign to this region; kept so that the E8 link is not lost)"
+  },
+  {
+   "a": "Ivalo",
+   "acc": "FI",
+   "b": "Alta",
+   "bcc": "NO",
+   "km": 320,
+   "road": "92 / E6 via Karigasniemi, Karasjok",
+   "ferry": false,
+   "conf": "low",
+   "note": "which road from Ivalo into Norway the game models is not verified. Could go to Kirkenes or another NH city instead"
+  },
+  {
+   "a": "Vyborg",
+   "acc": "RU",
+   "b": "Sankt-Peterburg",
+   "bcc": "RU",
+   "km": 135,
+   "road": "A-181 / E18",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Sankt-Peterburg",
+   "acc": "RU",
+   "b": "Sosnovy Bor",
+   "bcc": "RU",
+   "km": 85,
+   "road": "A-121 via Lomonosov",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Sosnovy Bor",
+   "acc": "RU",
+   "b": "Narva",
+   "bcc": "EE",
+   "km": 100,
+   "road": "41K via Kingisepp, then A-180 / E20",
+   "ferry": false,
+   "conf": "low",
+   "note": "unsure whether the game links Sosnovy Bor south to the Narva road"
+  },
+  {
+   "a": "Sankt-Peterburg",
+   "acc": "RU",
+   "b": "Narva",
+   "bcc": "EE",
+   "km": 155,
+   "road": "A-180 / E20 via Kingisepp, Ivangorod",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Sankt-Peterburg",
+   "acc": "RU",
+   "b": "Luga",
+   "bcc": "RU",
+   "km": 140,
+   "road": "R-23 (M-20) / E95",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Luga",
+   "acc": "RU",
+   "b": "Pskov",
+   "bcc": "RU",
+   "km": 150,
+   "road": "R-23 / E95",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Pskov",
+   "acc": "RU",
+   "b": "Rēzekne",
+   "bcc": "LV",
+   "km": 190,
+   "road": "R-23 to Ostrov, then E262 via Ubylinka/Grebņeva border, A13",
+   "ferry": false,
+   "conf": "medium",
+   "note": "GamePressure border guide: BtBS has border crossings on the Russian borders with Finland, Estonia, Latvia, Lithuania and Poland, so a Pskov–Latvia crossing exists; exact crossing (E262 Ubylinka/Grebņeva) not verified"
+  },
+  {
+   "a": "Pskov",
+   "acc": "RU",
+   "b": "Tartu",
+   "bcc": "EE",
+   "km": 145,
+   "road": "via Koidula / Pechory border",
+   "ferry": false,
+   "conf": "low",
+   "note": "which border crossing between Pskov and Estonia the game models (Koidula or Luhamaa) is not verified"
+  },
+  {
+   "a": "Narva",
+   "acc": "EE",
+   "b": "Kunda",
+   "bcc": "EE",
+   "km": 110,
+   "road": "E20 / 1",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Kunda",
+   "acc": "EE",
+   "b": "Tallinn",
+   "bcc": "EE",
+   "km": 115,
+   "road": "E20 / 1",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Tallinn",
+   "acc": "EE",
+   "b": "Paldiski",
+   "bcc": "EE",
+   "km": 50,
+   "road": "8",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Tallinn",
+   "acc": "EE",
+   "b": "Pärnu",
+   "bcc": "EE",
+   "km": 130,
+   "road": "E67 / 4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Tallinn",
+   "acc": "EE",
+   "b": "Tartu",
+   "bcc": "EE",
+   "km": 185,
+   "road": "E263 / 2",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Narva",
+   "acc": "EE",
+   "b": "Tartu",
+   "bcc": "EE",
+   "km": 180,
+   "road": "E20 to Jõhvi, then 3",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Tartu",
+   "acc": "EE",
+   "b": "Pärnu",
+   "bcc": "EE",
+   "km": 175,
+   "road": "92 via Viljandi",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Tartu",
+   "acc": "EE",
+   "b": "Valmiera",
+   "bcc": "LV",
+   "km": 140,
+   "road": "E264 / 3 via Valga/Valka, A3",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Pärnu",
+   "acc": "EE",
+   "b": "Rīga",
+   "bcc": "LV",
+   "km": 180,
+   "road": "E67 / A1 (Via Baltica)",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Valmiera",
+   "acc": "LV",
+   "b": "Rīga",
+   "bcc": "LV",
+   "km": 105,
+   "road": "A2 / A3",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rīga",
+   "acc": "LV",
+   "b": "Šiauliai",
+   "bcc": "LT",
+   "km": 128,
+   "road": "A8 / E77 via Jelgava, then A12",
+   "ferry": false,
+   "conf": "high",
+   "note": "replaces Rīga–Jelgava (45) and Jelgava–Šiauliai (80) after Jelgava was removed: it is not among the in-game Latvian cities, the road just passes it"
+  },
+  {
+   "a": "Rīga",
+   "acc": "LV",
+   "b": "Ventspils",
+   "bcc": "LV",
+   "km": 190,
+   "road": "A10 / E22",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rīga",
+   "acc": "LV",
+   "b": "Liepāja",
+   "bcc": "LV",
+   "km": 215,
+   "road": "A9",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Ventspils",
+   "acc": "LV",
+   "b": "Liepāja",
+   "bcc": "LV",
+   "km": 120,
+   "road": "P111",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Rīga",
+   "acc": "LV",
+   "b": "Daugavpils",
+   "bcc": "LV",
+   "km": 230,
+   "road": "A6 / E22",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rīga",
+   "acc": "LV",
+   "b": "Rēzekne",
+   "bcc": "LV",
+   "km": 240,
+   "road": "A6 to Jēkabpils, then A12 / E22",
+   "ferry": false,
+   "conf": "medium",
+   "note": "shares A6 with the Daugavpils route as far as Jēkabpils"
+  },
+  {
+   "a": "Daugavpils",
+   "acc": "LV",
+   "b": "Rēzekne",
+   "bcc": "LV",
+   "km": 90,
+   "road": "A13 / E262",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Rīga",
+   "acc": "LV",
+   "b": "Panevėžys",
+   "bcc": "LT",
+   "km": 145,
+   "road": "A7 / E67 via Bauska",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Liepāja",
+   "acc": "LV",
+   "b": "Klaipėda",
+   "bcc": "LT",
+   "km": 110,
+   "road": "A11 / A13 via Palanga",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Liepāja",
+   "acc": "LV",
+   "b": "Mažeikiai",
+   "bcc": "LT",
+   "km": 105,
+   "road": "via Skuodas",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Mažeikiai",
+   "acc": "LT",
+   "b": "Šiauliai",
+   "bcc": "LT",
+   "km": 85,
+   "road": "155 / 156",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Šiauliai",
+   "acc": "LT",
+   "b": "Panevėžys",
+   "bcc": "LT",
+   "km": 80,
+   "road": "A9",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Šiauliai",
+   "acc": "LT",
+   "b": "Klaipėda",
+   "bcc": "LT",
+   "km": 155,
+   "road": "A11",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Šiauliai",
+   "acc": "LT",
+   "b": "Kaunas",
+   "bcc": "LT",
+   "km": 140,
+   "road": "144 via Raseiniai / A1",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Kaunas",
+   "acc": "LT",
+   "b": "Klaipėda",
+   "bcc": "LT",
+   "km": 210,
+   "road": "A1 / E85",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kaunas",
+   "acc": "LT",
+   "b": "Vilnius",
+   "bcc": "LT",
+   "km": 105,
+   "road": "A1 / E85",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kaunas",
+   "acc": "LT",
+   "b": "Panevėžys",
+   "bcc": "LT",
+   "km": 110,
+   "road": "A8 / E67",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Vilnius",
+   "acc": "LT",
+   "b": "Panevėžys",
+   "bcc": "LT",
+   "km": 135,
+   "road": "A2 / E272",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Vilnius",
+   "acc": "LT",
+   "b": "Utena",
+   "bcc": "LT",
+   "km": 95,
+   "road": "A14",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Kaunas",
+   "acc": "LT",
+   "b": "Utena",
+   "bcc": "LT",
+   "km": 140,
+   "road": "A6 / E262 via Ukmergė",
+   "ferry": false,
+   "conf": "medium",
+   "note": "wiki.gg A6 (Lithuania): one section runs between Kaunas and western Utena"
+  },
+  {
+   "a": "Utena",
+   "acc": "LT",
+   "b": "Daugavpils",
+   "bcc": "LV",
+   "km": 110,
+   "road": "A6 / E262 via Zarasai",
+   "ferry": false,
+   "conf": "high",
+   "note": "wiki.gg A6 (Lithuania): second section runs from eastern Utena to Latvia"
+  },
+  {
+   "a": "Kaliningrad",
+   "acc": "RU",
+   "b": "Šiauliai",
+   "bcc": "LT",
+   "km": 245,
+   "road": "A-216 / E77 via Sovetsk, Tauragė, A12",
+   "ferry": false,
+   "conf": "medium",
+   "note": "wiki.gg: A216 connects Sovetsk on the Lithuanian border to A229; Lithuanian A12 runs from Latvia through Šiauliai to the Kaliningrad border"
+  },
+  {
+   "a": "Kaliningrad",
+   "acc": "RU",
+   "b": "Kaunas",
+   "bcc": "LT",
+   "km": 250,
+   "road": "A-229 / E28 via Chernyshevskoye/Kybartai, A7, Marijampolė",
+   "ferry": false,
+   "conf": "medium",
+   "note": "wiki.gg: E28/A229 cross into Lithuania at Chernyshevskoye/Kybartai; Lithuanian A7 links the border at Kybartai to A5 south of Kaunas"
+  },
+  {
+   "a": "Kaliningrad",
+   "acc": "RU",
+   "b": "Gdańsk",
+   "bcc": "PL",
+   "km": 165,
+   "road": "A-229 / R-516 via Mamonovo/Grzechotki, S22, S7 via Elbląg",
+   "ferry": false,
+   "conf": "medium",
+   "note": "wiki.gg A229 page: in game the road reaches Poland at the Mamonovo/Grzechotki crossing. Assumes Gdańsk is the nearest in-game PL city on this route"
+  },
+  {
+   "a": "Kaliningrad",
+   "acc": "RU",
+   "b": "Olsztyn",
+   "bcc": "PL",
+   "km": 120,
+   "road": "via Bagrationovsk/Bezledy, Bartoszyce, 51",
+   "ferry": false,
+   "conf": "low",
+   "note": "existence of this border crossing in game is not verified (wiki.gg only names Mamonovo/Grzechotki for A229). Real road distance is about 115-125 km"
+  },
+  {
+   "a": "Kaunas",
+   "acc": "LT",
+   "b": "Białystok",
+   "bcc": "PL",
+   "km": 245,
+   "road": "A5 / E67 (Via Baltica) via Marijampolė, Suwałki, S8",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Helsinki",
+   "acc": "FI",
+   "b": "Tallinn",
+   "bcc": "EE",
+   "km": 85,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "high",
+   "note": "wiki.gg ferry table: about 2h30; Tallinn page confirms the Helsinki ferry"
+  },
+  {
+   "a": "Helsinki",
+   "acc": "FI",
+   "b": "Travemünde",
+   "bcc": "DE",
+   "km": 1100,
+   "road": "ferry (Finnlines)",
+   "ferry": true,
+   "conf": "medium"
+  },
+  {
+   "a": "Turku",
+   "acc": "FI",
+   "b": "Stockholm",
+   "bcc": "SE",
+   "km": 290,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "medium"
+  },
+  {
+   "a": "Naantali",
+   "acc": "FI",
+   "b": "Kapellskär",
+   "bcc": "SE",
+   "km": 230,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "medium"
+  },
+  {
+   "a": "Vaasa",
+   "acc": "FI",
+   "b": "Umeå",
+   "bcc": "SE",
+   "km": 100,
+   "road": "ferry (Wasaline)",
+   "ferry": true,
+   "conf": "medium",
+   "note": "Nordic Horizons ferry"
+  },
+  {
+   "a": "Paldiski",
+   "acc": "EE",
+   "b": "Kapellskär",
+   "bcc": "SE",
+   "km": 300,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "medium"
+  },
+  {
+   "a": "Ventspils",
+   "acc": "LV",
+   "b": "Nynäshamn",
+   "bcc": "SE",
+   "km": 320,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "high",
+   "note": "wiki.gg ferry table lists Nynäshamn–Ventspils (about 8h30, needs Scandinavia + BtBS)"
+  },
+  {
+   "a": "Liepāja",
+   "acc": "LV",
+   "b": "Travemünde",
+   "bcc": "DE",
+   "km": 700,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "high",
+   "note": "wiki.gg ferry table lists Travemünde–Liepāja (about 26h30)"
+  },
+  {
+   "a": "Klaipėda",
+   "acc": "LT",
+   "b": "Kiel",
+   "bcc": "DE",
+   "km": 650,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "medium",
+   "note": "not confirmed by search (only real-world route found); kept because it could not be disproved"
+  },
+  {
+   "a": "Klaipėda",
+   "acc": "LT",
+   "b": "Karlshamn",
+   "bcc": "SE",
+   "km": 400,
+   "road": "ferry",
+   "ferry": true,
+   "conf": "medium",
+   "note": "not confirmed by search; kept because it could not be disproved"
+  }
+ ],
+ "changes": [
+  "REMOVED Jelgava (LV). The Truck Simulator Wiki (Fandom) lists Latvia's in-game cities as Daugavpils, Liepāja, Rēzekne, Rīga, Valmiera and Ventspils (6). A recent country guide also gives Latvia 6 DLC cities. No source names Jelgava as an in-game city. With it removed, BtBS has 35 cities (FI 10, EE 6, LV 6, LT 7, RU 6), which matches the 35 the wiki gives and closes the earlier 35-vs-36 question.",
+  "ROADS: Rīga–Jelgava (45) and Jelgava–Šiauliai (80) replaced by one edge, Rīga–Šiauliai 128 km on A8/E77 via Jelgava, then A12. The real road distance is about 125-130 km.",
+  "ROADS: Tornio–Tromsø (600, low) split at Karesuando (SE) into Tornio–Karesuando 310 (E8 via Pello, Kolari, Muonio and Kaaresuvanto) and Karesuando–Tromsø 300 (E8 via Kilpisjärvi and Skibotn). Evidence: the wiki.gg Karesuando page calls it a Nordic Horizons city in northern Sweden whose roads run south to Kiruna and north towards Finland and Norway. Karesuando is the in-game name for Kaaresuvanto (the radio_only FI candidate), so Kaaresuvanto is not added as a separate FI city. Both edges are conf low.",
+  "CONFIRMED Finland at 23 cities with the DLC split already in the dataset. The Truck Simulator Wiki Finland landmarks page puts Helsinki, Kotka, Kouvola, Lahti, Loviisa, Naantali, Pori, Tampere, Turku and Olkiluoto in BtBS. It puts Ivalo, Joensuu, Jyväskylä, Kajaani, Kokkola, Kuopio, Kuusamo, Lappeenranta, Mikkeli, Oulu, Rovaniemi, Tornio and Vaasa in Nordic Horizons. A country guide also gives 23 for Finland. Lappeenranta conf medium -> high (Nordic Horizons). SCS blog posts confirm Rovaniemi (Aug 2024), Oulu (Jan 2025) and Tornio/Haparanda (May 2025).",
+  "NOT ADDED (FI radio_only): Alajärvi, Hämeenlinna, Kemi, Kemijärvi, Kristiinankaupunki, Kärsämäki, Porvoo, Suomussalmi, Vantaa, Varkaus and Viitasaari. The vanilla list of 23 is fixed by the wiki grouping and the guide count, so these are ProMods or scenery towns. Kaaresuvanto is the Finnish name of SE Karesuando (see above).",
+  "CONFIRMED Estonia at 6 cities: the Truck Simulator Wiki Estonia navigation lists Kunda, Narva, Paldiski, Pärnu, Tallinn and Tartu. Tartu, Narva and Paldiski conf medium -> high. NOT ADDED (EE radio_only): Haapsalu, Kuressaare, Kärdla, Rakvere and Valga, all ProMods.",
+  "CONFIRMED Latvia at 6 cities (see the Jelgava entry). Ventspils, Liepāja, Daugavpils, Rēzekne and Valmiera conf medium -> high. NOT ADDED (LV radio_only): Balvi, Gulbene, Jēkabpils, Kolka, Ogre, Saldus, Tukums and Valka, all ProMods. The wiki lists only 13 Latvian scenery villages.",
+  "CONFIRMED Lithuania at 7 cities: the Truck Simulator Wiki lists Kaunas, Klaipėda, Mažeikiai, Panevėžys, Šiauliai, Utena and Vilnius. The wiki.gg Mažeikiai page and the GamePressure Utena description back this up. Šiauliai, Mažeikiai and Utena conf medium/low -> high. NOT ADDED (LT radio_only): Naujieji Valkininkai and Tauragė.",
+  "CONFIRMED Russia at 6 cities: GamePressure lists Saint Petersburg, Kaliningrad, Luga, Pskov, Sosnovy Bor and Vyborg, and a guide also counts 6. NOT ADDED (RU radio_only): Zelenogradsk and Chernyakhovsk (ProMods). 'Выборг' is the Cyrillic name of Vyborg and is now added to its aliases.",
+  "Utena roads: Kaunas–Utena conf low -> medium and Utena–Daugavpils medium -> high. The wiki.gg A6 (Lithuania) page splits A6 into Kaunas to western Utena and eastern Utena to Latvia.",
+  "Kaliningrad cross-border roads: Kaliningrad–Kaunas low -> medium (wiki.gg E28/A229: Chernyshevskoye/Kybartai crossing; A7 from Kybartai to A5 south of Kaunas). Kaliningrad–Šiauliai low -> medium (wiki.gg A216 runs from Sovetsk on the Lithuanian border to A229; Lithuanian A12 runs through Šiauliai to the Kaliningrad border). Kaliningrad–Gdańsk now notes the in-game Mamonovo/Grzechotki crossing (wiki.gg A229 page) and the road label is reordered. Kaliningrad–Olsztyn stays low: wiki.gg names no Bezledy crossing.",
+  "Pskov–Rēzekne conf low -> medium. The GamePressure border guide says BtBS has crossings on Russia's borders with Finland, Estonia, Latvia, Lithuania and Poland, so a Pskov–Latvia link exists. The exact crossing is still unverified.",
+  "Ferries: Ventspils–Nynäshamn low -> high (wiki.gg ferry table, about 8h30, needs Scandinavia). Liepāja–Travemünde medium -> high (wiki.gg ferry table, about 26h30). Helsinki–Tallinn gets an evidence note (about 2h30). No Rostock–Helsinki ferry was found, so none is added. Klaipėda–Kiel and Klaipėda–Karlshamn could not be confirmed or disproved and are kept at medium.",
+  "No DLC attribution, coordinate or name errors found beyond the above. No base-game rework from 1.50 to 1.58, and not Iceland (Nov 2026), touches this region. The graph is checked: 48 cities, 99 edges, connected, and every city has at least 2 edges."
+ ],
+ "sources": "I used 12 WebSearch calls. Truck Simulator Wiki (Fandom) Finland landmarks page (https://truck-simulator.fandom.com/wiki/List_of_landmarks_in_Finland): BtBS and Nordic Horizons city groups. Fandom Latvia city list, which does not include Jelgava (https://truck-simulator.fandom.com/wiki/Valmiera and related pages). Fandom Lithuania list (https://truck-simulator.fandom.com/wiki/A6_(Lithuania)). Estonia navigation (https://trucksimulator.wiki.gg/wiki/Tallinn, https://trucksimulator.wiki.gg/wiki/P%C3%A4rnu). wiki.gg Mažeikiai (https://trucksimulator.wiki.gg/wiki/Ma%C5%BEeikiai). wiki.gg A6 Lithuania (https://trucksimulator.wiki.gg/wiki/A6_(Lithuania)). wiki.gg Karesuando (https://trucksimulator.wiki.gg/wiki/Karesuando). wiki.gg E28, A229, A216 and A12 (https://trucksimulator.wiki.gg/wiki/E28, https://trucksimulator.wiki.gg/wiki/A229_(Russia), https://trucksimulator.wiki.gg/wiki/A216_(Russia), https://trucksimulator.wiki.gg/wiki/A12_(Lithuania)). wiki.gg ferry table (https://trucksimulator.wiki.gg/wiki/Ferry/Euro_Truck_Simulator_2). GamePressure guides: new terrains, Russia, Lithuania, Latvia and border crossings (https://www.gamepressure.com/eurotrucksimulator2/new-terrains/zfbf5b, https://www.gamepressure.com/eurotrucksimulator2/russia/z5bf67, https://www.gamepressure.com/eurotrucksimulator2/lithuania/z2bf64, https://www.gamepressure.com/eurotrucksimulator2/border-of-countries/z2bf5e). Country/DLC city counts (https://bloxodes.com/wiki/euro-truck-simulator-2/countries-and-map-dlcs). SCS blog: Nordic Horizons Rovaniemi, Oulu and Tornio/Haparanda (https://blog.scssoft.com/2024/08/nordic-horizons-rovaniemi.html, https://blog.scssoft.com/2025/01/nordic-horizons-oulu.html, https://blog.scssoft.com/2025/05/nordic-horizons-tornio-and-haparanda.html). Output file: /tmp/claude-0/-home-user-Flexxkynx/34de412e-1e38-564f-9444-7301e077a9f7/scratchpad/work/round3/baltic.json (it lacks the later note edits made only in this output)."
+}

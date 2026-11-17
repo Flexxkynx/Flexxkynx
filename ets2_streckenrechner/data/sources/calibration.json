@@ -1,0 +1,364 @@
+{
+ "pairs": [
+  {
+   "from": "Calais",
+   "from_cc": "FR",
+   "to": "Duisburg",
+   "to_cc": "DE",
+   "ingame_km": 436,
+   "source": "World of Trucks profile 3190250 (contract Calais -> Duisburg, nuts), via search snippet https://www.worldoftrucks.com/en/profile/3190250. Note: snapshot date unknown; the Benelux rework changed the old 'C-D road', so the current value may differ.",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Calais",
+   "from_cc": "FR",
+   "to": "London",
+   "to_cc": "GB",
+   "ingame_km": 125,
+   "source": "World of Trucks profile 8558671 (nitrocellulose, NBFC Calais -> NBFC London, 13 t), via search snippet https://www.worldoftrucks.com/en/profile/8558671. The route crosses the Channel by ferry or Eurotunnel. The short figure suggests the crossing adds little or nothing to the distance.",
+   "confidence": "medium",
+   "uses_ferry": true
+  },
+  {
+   "from": "Lyon",
+   "from_cc": "FR",
+   "to": "Calais",
+   "to_cc": "FR",
+   "ingame_km": 805,
+   "source": "World of Trucks profile page found by a search for Calais/London contracts (search summary; the exact profile URL was not attributed in the snippet)",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Calais",
+   "from_cc": "FR",
+   "to": "Terni",
+   "to_cc": "IT",
+   "ingame_km": 1566,
+   "source": "World of Trucks profile page (LPG job), from the same search summary; the exact profile URL was not attributed",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "London",
+   "from_cc": "GB",
+   "to": "Cambridge",
+   "to_cc": "GB",
+   "ingame_km": 101,
+   "source": "World of Trucks profile page (backhoe job), from the same search summary; the exact profile URL was not attributed",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Aberdeen",
+   "from_cc": "GB",
+   "to": "Glasgow",
+   "to_cc": "GB",
+   "ingame_km": 238,
+   "source": "World of Trucks profile 71580, via search snippet https://www.worldoftrucks.com/en/profile/71580",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Hamburg",
+   "from_cc": "DE",
+   "to": "Berlin",
+   "to_cc": "DE",
+   "ingame_km": 339,
+   "source": "World of Trucks profile (current contract Hamburg -> Berlin, 'Distance 339 km'), from a search snippet among profiles such as https://www.worldoftrucks.com/en/profile/2884906; the exact profile was not attributed",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Hamburg",
+   "from_cc": "DE",
+   "to": "Rostock",
+   "to_cc": "DE",
+   "ingame_km": 263,
+   "source": "World of Trucks profile (contract Hamburg -> Rostock, 'Distance 263 km'), from the same search; the exact profile was not attributed",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Erfurt",
+   "from_cc": "DE",
+   "to": "Praha",
+   "to_cc": "CZ",
+   "ingame_km": 360,
+   "source": "World of Trucks profile contract listing (search snippet; profile among https://www.worldoftrucks.com/en/profile/1220977 and similar)",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Dresden",
+   "from_cc": "DE",
+   "to": "Praha",
+   "to_cc": "CZ",
+   "ingame_km": 105,
+   "source": "World of Trucks profile contract listing (search snippet; the exact profile was not attributed). The value is short compared with the real road distance of about 150 km, so it may be depot-to-depot.",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "Madrid",
+   "from_cc": "ES",
+   "to": "A Coruña",
+   "to_cc": "ES",
+   "ingame_km": 622,
+   "source": "World of Trucks profile (Comoto Madrid -> RT Log A Coruña, 622 km), from a search snippet among profiles such as https://www.worldoftrucks.com/en/profile/5588009",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Badajoz",
+   "from_cc": "ES",
+   "to": "Tallinn",
+   "to_cc": "EE",
+   "ingame_km": 3974,
+   "source": "vtc.world convoy/event listing: 'Distance: 3974 km, Route: 4614 km' (search snippet; event URL not attributed, likely https://vtc.world/event/574190516C3B54ED/). It is unclear which figure the game displays (likely 3974 = job distance and 4614 = the planned GPS route). The route may use a ferry (Baltic). The vtc.world platform may involve TruckersMP or ProMods, so it is unverified for vanilla.",
+   "confidence": "low",
+   "uses_ferry": true
+  },
+  {
+   "from": "Södertälje",
+   "from_cc": "SE",
+   "to": "Lisboa",
+   "to_cc": "PT",
+   "ingame_km": 3794,
+   "source": "vtc.world event (Scania truck delivery to a Lisboa dealer, 'distance 3,794 km'), search snippet. This is an event or VTC platform figure, not confirmed as the vanilla job market distance. A ferry from Scandinavia is likely.",
+   "confidence": "low",
+   "uses_ferry": true
+  },
+  {
+   "from": "Berlin",
+   "from_cc": "DE",
+   "to": "Madrid",
+   "to_cc": "ES",
+   "ingame_km": 2495,
+   "source": "https://vtc.world/event/EFE506306E233A95 - 'Urgent Work: Food diplomacy Part II' Berlin (EuroGoodies) -> Madrid (Lavish Foods): 'Mass:17450 kg Distance:2495 km Route:2518 km'",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Berlin",
+   "from_cc": "DE",
+   "to": "Visby",
+   "to_cc": "SE",
+   "ingame_km": 1622,
+   "source": "https://vtc.world/event/37D7CD62F41AAC7C/ - Nova VTC Friday Convoy Berlin (EuroAcres) -> Visby (EuroAcres): 'Mass:30703 kg, Distance:1622 km, Route:1772 km'",
+   "confidence": "medium",
+   "uses_ferry": true
+  },
+  {
+   "from": "A Coruña",
+   "from_cc": "ES",
+   "to": "Sagunt",
+   "to_cc": "ES",
+   "ingame_km": 1331,
+   "source": "https://vtc.world/event/CB8E2C1636A25456/ (vtc.world flatbed convoy A Coruña -> Sagunt/Sagunto): 'Mass:40800 kg Distance:1331 km Route:1332 km'",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Luxembourg",
+   "from_cc": "LU",
+   "to": "Sevilla",
+   "to_cc": "ES",
+   "ingame_km": 2249,
+   "source": "vtc.world convoy listing (one of https://vtc.world/event/82E15B1F1AF94F1D/, 3342EA86BDBC1DEF, EEED7618E644EB05, 7BFBF83B9B3BAB1F, 41412E08024F5B4A, 4F3EA15023B428E6, 01AAAC977A3B4B3A, 17430A9033D7178B): 'Luxembourg to Sevilla Distance:2249 km Route:2249 km'",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "Bologna",
+   "from_cc": "IT",
+   "to": "Vilnius",
+   "to_cc": "LT",
+   "ingame_km": 1792,
+   "source": "vtc.world car transporter convoy (one of https://vtc.world/event/2622B8D96FBCF240/, 25C9980509A792F5, D551F5895DF905B2, D614045C65EB7942, EC9D176A4090C814, 96833B3D729E0626): 'Bologna to Vilnius Mass:12320 kg Distance:1792 km Route:1793 km'",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "Palermo",
+   "from_cc": "IT",
+   "to": "Genova",
+   "to_cc": "IT",
+   "ingame_km": 1376,
+   "source": "vtc.world convoy listing (same search set as Luxembourg-Sevilla, e.g. https://vtc.world/event/82E15B1F1AF94F1D/): 'Palermo to Genova Distance:1376 km Route:1383 km'",
+   "confidence": "low",
+   "uses_ferry": true
+  },
+  {
+   "from": "Stuttgart",
+   "from_cc": "DE",
+   "to": "Cagliari",
+   "to_cc": "IT",
+   "ingame_km": 1985,
+   "source": "vtc.world convoy listing (same search set as Luxembourg-Sevilla): 'Stuttgart to Cagliari Distance:1985 km Route:2486 km'",
+   "confidence": "low",
+   "uses_ferry": true
+  },
+  {
+   "from": "Mannheim",
+   "from_cc": "DE",
+   "to": "Livorno",
+   "to_cc": "IT",
+   "ingame_km": 939,
+   "source": "vtc.world convoy listing (same search set as Luxembourg-Sevilla): 'Mannheim to Livorno Distance:939 km Route:1571 km' (convoy route much longer than job distance)",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "München",
+   "from_cc": "DE",
+   "to": "Oslo",
+   "to_cc": "NO",
+   "ingame_km": 1431,
+   "source": "vtc.world gooseneck convoy (same search set as Bologna-Vilnius): 'Munich to Oslo Mass:15200 kg Distance:1431 km Route:1496 km'",
+   "confidence": "low"
+  },
+  {
+   "from": "Aberdeen",
+   "from_cc": "GB",
+   "to": "Tallinn",
+   "to_cc": "EE",
+   "ingame_km": 2884,
+   "source": "vtc.world yacht convoy (https://vtc.world/event/C0F8E1BDFD4B0956/?lang=en or https://vtc.world/event/05BEC7F76A8A9E38/): 'Aberdeen to Tallinn Distance: 2884 km Route: 2884 km' (requires Beyond the Baltic Sea)",
+   "confidence": "low",
+   "uses_ferry": true
+  },
+  {
+   "from": "Hamburg",
+   "from_cc": "DE",
+   "to": "Sankt-Peterburg",
+   "to_cc": "RU",
+   "ingame_km": 1790,
+   "source": "https://vtc.world/event/DA02416CF3E17BAD/ - Hamburg-start convoy to St. Petersburg: Distance ~1790 km, Route 1791 km",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "Kraków",
+   "from_cc": "PL",
+   "to": "Jönköping",
+   "to_cc": "SE",
+   "ingame_km": 1619,
+   "source": "vtc.world Friday Convoy (one of https://vtc.world/event/82617BDFDFCBE24B/, 92193E6EBDB83C4A, 630A50100F38CCFD, 547B282899DB7DD2): 'Kraków to Jönköping Distance 1619 km, Route 1619 km, Mass 9600 kg'",
+   "confidence": "low"
+  },
+  {
+   "from": "Constanța",
+   "from_cc": "RO",
+   "to": "Kraków",
+   "to_cc": "PL",
+   "ingame_km": 1427,
+   "source": "vtc.world convoy (same search set as Kraków-Jönköping): 'from Constanța to Kraków (Trameri) Distance 1427 km, Route 1427 km, Mass 24816 kg'",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "Le Mans",
+   "from_cc": "FR",
+   "to": "Wrocław",
+   "to_cc": "PL",
+   "ingame_km": 1532,
+   "source": "vtc.world convoy (same search set as Kraków-Jönköping): 'from Le Mans to Wrocław (EuroAcres) Distance 1532 km, Route 1532 km, Mass 36458 kg'",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "Köln",
+   "from_cc": "DE",
+   "to": "Warszawa",
+   "to_cc": "PL",
+   "ingame_km": 1040,
+   "source": "World of Trucks player profile job history (search hit on worldoftrucks.com profiles e.g. https://www.worldoftrucks.com/en/profile/17806 / 505600 / 4928688): 'Cologne to Warsaw 1,040 km'",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "Warszawa",
+   "from_cc": "PL",
+   "to": "Pescara",
+   "to_cc": "IT",
+   "ingame_km": 1704,
+   "source": "World of Trucks player profile job history (same search set as Köln-Warszawa): 'Warsaw to Pescara 1,704 km'",
+   "confidence": "low",
+   "uses_ferry": false
+  },
+  {
+   "from": "Felixstowe",
+   "from_cc": "GB",
+   "to": "Edinburgh",
+   "to_cc": "GB",
+   "ingame_km": 679,
+   "source": "World of Trucks player profile (search hit, e.g. https://www.worldoftrucks.com/en/profile/7950242 or /43864): Valentine-themed job 'Felixstowe to Edinburgh 679 km'",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Birmingham",
+   "from_cc": "GB",
+   "to": "Cardiff",
+   "to_cc": "GB",
+   "ingame_km": 228,
+   "source": "World of Trucks player profile job history (worldoftrucks.com profile search set incl. https://www.worldoftrucks.com/en/profile/4281477, 372369, 39000, 3831573): 'Birmingham to Cardiff 228 km'",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Glasgow",
+   "from_cc": "GB",
+   "to": "Carlisle",
+   "to_cc": "GB",
+   "ingame_km": 180,
+   "source": "World of Trucks player profile job history (worldoftrucks.com profile search set incl. https://www.worldoftrucks.com/en/profile/12043382, 5347038, 23056, 3321718): 'Glasgow to Carlisle 180 km'",
+   "confidence": "medium",
+   "uses_ferry": false
+  },
+  {
+   "from": "Calais",
+   "from_cc": "FR",
+   "to": "Southampton",
+   "to_cc": "GB",
+   "ingame_km": 239,
+   "source": "World of Trucks player profile job history (same search set as Glasgow-Carlisle): 'Calais to Southampton 239 km'",
+   "confidence": "medium",
+   "uses_ferry": true
+  },
+  {
+   "from": "Felixstowe",
+   "from_cc": "GB",
+   "to": "Warszawa",
+   "to_cc": "PL",
+   "ingame_km": 1615,
+   "source": "World of Trucks player profile job history (same search set as Glasgow-Carlisle): 'Felixstowe to Warsaw 1,615 km'",
+   "confidence": "low",
+   "uses_ferry": true
+  },
+  {
+   "from": "Felixstowe",
+   "from_cc": "GB",
+   "to": "Genève",
+   "to_cc": "CH",
+   "ingame_km": 1064,
+   "source": "World of Trucks player profile job history (same search set as Glasgow-Carlisle): 'Felixstowe to Geneva 1,064 km'",
+   "confidence": "low",
+   "uses_ferry": true
+  },
+  {
+   "from": "Ajaccio",
+   "from_cc": "FR",
+   "to": "Olbia",
+   "to_cc": "IT",
+   "ingame_km": 1125,
+   "source": "vtc.world convoy listing (same search set as Luxembourg-Sevilla): 'Ajaccio to Olbia Distance:1125 km Route:1125 km' - suspiciously long for a Bonifacio-strait crossing, probably a detour route; treat with caution",
+   "confidence": "low",
+   "uses_ferry": true
+  }
+ ],
+ "map_scale_facts": "NOTE ON COVERAGE: Only 13 city pairs are listed, not the 25 requested. The shared web-search budget for this run ran out partway through ('limit: 200 WebSearch calls per turn'), so no more searches could be made. No pairs were invented. A follow-up run can collect more (London-Manchester, Warszawa-Berlin, Roma-Milano, Lisboa-Madrid and so on).\nMAP SCALE: The mainland ETS2 map is about 1:19 (racinggames.gg article 'Euro Truck Simulator 2 Is Roughly 1:19'; trucksimulator.wiki.gg user blog 'Map Scale in ETS2 and ATS'; ATS is 1:20 for comparison). The UK is about 1:15, inherited from UK Truck Simulator, while Germany and Austria came from German Truck Simulator at 1:19. Cities are compressed much less: commonly quoted as 1:3, but a ProMods forum post says major cities are about 1:5 and small ones about 1:10, so this is medium confidence. SCS announced 'Project UK Rework' (reported 19 Oct 2025) with no stated new UK scale. A UK scale of 1:20 appears only in a fan suggestion on the SCS forum, so the UK scale in the Nov 2026 build is uncertain if the rework has shipped.\nDISPLAYED KM: The km shown in game (job market, route advisor, odometer, WoT logs) are not raw world-space metres. Outside cities they are scaled up by the scale factor (about x19), so they roughly match real-world road distances. Evidence: the ets2-telemetry-server Telemetry.md describes a 'scale' factor (example value 19) applied to distance and time to compensate for the map scale. The 'Real time and distance' mods exist to show the unscaled distance instead. Sample values match too: Calais-Duisburg 436 km in game vs about 370-400 km in reality; Hamburg-Berlin 339 km vs about 290 km. The exact factor applied inside city zones and in the UK (15 vs 19) is not confirmed by a primary source.\nFERRIES: Community sources (Steam ETS2 discussions from 2014-2015, including the 2,200 km achievement thread) say ferry and train (Eurotunnel) legs ARE included in a job's total distance shown in the offer and completion screen, but do NOT count as 'driven' km because the truck is static. In one example, the total was above 2,200 km including the ferry and 2,069 km driven without it. A route-planner tool notes that the game does not show ferry or train leg distances separately. A ProMods forum thread notes that the GPS may prefer ferries, which cuts road km and thus income. These sources are old, so verify in the current build: medium confidence. Separately, a forum post (Jan 2026) says the WoT external job market currently caps jobs at about 5,000 km.",
+ "time_scale_facts": "Default ETS2 time compression on the open road (mainland) is about 1:19. One in-game hour is 60/19, about 3.16 real minutes (the Truck Simulator Wiki 'Time Compression' page and Steam threads round this to about 3 real minutes; one Steam comment says 1:20). Inside cities, depots and some rest areas, time runs at about 1:3, so one in-game hour is about 20 real minutes (Steam forum; SCS forum thread on Krakow time flow scale). For the UK, the time scale is commonly quoted as 1:15 to match the UK map scale, which gives one in-game hour of about 4 real minutes. That figure is low-to-medium confidence: the sources found tie 1:15 to the UK map scale but none explicitly confirms the UK time scale, and the UK rework may change it. Ferry and train crossings skip ahead: the game fast-forwards the in-game clock by the crossing duration while only a loading screen passes in real time. Conversion formula: real_minutes = ingame_hours x 60 / k, with k = 19 for the mainland open road, about 15 for the UK (uncertain) and 3 in cities. Because displayed km are scaled by the same factor as time, driving at a displayed 80 km/h covers a displayed 80 km per in-game hour. So, as a rough rule, the real time for a mainland job is displayed_km / avg_speed_kmh x 60 / 19 minutes, plus extra for city segments at 1:3. Player reports of 3-5 real minutes per in-game hour on the road reflect slowdowns from traffic and cities."
+}

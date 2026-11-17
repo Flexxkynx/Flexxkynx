@@ -1,0 +1,1447 @@
+{
+ "region": "Spain and Portugal (ES, PT mainland) - Iberia DLC",
+ "cities": [
+  {
+   "name": "A Coruña",
+   "cc": "ES",
+   "lat": 43.362,
+   "lon": -8.411,
+   "dlc": "Iberia",
+   "aliases": [
+    "A Coruna",
+    "La Coruña",
+    "La Coruna",
+    "Corunna",
+    "Coruna"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Albacete",
+   "cc": "ES",
+   "lat": 38.994,
+   "lon": -1.856,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Algeciras",
+   "cc": "ES",
+   "lat": 36.131,
+   "lon": -5.454,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Almaraz",
+   "cc": "ES",
+   "lat": 39.809,
+   "lon": -5.687,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high",
+   "note": "A city in-game, with game name 'almaraz' in the Local Radio file. wiki.gg lists an Iberatómica depot at the nuclear power plant."
+  },
+  {
+   "name": "Almería",
+   "cc": "ES",
+   "lat": 36.834,
+   "lon": -2.464,
+   "dlc": "Iberia",
+   "aliases": [
+    "Almeria"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Badajoz",
+   "cc": "ES",
+   "lat": 38.879,
+   "lon": -6.97,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Bailén",
+   "cc": "ES",
+   "lat": 38.093,
+   "lon": -3.776,
+   "dlc": "Iberia",
+   "aliases": [
+    "Bailen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Barcelona",
+   "cc": "ES",
+   "lat": 41.385,
+   "lon": 2.173,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Bilbao",
+   "cc": "ES",
+   "lat": 43.263,
+   "lon": -2.935,
+   "dlc": "Iberia",
+   "aliases": [
+    "Bilbo"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Burgos",
+   "cc": "ES",
+   "lat": 42.344,
+   "lon": -3.697,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Cartagena",
+   "cc": "ES",
+   "lat": 37.606,
+   "lon": -0.986,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "medium",
+   "note": "Refinery and port city, from memory. It is needed to reach the wiki's count of 39 Spanish cities. Dead end: its only edge goes to Murcia."
+  },
+  {
+   "name": "Córdoba",
+   "cc": "ES",
+   "lat": 37.888,
+   "lon": -4.779,
+   "dlc": "Iberia",
+   "aliases": [
+    "Cordoba",
+    "Cordova"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "El Ejido",
+   "cc": "ES",
+   "lat": 36.776,
+   "lon": -2.815,
+   "dlc": "Iberia",
+   "aliases": [
+    "Ejido"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Gijón",
+   "cc": "ES",
+   "lat": 43.532,
+   "lon": -5.661,
+   "dlc": "Iberia",
+   "aliases": [
+    "Gijon",
+    "Xixón",
+    "Xixon"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Granada",
+   "cc": "ES",
+   "lat": 37.177,
+   "lon": -3.599,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Huelva",
+   "cc": "ES",
+   "lat": 37.261,
+   "lon": -6.945,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "León",
+   "cc": "ES",
+   "lat": 42.599,
+   "lon": -5.567,
+   "dlc": "Iberia",
+   "aliases": [
+    "Leon"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Lleida",
+   "cc": "ES",
+   "lat": 41.617,
+   "lon": 0.62,
+   "dlc": "Iberia",
+   "aliases": [
+    "Lérida",
+    "Lerida"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Madrid",
+   "cc": "ES",
+   "lat": 40.417,
+   "lon": -3.704,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Málaga",
+   "cc": "ES",
+   "lat": 36.721,
+   "lon": -4.421,
+   "dlc": "Iberia",
+   "aliases": [
+    "Malaga"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Mérida",
+   "cc": "ES",
+   "lat": 38.916,
+   "lon": -6.344,
+   "dlc": "Iberia",
+   "aliases": [
+    "Merida"
+   ],
+   "conf": "medium",
+   "note": "trucksimulator.wiki.gg calls Mérida an 'inaccessible city' and a map-data project lists it as a scenery village, so it probably has no depots. Kept because the wiki still counts it among the 39 Spanish cities (38 others + Mérida = 39) and it marks the A-5/A-66 junction."
+  },
+  {
+   "name": "Murcia",
+   "cc": "ES",
+   "lat": 37.992,
+   "lon": -1.131,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Navia",
+   "cc": "ES",
+   "lat": 43.54,
+   "lon": -6.725,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Ourense",
+   "cc": "ES",
+   "lat": 42.336,
+   "lon": -7.864,
+   "dlc": "Iberia",
+   "aliases": [
+    "Orense"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Pamplona",
+   "cc": "ES",
+   "lat": 42.812,
+   "lon": -1.646,
+   "dlc": "Iberia",
+   "aliases": [
+    "Iruña",
+    "Iruna",
+    "Pampeluna",
+    "Pamplona-Iruña"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Port de Sagunt",
+   "cc": "ES",
+   "lat": 39.66,
+   "lon": -0.228,
+   "dlc": "Iberia",
+   "aliases": [
+    "Puerto de Sagunto",
+    "Sagunto",
+    "Sagunt"
+   ],
+   "conf": "high",
+   "note": "wiki.gg: town in central-eastern Spain in the Iberia DLC, with ACC and CGLA factories and a TDC Auto Terminal depot. It lies on the AP-7 between València and Vila-real."
+  },
+  {
+   "name": "Puertollano",
+   "cc": "ES",
+   "lat": 38.687,
+   "lon": -4.107,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Salamanca",
+   "cc": "ES",
+   "lat": 40.965,
+   "lon": -5.664,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Santander",
+   "cc": "ES",
+   "lat": 43.462,
+   "lon": -3.81,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Sevilla",
+   "cc": "ES",
+   "lat": 37.389,
+   "lon": -5.984,
+   "dlc": "Iberia",
+   "aliases": [
+    "Seville"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Soria",
+   "cc": "ES",
+   "lat": 41.764,
+   "lon": -2.465,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high",
+   "note": "Added in update 1.43 (wiki.gg Soria page). Game name 'soria' is also in the Local Radio file."
+  },
+  {
+   "name": "Tarragona",
+   "cc": "ES",
+   "lat": 41.119,
+   "lon": 1.245,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Teruel",
+   "cc": "ES",
+   "lat": 40.344,
+   "lon": -1.107,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Valencia",
+   "cc": "ES",
+   "lat": 39.47,
+   "lon": -0.376,
+   "dlc": "Iberia",
+   "aliases": [
+    "València"
+   ],
+   "conf": "high",
+   "note": "The fandom wiki writes València, while wiki.gg (page /wiki/Valencia) and the Local Radio file write Valencia. The exact in-game spelling is unverified."
+  },
+  {
+   "name": "Valladolid",
+   "cc": "ES",
+   "lat": 41.652,
+   "lon": -4.724,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Vandellòs",
+   "cc": "ES",
+   "lat": 40.951,
+   "lon": 0.866,
+   "dlc": "Iberia",
+   "aliases": [
+    "Vandellos",
+    "Vandellòs i l'Hospitalet de l'Infant",
+    "L'Hospitalet de l'Infant"
+   ],
+   "conf": "medium",
+   "note": "wiki.gg: in-game this is only the Vandellòs II nuclear power plant, with an Iberatómica depot, like Almaraz. Its coordinates are the plant's, on the AP-7 coast; the real village is about 8 km north. The Japanese wiki lists it as an Iberia city, but one search summary said the wiki.gg Spain list leaves it out."
+  },
+  {
+   "name": "Vigo",
+   "cc": "ES",
+   "lat": 42.24,
+   "lon": -8.721,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Vila-real",
+   "cc": "ES",
+   "lat": 39.938,
+   "lon": -0.101,
+   "dlc": "Iberia",
+   "aliases": [
+    "Villarreal",
+    "Vila-Real",
+    "Vilareal"
+   ],
+   "conf": "high",
+   "note": "wiki.gg: city in the Iberia DLC with a Domdepo depot and a garage. It is the game's city on the AP-7 near Castellón, and Castellón itself is not a city."
+  },
+  {
+   "name": "Zaragoza",
+   "cc": "ES",
+   "lat": 41.649,
+   "lon": -0.889,
+   "dlc": "Iberia",
+   "aliases": [
+    "Saragossa",
+    "Saragosa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Lisboa",
+   "cc": "PT",
+   "lat": 38.722,
+   "lon": -9.139,
+   "dlc": "Iberia",
+   "aliases": [
+    "Lisbon",
+    "Lissabon"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Porto",
+   "cc": "PT",
+   "lat": 41.15,
+   "lon": -8.611,
+   "dlc": "Iberia",
+   "aliases": [
+    "Oporto"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Coimbra",
+   "cc": "PT",
+   "lat": 40.203,
+   "lon": -8.41,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Guarda",
+   "cc": "PT",
+   "lat": 40.537,
+   "lon": -7.267,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Ponte de Sor",
+   "cc": "PT",
+   "lat": 39.249,
+   "lon": -8.01,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Cortiçadas de Lavre",
+   "cc": "PT",
+   "lat": 38.79,
+   "lon": -8.365,
+   "dlc": "Iberia",
+   "aliases": [
+    "Corticadas de Lavre",
+    "Corticadas",
+    "Lavre"
+   ],
+   "conf": "high",
+   "note": "Confirmed in the fandom wiki's Portugal city list. Coordinates are approximate, within about 5 km of the real village."
+  },
+  {
+   "name": "Évora",
+   "cc": "PT",
+   "lat": 38.571,
+   "lon": -7.909,
+   "dlc": "Iberia",
+   "aliases": [
+    "Evora"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Setúbal",
+   "cc": "PT",
+   "lat": 38.524,
+   "lon": -8.893,
+   "dlc": "Iberia",
+   "aliases": [
+    "Setubal"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Sines",
+   "cc": "PT",
+   "lat": 37.956,
+   "lon": -8.869,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Beja",
+   "cc": "PT",
+   "lat": 38.015,
+   "lon": -7.863,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high",
+   "note": "Added in update 1.43."
+  },
+  {
+   "name": "Faro",
+   "cc": "PT",
+   "lat": 37.019,
+   "lon": -7.93,
+   "dlc": "Iberia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Olhão",
+   "cc": "PT",
+   "lat": 37.026,
+   "lon": -7.841,
+   "dlc": "Iberia",
+   "aliases": [
+    "Olhao"
+   ],
+   "conf": "high"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Lisboa",
+   "acc": "PT",
+   "b": "Coimbra",
+   "bcc": "PT",
+   "km": 205,
+   "ferry": false,
+   "road": "A1 / E80",
+   "conf": "high"
+  },
+  {
+   "a": "Coimbra",
+   "acc": "PT",
+   "b": "Porto",
+   "bcc": "PT",
+   "km": 120,
+   "ferry": false,
+   "road": "A1 / E1",
+   "conf": "high"
+  },
+  {
+   "a": "Lisboa",
+   "acc": "PT",
+   "b": "Setúbal",
+   "bcc": "PT",
+   "km": 50,
+   "ferry": false,
+   "road": "A2 / A12",
+   "conf": "high"
+  },
+  {
+   "a": "Setúbal",
+   "acc": "PT",
+   "b": "Sines",
+   "bcc": "PT",
+   "km": 100,
+   "ferry": false,
+   "road": "A2 / IP8",
+   "conf": "medium"
+  },
+  {
+   "a": "Setúbal",
+   "acc": "PT",
+   "b": "Faro",
+   "bcc": "PT",
+   "km": 235,
+   "ferry": false,
+   "road": "A2 / A22 / E1",
+   "conf": "medium",
+   "note": "Main north-south motorway towards the Algarve."
+  },
+  {
+   "a": "Sines",
+   "acc": "PT",
+   "b": "Beja",
+   "bcc": "PT",
+   "km": 95,
+   "ferry": false,
+   "road": "IP8 / A26",
+   "conf": "medium"
+  },
+  {
+   "a": "Beja",
+   "acc": "PT",
+   "b": "Évora",
+   "bcc": "PT",
+   "km": 78,
+   "ferry": false,
+   "road": "IP2",
+   "conf": "medium"
+  },
+  {
+   "a": "Beja",
+   "acc": "PT",
+   "b": "Faro",
+   "bcc": "PT",
+   "km": 150,
+   "ferry": false,
+   "road": "IP2 / A2 / A22",
+   "conf": "low",
+   "note": "The route the game models between Beja and the Algarve is uncertain."
+  },
+  {
+   "a": "Faro",
+   "acc": "PT",
+   "b": "Olhão",
+   "bcc": "PT",
+   "km": 10,
+   "ferry": false,
+   "road": "N125 / A22",
+   "conf": "high"
+  },
+  {
+   "a": "Lisboa",
+   "acc": "PT",
+   "b": "Évora",
+   "bcc": "PT",
+   "km": 135,
+   "ferry": false,
+   "road": "A2 / A6 / E90",
+   "conf": "high"
+  },
+  {
+   "a": "Lisboa",
+   "acc": "PT",
+   "b": "Cortiçadas de Lavre",
+   "bcc": "PT",
+   "km": 90,
+   "ferry": false,
+   "road": "A12 / A13 / N114",
+   "conf": "low",
+   "note": "Single approach road northeast of Lisboa. The exact in-game road is unverified. The real distance is about 95-105 km."
+  },
+  {
+   "a": "Cortiçadas de Lavre",
+   "acc": "PT",
+   "b": "Évora",
+   "bcc": "PT",
+   "km": 55,
+   "ferry": false,
+   "road": "N114 / A6",
+   "conf": "low",
+   "note": "Assumed link via Montemor-o-Novo."
+  },
+  {
+   "a": "Cortiçadas de Lavre",
+   "acc": "PT",
+   "b": "Ponte de Sor",
+   "bcc": "PT",
+   "km": 70,
+   "ferry": false,
+   "road": "N2 / N119",
+   "conf": "low",
+   "note": "Unverified local road. Drop it if the town is a dead end in-game."
+  },
+  {
+   "a": "Lisboa",
+   "acc": "PT",
+   "b": "Ponte de Sor",
+   "bcc": "PT",
+   "km": 165,
+   "ferry": false,
+   "road": "A1 / A23",
+   "conf": "medium",
+   "note": "The wiki says the A23 connects Lisboa and Ponte de Sor."
+  },
+  {
+   "a": "Ponte de Sor",
+   "acc": "PT",
+   "b": "Guarda",
+   "bcc": "PT",
+   "km": 205,
+   "ferry": false,
+   "road": "A23 / IP2",
+   "conf": "medium"
+  },
+  {
+   "a": "Porto",
+   "acc": "PT",
+   "b": "Guarda",
+   "bcc": "PT",
+   "km": 205,
+   "ferry": false,
+   "road": "A1 / A25 / E80",
+   "conf": "medium"
+  },
+  {
+   "a": "Coimbra",
+   "acc": "PT",
+   "b": "Guarda",
+   "bcc": "PT",
+   "km": 160,
+   "ferry": false,
+   "road": "IP3 / A25",
+   "conf": "low",
+   "note": "Unsure whether the IP3 Coimbra-Viseu road is modelled. If not, the route runs via A1/A25 and is about 190 km."
+  },
+  {
+   "a": "Porto",
+   "acc": "PT",
+   "b": "Vigo",
+   "bcc": "ES",
+   "km": 155,
+   "ferry": false,
+   "road": "A3 / A-55 / AP-9 / E1",
+   "conf": "high"
+  },
+  {
+   "a": "Guarda",
+   "acc": "PT",
+   "b": "Salamanca",
+   "bcc": "ES",
+   "km": 175,
+   "ferry": false,
+   "road": "A25 / A-62 / E80",
+   "conf": "high"
+  },
+  {
+   "a": "Évora",
+   "acc": "PT",
+   "b": "Badajoz",
+   "bcc": "ES",
+   "km": 100,
+   "ferry": false,
+   "road": "A6 / A-5 / E90",
+   "conf": "high"
+  },
+  {
+   "a": "Olhão",
+   "acc": "PT",
+   "b": "Huelva",
+   "bcc": "ES",
+   "km": 100,
+   "ferry": false,
+   "road": "A22 / A-49 / E1",
+   "conf": "high"
+  },
+  {
+   "a": "Vigo",
+   "acc": "ES",
+   "b": "A Coruña",
+   "bcc": "ES",
+   "km": 157,
+   "ferry": false,
+   "road": "AP-9 / E1",
+   "conf": "high"
+  },
+  {
+   "a": "Vigo",
+   "acc": "ES",
+   "b": "Ourense",
+   "bcc": "ES",
+   "km": 100,
+   "ferry": false,
+   "road": "A-52",
+   "conf": "high"
+  },
+  {
+   "a": "Ourense",
+   "acc": "ES",
+   "b": "León",
+   "bcc": "ES",
+   "km": 245,
+   "ferry": false,
+   "road": "N-120 / A-6 via Ponferrada (alternatively A-52 / A-66 via Benavente, about 310 km)",
+   "conf": "medium",
+   "note": "The corridor the game uses is uncertain."
+  },
+  {
+   "a": "A Coruña",
+   "acc": "ES",
+   "b": "León",
+   "bcc": "ES",
+   "km": 330,
+   "ferry": false,
+   "road": "A-6 / AP-71",
+   "conf": "medium"
+  },
+  {
+   "a": "A Coruña",
+   "acc": "ES",
+   "b": "Navia",
+   "bcc": "ES",
+   "km": 195,
+   "ferry": false,
+   "road": "A-6 / A-8",
+   "conf": "medium"
+  },
+  {
+   "a": "Navia",
+   "acc": "ES",
+   "b": "Gijón",
+   "bcc": "ES",
+   "km": 115,
+   "ferry": false,
+   "road": "A-8 / E70",
+   "conf": "high"
+  },
+  {
+   "a": "Gijón",
+   "acc": "ES",
+   "b": "León",
+   "bcc": "ES",
+   "km": 150,
+   "ferry": false,
+   "road": "AP-66 / E70",
+   "conf": "high"
+  },
+  {
+   "a": "Gijón",
+   "acc": "ES",
+   "b": "Santander",
+   "bcc": "ES",
+   "km": 190,
+   "ferry": false,
+   "road": "A-8 / E70",
+   "conf": "high"
+  },
+  {
+   "a": "Santander",
+   "acc": "ES",
+   "b": "Bilbao",
+   "bcc": "ES",
+   "km": 100,
+   "ferry": false,
+   "road": "A-8 / E70",
+   "conf": "high"
+  },
+  {
+   "a": "Santander",
+   "acc": "ES",
+   "b": "Burgos",
+   "bcc": "ES",
+   "km": 155,
+   "ferry": false,
+   "road": "N-623 / A-73",
+   "conf": "medium"
+  },
+  {
+   "a": "Bilbao",
+   "acc": "ES",
+   "b": "Burgos",
+   "bcc": "ES",
+   "km": 160,
+   "ferry": false,
+   "road": "AP-68 / AP-1 / E804",
+   "conf": "high"
+  },
+  {
+   "a": "Bilbao",
+   "acc": "ES",
+   "b": "Pamplona",
+   "bcc": "ES",
+   "km": 160,
+   "ferry": false,
+   "road": "A-1 / A-10 via Vitoria",
+   "conf": "medium"
+  },
+  {
+   "a": "Bilbao",
+   "acc": "ES",
+   "b": "Zaragoza",
+   "bcc": "ES",
+   "km": 305,
+   "ferry": false,
+   "road": "AP-68 / E804",
+   "conf": "medium",
+   "note": "Via Logroño, which is not an in-game city. Replaces Bilbao-Logroño-Zaragoza."
+  },
+  {
+   "a": "Burgos",
+   "acc": "ES",
+   "b": "Zaragoza",
+   "bcc": "ES",
+   "km": 290,
+   "ferry": false,
+   "road": "AP-1 / AP-68 / E804",
+   "conf": "low",
+   "note": "Via Miranda de Ebro and Logroño, which are not cities. Replaces the Burgos-Logroño-Zaragoza path."
+  },
+  {
+   "a": "Burgos",
+   "acc": "ES",
+   "b": "Pamplona",
+   "bcc": "ES",
+   "km": 210,
+   "ferry": false,
+   "road": "AP-1 / A-1 / A-10",
+   "conf": "low",
+   "note": "Via Vitoria. Replaces the Burgos-Logroño-Pamplona path (205 km)."
+  },
+  {
+   "a": "Pamplona",
+   "acc": "ES",
+   "b": "Zaragoza",
+   "bcc": "ES",
+   "km": 175,
+   "ferry": false,
+   "road": "AP-15 / AP-68",
+   "conf": "high"
+  },
+  {
+   "a": "Soria",
+   "acc": "ES",
+   "b": "Zaragoza",
+   "bcc": "ES",
+   "km": 160,
+   "ferry": false,
+   "road": "N-122 / A-15",
+   "conf": "medium"
+  },
+  {
+   "a": "Soria",
+   "acc": "ES",
+   "b": "Madrid",
+   "bcc": "ES",
+   "km": 225,
+   "ferry": false,
+   "road": "A-15 / A-2",
+   "conf": "medium"
+  },
+  {
+   "a": "Burgos",
+   "acc": "ES",
+   "b": "Valladolid",
+   "bcc": "ES",
+   "km": 125,
+   "ferry": false,
+   "road": "A-62 / E80",
+   "conf": "high"
+  },
+  {
+   "a": "Burgos",
+   "acc": "ES",
+   "b": "Madrid",
+   "bcc": "ES",
+   "km": 240,
+   "ferry": false,
+   "road": "A-1 / E5",
+   "conf": "high"
+  },
+  {
+   "a": "Valladolid",
+   "acc": "ES",
+   "b": "León",
+   "bcc": "ES",
+   "km": 140,
+   "ferry": false,
+   "road": "A-60 / N-601",
+   "conf": "medium"
+  },
+  {
+   "a": "Valladolid",
+   "acc": "ES",
+   "b": "Madrid",
+   "bcc": "ES",
+   "km": 195,
+   "ferry": false,
+   "road": "A-6 / AP-6",
+   "conf": "high"
+  },
+  {
+   "a": "Valladolid",
+   "acc": "ES",
+   "b": "Salamanca",
+   "bcc": "ES",
+   "km": 120,
+   "ferry": false,
+   "road": "A-62 / E80",
+   "conf": "high"
+  },
+  {
+   "a": "León",
+   "acc": "ES",
+   "b": "Salamanca",
+   "bcc": "ES",
+   "km": 200,
+   "ferry": false,
+   "road": "A-66 / E803 via Benavente, Zamora",
+   "conf": "medium"
+  },
+  {
+   "a": "Salamanca",
+   "acc": "ES",
+   "b": "Madrid",
+   "bcc": "ES",
+   "km": 210,
+   "ferry": false,
+   "road": "A-50 / AP-51 / A-6",
+   "conf": "medium"
+  },
+  {
+   "a": "Salamanca",
+   "acc": "ES",
+   "b": "Mérida",
+   "bcc": "ES",
+   "km": 265,
+   "ferry": false,
+   "road": "A-66 / E803",
+   "conf": "high"
+  },
+  {
+   "a": "Madrid",
+   "acc": "ES",
+   "b": "Almaraz",
+   "bcc": "ES",
+   "km": 195,
+   "ferry": false,
+   "road": "A-5 / E90",
+   "conf": "high"
+  },
+  {
+   "a": "Almaraz",
+   "acc": "ES",
+   "b": "Mérida",
+   "bcc": "ES",
+   "km": 140,
+   "ferry": false,
+   "road": "A-5 / E90",
+   "conf": "high"
+  },
+  {
+   "a": "Mérida",
+   "acc": "ES",
+   "b": "Badajoz",
+   "bcc": "ES",
+   "km": 62,
+   "ferry": false,
+   "road": "A-5 / E90",
+   "conf": "high"
+  },
+  {
+   "a": "Mérida",
+   "acc": "ES",
+   "b": "Sevilla",
+   "bcc": "ES",
+   "km": 195,
+   "ferry": false,
+   "road": "A-66 / E803",
+   "conf": "high"
+  },
+  {
+   "a": "Madrid",
+   "acc": "ES",
+   "b": "Puertollano",
+   "bcc": "ES",
+   "km": 235,
+   "ferry": false,
+   "road": "A-4 / A-41",
+   "conf": "medium"
+  },
+  {
+   "a": "Puertollano",
+   "acc": "ES",
+   "b": "Córdoba",
+   "bcc": "ES",
+   "km": 165,
+   "ferry": false,
+   "road": "N-420",
+   "conf": "low",
+   "note": "Unsure whether this southern link from Puertollano exists in-game."
+  },
+  {
+   "a": "Madrid",
+   "acc": "ES",
+   "b": "Bailén",
+   "bcc": "ES",
+   "km": 295,
+   "ferry": false,
+   "road": "A-4 / E5",
+   "conf": "high"
+  },
+  {
+   "a": "Bailén",
+   "acc": "ES",
+   "b": "Córdoba",
+   "bcc": "ES",
+   "km": 105,
+   "ferry": false,
+   "road": "A-4 / E5",
+   "conf": "high"
+  },
+  {
+   "a": "Bailén",
+   "acc": "ES",
+   "b": "Granada",
+   "bcc": "ES",
+   "km": 120,
+   "ferry": false,
+   "road": "A-44 / E902",
+   "conf": "high"
+  },
+  {
+   "a": "Córdoba",
+   "acc": "ES",
+   "b": "Sevilla",
+   "bcc": "ES",
+   "km": 140,
+   "ferry": false,
+   "road": "A-4 / E5",
+   "conf": "high"
+  },
+  {
+   "a": "Córdoba",
+   "acc": "ES",
+   "b": "Málaga",
+   "bcc": "ES",
+   "km": 160,
+   "ferry": false,
+   "road": "A-45",
+   "conf": "medium"
+  },
+  {
+   "a": "Sevilla",
+   "acc": "ES",
+   "b": "Huelva",
+   "bcc": "ES",
+   "km": 95,
+   "ferry": false,
+   "road": "A-49 / E1",
+   "conf": "high"
+  },
+  {
+   "a": "Sevilla",
+   "acc": "ES",
+   "b": "Málaga",
+   "bcc": "ES",
+   "km": 205,
+   "ferry": false,
+   "road": "A-92 / A-45",
+   "conf": "medium"
+  },
+  {
+   "a": "Sevilla",
+   "acc": "ES",
+   "b": "Algeciras",
+   "bcc": "ES",
+   "km": 190,
+   "ferry": false,
+   "road": "AP-4 / A-381",
+   "conf": "medium"
+  },
+  {
+   "a": "Málaga",
+   "acc": "ES",
+   "b": "Algeciras",
+   "bcc": "ES",
+   "km": 135,
+   "ferry": false,
+   "road": "AP-7 / A-7 / E15",
+   "conf": "high"
+  },
+  {
+   "a": "Granada",
+   "acc": "ES",
+   "b": "Málaga",
+   "bcc": "ES",
+   "km": 125,
+   "ferry": false,
+   "road": "A-92 / A-45",
+   "conf": "high"
+  },
+  {
+   "a": "Granada",
+   "acc": "ES",
+   "b": "Almería",
+   "bcc": "ES",
+   "km": 165,
+   "ferry": false,
+   "road": "A-92",
+   "conf": "high"
+  },
+  {
+   "a": "Málaga",
+   "acc": "ES",
+   "b": "El Ejido",
+   "bcc": "ES",
+   "km": 180,
+   "ferry": false,
+   "road": "A-7 / E15",
+   "conf": "high"
+  },
+  {
+   "a": "El Ejido",
+   "acc": "ES",
+   "b": "Almería",
+   "bcc": "ES",
+   "km": 32,
+   "ferry": false,
+   "road": "A-7 / E15",
+   "conf": "high"
+  },
+  {
+   "a": "Almería",
+   "acc": "ES",
+   "b": "Murcia",
+   "bcc": "ES",
+   "km": 220,
+   "ferry": false,
+   "road": "A-7 / E15",
+   "conf": "high"
+  },
+  {
+   "a": "Murcia",
+   "acc": "ES",
+   "b": "Cartagena",
+   "bcc": "ES",
+   "km": 50,
+   "ferry": false,
+   "road": "A-30",
+   "conf": "high"
+  },
+  {
+   "a": "Murcia",
+   "acc": "ES",
+   "b": "Albacete",
+   "bcc": "ES",
+   "km": 145,
+   "ferry": false,
+   "road": "A-30",
+   "conf": "high"
+  },
+  {
+   "a": "Murcia",
+   "acc": "ES",
+   "b": "Valencia",
+   "bcc": "ES",
+   "km": 240,
+   "ferry": false,
+   "road": "A-7 / AP-7 / E15",
+   "conf": "medium",
+   "note": "No in-game city (e.g. Alicante) on this stretch."
+  },
+  {
+   "a": "Albacete",
+   "acc": "ES",
+   "b": "Madrid",
+   "bcc": "ES",
+   "km": 255,
+   "ferry": false,
+   "road": "A-31 / A-3",
+   "conf": "high"
+  },
+  {
+   "a": "Albacete",
+   "acc": "ES",
+   "b": "Valencia",
+   "bcc": "ES",
+   "km": 190,
+   "ferry": false,
+   "road": "A-31 / A-35 / A-7",
+   "conf": "medium"
+  },
+  {
+   "a": "Madrid",
+   "acc": "ES",
+   "b": "Valencia",
+   "bcc": "ES",
+   "km": 355,
+   "ferry": false,
+   "road": "A-3 / E901",
+   "conf": "high"
+  },
+  {
+   "a": "Valencia",
+   "acc": "ES",
+   "b": "Port de Sagunt",
+   "bcc": "ES",
+   "km": 30,
+   "ferry": false,
+   "road": "V-21 / A-7 / AP-7 / E15",
+   "conf": "high"
+  },
+  {
+   "a": "Port de Sagunt",
+   "acc": "ES",
+   "b": "Vila-real",
+   "bcc": "ES",
+   "km": 45,
+   "ferry": false,
+   "road": "AP-7 / A-7 / E15",
+   "conf": "medium"
+  },
+  {
+   "a": "Vila-real",
+   "acc": "ES",
+   "b": "Vandellòs",
+   "bcc": "ES",
+   "km": 145,
+   "ferry": false,
+   "road": "AP-7 / E15",
+   "conf": "medium"
+  },
+  {
+   "a": "Vandellòs",
+   "acc": "ES",
+   "b": "Tarragona",
+   "bcc": "ES",
+   "km": 40,
+   "ferry": false,
+   "road": "AP-7 / E15",
+   "conf": "medium"
+  },
+  {
+   "a": "Port de Sagunt",
+   "acc": "ES",
+   "b": "Teruel",
+   "bcc": "ES",
+   "km": 118,
+   "ferry": false,
+   "road": "A-23",
+   "conf": "medium",
+   "note": "The A-23 from Teruel meets the coast at Sagunt, so this replaces the old Valencia-Teruel edge (145 km). Valencia-Teruel is now 148 km."
+  },
+  {
+   "a": "Teruel",
+   "acc": "ES",
+   "b": "Zaragoza",
+   "bcc": "ES",
+   "km": 180,
+   "ferry": false,
+   "road": "A-23",
+   "conf": "high"
+  },
+  {
+   "a": "Zaragoza",
+   "acc": "ES",
+   "b": "Madrid",
+   "bcc": "ES",
+   "km": 315,
+   "ferry": false,
+   "road": "A-2 / E90",
+   "conf": "high"
+  },
+  {
+   "a": "Zaragoza",
+   "acc": "ES",
+   "b": "Lleida",
+   "bcc": "ES",
+   "km": 150,
+   "ferry": false,
+   "road": "A-2 / AP-2 / E90",
+   "conf": "high"
+  },
+  {
+   "a": "Lleida",
+   "acc": "ES",
+   "b": "Barcelona",
+   "bcc": "ES",
+   "km": 165,
+   "ferry": false,
+   "road": "A-2",
+   "conf": "high"
+  },
+  {
+   "a": "Lleida",
+   "acc": "ES",
+   "b": "Tarragona",
+   "bcc": "ES",
+   "km": 95,
+   "ferry": false,
+   "road": "AP-2 / A-27",
+   "conf": "medium"
+  },
+  {
+   "a": "Tarragona",
+   "acc": "ES",
+   "b": "Barcelona",
+   "bcc": "ES",
+   "km": 100,
+   "ferry": false,
+   "road": "AP-7 / E15",
+   "conf": "high"
+  },
+  {
+   "a": "Barcelona",
+   "acc": "ES",
+   "b": "Perpignan",
+   "bcc": "FR",
+   "km": 190,
+   "ferry": false,
+   "road": "AP-7 / A9 / E15",
+   "conf": "high"
+  },
+  {
+   "a": "Bilbao",
+   "acc": "ES",
+   "b": "Bayonne",
+   "bcc": "FR",
+   "km": 150,
+   "ferry": false,
+   "road": "AP-8 / A63 / E70",
+   "conf": "high"
+  },
+  {
+   "a": "Pamplona",
+   "acc": "ES",
+   "b": "Bayonne",
+   "bcc": "FR",
+   "km": 115,
+   "ferry": false,
+   "road": "N-121A / A63",
+   "conf": "medium",
+   "note": "Assumes the N-121A to Irun is modelled. Otherwise route Pamplona-Bilbao-Bayonne."
+  }
+ ],
+ "changes": [
+  "REMOVED Castellón de la Plana. It was a low-confidence filler city, and no search found it as an ETS2 city. The wiki.gg Vila-real page shows the game's city on the AP-7 in that area is Vila-real. A ProMods forum post says vanilla lacks Castellón.",
+  "REMOVED Logroño. No city page or depot was found. The wiki.gg A-1 (Spain) page mentions it only as a route waypoint (Burgos-Logroño segment). Its 5 edges are replaced by Bilbao-Zaragoza 305 km, Burgos-Zaragoza 290 km and Burgos-Pamplona 210 km (via Vitoria). The low-confidence Logroño-Soria N-111 edge is dropped.",
+  "ADDED Vila-real (ES, Iberia, 39.938/-0.101, aliases Villarreal). wiki.gg: 'Vila-real (Spanish: Villarreal) is a city in Spain that is featured in the Iberia map expansion', with a Domdepo depot and a garage.",
+  "ADDED Port de Sagunt (ES, Iberia, 39.660/-0.228, aliases Puerto de Sagunto/Sagunto). wiki.gg: town featured in the Iberia DLC, with ACC and CGLA factories and a TDC Auto Terminal depot. The wiki's Spain list of 39 cities includes it, between València and Vila-real.",
+  "ADDED Vandellòs (ES, Iberia, coordinates of the Vandellòs II plant 40.951/0.866), conf medium. wiki.gg: 'In-game, Vandellòs consists only of the Vandellòs II Nuclear Power Plant', with an Iberatómica depot (same pattern as Almaraz). The Japanese wiki (wikiwiki.jp ets2steam Iberia) lists it, but one search summary said the wiki.gg Spain city list omits it.",
+  "ROADS: split the coastal AP-7 Valencia-Tarragona corridor (formerly via Castellón) into Valencia-Port de Sagunt 30, Port de Sagunt-Vila-real 45, Vila-real-Vandellòs 145 and Vandellòs-Tarragona 40, about 260 km in total, as before.",
+  "ROADS: replaced Valencia-Teruel (145) with Port de Sagunt-Teruel (118, A-23), because the A-23 joins the coast at Sagunt. Valencia-Teruel is now 148 km.",
+  "Mérida: kept, conf high->medium, with a note. The wiki.gg Mérida page calls it 'an inaccessible city' and the map-data project lists it as a village, so it probably has no depots. It still appears to count toward the wiki's 39 Spanish cities (51 Iberia cities in total), and it is the A-5/A-66 junction, so it was not disproved as an in-game city entry.",
+  "CITY COUNT: the previous file had 38 ES + 12 PT = 50, not 51 as stated. It now has 39 ES + 12 PT = 51, which matches wiki.gg's 'Iberia: 51 cities (49 at release + Beja and Soria in 1.43)' and '39 cities in Spain'.",
+  "PORTUGAL: all 12 confirmed by the fandom wiki's Portugal city list: Beja, Coimbra, Cortiçadas de Lavre, Évora, Faro, Guarda, Lisboa, Olhão, Ponte de Sor, Porto, Setúbal, Sines. Cortiçadas de Lavre raised from medium to high.",
+  "NOT ADDED (radio_only candidates): Huesca, Irun, La Jonquera, Manresa, Mengíbar, San Sebastián/Donostia. None appears in any vanilla Iberia city evidence, and they fit the ProMods Iberia additions. The 39-city Spanish count is already filled.",
+  "FERRIES: none added. No vanilla ferry from an Iberian port was found, and Santander-Plymouth is not vanilla (Plymouth is not in the base-game UK). The graph was checked: all 51 cities are connected, and the cross-border edges to Perpignan and Bayonne (FR) are kept."
+ ],
+ "sources": "WebSearch (14 calls), working only from result text. trucksimulator.wiki.gg pages: Iberia, Euro_Truck_Simulator_2:_Iberia (51 cities: 49 at release + 2 in 1.43), Spain ('39 cities in Spain'), Vila-real, Port_de_Sagunt, Vandellòs, Mérida ('an inaccessible city'), Soria, A-1_(Spain) (Logroño only as a waypoint), Scenery_towns/Euro_Truck_Simulator_2/Spain. truck-simulator.fandom.com Portugal navbox via A7/A12/A28 (Portugal) pages (12 PT cities). wikiwiki.jp/ets2steam/DLC/Iberia (lists Vandellòs). promods.net viewtopic.php?p=217775 (Castellón not in vanilla; ProMods used Vinaròs). blog.scssoft.com Iberia posts (2020-2021)."
+}

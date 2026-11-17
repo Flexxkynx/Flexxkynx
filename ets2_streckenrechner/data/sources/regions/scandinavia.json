@@ -1,0 +1,1727 @@
+{
+ "region": "DK, SE, NO (Scandinavia DLC 2015 + Nordic Horizons DLC, released 27 Nov 2025). Web-checked Nov 2026: Nordic Horizons adds 15 Norwegian and 13 Swedish cities per the fan wiki (SCS: Haparanda is merged into Tornio in game). Denmark keeps its 7 Scandinavia-DLC cities. Iceland DLC (10 Nov 2026) ferries from Hirtshals and Ålesund are included.",
+ "cities": [
+  {
+   "name": "København",
+   "cc": "DK",
+   "lat": 55.676,
+   "lon": 12.568,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Copenhagen",
+    "Kopenhagen",
+    "Kobenhavn",
+    "Koebenhavn"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Odense",
+   "cc": "DK",
+   "lat": 55.403,
+   "lon": 10.402,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Odense"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Aalborg",
+   "cc": "DK",
+   "lat": 57.048,
+   "lon": 9.919,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Alborg",
+    "Ålborg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Esbjerg",
+   "cc": "DK",
+   "lat": 55.476,
+   "lon": 8.459,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Esbjerg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Frederikshavn",
+   "cc": "DK",
+   "lat": 57.441,
+   "lon": 10.537,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Frederikshafen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Hirtshals",
+   "cc": "DK",
+   "lat": 57.588,
+   "lon": 9.959,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Hirtshals"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Gedser",
+   "cc": "DK",
+   "lat": 54.575,
+   "lon": 11.926,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Gedser"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Malmö",
+   "cc": "SE",
+   "lat": 55.605,
+   "lon": 13.004,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Malmo",
+    "Malmoe"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Trelleborg",
+   "cc": "SE",
+   "lat": 55.376,
+   "lon": 13.157,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Trelleborg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Helsingborg",
+   "cc": "SE",
+   "lat": 56.046,
+   "lon": 12.694,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Helsingburg",
+    "Hälsingborg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Göteborg",
+   "cc": "SE",
+   "lat": 57.709,
+   "lon": 11.974,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Gothenburg",
+    "Goteborg",
+    "Goeteborg",
+    "Gotenburg"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Jönköping",
+   "cc": "SE",
+   "lat": 57.783,
+   "lon": 14.161,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Jonkoping",
+    "Joenkoeping"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Växjö",
+   "cc": "SE",
+   "lat": 56.879,
+   "lon": 14.806,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Vaxjo",
+    "Vaexjoe"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kalmar",
+   "cc": "SE",
+   "lat": 56.663,
+   "lon": 16.356,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Kalmar"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Karlskrona",
+   "cc": "SE",
+   "lat": 56.161,
+   "lon": 15.587,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Karlskrona"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Linköping",
+   "cc": "SE",
+   "lat": 58.411,
+   "lon": 15.622,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Linkoping",
+    "Linkoeping"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Södertälje",
+   "cc": "SE",
+   "lat": 59.196,
+   "lon": 17.626,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Sodertalje",
+    "Soedertaelje"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Stockholm",
+   "cc": "SE",
+   "lat": 59.329,
+   "lon": 18.069,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Stockholm"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Nynäshamn",
+   "cc": "SE",
+   "lat": 58.903,
+   "lon": 17.948,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Nynashamn",
+    "Nynaeshamn"
+   ],
+   "conf": "high",
+   "note": "Original Scandinavia DLC city; wiki ferry table lists the Nynäshamn-Ventspils route."
+  },
+  {
+   "name": "Kapellskär",
+   "cc": "SE",
+   "lat": 59.72,
+   "lon": 19.062,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Kapellskar",
+    "Kapellskaer"
+   ],
+   "conf": "high",
+   "note": "Added in update 1.33 (wiki). Coordinates are for the port."
+  },
+  {
+   "name": "Uppsala",
+   "cc": "SE",
+   "lat": 59.859,
+   "lon": 17.639,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Upsala"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Västerås",
+   "cc": "SE",
+   "lat": 59.61,
+   "lon": 16.545,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Vasteras",
+    "Vaesteraas"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Örebro",
+   "cc": "SE",
+   "lat": 59.275,
+   "lon": 15.213,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Orebro",
+    "Oerebro"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Gävle",
+   "cc": "SE",
+   "lat": 60.675,
+   "lon": 17.142,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Gavle",
+    "Gaevle"
+   ],
+   "conf": "high",
+   "note": "wiki.gg Gävle page: featured in Nordic Horizons."
+  },
+  {
+   "name": "Sundsvall",
+   "cc": "SE",
+   "lat": 62.391,
+   "lon": 17.307,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Sundsvall"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Östersund",
+   "cc": "SE",
+   "lat": 63.179,
+   "lon": 14.636,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Ostersund",
+    "Oestersund"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Umeå",
+   "cc": "SE",
+   "lat": 63.826,
+   "lon": 20.263,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Umea",
+    "Umeaa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Skellefteå",
+   "cc": "SE",
+   "lat": 64.75,
+   "lon": 20.951,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Skelleftea",
+    "Skellefteaa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Luleå",
+   "cc": "SE",
+   "lat": 65.584,
+   "lon": 22.155,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Lulea",
+    "Luleaa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kiruna",
+   "cc": "SE",
+   "lat": 67.856,
+   "lon": 20.225,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Kiruna"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Arvidsjaur",
+   "cc": "SE",
+   "lat": 65.59,
+   "lon": 19.168,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Arvidsjaur"
+   ],
+   "conf": "high",
+   "note": "Listed among the 13 Swedish Nordic Horizons cities (truck-simulator.fandom.com Nordic Horizons page)."
+  },
+  {
+   "name": "Oslo",
+   "cc": "NO",
+   "lat": 59.914,
+   "lon": 10.752,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Oslo",
+    "Christiania"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Kristiansand",
+   "cc": "NO",
+   "lat": 58.146,
+   "lon": 7.996,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Kristiansand"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Stavanger",
+   "cc": "NO",
+   "lat": 58.97,
+   "lon": 5.733,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Stavanger"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bergen",
+   "cc": "NO",
+   "lat": 60.391,
+   "lon": 5.322,
+   "dlc": "Scandinavia",
+   "aliases": [
+    "Bergen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Trondheim",
+   "cc": "NO",
+   "lat": 63.431,
+   "lon": 10.395,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Drontheim",
+    "Trondhjem",
+    "Tråante",
+    "Traante"
+   ],
+   "conf": "high",
+   "note": "Fandom lists it as Trondheim (Tråante)."
+  },
+  {
+   "name": "Steinkjer",
+   "cc": "NO",
+   "lat": 64.015,
+   "lon": 11.495,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Steinkjer"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page)."
+  },
+  {
+   "name": "Mo i Rana",
+   "cc": "NO",
+   "lat": 66.313,
+   "lon": 14.142,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Mo",
+    "Rana",
+    "Mo i Rana"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page)."
+  },
+  {
+   "name": "Bodø",
+   "cc": "NO",
+   "lat": 67.28,
+   "lon": 14.405,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Bodo",
+    "Bodoe"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Narvik",
+   "cc": "NO",
+   "lat": 68.438,
+   "lon": 17.427,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Narvik"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Tromsø",
+   "cc": "NO",
+   "lat": 69.649,
+   "lon": 18.956,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Tromso",
+    "Tromsoe"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Alta",
+   "cc": "NO",
+   "lat": 69.969,
+   "lon": 23.272,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Alta"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Borlänge",
+   "cc": "SE",
+   "lat": 60.484,
+   "lon": 15.434,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Borlange",
+    "Borlaenge"
+   ],
+   "conf": "high",
+   "note": "Listed among the 13 Swedish Nordic Horizons cities (truck-simulator.fandom.com Nordic Horizons page). wiki.gg page also calls it a Nordic Horizons city."
+  },
+  {
+   "name": "Falun",
+   "cc": "SE",
+   "lat": 60.607,
+   "lon": 15.629,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Falun"
+   ],
+   "conf": "high",
+   "note": "Listed among the 13 Swedish Nordic Horizons cities (truck-simulator.fandom.com Nordic Horizons page)."
+  },
+  {
+   "name": "Örnsköldsvik",
+   "cc": "SE",
+   "lat": 63.29,
+   "lon": 18.716,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Ornskoldsvik",
+    "Oernskoeldsvik",
+    "Övik",
+    "Ovik"
+   ],
+   "conf": "high",
+   "note": "Listed among the 13 Swedish Nordic Horizons cities (truck-simulator.fandom.com Nordic Horizons page). wiki.gg page also calls it a Nordic Horizons city."
+  },
+  {
+   "name": "Karesuando",
+   "cc": "SE",
+   "lat": 68.44,
+   "lon": 22.483,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Karesuando",
+    "Gárasavvon"
+   ],
+   "conf": "high",
+   "note": "Listed among the 13 Swedish Nordic Horizons cities (truck-simulator.fandom.com Nordic Horizons page). wiki.gg: connections north towards Finland and Norway."
+  },
+  {
+   "name": "Ålesund",
+   "cc": "NO",
+   "lat": 62.472,
+   "lon": 6.15,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Alesund",
+    "Aalesund"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page). Iceland DLC adds a ferry from here to Seyðisfjörður."
+  },
+  {
+   "name": "Andenes",
+   "cc": "NO",
+   "lat": 69.316,
+   "lon": 16.119,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Andenes"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page). SCS blog post on Andenes, 6 May 2025."
+  },
+  {
+   "name": "Dombås",
+   "cc": "NO",
+   "lat": 62.074,
+   "lon": 9.123,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Dombas",
+    "Dombaas"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page)."
+  },
+  {
+   "name": "Hamar",
+   "cc": "NO",
+   "lat": 60.795,
+   "lon": 11.068,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Hamar"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page)."
+  },
+  {
+   "name": "Honningsvåg",
+   "cc": "NO",
+   "lat": 70.982,
+   "lon": 25.97,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Honningsvag",
+    "Honningsvaag",
+    "Nordkapp",
+    "North Cape"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page)."
+  },
+  {
+   "name": "Kristiansund",
+   "cc": "NO",
+   "lat": 63.11,
+   "lon": 7.728,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Kristiansund"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page)."
+  },
+  {
+   "name": "Lillehammer",
+   "cc": "NO",
+   "lat": 61.115,
+   "lon": 10.466,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Lillehammer"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page)."
+  },
+  {
+   "name": "Svolvær",
+   "cc": "NO",
+   "lat": 68.234,
+   "lon": 14.568,
+   "dlc": "Nordic Horizons",
+   "aliases": [
+    "Svolvaer",
+    "Svolvar"
+   ],
+   "conf": "high",
+   "note": "Listed among the 15 Norwegian Nordic Horizons cities (truck-simulator.fandom.com Norway page)."
+  }
+ ],
+ "roads": [
+  {
+   "a": "København",
+   "acc": "DK",
+   "b": "Odense",
+   "bcc": "DK",
+   "km": 165,
+   "road": "E20 (Storebælt bridge)",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Odense",
+   "acc": "DK",
+   "b": "Esbjerg",
+   "bcc": "DK",
+   "km": 135,
+   "road": "E20",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Odense",
+   "acc": "DK",
+   "b": "Aalborg",
+   "bcc": "DK",
+   "km": 250,
+   "road": "E20 / E45",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Aarhus is not a vanilla city, as far as the reviewer recalls, so this edge is not split."
+  },
+  {
+   "a": "Esbjerg",
+   "acc": "DK",
+   "b": "Aalborg",
+   "bcc": "DK",
+   "km": 270,
+   "road": "E20 / E45",
+   "ferry": false,
+   "conf": "low",
+   "note": "Route uncertain. In-game this may be a west-coast road instead."
+  },
+  {
+   "a": "Aalborg",
+   "acc": "DK",
+   "b": "Frederikshavn",
+   "bcc": "DK",
+   "km": 65,
+   "road": "E45",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Aalborg",
+   "acc": "DK",
+   "b": "Hirtshals",
+   "bcc": "DK",
+   "km": 65,
+   "road": "E39",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Hirtshals",
+   "acc": "DK",
+   "b": "Frederikshavn",
+   "bcc": "DK",
+   "km": 45,
+   "road": "35 / 597",
+   "ferry": false,
+   "conf": "low",
+   "note": "Not sure this direct link is in the game."
+  },
+  {
+   "a": "København",
+   "acc": "DK",
+   "b": "Gedser",
+   "bcc": "DK",
+   "km": 150,
+   "road": "E47 / E55",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "København",
+   "acc": "DK",
+   "b": "Malmö",
+   "bcc": "SE",
+   "km": 45,
+   "road": "E20 (Øresund bridge)",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Malmö",
+   "acc": "SE",
+   "b": "Trelleborg",
+   "bcc": "SE",
+   "km": 35,
+   "road": "E6",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Malmö",
+   "acc": "SE",
+   "b": "Helsingborg",
+   "bcc": "SE",
+   "km": 65,
+   "road": "E6 / E20",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Malmö",
+   "acc": "SE",
+   "b": "Karlskrona",
+   "bcc": "SE",
+   "km": 195,
+   "road": "E22",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Helsingborg",
+   "acc": "SE",
+   "b": "Göteborg",
+   "bcc": "SE",
+   "km": 215,
+   "road": "E6",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Helsingborg",
+   "acc": "SE",
+   "b": "Jönköping",
+   "bcc": "SE",
+   "km": 215,
+   "road": "E4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Göteborg",
+   "acc": "SE",
+   "b": "Jönköping",
+   "bcc": "SE",
+   "km": 150,
+   "road": "Rv40",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Göteborg",
+   "acc": "SE",
+   "b": "Oslo",
+   "bcc": "NO",
+   "km": 295,
+   "road": "E6",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Göteborg",
+   "acc": "SE",
+   "b": "Örebro",
+   "bcc": "SE",
+   "km": 285,
+   "road": "E20",
+   "ferry": false,
+   "conf": "low",
+   "note": "Not sure the E20 Göteborg-Örebro corridor is in the game. The reviewer believes it is, but could not verify."
+  },
+  {
+   "a": "Jönköping",
+   "acc": "SE",
+   "b": "Linköping",
+   "bcc": "SE",
+   "km": 130,
+   "road": "E4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Jönköping",
+   "acc": "SE",
+   "b": "Växjö",
+   "bcc": "SE",
+   "km": 120,
+   "road": "Rv30",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Växjö",
+   "acc": "SE",
+   "b": "Kalmar",
+   "bcc": "SE",
+   "km": 110,
+   "road": "Rv25",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Växjö",
+   "acc": "SE",
+   "b": "Karlskrona",
+   "bcc": "SE",
+   "km": 110,
+   "road": "Rv27 / Rv28",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Karlskrona",
+   "acc": "SE",
+   "b": "Kalmar",
+   "bcc": "SE",
+   "km": 85,
+   "road": "E22",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kalmar",
+   "acc": "SE",
+   "b": "Linköping",
+   "bcc": "SE",
+   "km": 240,
+   "road": "E22 / Rv34",
+   "ferry": false,
+   "conf": "low",
+   "note": "Not sure which road the game uses. In-game the E22 may instead join the E4 near Norrköping (not a city) between Linköping and Södertälje."
+  },
+  {
+   "a": "Linköping",
+   "acc": "SE",
+   "b": "Södertälje",
+   "bcc": "SE",
+   "km": 170,
+   "road": "E4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Södertälje",
+   "acc": "SE",
+   "b": "Stockholm",
+   "bcc": "SE",
+   "km": 35,
+   "road": "E4 / E20",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Stockholm",
+   "acc": "SE",
+   "b": "Nynäshamn",
+   "bcc": "SE",
+   "km": 60,
+   "road": "Rv73",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Stockholm",
+   "acc": "SE",
+   "b": "Kapellskär",
+   "bcc": "SE",
+   "km": 90,
+   "road": "E18",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Stockholm",
+   "acc": "SE",
+   "b": "Uppsala",
+   "bcc": "SE",
+   "km": 70,
+   "road": "E4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Stockholm",
+   "acc": "SE",
+   "b": "Västerås",
+   "bcc": "SE",
+   "km": 110,
+   "road": "E18",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Uppsala",
+   "acc": "SE",
+   "b": "Västerås",
+   "bcc": "SE",
+   "km": 80,
+   "road": "Rv55 / Rv70",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Västerås",
+   "acc": "SE",
+   "b": "Örebro",
+   "bcc": "SE",
+   "km": 95,
+   "road": "E18",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Örebro",
+   "acc": "SE",
+   "b": "Södertälje",
+   "bcc": "SE",
+   "km": 180,
+   "road": "E20",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Örebro",
+   "acc": "SE",
+   "b": "Oslo",
+   "bcc": "NO",
+   "km": 330,
+   "road": "E18 (via Karlstad)",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Uppsala",
+   "acc": "SE",
+   "b": "Gävle",
+   "bcc": "SE",
+   "km": 110,
+   "road": "E4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Gävle",
+   "acc": "SE",
+   "b": "Sundsvall",
+   "bcc": "SE",
+   "km": 215,
+   "road": "E4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Umeå",
+   "acc": "SE",
+   "b": "Skellefteå",
+   "bcc": "SE",
+   "km": 135,
+   "road": "E4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Skellefteå",
+   "acc": "SE",
+   "b": "Luleå",
+   "bcc": "SE",
+   "km": 130,
+   "road": "E4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Sundsvall",
+   "acc": "SE",
+   "b": "Östersund",
+   "bcc": "SE",
+   "km": 185,
+   "road": "E14",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Östersund",
+   "acc": "SE",
+   "b": "Trondheim",
+   "bcc": "NO",
+   "km": 260,
+   "road": "E14",
+   "ferry": false,
+   "conf": "high",
+   "note": "The SCS blog names Trondheim-Östersund as a featured route."
+  },
+  {
+   "a": "Luleå",
+   "acc": "SE",
+   "b": "Kiruna",
+   "bcc": "SE",
+   "km": 340,
+   "road": "E10 (via Gällivare)",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Kiruna",
+   "acc": "SE",
+   "b": "Narvik",
+   "bcc": "NO",
+   "km": 175,
+   "road": "E10",
+   "ferry": false,
+   "conf": "high",
+   "note": "The SCS blog names Narvik-Kiruna as a featured route."
+  },
+  {
+   "a": "Arvidsjaur",
+   "acc": "SE",
+   "b": "Skellefteå",
+   "bcc": "SE",
+   "km": 135,
+   "road": "Rv95",
+   "ferry": false,
+   "conf": "low",
+   "note": "Reviewer lowered the km from 175: the straight line is about 125 km and the real Rv95 route about 130-140 km."
+  },
+  {
+   "a": "Arvidsjaur",
+   "acc": "SE",
+   "b": "Luleå",
+   "bcc": "SE",
+   "km": 165,
+   "road": "Rv94",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Oslo",
+   "acc": "NO",
+   "b": "Kristiansand",
+   "bcc": "NO",
+   "km": 320,
+   "road": "E18",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Kristiansand",
+   "acc": "NO",
+   "b": "Stavanger",
+   "bcc": "NO",
+   "km": 235,
+   "road": "E39",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Stavanger",
+   "acc": "NO",
+   "b": "Bergen",
+   "bcc": "NO",
+   "km": 210,
+   "road": "E39",
+   "ferry": false,
+   "conf": "medium",
+   "note": "In real life the coastal E39 has ferry crossings. In the game it may be all road, or an inland route, which would be about 300 km or more. Not verified."
+  },
+  {
+   "a": "Bergen",
+   "acc": "NO",
+   "b": "Oslo",
+   "bcc": "NO",
+   "km": 465,
+   "road": "E16",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Trondheim",
+   "acc": "NO",
+   "b": "Steinkjer",
+   "bcc": "NO",
+   "km": 125,
+   "road": "E6",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Steinkjer",
+   "acc": "NO",
+   "b": "Mo i Rana",
+   "bcc": "NO",
+   "km": 355,
+   "road": "E6",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Passes Mosjøen, which is not in the wiki's Nordic Horizons city list."
+  },
+  {
+   "a": "Mo i Rana",
+   "acc": "NO",
+   "b": "Bodø",
+   "bcc": "NO",
+   "km": 230,
+   "road": "E6 / Rv80",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Mo i Rana",
+   "acc": "NO",
+   "b": "Narvik",
+   "bcc": "NO",
+   "km": 410,
+   "road": "E6 (via Fauske)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Bodø is a 63 km spur off the E6 at Fauske, so this is the through route that skips it. In real life it includes the Bognes-Skarberget ferry."
+  },
+  {
+   "a": "Bodø",
+   "acc": "NO",
+   "b": "Narvik",
+   "bcc": "NO",
+   "km": 300,
+   "road": "Rv80 / E6",
+   "ferry": false,
+   "conf": "low",
+   "note": "In real life includes the Bognes-Skarberget ferry."
+  },
+  {
+   "a": "Narvik",
+   "acc": "NO",
+   "b": "Tromsø",
+   "bcc": "NO",
+   "km": 250,
+   "road": "E6 / E8",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Tromsø",
+   "acc": "NO",
+   "b": "Alta",
+   "bcc": "NO",
+   "km": 390,
+   "road": "E8 / E6 (around Lyngen)",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Kiel",
+   "acc": "DE",
+   "b": "Esbjerg",
+   "bcc": "DK",
+   "km": 230,
+   "road": "A7 / E45 / E20",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Kiel",
+   "acc": "DE",
+   "b": "Odense",
+   "bcc": "DK",
+   "km": 250,
+   "road": "A7 / E45 / E20",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Odense",
+   "bcc": "DK",
+   "km": 315,
+   "road": "A7 / E45 / E20",
+   "ferry": false,
+   "conf": "medium",
+   "note": "The A7 does not pass through Kiel."
+  },
+  {
+   "a": "Hamburg",
+   "acc": "DE",
+   "b": "Esbjerg",
+   "bcc": "DK",
+   "km": 300,
+   "road": "A7 / E45",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Gedser",
+   "acc": "DK",
+   "b": "Rostock",
+   "bcc": "DE",
+   "km": 45,
+   "ferry": true,
+   "conf": "high",
+   "note": "Wiki ferry page lists Rostock-Gedser."
+  },
+  {
+   "a": "Frederikshavn",
+   "acc": "DK",
+   "b": "Göteborg",
+   "bcc": "SE",
+   "km": 90,
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Frederikshavn",
+   "acc": "DK",
+   "b": "Oslo",
+   "bcc": "NO",
+   "km": 270,
+   "ferry": true,
+   "conf": "medium"
+  },
+  {
+   "a": "Hirtshals",
+   "acc": "DK",
+   "b": "Kristiansand",
+   "bcc": "NO",
+   "km": 130,
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Hirtshals",
+   "acc": "DK",
+   "b": "Stavanger",
+   "bcc": "NO",
+   "km": 330,
+   "ferry": true,
+   "conf": "medium",
+   "note": "Wiki ferry page: all 4 Scandinavia-DLC Norwegian cities have ferry links; only Hirtshals fits for Stavanger and Bergen."
+  },
+  {
+   "a": "Hirtshals",
+   "acc": "DK",
+   "b": "Bergen",
+   "bcc": "NO",
+   "km": 480,
+   "ferry": true,
+   "conf": "medium",
+   "note": "Wiki ferry page: all 4 Scandinavia-DLC Norwegian cities have ferry links; only Hirtshals fits for Stavanger and Bergen."
+  },
+  {
+   "a": "København",
+   "acc": "DK",
+   "b": "Oslo",
+   "bcc": "NO",
+   "km": 500,
+   "ferry": true,
+   "conf": "low",
+   "note": "Not sure this ferry is in the game. The reviewer recalls it, but could not verify."
+  },
+  {
+   "a": "Göteborg",
+   "acc": "SE",
+   "b": "Kiel",
+   "bcc": "DE",
+   "km": 440,
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Oslo",
+   "acc": "NO",
+   "b": "Kiel",
+   "bcc": "DE",
+   "km": 650,
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Trelleborg",
+   "acc": "SE",
+   "b": "Rostock",
+   "bcc": "DE",
+   "km": 175,
+   "ferry": true,
+   "conf": "high"
+  },
+  {
+   "a": "Trelleborg",
+   "acc": "SE",
+   "b": "Lübeck",
+   "bcc": "DE",
+   "km": 230,
+   "ferry": true,
+   "conf": "low",
+   "note": "Real port is Travemünde; update 1.33 added a Travemünde port (SCS blog / wiki). The in-game endpoint may be named Travemünde rather than Lübeck. Not verified."
+  },
+  {
+   "a": "Trelleborg",
+   "acc": "SE",
+   "b": "Świnoujście",
+   "bcc": "PL",
+   "km": 170,
+   "ferry": true,
+   "conf": "low",
+   "note": "Not sure Świnoujście is a vanilla city."
+  },
+  {
+   "a": "Karlskrona",
+   "acc": "SE",
+   "b": "Gdańsk",
+   "bcc": "PL",
+   "km": 300,
+   "ferry": true,
+   "conf": "low",
+   "note": "The real ferry goes to Gdynia. Not sure about the in-game port name."
+  },
+  {
+   "a": "Nynäshamn",
+   "acc": "SE",
+   "b": "Ventspils",
+   "bcc": "LV",
+   "km": 300,
+   "ferry": true,
+   "conf": "high",
+   "note": "Listed in the wiki ferry table (Polaris Lines routes)."
+  },
+  {
+   "a": "Kapellskär",
+   "acc": "SE",
+   "b": "Naantali",
+   "bcc": "FI",
+   "km": 230,
+   "ferry": true,
+   "conf": "high",
+   "note": "Listed in the wiki ferry table (Polaris Lines routes)."
+  },
+  {
+   "a": "Kapellskär",
+   "acc": "SE",
+   "b": "Paldiski",
+   "bcc": "EE",
+   "km": 350,
+   "ferry": true,
+   "conf": "high",
+   "note": "Listed in the wiki ferry table (Polaris Lines routes)."
+  },
+  {
+   "a": "Oslo",
+   "acc": "NO",
+   "b": "Hamar",
+   "bcc": "NO",
+   "km": 125,
+   "ferry": false,
+   "conf": "high",
+   "road": "E6",
+   "note": "Split of the old Oslo-Trondheim edge: Hamar is a Nordic Horizons city."
+  },
+  {
+   "a": "Hamar",
+   "acc": "NO",
+   "b": "Lillehammer",
+   "bcc": "NO",
+   "km": 60,
+   "ferry": false,
+   "conf": "high",
+   "road": "E6"
+  },
+  {
+   "a": "Lillehammer",
+   "acc": "NO",
+   "b": "Dombås",
+   "bcc": "NO",
+   "km": 145,
+   "ferry": false,
+   "conf": "high",
+   "road": "E6 (Gudbrandsdalen, via Otta)"
+  },
+  {
+   "a": "Dombås",
+   "acc": "NO",
+   "b": "Trondheim",
+   "bcc": "NO",
+   "km": 195,
+   "ferry": false,
+   "conf": "high",
+   "road": "E6 (Dovrefjell, via Oppdal)"
+  },
+  {
+   "a": "Dombås",
+   "acc": "NO",
+   "b": "Ålesund",
+   "bcc": "NO",
+   "km": 220,
+   "ferry": false,
+   "conf": "medium",
+   "road": "E136 (Romsdalen, via Åndalsnes)"
+  },
+  {
+   "a": "Ålesund",
+   "acc": "NO",
+   "b": "Kristiansund",
+   "bcc": "NO",
+   "km": 140,
+   "ferry": false,
+   "conf": "low",
+   "road": "E39 / Rv64 (via Molde)",
+   "note": "In real life the shortest route uses the Vestnes-Molde ferry. The in-game road layout was not verified."
+  },
+  {
+   "a": "Kristiansund",
+   "acc": "NO",
+   "b": "Trondheim",
+   "bcc": "NO",
+   "km": 195,
+   "ferry": false,
+   "conf": "low",
+   "road": "E39",
+   "note": "In real life E39 has the Halsa-Kanestraum ferry; the alternative via Rv70 and Oppdal is about 210 km. Not verified in game."
+  },
+  {
+   "a": "Narvik",
+   "acc": "NO",
+   "b": "Svolvær",
+   "bcc": "NO",
+   "km": 230,
+   "ferry": false,
+   "conf": "medium",
+   "road": "E10 (Lofast)"
+  },
+  {
+   "a": "Svolvær",
+   "acc": "NO",
+   "b": "Andenes",
+   "bcc": "NO",
+   "km": 225,
+   "ferry": false,
+   "conf": "low",
+   "road": "E10 / Rv85 / Rv82 (via Sortland)"
+  },
+  {
+   "a": "Narvik",
+   "acc": "NO",
+   "b": "Andenes",
+   "bcc": "NO",
+   "km": 265,
+   "ferry": false,
+   "conf": "low",
+   "road": "E10 / Rv85 / Rv82 (via Sortland)"
+  },
+  {
+   "a": "Alta",
+   "acc": "NO",
+   "b": "Honningsvåg",
+   "bcc": "NO",
+   "km": 210,
+   "ferry": false,
+   "conf": "medium",
+   "road": "E6 / E69 (via Olderfjord)"
+  },
+  {
+   "a": "Sundsvall",
+   "acc": "SE",
+   "b": "Örnsköldsvik",
+   "bcc": "SE",
+   "km": 160,
+   "ferry": false,
+   "conf": "high",
+   "road": "E4 (Härnösand, Höga Kusten bridge)",
+   "note": "Split of the old Sundsvall-Umeå edge."
+  },
+  {
+   "a": "Örnsköldsvik",
+   "acc": "SE",
+   "b": "Umeå",
+   "bcc": "SE",
+   "km": 112,
+   "ferry": false,
+   "conf": "high",
+   "road": "E4"
+  },
+  {
+   "a": "Umeå",
+   "acc": "SE",
+   "b": "Mo i Rana",
+   "bcc": "NO",
+   "km": 455,
+   "ferry": false,
+   "conf": "medium",
+   "road": "E12 (Blå vägen, via Storuman and Tärnaby)",
+   "note": "Replaces Umeå-Storuman-Mo i Rana: Storuman is not a city. Wiki lists E12 as the Umeå-Norway connection."
+  },
+  {
+   "a": "Östersund",
+   "acc": "SE",
+   "b": "Arvidsjaur",
+   "bcc": "SE",
+   "km": 500,
+   "ferry": false,
+   "conf": "low",
+   "road": "E45 (via Strömsund, Storuman, Sorsele)",
+   "note": "Replaces Östersund-Storuman-Arvidsjaur. wiki.gg Östersund page: roads run north to Strömsund, Storuman and Arvidsjaur."
+  },
+  {
+   "a": "Arvidsjaur",
+   "acc": "SE",
+   "b": "Bodø",
+   "bcc": "NO",
+   "km": 335,
+   "ferry": false,
+   "conf": "low",
+   "road": "Rv95 / Rv77 / E6 / Rv80 (Silvervägen, via Arjeplog and Fauske)",
+   "note": "wiki.gg Skellefteå page: a road runs northwest towards Arvidsjaur and Norway. Exact in-game junction not verified."
+  },
+  {
+   "a": "Arvidsjaur",
+   "acc": "SE",
+   "b": "Kiruna",
+   "bcc": "SE",
+   "km": 375,
+   "ferry": false,
+   "conf": "low",
+   "road": "E45 (via Jokkmokk, Gällivare)",
+   "note": "Assumes the E45 continues north of Arvidsjaur in game. Not verified."
+  },
+  {
+   "a": "Kiruna",
+   "acc": "SE",
+   "b": "Karesuando",
+   "bcc": "SE",
+   "km": 185,
+   "ferry": false,
+   "conf": "medium",
+   "road": "E10 / E45 (via Vittangi)",
+   "note": "SCS settlements blog names Vittangi as a Swedish stop."
+  },
+  {
+   "a": "Karesuando",
+   "acc": "SE",
+   "b": "Tromsø",
+   "bcc": "NO",
+   "km": 300,
+   "ferry": false,
+   "conf": "low",
+   "road": "E8 (via Kaaresuvanto, Kilpisjärvi, Skibotn in Finland)",
+   "note": "Wiki lists E8 as Tromsø-Finland. Passes through Finland without a city."
+  },
+  {
+   "a": "Karesuando",
+   "acc": "SE",
+   "b": "Alta",
+   "bcc": "NO",
+   "km": 310,
+   "ferry": false,
+   "conf": "low",
+   "road": "E45 (via Kaaresuvanto, Hetta, Kautokeino)",
+   "note": "Wiki lists an E45 Finland connection in Norway. Not verified."
+  },
+  {
+   "a": "Gävle",
+   "acc": "SE",
+   "b": "Falun",
+   "bcc": "SE",
+   "km": 90,
+   "ferry": false,
+   "conf": "medium",
+   "road": "E16"
+  },
+  {
+   "a": "Falun",
+   "acc": "SE",
+   "b": "Borlänge",
+   "bcc": "SE",
+   "km": 25,
+   "ferry": false,
+   "conf": "high",
+   "road": "Rv50 / E16"
+  },
+  {
+   "a": "Örebro",
+   "acc": "SE",
+   "b": "Borlänge",
+   "bcc": "SE",
+   "km": 165,
+   "ferry": false,
+   "conf": "medium",
+   "road": "Rv50 (via Lindesberg, Ludvika)",
+   "note": "Splits the old Örebro-Östersund edge. Ludvika is a scenery village."
+  },
+  {
+   "a": "Borlänge",
+   "acc": "SE",
+   "b": "Östersund",
+   "bcc": "SE",
+   "km": 420,
+   "ferry": false,
+   "conf": "low",
+   "road": "Rv70 / E45 (via Mora, Sveg)",
+   "note": "wiki.gg Östersund page: roads run south to Sveg, Mora and Malung."
+  },
+  {
+   "a": "Luleå",
+   "acc": "SE",
+   "b": "Tornio",
+   "bcc": "FI",
+   "km": 130,
+   "ferry": false,
+   "conf": "high",
+   "road": "E4 (via Haparanda)",
+   "note": "SCS blog (28 May 2025): Haparanda and Tornio appear as a single in-game city named Tornio."
+  },
+  {
+   "a": "Hirtshals",
+   "acc": "DK",
+   "b": "Seyðisfjörður",
+   "bcc": "IS",
+   "km": 1595,
+   "ferry": true,
+   "conf": "high",
+   "note": "Iceland DLC (10 Nov 2026): ferry based on the Smyril Line route."
+  },
+  {
+   "a": "Ålesund",
+   "acc": "NO",
+   "b": "Seyðisfjörður",
+   "bcc": "IS",
+   "km": 1080,
+   "ferry": true,
+   "conf": "high",
+   "note": "Iceland DLC: fictional route that opens Ålesund's previously closed ferry port."
+  },
+  {
+   "a": "Esbjerg",
+   "acc": "DK",
+   "b": "Grimsby",
+   "bcc": "GB",
+   "km": 620,
+   "ferry": true,
+   "conf": "medium",
+   "note": "Wiki ferry page lists a Hull (Grimsby)-Esbjerg route."
+  }
+ ],
+ "changes": [
+  "Nordic Horizons release date confirmed as 27 Nov 2025 (fandom wiki, SCS blog post 'nordic-horizons-forest-machinery-release' dated 27 Nov 2025, pressfire.no). Fandom: 41 cities in the DLC = 15 Norway + 13 Sweden + 13 Finland.",
+  "Added 8 Norwegian Nordic Horizons cities: Ålesund, Andenes, Dombås, Hamar, Honningsvåg, Kristiansund, Lillehammer, Svolvær. Evidence: the truck-simulator.fandom.com Norway page lists 19 cities (4 Scandinavia + 15 Nordic Horizons): Ålesund, Alta, Andenes, Bodø, Dombås, Hamar, Honningsvåg, Kristiansund, Lillehammer, Mo i Rana, Narvik, Steinkjer, Svolvær, Tromsø, Trondheim. Andenes also has its own SCS blog post (May 2025).",
+  "Removed Kirkenes, and the Alta-Kirkenes edge with it: it is not in the 15-city Norwegian Nordic Horizons list. Added Alta-Honningsvåg (E6/E69, about 210 km) instead.",
+  "Added 4 Swedish Nordic Horizons cities: Borlänge, Falun, Örnsköldsvik, Karesuando. The fandom Nordic Horizons table lists the Swedish cities as Arvidsjaur, Borlänge, Falun, Gävle, Haparanda, Karesuando, Kiruna, Luleå, Örnsköldsvik, Östersund, Skellefteå, Sundsvall, Umeå. The wiki.gg pages for Borlänge, Örnsköldsvik and Karesuando also call them Nordic Horizons cities.",
+  "Removed Storuman: it is not in the 13-city Swedish list. The wiki.gg Östersund page names it only as a place on the road north, beside Strömsund. Its 4 edges are replaced by Umeå-Mo i Rana (E12, 455 km; the wiki pairs E12 with an Umeå-Norway connection) and Östersund-Arvidsjaur (E45, 500 km).",
+  "Removed Haparanda as a separate city. The SCS blog (28 May 2025, 'Nordic Horizons: Tornio and Haparanda') says the twin towns appear together under the single in-game name Tornio. This also matches the '27 cities in Norway and Sweden' figure. Luleå-Haparanda and Haparanda-Tornio are replaced by Luleå-Tornio (FI), E4, 130 km.",
+  "Arvidsjaur, Steinkjer and Mo i Rana raised to high confidence: all three are in the fandom Nordic Horizons city lists.",
+  "Split Oslo-Trondheim (495 km) into Oslo-Hamar 125, Hamar-Lillehammer 60, Lillehammer-Dombås 145 and Dombås-Trondheim 195 (E6). Added Dombås-Ålesund (E136, 220 km), plus Ålesund-Kristiansund (140 km) and Kristiansund-Trondheim (E39, 195 km) at low confidence.",
+  "Split Sundsvall-Umeå (265 km) into Sundsvall-Örnsköldsvik 160 and Örnsköldsvik-Umeå 112 (E4).",
+  "Replaced Örebro-Östersund (610 km, low) with Örebro-Borlänge (Rv50, 165 km) and Borlänge-Östersund (Rv70/E45 via Mora and Sveg, 420 km). The wiki.gg Östersund page says roads run south to Sveg, Mora and Malung. Added Gävle-Falun (E16, 90 km) and Falun-Borlänge (25 km).",
+  "Connected Lofoten and Vesterålen: Narvik-Svolvær (E10, 230 km), Svolvær-Andenes (225 km, low) and Narvik-Andenes (265 km, low). No in-game Lofoten ferry could be confirmed, so none was added.",
+  "Connected Karesuando: Kiruna-Karesuando (E10/E45 via Vittangi, 185 km; the SCS settlements blog names Vittangi). Added Karesuando-Tromsø (E8 through Finland, about 300 km, low; the wiki lists E8 as Tromsø-Finland) and Karesuando-Alta (E45 via Kautokeino, about 310 km, low).",
+  "Added low-confidence edges Arvidsjaur-Bodø (Rv95 Silvervägen, about 335 km; the wiki Skellefteå page says a road runs northwest towards Arvidsjaur and Norway) and Arvidsjaur-Kiruna (E45, about 375 km).",
+  "Added Iceland DLC ferries: Hirtshals-Seyðisfjörður (IS), based on the Smyril Line route, and Ålesund-Seyðisfjörður (IS), a fictional route that opens Ålesund's closed ferry port. Source: racinggames.gg article on the Iceland DLC release, 10 Nov 2026. The third Iceland ferry, Rotterdam-Þorlákshöfn, is outside this region.",
+  "Added ferry Esbjerg-Grimsby (GB), medium confidence: the wiki.gg ferry page lists a 'Hull (Grimsby)-Esbjerg' route.",
+  "Removed ferries Stockholm-Helsinki, Stockholm-Turku, Stockholm-Tallinn and Stockholm-Riga. The SCS 'Baltic ports' blog and the wiki say the Kapellskär and Travemünde ports were added in 1.33 to give access to the Beyond the Baltic Sea area from Sweden and Germany. The wiki ferry table lists Swedish links only from Kapellskär (to Naantali and Paldiski) and Nynäshamn (to Ventspils), and no Stockholm port.",
+  "Kapellskär-Naantali, Kapellskär-Paldiski and Nynäshamn-Ventspils raised to high confidence: all are listed in the wiki ferry table. Nynäshamn city raised to high confidence for the same reason.",
+  "Hirtshals-Stavanger and Hirtshals-Bergen raised to medium confidence: the wiki ferry page says all 4 Norwegian Scandinavia-DLC cities have ferry links.",
+  "Trelleborg-Lübeck: note added that the in-game port is probably Travemünde, added as a port in update 1.33. The endpoint name is kept because it could not be disproved.",
+  "Trondheim: added alias Tråante (Southern Sami name; the fandom lists 'Trondheim (Tråante)'). Added aliases for the new cities.",
+  "Helsingborg-Jönköping: km changed from 195 to 215, because the straight line is already 213 km and the real E4 is about 215 km.",
+  "Rejected as non-vanilla or village: Aarhus, Kolding, Herning, Holstebro, Padborg, Rødbyhavn, Rønne, Viborg, Vilsund and Bakkebølle (DK); Karlstad, Kristianstad, Söderhamn, Gällivare, Sveg, Strömsund, Åre, Dorotea, Hammerdal, Kabdalis, Byvallen, Volgsjön and Ytterhogdal (SE); Fauske, Mosjøen, Oppdal, Orkanger, Otta, Longyearbyen and Hiorthhamn (NO). None is in the fandom city lists for Denmark (7 Scandinavia cities, confirmed by gamepressure), Norway (19) or Sweden. The wiki.gg Sweden page lists Gällivare and Strömsund as villages. Denmark keeps its 7 cities: no source shows a Danish rework."
+ ],
+ "sources": "WebSearch (14 calls). Main evidence came from search-result text. truck-simulator.fandom.com/wiki/Norway gives 19 Norwegian cities and the 15 Nordic Horizons names. truck-simulator.fandom.com/wiki/Euro_Truck_Simulator_2:_Nordic_Horizons gives the 41-city table by country and the release date of 27 Nov 2025. trucksimulator.wiki.gg has pages for Borlänge, Örnsköldsvik, Karesuando, Östersund (road directions), Skellefteå and Gävle, plus Scenery_towns/Euro_Truck_Simulator_2/Sweden (Gällivare and Strömsund are villages) and Ferry/Euro_Truck_Simulator_2 (Rostock-Gedser, Hull (Grimsby)-Esbjerg, Polaris routes Kapellskär-Naantali, Kapellskär-Paldiski and Nynäshamn-Ventspils, and the note that all Norwegian cities have ferries). SCS blog posts used: blog.scssoft.com/2025/05/nordic-horizons-tornio-and-haparanda.html (Haparanda and Tornio are one in-game city named Tornio), blog.scssoft.com/2025/07/nordic-horizons-settlements.html (Vittangi), blog.scssoft.com/2025/11/nordic-horizons-forest-machinery-release.html (release) and blog.scssoft.com/2018/11/baltic-ports.html (Kapellskär and Travemünde ports in 1.33). racinggames.gg/article/euro-truck-simulator-2-iceland-dlc-released-14-cities-new-ferries-and-special-transport-routes covers the Iceland ferries Hirtshals-Seyðisfjörður, Ålesund-Seyðisfjörður and Rotterdam-Þorlákshöfn. gamepressure.com/ets2scandinavia lists the 7 Danish cities."
+}

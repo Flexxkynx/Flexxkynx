@@ -1,0 +1,956 @@
+{
+ "region": "Italy (IT) incl. Sicily and Sardinia; San Marino (SM) has no vanilla city",
+ "cities": [
+  {
+   "name": "Milano",
+   "cc": "IT",
+   "lat": 45.464,
+   "lon": 9.19,
+   "dlc": "Base",
+   "aliases": [
+    "Milan",
+    "Mailand"
+   ],
+   "conf": "high",
+   "note": "Base game city; garage city"
+  },
+  {
+   "name": "Torino",
+   "cc": "IT",
+   "lat": 45.07,
+   "lon": 7.687,
+   "dlc": "Base",
+   "aliases": [
+    "Turin"
+   ],
+   "conf": "high",
+   "note": "Base game; garage city"
+  },
+  {
+   "name": "Verona",
+   "cc": "IT",
+   "lat": 45.438,
+   "lon": 10.992,
+   "dlc": "Base",
+   "aliases": [],
+   "conf": "high",
+   "note": "Base game; garage city"
+  },
+  {
+   "name": "Venezia",
+   "cc": "IT",
+   "lat": 45.441,
+   "lon": 12.316,
+   "dlc": "Base",
+   "aliases": [
+    "Venice",
+    "Venedig",
+    "Mestre"
+   ],
+   "conf": "high",
+   "note": "Base game; in-game city area is on the mainland (Mestre/Marghera side)"
+  },
+  {
+   "name": "Trieste",
+   "cc": "IT",
+   "lat": 45.65,
+   "lon": 13.777,
+   "dlc": "Base",
+   "aliases": [
+    "Triest"
+   ],
+   "conf": "high",
+   "note": "Base game; added free in update 1.48.5 (12 Oct 2023) ahead of West Balkans; no garage. Ferry port to Ancona and Bari (Italia DLC routes)"
+  },
+  {
+   "name": "Genova",
+   "cc": "IT",
+   "lat": 44.405,
+   "lon": 8.946,
+   "dlc": "Italia",
+   "aliases": [
+    "Genoa",
+    "Genua"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Parma",
+   "cc": "IT",
+   "lat": 44.801,
+   "lon": 10.328,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "No garage"
+  },
+  {
+   "name": "Suzzara",
+   "cc": "IT",
+   "lat": 44.993,
+   "lon": 10.745,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "No garage"
+  },
+  {
+   "name": "Bologna",
+   "cc": "IT",
+   "lat": 44.494,
+   "lon": 11.343,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Firenze",
+   "cc": "IT",
+   "lat": 43.77,
+   "lon": 11.256,
+   "dlc": "Italia",
+   "aliases": [
+    "Florence",
+    "Florenz"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Livorno",
+   "cc": "IT",
+   "lat": 43.548,
+   "lon": 10.311,
+   "dlc": "Italia",
+   "aliases": [
+    "Leghorn"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Ancona",
+   "cc": "IT",
+   "lat": 43.616,
+   "lon": 13.519,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "Reworked in 1.48.5 with a new ferry port (West Balkans/Greece ferries)"
+  },
+  {
+   "name": "Pescara",
+   "cc": "IT",
+   "lat": 42.462,
+   "lon": 14.214,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Terni",
+   "cc": "IT",
+   "lat": 42.564,
+   "lon": 12.643,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "No garage"
+  },
+  {
+   "name": "Roma",
+   "cc": "IT",
+   "lat": 41.893,
+   "lon": 12.483,
+   "dlc": "Italia",
+   "aliases": [
+    "Rome",
+    "Rom"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Cassino",
+   "cc": "IT",
+   "lat": 41.493,
+   "lon": 13.831,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "No garage"
+  },
+  {
+   "name": "Napoli",
+   "cc": "IT",
+   "lat": 40.852,
+   "lon": 14.268,
+   "dlc": "Italia",
+   "aliases": [
+    "Naples",
+    "Neapel"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bari",
+   "cc": "IT",
+   "lat": 41.117,
+   "lon": 16.872,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "Reworked in 1.48.5 with a new ferry port (West Balkans/Greece ferries)"
+  },
+  {
+   "name": "Taranto",
+   "cc": "IT",
+   "lat": 40.464,
+   "lon": 17.247,
+   "dlc": "Italia",
+   "aliases": [
+    "Tarent"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Catanzaro",
+   "cc": "IT",
+   "lat": 38.91,
+   "lon": 16.588,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Villa San Giovanni",
+   "cc": "IT",
+   "lat": 38.22,
+   "lon": 15.637,
+   "dlc": "Italia",
+   "aliases": [
+    "Villa S. Giovanni",
+    "San Giovanni"
+   ],
+   "conf": "high",
+   "note": "Game token 'sangiovanni'; no garage"
+  },
+  {
+   "name": "Messina",
+   "cc": "IT",
+   "lat": 38.194,
+   "lon": 15.554,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Catania",
+   "cc": "IT",
+   "lat": 37.502,
+   "lon": 15.087,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Palermo",
+   "cc": "IT",
+   "lat": 38.116,
+   "lon": 13.361,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Cagliari",
+   "cc": "IT",
+   "lat": 39.224,
+   "lon": 9.122,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "Sardinia, free addition to Italia (update 1.35)"
+  },
+  {
+   "name": "Olbia",
+   "cc": "IT",
+   "lat": 40.923,
+   "lon": 9.498,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "Sardinia, update 1.35; no vanilla ferry found from Olbia"
+  },
+  {
+   "name": "Sassari",
+   "cc": "IT",
+   "lat": 40.726,
+   "lon": 8.561,
+   "dlc": "Italia",
+   "aliases": [],
+   "conf": "high",
+   "note": "Sardinia, update 1.35; ferry to Ajaccio (Corsica) leaves from this city (real port is Porto Torres)"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Torino",
+   "acc": "IT",
+   "b": "Milano",
+   "bcc": "IT",
+   "km": 140,
+   "ferry": false,
+   "road": "A4 / E64",
+   "conf": "high"
+  },
+  {
+   "a": "Torino",
+   "acc": "IT",
+   "b": "Genova",
+   "bcc": "IT",
+   "km": 170,
+   "ferry": false,
+   "road": "A6/A10 or A21/A26",
+   "conf": "medium",
+   "note": "exact in-game corridor not verified"
+  },
+  {
+   "a": "Milano",
+   "acc": "IT",
+   "b": "Genova",
+   "bcc": "IT",
+   "km": 145,
+   "ferry": false,
+   "road": "A7 / E62",
+   "conf": "high"
+  },
+  {
+   "a": "Milano",
+   "acc": "IT",
+   "b": "Verona",
+   "bcc": "IT",
+   "km": 160,
+   "ferry": false,
+   "road": "A4 / E64",
+   "conf": "high"
+  },
+  {
+   "a": "Milano",
+   "acc": "IT",
+   "b": "Parma",
+   "bcc": "IT",
+   "km": 125,
+   "ferry": false,
+   "road": "A1 / E35",
+   "conf": "high"
+  },
+  {
+   "a": "Verona",
+   "acc": "IT",
+   "b": "Venezia",
+   "bcc": "IT",
+   "km": 120,
+   "ferry": false,
+   "road": "A4 / E70",
+   "conf": "high"
+  },
+  {
+   "a": "Venezia",
+   "acc": "IT",
+   "b": "Trieste",
+   "bcc": "IT",
+   "km": 155,
+   "ferry": false,
+   "road": "A4 / E70",
+   "conf": "high"
+  },
+  {
+   "a": "Verona",
+   "acc": "IT",
+   "b": "Suzzara",
+   "bcc": "IT",
+   "km": 60,
+   "ferry": false,
+   "road": "A22 / E45",
+   "conf": "medium"
+  },
+  {
+   "a": "Suzzara",
+   "acc": "IT",
+   "b": "Bologna",
+   "bcc": "IT",
+   "km": 90,
+   "ferry": false,
+   "road": "A22 + A1",
+   "conf": "medium"
+  },
+  {
+   "a": "Suzzara",
+   "acc": "IT",
+   "b": "Parma",
+   "bcc": "IT",
+   "km": 50,
+   "ferry": false,
+   "road": "SS62 / SP",
+   "conf": "low",
+   "note": "local road link assumed; if absent in game, the connection runs A22+A1 via Modena (~85 km)"
+  },
+  {
+   "a": "Parma",
+   "acc": "IT",
+   "b": "Bologna",
+   "bcc": "IT",
+   "km": 100,
+   "ferry": false,
+   "road": "A1 / E35",
+   "conf": "high"
+  },
+  {
+   "a": "Venezia",
+   "acc": "IT",
+   "b": "Bologna",
+   "bcc": "IT",
+   "km": 155,
+   "ferry": false,
+   "road": "A13 / E45 via Padova",
+   "conf": "medium"
+  },
+  {
+   "a": "Genova",
+   "acc": "IT",
+   "b": "Livorno",
+   "bcc": "IT",
+   "km": 180,
+   "ferry": false,
+   "road": "A12 / E80",
+   "conf": "high"
+  },
+  {
+   "a": "Parma",
+   "acc": "IT",
+   "b": "Livorno",
+   "bcc": "IT",
+   "km": 205,
+   "ferry": false,
+   "road": "A15 + A12",
+   "conf": "low",
+   "note": "Cisa corridor presence in game not verified"
+  },
+  {
+   "a": "Bologna",
+   "acc": "IT",
+   "b": "Firenze",
+   "bcc": "IT",
+   "km": 105,
+   "ferry": false,
+   "road": "A1 / E35",
+   "conf": "high"
+  },
+  {
+   "a": "Firenze",
+   "acc": "IT",
+   "b": "Livorno",
+   "bcc": "IT",
+   "km": 95,
+   "ferry": false,
+   "road": "FI-PI-LI / A11+A12",
+   "conf": "medium"
+  },
+  {
+   "a": "Livorno",
+   "acc": "IT",
+   "b": "Roma",
+   "bcc": "IT",
+   "km": 320,
+   "ferry": false,
+   "road": "A12 / SS1 Aurelia / E80",
+   "conf": "medium"
+  },
+  {
+   "a": "Firenze",
+   "acc": "IT",
+   "b": "Roma",
+   "bcc": "IT",
+   "km": 275,
+   "ferry": false,
+   "road": "A1 / E35",
+   "conf": "high"
+  },
+  {
+   "a": "Terni",
+   "acc": "IT",
+   "b": "Roma",
+   "bcc": "IT",
+   "km": 105,
+   "ferry": false,
+   "road": "SS675 + A1",
+   "conf": "medium"
+  },
+  {
+   "a": "Terni",
+   "acc": "IT",
+   "b": "Firenze",
+   "bcc": "IT",
+   "km": 240,
+   "ferry": false,
+   "road": "SS675 + A1 via Orte",
+   "conf": "medium"
+  },
+  {
+   "a": "Terni",
+   "acc": "IT",
+   "b": "Ancona",
+   "bcc": "IT",
+   "km": 200,
+   "ferry": false,
+   "road": "SS3 Flaminia / SS76",
+   "conf": "low",
+   "note": "in-game existence of this corridor not verified"
+  },
+  {
+   "a": "Terni",
+   "acc": "IT",
+   "b": "Pescara",
+   "bcc": "IT",
+   "km": 200,
+   "ferry": false,
+   "road": "SS79/SS17 via Rieti, L'Aquila, A24/A25",
+   "conf": "low",
+   "note": "in-game existence not verified"
+  },
+  {
+   "a": "Bologna",
+   "acc": "IT",
+   "b": "Ancona",
+   "bcc": "IT",
+   "km": 215,
+   "ferry": false,
+   "road": "A14 / E45-E55",
+   "conf": "high"
+  },
+  {
+   "a": "Ancona",
+   "acc": "IT",
+   "b": "Pescara",
+   "bcc": "IT",
+   "km": 155,
+   "ferry": false,
+   "road": "A14 / E55",
+   "conf": "high"
+  },
+  {
+   "a": "Pescara",
+   "acc": "IT",
+   "b": "Bari",
+   "bcc": "IT",
+   "km": 305,
+   "ferry": false,
+   "road": "A14 / E55",
+   "conf": "high"
+  },
+  {
+   "a": "Roma",
+   "acc": "IT",
+   "b": "Pescara",
+   "bcc": "IT",
+   "km": 210,
+   "ferry": false,
+   "road": "A24/A25 / E80",
+   "conf": "medium"
+  },
+  {
+   "a": "Roma",
+   "acc": "IT",
+   "b": "Cassino",
+   "bcc": "IT",
+   "km": 130,
+   "ferry": false,
+   "road": "A1 / E45",
+   "conf": "high"
+  },
+  {
+   "a": "Cassino",
+   "acc": "IT",
+   "b": "Napoli",
+   "bcc": "IT",
+   "km": 105,
+   "ferry": false,
+   "road": "A1 / E45",
+   "conf": "high"
+  },
+  {
+   "a": "Napoli",
+   "acc": "IT",
+   "b": "Bari",
+   "bcc": "IT",
+   "km": 260,
+   "ferry": false,
+   "road": "A16 / E842",
+   "conf": "high"
+  },
+  {
+   "a": "Bari",
+   "acc": "IT",
+   "b": "Taranto",
+   "bcc": "IT",
+   "km": 95,
+   "ferry": false,
+   "road": "SS100",
+   "conf": "high"
+  },
+  {
+   "a": "Taranto",
+   "acc": "IT",
+   "b": "Catanzaro",
+   "bcc": "IT",
+   "km": 290,
+   "ferry": false,
+   "road": "SS106 / E90 (Ionian coast)",
+   "conf": "medium"
+  },
+  {
+   "a": "Napoli",
+   "acc": "IT",
+   "b": "Catanzaro",
+   "bcc": "IT",
+   "km": 390,
+   "ferry": false,
+   "road": "A2 / E45 + SS280 via Lamezia",
+   "conf": "medium"
+  },
+  {
+   "a": "Napoli",
+   "acc": "IT",
+   "b": "Villa San Giovanni",
+   "bcc": "IT",
+   "km": 485,
+   "ferry": false,
+   "road": "A2 / E45",
+   "conf": "medium",
+   "note": "main A2 trunk; Catanzaro lies ~30 km off it"
+  },
+  {
+   "a": "Catanzaro",
+   "acc": "IT",
+   "b": "Villa San Giovanni",
+   "bcc": "IT",
+   "km": 150,
+   "ferry": false,
+   "road": "SS280 + A2",
+   "conf": "medium"
+  },
+  {
+   "a": "Villa San Giovanni",
+   "acc": "IT",
+   "b": "Messina",
+   "bcc": "IT",
+   "km": 8,
+   "ferry": true,
+   "road": "Strait of Messina ferry",
+   "conf": "high",
+   "note": "wiki Sicilia page names Messina-Villa San Giovanni as one of Sicily's ferry lines"
+  },
+  {
+   "a": "Messina",
+   "acc": "IT",
+   "b": "Catania",
+   "bcc": "IT",
+   "km": 95,
+   "ferry": false,
+   "road": "A18 / E45",
+   "conf": "high"
+  },
+  {
+   "a": "Messina",
+   "acc": "IT",
+   "b": "Palermo",
+   "bcc": "IT",
+   "km": 230,
+   "ferry": false,
+   "road": "A20 / E90",
+   "conf": "high"
+  },
+  {
+   "a": "Catania",
+   "acc": "IT",
+   "b": "Palermo",
+   "bcc": "IT",
+   "km": 210,
+   "ferry": false,
+   "road": "A19 / E932",
+   "conf": "high"
+  },
+  {
+   "a": "Olbia",
+   "acc": "IT",
+   "b": "Sassari",
+   "bcc": "IT",
+   "km": 105,
+   "ferry": false,
+   "road": "SS729 / SS597",
+   "conf": "medium"
+  },
+  {
+   "a": "Sassari",
+   "acc": "IT",
+   "b": "Cagliari",
+   "bcc": "IT",
+   "km": 215,
+   "ferry": false,
+   "road": "SS131 / E25",
+   "conf": "high"
+  },
+  {
+   "a": "Olbia",
+   "acc": "IT",
+   "b": "Cagliari",
+   "bcc": "IT",
+   "km": 265,
+   "ferry": false,
+   "road": "SS131 DCN + SS131",
+   "conf": "medium"
+  },
+  {
+   "a": "Cagliari",
+   "acc": "IT",
+   "b": "Palermo",
+   "bcc": "IT",
+   "km": 400,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Italia DLC route (id cagliari_palermo, dlc_it); added in 1.35"
+  },
+  {
+   "a": "Napoli",
+   "acc": "IT",
+   "b": "Palermo",
+   "bcc": "IT",
+   "km": 315,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Italia DLC route (id napoli_palermo, dlc_it)"
+  },
+  {
+   "a": "Cagliari",
+   "acc": "IT",
+   "b": "Napoli",
+   "bcc": "IT",
+   "km": 470,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Italia DLC route (id cagliari_napoli, dlc_it)"
+  },
+  {
+   "a": "Trieste",
+   "acc": "IT",
+   "b": "Ancona",
+   "bcc": "IT",
+   "km": 280,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Italia DLC route (id trieste_ancona); wiki: Euro Lines/Eolo Lines, 10h 20m, EUR 335; base game + Italia"
+  },
+  {
+   "a": "Trieste",
+   "acc": "IT",
+   "b": "Bari",
+   "bcc": "IT",
+   "km": 700,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Italia DLC route (id bari_trieste, dlc_it); wiki: 19h 10m, EUR 660"
+  },
+  {
+   "a": "Bari",
+   "acc": "IT",
+   "b": "Patras",
+   "bcc": "GR",
+   "km": 480,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Greece DLC route (id bari_patras, dlc_greece). The defs write Patras in Greek script ('Πάτρα'); use the Greece dataset's spelling"
+  },
+  {
+   "a": "Ancona",
+   "acc": "IT",
+   "b": "Patras",
+   "bcc": "GR",
+   "km": 1000,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Greece DLC route (id ancona_patras, dlc_greece); community list gives 25h 00m. Patras = 'Πάτρα' in defs"
+  },
+  {
+   "a": "Ancona",
+   "acc": "IT",
+   "b": "Igoumenitsa",
+   "bcc": "GR",
+   "km": 790,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Greece DLC route (id ancona_igoumenitsa, dlc_greece). The Greece dataset may write it in Greek script ('Ηγουμενίτσα'); use its spelling"
+  },
+  {
+   "a": "Bari",
+   "acc": "IT",
+   "b": "Igoumenitsa",
+   "bcc": "GR",
+   "km": 300,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "Greece DLC route (id bari_igoumenitsa, dlc_greece). Use the Greece dataset's spelling"
+  },
+  {
+   "a": "Bari",
+   "acc": "IT",
+   "b": "Durrës",
+   "bcc": "AL",
+   "km": 230,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "West Balkans route (id bari_durres, dlc_balkan_w); wiki: Polaris/Eolo Lines, 9h, EUR 420"
+  },
+  {
+   "a": "Ancona",
+   "acc": "IT",
+   "b": "Durrës",
+   "bcc": "AL",
+   "km": 600,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "West Balkans route (id ancona_durres, dlc_balkan_w); wiki: 18h, EUR 615"
+  },
+  {
+   "a": "Ancona",
+   "acc": "IT",
+   "b": "Split",
+   "bcc": "HR",
+   "km": 220,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "high",
+   "note": "West Balkans route (id ancona_split, dlc_balkan_w); wiki: 10h, EUR 315"
+  },
+  {
+   "a": "Sassari",
+   "acc": "IT",
+   "b": "Ajaccio",
+   "bcc": "FR",
+   "km": 150,
+   "ferry": true,
+   "road": "ferry",
+   "conf": "medium",
+   "note": "Corsica-Sardinia link (needs Italia + Vive la France!); the wiki Corse page names it Ajaccio-Sassari (real port is Porto Torres: ~130 km by sea + ~20 km by road)"
+  },
+  {
+   "a": "Genova",
+   "acc": "IT",
+   "b": "Nice",
+   "bcc": "FR",
+   "km": 195,
+   "ferry": false,
+   "road": "A10 / A8 / E80",
+   "conf": "high"
+  },
+  {
+   "a": "Torino",
+   "acc": "IT",
+   "b": "Lyon",
+   "bcc": "FR",
+   "km": 310,
+   "ferry": false,
+   "road": "A32 / Fréjus tunnel / A43",
+   "conf": "medium"
+  },
+  {
+   "a": "Milano",
+   "acc": "IT",
+   "b": "Zürich",
+   "bcc": "CH",
+   "km": 280,
+   "ferry": false,
+   "road": "A9/A2 / E35 Gotthard",
+   "conf": "medium"
+  },
+  {
+   "a": "Milano",
+   "acc": "IT",
+   "b": "Bern",
+   "bcc": "CH",
+   "km": 270,
+   "ferry": false,
+   "road": "SS33 Simplon / A6",
+   "conf": "low",
+   "note": "Simplon corridor in game not verified"
+  },
+  {
+   "a": "Verona",
+   "acc": "IT",
+   "b": "Innsbruck",
+   "bcc": "AT",
+   "km": 275,
+   "ferry": false,
+   "road": "A22 / E45 Brenner",
+   "conf": "high"
+  },
+  {
+   "a": "Venezia",
+   "acc": "IT",
+   "b": "Klagenfurt am Wörthersee",
+   "bcc": "AT",
+   "km": 275,
+   "ferry": false,
+   "road": "A4 + A23 / E55 Tarvisio",
+   "conf": "medium"
+  },
+  {
+   "a": "Trieste",
+   "acc": "IT",
+   "b": "Koper",
+   "bcc": "SI",
+   "km": 22,
+   "ferry": false,
+   "road": "RA13/RA14 + H5",
+   "conf": "medium",
+   "note": "Koper is a West Balkans DLC city"
+  },
+  {
+   "a": "Trieste",
+   "acc": "IT",
+   "b": "Ljubljana",
+   "bcc": "SI",
+   "km": 95,
+   "ferry": false,
+   "road": "RA13 + A1 / E61-E70",
+   "conf": "medium",
+   "note": "Ljubljana is a West Balkans DLC city"
+  }
+ ],
+ "changes": [
+  "City list unchanged at 27 Italian cities (5 base: Milano, Torino, Verona, Venezia, Trieste; 22 Italia). The wiki Italia page says the DLC has 22 cities, 19 at release; Sardinia (Cagliari, Olbia, Sassari) came free in 1.35. That matches the dataset exactly.",
+  "Modena and Vicenza (radio_only) not added. Vicenza shows up only in a ProMods add-on ('Italy Map Rework (Promods addon)': new cities Vicenza, Padua). Nothing shows Modena as a vanilla city. The previous round's 1.62 defs check also found no such cities.",
+  "San Marino (SM): no vanilla city. Nothing to add.",
+  "Trieste note: confirmed it was added to the base game in update 1.48.5 (12 Oct 2023), as stated by the SCS blog, the wiki 1.48.5 patch notes and eteknix. Also added that it is a ferry port.",
+  "Ancona and Bari: added a note on the 1.48.5 rework that gave both new ferry ports for West Balkans/Greece (SCS blog, 9 Sep 2023).",
+  "Added ferry Trieste-Ancona (Italia, id trieste_ancona, 10h20m, EUR 335) and Trieste-Bari (Italia, id bari_trieste, 19h10m, EUR 660). Source: the wiki ferry table and a Steam ferry-ID list.",
+  "Added ferry Ancona-Durrës (West Balkans, id ancona_durres, 18h, EUR 615), per the wiki ferry table and the Steam ferry-ID list.",
+  "Added ferries Ancona-Igoumenitsa and Bari-Igoumenitsa (Greece DLC, ids ancona_igoumenitsa and bari_igoumenitsa, tagged dlc_greece in the Steam ferry-ID list).",
+  "Raised Bari-Patras and Ancona-Patras (dlc_greece ids), Bari-Durrës and Ancona-Split (dlc_balkan_w ids, wiki ferry table) from low to high confidence.",
+  "Raised Cagliari-Palermo, Napoli-Palermo and Cagliari-Napoli to high confidence. The Steam ferry-ID list has ids cagliari_napoli, cagliari_palermo and napoli_palermo tagged dlc_it. The wiki says Cagliari-Palermo was added in 1.35 and that Sardinia is reached by ferry 'from either Napoli or Palermo'.",
+  "Added ferry Sassari-Ajaccio (FR). The wiki Corse page says Corsica has exactly two ferry links: one to mainland France and one to Sardinia (Ajaccio-Sassari), the second needing Italia.",
+  "Removed ferries Olbia-Bonifacio and Livorno-Bastia. The wiki Corse page lists only Ajaccio-Sassari as the Corsica-Italy link, and the routes appear nowhere in the in-game ferry-ID or wiki route lists.",
+  "Removed ferries Genova-Palermo and Livorno-Palermo. The wiki Sicilia page counts three Sicilian lines (Palermo-Napoli, Messina-Villa San Giovanni, plus Palermo-Cagliari from 1.35), which leaves no room for more Palermo routes, and the dlc_it ferry-ID list has neither. They are real-world GNV routes (and mod routes), not vanilla.",
+  "Removed ferries Olbia-Livorno and Olbia-Genova. No in-game ferry ID or wiki route list includes them, and the wiki gives Cagliari (from Napoli or Palermo) as the way to reach Sardinia. The 1.35 Olbia 'marina' is a company depot, not a ferry port.",
+  "Graph check: all 27 cities are still connected. Sardinia connects to the mainland through the Cagliari ferries and to Corsica through Sassari-Ajaccio. Road corridors and coordinates were not disproved and are kept as they were."
+ ],
+ "sources": "14 WebSearch calls (snippets only). Sources: trucksimulator.wiki.gg/wiki/Italia (22 cities, 19 at release; Sardinia in 1.35); trucksimulator.wiki.gg/wiki/Patch_Notes/Euro_Truck_Simulator_2/Update_1.48.5 and blog.scssoft.com/2023/10/ets2-1485-update-release.html (Trieste added to the base game; Ancona and Bari ferry ports); blog.scssoft.com/2023/09/euro-truck-simulator-2-ancona-and-bari.html; eteknix.com/ets-2-1-48-5-introduces-some-map-additions-and-finally-an-fps-limiter/; trucksimulator.wiki.gg/wiki/Ferry/Euro_Truck_Simulator_2 (Trieste-Ancona 10h20m EUR 335 and Trieste-Bari 19h10m EUR 660 as base + Italia; Ancona-Split, Ancona-Durrës and Bari-Durrës as West Balkans); steamcommunity.com/app/227300/discussions/0/3431201960395400105 (ferry IDs with DLC tags: ancona_durres, ancona_split, bari_durres = dlc_balkan_w; ancona_igoumenitsa, ancona_patras, bari_igoumenitsa, bari_patras = dlc_greece; cagliari_napoli, cagliari_palermo, napoli_palermo, bari_trieste = dlc_it); truck-simulator.fandom.com/wiki/Corse (Corsica cities; two ferry links, one of them Ajaccio-Sassari with Italia); trucksimulator.wiki.gg/wiki/Sicilia (three Sicilian lines); trucksimulator.wiki.gg/wiki/Sardinia and blog.scssoft.com/2019/04/sardinia.html (Sardinia in 1.35; Cagliari reached from Napoli or Palermo); modland.net Italy Map Rework ProMods add-on (Vicenza and Padua are mod cities). Sea km are real-world approximations."
+}

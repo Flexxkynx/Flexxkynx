@@ -1,0 +1,855 @@
+{
+ "region": "PL, CZ, SK, HU (Poland, Czechia, Slovakia, Hungary)",
+ "cities": [
+  {
+   "name": "Szczecin",
+   "cc": "PL",
+   "lat": 53.428,
+   "lon": 14.553,
+   "dlc": "Base",
+   "aliases": [
+    "Stettin"
+   ],
+   "conf": "high",
+   "note": "Western Poland is in the base game"
+  },
+  {
+   "name": "Poznań",
+   "cc": "PL",
+   "lat": 52.408,
+   "lon": 16.934,
+   "dlc": "Base",
+   "aliases": [
+    "Poznan",
+    "Posen"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Wrocław",
+   "cc": "PL",
+   "lat": 51.11,
+   "lon": 17.032,
+   "dlc": "Base",
+   "aliases": [
+    "Wroclaw",
+    "Breslau"
+   ],
+   "conf": "high",
+   "note": "The wiki says Poznań is one of three Polish cities in the base game at launch; the other two are Szczecin and Wrocław. Wrocław is also absent from the Going East! city list."
+  },
+  {
+   "name": "Gdańsk",
+   "cc": "PL",
+   "lat": 54.352,
+   "lon": 18.646,
+   "dlc": "Going East!",
+   "aliases": [
+    "Gdansk",
+    "Danzig"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Olsztyn",
+   "cc": "PL",
+   "lat": 53.778,
+   "lon": 20.48,
+   "dlc": "Going East!",
+   "aliases": [
+    "Allenstein"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Białystok",
+   "cc": "PL",
+   "lat": 53.133,
+   "lon": 23.164,
+   "dlc": "Going East!",
+   "aliases": [
+    "Bialystok"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Warszawa",
+   "cc": "PL",
+   "lat": 52.23,
+   "lon": 21.012,
+   "dlc": "Going East!",
+   "aliases": [
+    "Warsaw",
+    "Warschau"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Łódź",
+   "cc": "PL",
+   "lat": 51.759,
+   "lon": 19.456,
+   "dlc": "Going East!",
+   "aliases": [
+    "Lodz",
+    "Lodsch"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Lublin",
+   "cc": "PL",
+   "lat": 51.246,
+   "lon": 22.568,
+   "dlc": "Going East!",
+   "aliases": [],
+   "conf": "high"
+  },
+  {
+   "name": "Kraków",
+   "cc": "PL",
+   "lat": 50.065,
+   "lon": 19.945,
+   "dlc": "Going East!",
+   "aliases": [
+    "Krakow",
+    "Cracow",
+    "Krakau"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Katowice",
+   "cc": "PL",
+   "lat": 50.264,
+   "lon": 19.024,
+   "dlc": "Going East!",
+   "aliases": [
+    "Kattowitz"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Praha",
+   "cc": "CZ",
+   "lat": 50.088,
+   "lon": 14.421,
+   "dlc": "Base",
+   "aliases": [
+    "Prague",
+    "Prag"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Brno",
+   "cc": "CZ",
+   "lat": 49.195,
+   "lon": 16.608,
+   "dlc": "Base",
+   "aliases": [
+    "Brünn",
+    "Bruenn"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Ostrava",
+   "cc": "CZ",
+   "lat": 49.835,
+   "lon": 18.282,
+   "dlc": "Going East!",
+   "aliases": [
+    "Ostrau",
+    "Maehrisch-Ostrau"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Bratislava",
+   "cc": "SK",
+   "lat": 48.149,
+   "lon": 17.107,
+   "dlc": "Base",
+   "aliases": [
+    "Pressburg",
+    "Pozsony"
+   ],
+   "conf": "high",
+   "note": "The only Slovak base-game city (confirmed by the wiki)"
+  },
+  {
+   "name": "Banská Bystrica",
+   "cc": "SK",
+   "lat": 48.736,
+   "lon": 19.146,
+   "dlc": "Going East!",
+   "aliases": [
+    "Banska Bystrica",
+    "B. Bystrica",
+    "Neusohl"
+   ],
+   "conf": "high",
+   "note": "The wiki page is titled 'B._Bystrica', so the in-game label may be abbreviated"
+  },
+  {
+   "name": "Košice",
+   "cc": "SK",
+   "lat": 48.716,
+   "lon": 21.261,
+   "dlc": "Going East!",
+   "aliases": [
+    "Kosice",
+    "Kaschau",
+    "Kassa"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Budapest",
+   "cc": "HU",
+   "lat": 47.498,
+   "lon": 19.04,
+   "dlc": "Going East!",
+   "aliases": [
+    "Budapescht"
+   ],
+   "conf": "high",
+   "note": "One of the 13 original Going East! cities (8 PL, Ostrava, B. Bystrica, Košice, Budapest, Debrecen)"
+  },
+  {
+   "name": "Debrecen",
+   "cc": "HU",
+   "lat": 47.532,
+   "lon": 21.627,
+   "dlc": "Going East!",
+   "aliases": [
+    "Debrezin"
+   ],
+   "conf": "high"
+  },
+  {
+   "name": "Pécs",
+   "cc": "HU",
+   "lat": 46.073,
+   "lon": 18.233,
+   "dlc": "Going East!",
+   "aliases": [
+    "Pecs",
+    "Fünfkirchen",
+    "Fuenfkirchen"
+   ],
+   "conf": "high",
+   "note": "Added to Going East! in update 1.19"
+  },
+  {
+   "name": "Szeged",
+   "cc": "HU",
+   "lat": 46.253,
+   "lon": 20.148,
+   "dlc": "Going East!",
+   "aliases": [
+    "Segedin"
+   ],
+   "conf": "high",
+   "note": "Added to Going East! in update 1.19"
+  }
+ ],
+ "roads": [
+  {
+   "a": "Szczecin",
+   "acc": "PL",
+   "b": "Poznań",
+   "bcc": "PL",
+   "km": 240,
+   "road": "S3 / S10 / road 11",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Szczecin",
+   "acc": "PL",
+   "b": "Gdańsk",
+   "bcc": "PL",
+   "km": 350,
+   "road": "S6 / E28",
+   "ferry": false,
+   "conf": "medium",
+   "note": "The wiki's Szczecin page says Going East! added a minor road north of Szczecin that heads toward Gdańsk."
+  },
+  {
+   "a": "Szczecin",
+   "acc": "PL",
+   "b": "Wrocław",
+   "bcc": "PL",
+   "km": 370,
+   "road": "S3 / E65",
+   "ferry": false,
+   "conf": "low",
+   "note": "Not sure the game models S3 south of Gorzów; kept because it could not be disproved. The wiki's Szczecin page mentions a southbound minor road that meets near Szczecin, which is weakly consistent with an S3 corridor."
+  },
+  {
+   "a": "Poznań",
+   "acc": "PL",
+   "b": "Wrocław",
+   "bcc": "PL",
+   "km": 180,
+   "road": "S5 / E261",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Poznań",
+   "acc": "PL",
+   "b": "Łódź",
+   "bcc": "PL",
+   "km": 215,
+   "road": "A2 / E30",
+   "ferry": false,
+   "conf": "high",
+   "note": "A2 passes Łódź at Stryków"
+  },
+  {
+   "a": "Poznań",
+   "acc": "PL",
+   "b": "Gdańsk",
+   "bcc": "PL",
+   "km": 310,
+   "road": "S5 / A1",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Łódź",
+   "acc": "PL",
+   "b": "Warszawa",
+   "bcc": "PL",
+   "km": 135,
+   "road": "A2 / E30",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Łódź",
+   "acc": "PL",
+   "b": "Wrocław",
+   "bcc": "PL",
+   "km": 215,
+   "road": "S8 / E67",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Łódź",
+   "acc": "PL",
+   "b": "Katowice",
+   "bcc": "PL",
+   "km": 200,
+   "road": "A1 / E75",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Wrocław",
+   "acc": "PL",
+   "b": "Katowice",
+   "bcc": "PL",
+   "km": 195,
+   "road": "A4 / E40",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Katowice",
+   "acc": "PL",
+   "b": "Kraków",
+   "bcc": "PL",
+   "km": 80,
+   "road": "A4 / E40",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Warszawa",
+   "acc": "PL",
+   "b": "Katowice",
+   "bcc": "PL",
+   "km": 295,
+   "road": "S8 / A1",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Joins A1 at Piotrków and bypasses Łódź"
+  },
+  {
+   "a": "Warszawa",
+   "acc": "PL",
+   "b": "Kraków",
+   "bcc": "PL",
+   "km": 295,
+   "road": "S7 / E77",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Warszawa",
+   "acc": "PL",
+   "b": "Gdańsk",
+   "bcc": "PL",
+   "km": 340,
+   "road": "S7 / E77",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Warszawa",
+   "acc": "PL",
+   "b": "Olsztyn",
+   "bcc": "PL",
+   "km": 215,
+   "road": "S7 / S51",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Warszawa",
+   "acc": "PL",
+   "b": "Białystok",
+   "bcc": "PL",
+   "km": 200,
+   "road": "S8 / E67",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Warszawa",
+   "acc": "PL",
+   "b": "Lublin",
+   "bcc": "PL",
+   "km": 170,
+   "road": "S17 / E372",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Gdańsk",
+   "acc": "PL",
+   "b": "Olsztyn",
+   "bcc": "PL",
+   "km": 160,
+   "road": "S7 / road 16",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Olsztyn",
+   "acc": "PL",
+   "b": "Białystok",
+   "bcc": "PL",
+   "km": 225,
+   "road": "road 16 / S61 (via Ełk)",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Białystok",
+   "acc": "PL",
+   "b": "Lublin",
+   "bcc": "PL",
+   "km": 250,
+   "road": "S19 / E372",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Lublin",
+   "acc": "PL",
+   "b": "Kraków",
+   "bcc": "PL",
+   "km": 270,
+   "road": "S19 / road 74 / S7",
+   "ferry": false,
+   "conf": "low",
+   "note": "Exact routing unclear"
+  },
+  {
+   "a": "Katowice",
+   "acc": "PL",
+   "b": "Ostrava",
+   "bcc": "CZ",
+   "km": 100,
+   "road": "A1 / D1 / E75",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Wrocław",
+   "acc": "PL",
+   "b": "Praha",
+   "bcc": "CZ",
+   "km": 290,
+   "road": "S8 / D11 / E67 (Kudowa-Náchod, via Hradec Králové)",
+   "ferry": false,
+   "conf": "low",
+   "note": "The real road distance is about 280-300 km. Not sure the game has this crossing. Hradec Králové is a city only in fan maps (Projekt Česko, Czechoslovak Expansion), not in vanilla, so the edge is not split."
+  },
+  {
+   "a": "Praha",
+   "acc": "CZ",
+   "b": "Brno",
+   "bcc": "CZ",
+   "km": 205,
+   "road": "D1 / E65 / E50",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Brno",
+   "acc": "CZ",
+   "b": "Ostrava",
+   "bcc": "CZ",
+   "km": 170,
+   "road": "D1 / E462",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Brno",
+   "acc": "CZ",
+   "b": "Bratislava",
+   "bcc": "SK",
+   "km": 130,
+   "road": "D2 / E65",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Ostrava",
+   "acc": "CZ",
+   "b": "Banská Bystrica",
+   "bcc": "SK",
+   "km": 200,
+   "road": "D56 / D3 / R1 (via Žilina)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Search did not confirm that the game has a direct Ostrava-Žilina link. Žilina is a city only in fan maps (Slovensko+), not in vanilla, so the edge is not split."
+  },
+  {
+   "a": "Bratislava",
+   "acc": "SK",
+   "b": "Banská Bystrica",
+   "bcc": "SK",
+   "km": 210,
+   "road": "D1 / R1 / E58",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Banská Bystrica",
+   "acc": "SK",
+   "b": "Košice",
+   "bcc": "SK",
+   "km": 215,
+   "road": "R2 / E58 / E571",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Banská Bystrica",
+   "acc": "SK",
+   "b": "Budapest",
+   "bcc": "HU",
+   "km": 190,
+   "road": "R1 / E77 / M2 (via Zvolen-Šahy)",
+   "ferry": false,
+   "conf": "low",
+   "note": "The wiki's E77 page says the route runs to Budapest and is split into in-game sections in Poland and Slovakia, among others."
+  },
+  {
+   "a": "Banská Bystrica",
+   "acc": "SK",
+   "b": "Kraków",
+   "bcc": "PL",
+   "km": 230,
+   "road": "E77 (via Ružomberok-Chyżne)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "trucksimulator.wiki.gg E77 page lists the Chyżne / Trstená PL-SK border crossing in-game"
+  },
+  {
+   "a": "Bratislava",
+   "acc": "SK",
+   "b": "Budapest",
+   "bcc": "HU",
+   "km": 200,
+   "road": "D2 / M15 / M1 / E75 / E60",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Košice",
+   "acc": "SK",
+   "b": "Budapest",
+   "bcc": "HU",
+   "km": 260,
+   "road": "M30 / M3 / E71",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Košice",
+   "acc": "SK",
+   "b": "Debrecen",
+   "bcc": "HU",
+   "km": 200,
+   "road": "M30 / M3 / M35",
+   "ferry": false,
+   "conf": "low",
+   "note": "The real route shares M30 with Košice-Budapest and splits near Miskolc, which is not an in-game city"
+  },
+  {
+   "a": "Budapest",
+   "acc": "HU",
+   "b": "Debrecen",
+   "bcc": "HU",
+   "km": 230,
+   "road": "M3 / M35 / E71 / E79",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Budapest",
+   "acc": "HU",
+   "b": "Szeged",
+   "bcc": "HU",
+   "km": 175,
+   "road": "M5 / E75",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Budapest",
+   "acc": "HU",
+   "b": "Pécs",
+   "bcc": "HU",
+   "km": 200,
+   "road": "M6 / E73",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Szeged",
+   "acc": "HU",
+   "b": "Pécs",
+   "bcc": "HU",
+   "km": 190,
+   "road": "road 55 (via Baja)",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Szeged",
+   "acc": "HU",
+   "b": "Debrecen",
+   "bcc": "HU",
+   "km": 225,
+   "road": "road 47",
+   "ferry": false,
+   "conf": "low"
+  },
+  {
+   "a": "Szczecin",
+   "acc": "PL",
+   "b": "Berlin",
+   "bcc": "DE",
+   "km": 150,
+   "road": "S10 / A6 / A11 / E28",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Szczecin",
+   "acc": "PL",
+   "b": "Rostock",
+   "bcc": "DE",
+   "km": 220,
+   "road": "A6 / A11 / A20",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Split it if the German reworks added an in-game city on A20 (e.g. Neubrandenburg). Not verified."
+  },
+  {
+   "a": "Poznań",
+   "acc": "PL",
+   "b": "Berlin",
+   "bcc": "DE",
+   "km": 270,
+   "road": "A2 / A12 / E30",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Wrocław",
+   "acc": "PL",
+   "b": "Dresden",
+   "bcc": "DE",
+   "km": 270,
+   "road": "A4 / A4 / E40 (via Görlitz)",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Praha",
+   "acc": "CZ",
+   "b": "Dresden",
+   "bcc": "DE",
+   "km": 150,
+   "road": "D8 / A17 / E55",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Praha",
+   "acc": "CZ",
+   "b": "Nürnberg",
+   "bcc": "DE",
+   "km": 295,
+   "road": "D5 / A6 / E50",
+   "ferry": false,
+   "conf": "high",
+   "note": "Plzeň is a city only in fan maps (Czechoslovak Expansion), not in vanilla, so the edge is not split."
+  },
+  {
+   "a": "Praha",
+   "acc": "CZ",
+   "b": "Linz",
+   "bcc": "AT",
+   "km": 255,
+   "road": "D3 / E55 (via České Budějovice)",
+   "ferry": false,
+   "conf": "medium"
+  },
+  {
+   "a": "Brno",
+   "acc": "CZ",
+   "b": "Wien",
+   "bcc": "AT",
+   "km": 145,
+   "road": "D52 / A5 / E461",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Bratislava",
+   "acc": "SK",
+   "b": "Wien",
+   "bcc": "AT",
+   "km": 80,
+   "road": "D2 / D4 / A6 / A4",
+   "ferry": false,
+   "conf": "high"
+  },
+  {
+   "a": "Budapest",
+   "acc": "HU",
+   "b": "Wien",
+   "bcc": "AT",
+   "km": 245,
+   "road": "M1 / A4 / E60",
+   "ferry": false,
+   "conf": "high",
+   "note": "The wiki's M1 (Hungary) page lists the Hegyeshalom / Nickelsdorf crossing at the western end of E60. The route splits from the Bratislava route at the M1/M15 junction (Levél), so it does not pass through Bratislava. Győr on M1 is only a speed-limit section in vanilla, not a city."
+  },
+  {
+   "a": "Białystok",
+   "acc": "PL",
+   "b": "Kaunas",
+   "bcc": "LT",
+   "km": 245,
+   "road": "S8 / S61 / A5 / E67 (Via Baltica)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "Marijampolė is not believed to be a Beyond the Baltic Sea city, so no split"
+  },
+  {
+   "a": "Gdańsk",
+   "acc": "PL",
+   "b": "Kaliningrad",
+   "bcc": "RU",
+   "km": 170,
+   "road": "S7 / S22 / E28 / A229 (via Elbląg, Grzechotki-Mamonovo II)",
+   "ferry": false,
+   "conf": "high",
+   "note": "The trucksimulator.wiki.gg E28 and A229 (Russia) pages list the Grzechotki / Mamonovo II crossing in-game. The Polish localization names Kaliningrad 'Królewiec'."
+  },
+  {
+   "a": "Olsztyn",
+   "acc": "PL",
+   "b": "Kaliningrad",
+   "bcc": "RU",
+   "km": 145,
+   "road": "road 51 / A195 (Bezledy-Bagrationovsk)",
+   "ferry": false,
+   "conf": "high",
+   "note": "The trucksimulator.wiki.gg border crossing list and A195 (Russia) page list the Bagrationovsk / Bezledy crossing on A195 / road 51 in-game"
+  },
+  {
+   "a": "Debrecen",
+   "acc": "HU",
+   "b": "Cluj-Napoca",
+   "bcc": "RO",
+   "km": 230,
+   "road": "road 47 / DN1 / E60 / E79 (Ártánd-Borș, via Oradea)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "The wiki's Hungary landmarks page lists the Ártánd crossing. A fan wiki says Road to the Black Sea routes reach Cluj-Napoca from Debrecen. Oradea is not believed to be among the 16 Road to the Black Sea Romanian cities, so no split."
+  },
+  {
+   "a": "Szeged",
+   "acc": "HU",
+   "b": "Timișoara",
+   "bcc": "RO",
+   "km": 160,
+   "road": "M43 / A1 (via Arad)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "A fan wiki says Road to the Black Sea reaches Timișoara from Szeged. The exact crossing (Csanádpalota/Arad or Kiszombor/Cenad, about 120 km) is not confirmed, so km is unchanged."
+  },
+  {
+   "a": "Szeged",
+   "acc": "HU",
+   "b": "Novi Sad",
+   "bcc": "RS",
+   "km": 110,
+   "road": "M5 / A1 / E75 (Röszke-Horgoš)",
+   "ferry": false,
+   "conf": "medium",
+   "note": "The wiki's Hungary landmarks page lists the Röszke crossing near Szeged. Novi Sad is confirmed as a West Balkans Danube port. Subotica is not confirmed as a West Balkans city (Serbia is believed to have 4 cities: Beograd, Novi Sad, Kragujevac, Niš), so no split."
+  },
+  {
+   "a": "Pécs",
+   "acc": "HU",
+   "b": "Osijek",
+   "bcc": "HR",
+   "km": 85,
+   "road": "M60 / road 58 / D7 (Udvar crossing)",
+   "ferry": false,
+   "conf": "low",
+   "note": "Osijek is confirmed as a West Balkans city (Danube port). Search did not confirm the Udvar crossing; kept because it could not be disproved."
+  }
+ ],
+ "changes": [
+  "No cities added. Every radio_only candidate (Augustów, Bielsko-Biała, Bydgoszcz, Cieszyn, Elbląg, Ełk, Gdynia, Gorzów Wlkp., Grudziądz, Kielce, Koszalin, Krosno, Nowogard, Opole, Ostrołęka, Ostrów Mazowiecka, Piła, Przemyśl, Płock, Radom, Rzeszów, Sanok, Siedlce, Stargard, Suwałki, Wałcz, Zamość, Zgorzelec, Świnoujście; Hradec Králové, Mladá Boleslav; Győr) is mod content. Searches found them in ProMods, Poland Rebuilding 3.0, Czechoslovak Expansion, Projekt Česko and Slovensko+, never in an official SCS source. No official Poland, Czech, Slovak or Hungarian rework was found. Map changes up to November 2026 were elsewhere: 1.58 had no map changes, 1.59 reworked Benelux (Eindhoven), 1.61 added Proximity Exploration and 1.62 replaced the garages. The trucksimulator.wiki.gg M1 (Hungary) page says that where Győr would be in-game there is only a speed-limit section.",
+  "No cities removed (listed_as_village was empty). The wiki confirms the Going East! cities Warszawa, Białystok, Gdańsk, Katowice, Kraków, Łódź, Lublin, Olsztyn, Ostrava, Banská Bystrica, Košice, Budapest and Debrecen, with Pécs and Szeged added in update 1.19. It also confirms Bratislava as the only Slovak base-game city, Praha and Brno as base cities, and Poznań as one of three Polish cities at base-game launch.",
+  "Wrocław: conf medium -> high (Base). The wiki says Poznań is one of three Polish base-launch cities; the other two are Szczecin and Wrocław, and Wrocław is absent from the Going East! list.",
+  "Olsztyn-Kaliningrad: conf low -> high; road set to 'road 51 / A195 (Bezledy-Bagrationovsk)'. Evidence: the wiki's border crossing list and A195 (Russia) page list the Bagrationovsk / Bezledy crossing in-game.",
+  "Gdańsk-Kaliningrad: conf medium -> high; road now names the Grzechotki / Mamonovo II crossing. Evidence: the wiki's E28 page lists that crossing, and the A229 page says the route is extended to the Polish border southwest of Kaliningrad.",
+  "Banská Bystrica-Kraków: conf low -> medium. Evidence: the wiki's E77 page lists the Chyżne / Trstená crossing in-game.",
+  "Budapest-Wien: conf medium -> high. Evidence: the wiki's M1 (Hungary) page lists the Hegyeshalom / Nickelsdorf crossing at the western end of E60.",
+  "Debrecen-Cluj-Napoca: conf low -> medium. Evidence: the wiki's Hungary landmarks page lists the Ártánd crossing, and a fan wiki says Road to the Black Sea routes run through Cluj-Napoca from Debrecen.",
+  "Szeged-Timișoara: conf low -> medium. Evidence: a fan wiki says Road to the Black Sea reaches Timișoara from Szeged.",
+  "Szeged-Novi Sad: conf low -> medium; road now names Röszke-Horgoš. Evidence: the wiki's Hungary landmarks page lists the Röszke crossing, and Novi Sad is confirmed as a West Balkans Danube port.",
+  "Notes updated without changing confidence: Pécs-Osijek (Osijek confirmed as a West Balkans city, Udvar crossing unconfirmed), Ostrava-Banská Bystrica (Žilina is a city only in fan maps), Wrocław-Praha (Hradec Králové is a city only in fan maps, so no split), Praha-Nürnberg (Plzeň is a city only in fan maps, so no split), Szczecin-Wrocław and Szczecin-Gdańsk (the wiki's Szczecin page describes Going East! roads north and south of Szczecin).",
+  "No DLC, name, coordinate or ferry errors found. No search result mentions a vanilla ferry from a Polish port (Gdańsk included); Świnoujście and Gdynia are not vanilla cities, so no ferry edges were added. The graph is unchanged: 21 cities, 56 edges, connected."
+ ],
+ "sources": "14 WebSearch queries. Pages used, from search result text only: trucksimulator.wiki.gg Poland, Szczecin, Poznań, Wrocław, Euro Truck Simulator 2: Going East!, Pécs, M1 (Hungary), List of landmarks in Hungary, E77, E28, A229 (Russia), A195 (Russia), Border crossing, Bratislava, E58, Euro Truck Simulator 2: West Balkans, Road to the Black Sea (https://trucksimulator.wiki.gg/wiki/...); blog.scssoft.com 1.58 update (https://blog.scssoft.com/2026/02/euro-truck-simulator-2-158-update.html), 1.59 update and 1.61 open beta (https://blog.scssoft.com/2026/09/euro-truck-simulator-2-161-update-open.html); racinggames.gg articles on 1.59, 1.61 and 1.62; patched.gg 1.62 release; pcgameshardware.de Eindhoven/Benelux rework article; traxion.gg West Balkans; bloxodes countries and map DLCs; mod pages showing the candidate cities are mod-only: allmods.net Projekt Cesko and Czechoslovak Expansion, forum.scssoft.com Poland Rebuilding 3.0, download-ets2.com Slovensko+, modland Hungary Map."
+}

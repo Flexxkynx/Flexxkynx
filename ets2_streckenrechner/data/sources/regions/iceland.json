@@ -1,0 +1,407 @@
+{
+ "region": "Iceland",
+ "cities": [
+  {
+   "name": "Reykjavík",
+   "cc": "IS",
+   "lat": 64.1466,
+   "lon": -21.9426,
+   "dlc": "Iceland",
+   "aliases": [
+    "Reykjavik"
+   ],
+   "conf": "high",
+   "note": "Capital; named in all release coverage"
+  },
+  {
+   "name": "Akureyri",
+   "cc": "IS",
+   "lat": 65.6835,
+   "lon": -18.0878,
+   "dlc": "Iceland",
+   "aliases": [
+    "Akureyri"
+   ],
+   "conf": "high",
+   "note": "Named in release coverage; on Route 1 at Eyjafjörður"
+  },
+  {
+   "name": "Blönduós",
+   "cc": "IS",
+   "lat": 65.66,
+   "lon": -20.28,
+   "dlc": "Iceland",
+   "aliases": [
+    "Blonduos"
+   ],
+   "conf": "high",
+   "note": "In the game-checklists 14-city list; MS Stein custom quarry (SCS depots blog); also a Special Transport endpoint (Blönduós-Akureyri)"
+  },
+  {
+   "name": "Borgarnes",
+   "cc": "IS",
+   "lat": 64.5383,
+   "lon": -21.9206,
+   "dlc": "Iceland",
+   "aliases": [
+    "Borgarnes"
+   ],
+   "conf": "high",
+   "note": "In the 14-city list; one of the first towns confirmed on the wiki"
+  },
+  {
+   "name": "Egilsstaðir",
+   "cc": "IS",
+   "lat": 65.2653,
+   "lon": -14.3948,
+   "dlc": "Iceland",
+   "aliases": [
+    "Egilsstadir"
+   ],
+   "conf": "high",
+   "note": "In the 14-city list. The Seyðisfjörður ferry port is not a separate city in the list and is assumed to be reached from here (about 27 km over Route 93). The Reyðarfjörður aluminium plant shown in the SCS depots blog is probably a depot in this city's area."
+  },
+  {
+   "name": "Höfn",
+   "cc": "IS",
+   "lat": 64.2539,
+   "lon": -15.2082,
+   "dlc": "Iceland",
+   "aliases": [
+    "Hofn",
+    "Höfn í Hornafirði",
+    "Hofn i Hornafirdi"
+   ],
+   "conf": "high",
+   "note": "On Route 1 in the southeast"
+  },
+  {
+   "name": "Hólmavík",
+   "cc": "IS",
+   "lat": 65.7069,
+   "lon": -21.6815,
+   "dlc": "Iceland",
+   "aliases": [
+    "Holmavik"
+   ],
+   "conf": "high",
+   "note": "Westfjords; Route 61"
+  },
+  {
+   "name": "Húsavík",
+   "cc": "IS",
+   "lat": 66.0449,
+   "lon": -17.3389,
+   "dlc": "Iceland",
+   "aliases": [
+    "Husavik"
+   ],
+   "conf": "high",
+   "note": "Silicon metal factory custom depot (Simulation Daily / SCS depots blog)"
+  },
+  {
+   "name": "Ísafjörður",
+   "cc": "IS",
+   "lat": 66.075,
+   "lon": -23.124,
+   "dlc": "Iceland",
+   "aliases": [
+    "Isafjordur"
+   ],
+   "conf": "high",
+   "note": "Named in the SCS fjords blog; Westfjords"
+  },
+  {
+   "name": "Keflavík",
+   "cc": "IS",
+   "lat": 64.0049,
+   "lon": -22.5624,
+   "dlc": "Iceland",
+   "aliases": [
+    "Keflavik",
+    "Reykjanesbaer",
+    "Reykjanesbær"
+   ],
+   "conf": "high",
+   "note": "Reykjanes peninsula; part of Reykjanesbær"
+  },
+  {
+   "name": "Ólafsvík",
+   "cc": "IS",
+   "lat": 64.8945,
+   "lon": -23.7097,
+   "dlc": "Iceland",
+   "aliases": [
+    "Olafsvik"
+   ],
+   "conf": "high",
+   "note": "Snæfellsnes; three depots per game-checklists"
+  },
+  {
+   "name": "Patreksfjörður",
+   "cc": "IS",
+   "lat": 65.5964,
+   "lon": -23.9978,
+   "dlc": "Iceland",
+   "aliases": [
+    "Patreksfjordur"
+   ],
+   "conf": "high",
+   "note": "Westfjords; MS Stein quarry; named in the Cruising Iceland event"
+  },
+  {
+   "name": "Selfoss",
+   "cc": "IS",
+   "lat": 63.9331,
+   "lon": -20.9971,
+   "dlc": "Iceland",
+   "aliases": [
+    "Selfoss"
+   ],
+   "conf": "high",
+   "note": "Six depots incl. MS Stein quarry; the Þorlákshöfn ferry port is assumed to be reached from here (about 20 km)"
+  },
+  {
+   "name": "Þórshöfn",
+   "cc": "IS",
+   "lat": 66.1999,
+   "lon": -15.3333,
+   "dlc": "Iceland",
+   "aliases": [
+    "Thorshofn",
+    "Thorshofn (Iceland)",
+    "Þórshöfn á Langanesi"
+   ],
+   "conf": "medium",
+   "note": "Fishing village on Langanes in the northeast; 14th entry of the consolidated 14-city list. This review's searches found no independent mention of it in release coverage, so it stays at medium. Not Tórshavn on the Faroe Islands."
+  }
+ ],
+ "roads": [
+  {
+   "a": "Reykjavík",
+   "acc": "IS",
+   "b": "Selfoss",
+   "bcc": "IS",
+   "km": 57,
+   "ferry": false,
+   "conf": "high",
+   "road": "Route 1",
+   "note": "Over Hellisheiði"
+  },
+  {
+   "a": "Selfoss",
+   "acc": "IS",
+   "b": "Höfn",
+   "bcc": "IS",
+   "km": 400,
+   "ferry": false,
+   "conf": "high",
+   "road": "Route 1",
+   "note": "South coast via Hella, Vík, Kirkjubæjarklaustur and Jökulsárlón; none of them is a city"
+  },
+  {
+   "a": "Höfn",
+   "acc": "IS",
+   "b": "Egilsstaðir",
+   "bcc": "IS",
+   "km": 258,
+   "ferry": false,
+   "conf": "medium",
+   "road": "Route 1",
+   "note": "Through the Eastern Fjords via Djúpivogur, Breiðdalsvík, Fáskrúðsfjörður and Reyðarfjörður (none is a city), then over Fagridalur. The real distance is about 245-260 km; the Öxi shortcut (Route 939) would be about 190 km if it is modelled."
+  },
+  {
+   "a": "Egilsstaðir",
+   "acc": "IS",
+   "b": "Akureyri",
+   "bcc": "IS",
+   "km": 265,
+   "ferry": false,
+   "conf": "high",
+   "road": "Route 1",
+   "note": "Via Möðrudalur and Mývatn (Reykjahlíð is not a city)"
+  },
+  {
+   "a": "Akureyri",
+   "acc": "IS",
+   "b": "Blönduós",
+   "bcc": "IS",
+   "km": 144,
+   "ferry": false,
+   "conf": "high",
+   "road": "Route 1",
+   "note": "Via Öxnadalsheiði and Varmahlíð (not a city)"
+  },
+  {
+   "a": "Blönduós",
+   "acc": "IS",
+   "b": "Borgarnes",
+   "bcc": "IS",
+   "km": 171,
+   "ferry": false,
+   "conf": "high",
+   "road": "Route 1",
+   "note": "Over Holtavörðuheiði"
+  },
+  {
+   "a": "Borgarnes",
+   "acc": "IS",
+   "b": "Reykjavík",
+   "bcc": "IS",
+   "km": 74,
+   "ferry": false,
+   "conf": "high",
+   "road": "Route 1",
+   "note": "Includes the Hvalfjörður undersea tunnel"
+  },
+  {
+   "a": "Reykjavík",
+   "acc": "IS",
+   "b": "Keflavík",
+   "bcc": "IS",
+   "km": 48,
+   "ferry": false,
+   "conf": "high",
+   "road": "Route 41"
+  },
+  {
+   "a": "Akureyri",
+   "acc": "IS",
+   "b": "Húsavík",
+   "bcc": "IS",
+   "km": 75,
+   "ferry": false,
+   "conf": "medium",
+   "road": "Route 1 + Route 85"
+  },
+  {
+   "a": "Húsavík",
+   "acc": "IS",
+   "b": "Þórshöfn",
+   "bcc": "IS",
+   "km": 160,
+   "ferry": false,
+   "conf": "medium",
+   "road": "Route 85",
+   "note": "Along the north coast via Kópasker"
+  },
+  {
+   "a": "Þórshöfn",
+   "acc": "IS",
+   "b": "Egilsstaðir",
+   "bcc": "IS",
+   "km": 190,
+   "ferry": false,
+   "conf": "low",
+   "road": "Route 85 via Vopnafjörður + Route 1",
+   "note": "Not needed for connectivity. The wiki mentions a route linking Húsavík and Þórshöfn to Route 1, but whether the southern leg is modelled is unverified."
+  },
+  {
+   "a": "Borgarnes",
+   "acc": "IS",
+   "b": "Ólafsvík",
+   "bcc": "IS",
+   "km": 118,
+   "ferry": false,
+   "conf": "medium",
+   "road": "Route 54"
+  },
+  {
+   "a": "Borgarnes",
+   "acc": "IS",
+   "b": "Hólmavík",
+   "bcc": "IS",
+   "km": 160,
+   "ferry": false,
+   "conf": "medium",
+   "road": "Route 60 + Route 61 (Þröskuldar)",
+   "note": "Via Búðardalur (not a city)"
+  },
+  {
+   "a": "Hólmavík",
+   "acc": "IS",
+   "b": "Ísafjörður",
+   "bcc": "IS",
+   "km": 225,
+   "ferry": false,
+   "conf": "medium",
+   "road": "Route 61",
+   "note": "Around the Ísafjarðardjúp fjords"
+  },
+  {
+   "a": "Ísafjörður",
+   "acc": "IS",
+   "b": "Patreksfjörður",
+   "bcc": "IS",
+   "km": 175,
+   "ferry": false,
+   "conf": "medium",
+   "road": "Route 60 (Dýrafjarðargöng, Dynjandisheiði) + Route 62",
+   "note": "Route 62 runs from Flókalundur to Patreksfjörður. Route 63 is the Bíldudalur spur and not the through road."
+  },
+  {
+   "a": "Patreksfjörður",
+   "acc": "IS",
+   "b": "Borgarnes",
+   "bcc": "IS",
+   "km": 320,
+   "ferry": false,
+   "conf": "low",
+   "road": "Route 62 + Route 60",
+   "note": "Coverage says the Stykkishólmur ferry lets you skip the winding Route 60, which implies Route 60 is modelled. It passes the Route 61 junction to Hólmavík, which is not a city."
+  },
+  {
+   "a": "Hirtshals",
+   "acc": "DK",
+   "b": "Egilsstaðir",
+   "bcc": "IS",
+   "km": 1550,
+   "ferry": true,
+   "conf": "high",
+   "note": "Ferry Hirtshals-Seyðisfjörður (Smyril Line model). The Seyðisfjörður port is about 27 km from Egilsstaðir. km is the sea distance, about 1520 km great-circle and about 1560 km via the Faroes."
+  },
+  {
+   "a": "Ålesund",
+   "acc": "NO",
+   "b": "Egilsstaðir",
+   "bcc": "IS",
+   "km": 1050,
+   "ferry": true,
+   "conf": "high",
+   "note": "Fictional route Ålesund-Seyðisfjörður added by SCS; it opens Ålesund's ferry port. The great-circle distance is about 1030 km."
+  },
+  {
+   "a": "Rotterdam",
+   "acc": "NL",
+   "b": "Selfoss",
+   "bcc": "IS",
+   "km": 2100,
+   "ferry": true,
+   "conf": "high",
+   "note": "Ferry Rotterdam (Europoort)-Þorlákshöfn, reported in release coverage. The great-circle distance is about 1980 km; the real sailing goes around Scotland. The Þorlákshöfn port is about 20 km from Selfoss. Which city owns the port is inferred."
+  },
+  {
+   "a": "Ólafsvík",
+   "acc": "IS",
+   "b": "Patreksfjörður",
+   "bcc": "IS",
+   "km": 55,
+   "ferry": true,
+   "conf": "medium",
+   "note": "Domestic Breiðafjörður ferry Stykkishólmur-Brjánslækur (Baldur), confirmed in release coverage. The crossing is about 54 km. Neither port is a listed city: Stykkishólmur is nearest Ólafsvík (about 65 km by road) and Brjánslækur nearest Patreksfjörður (about 60 km)."
+  }
+ ],
+ "changes": [
+  "Removed Reyðarfjörður as a city. It is not in the 14-city list, which already reaches 14 with Þórshöfn, and only the SCS depots blog mentions it, as the site of the aluminium plant. It is now treated as a depot site on Route 1, probably in Egilsstaðir's area, and mentioned in the Egilsstaðir note.",
+  "Removed the edges Höfn-Reyðarfjörður (225 km) and Reyðarfjörður-Egilsstaðir (33 km). The single Route 1 edge Höfn-Egilsstaðir (258 km) is kept, and its note now names the non-city places it passes through. The dataset had included both alternatives, contrary to its own note.",
+  "Egilsstaðir-Akureyri: changed km from 255 to 265, the real Route 1 distance via Mývatn.",
+  "Ísafjörður-Patreksfjörður: changed the road label from 'Route 60 + Route 63' to 'Route 60 (Dýrafjarðargöng, Dynjandisheiði) + Route 62', because Route 62 is the Flókalundur-Patreksfjörður road and Route 63 is the Bíldudalur spur. Changed km from 170 to 175.",
+  "Þórshöfn: kept at medium confidence. This review's searches found no independent mention of it in game coverage, so it rests only on the consolidated 14-city list. Added the alias Þórshöfn á Langanesi.",
+  "Added the alias Reykjanesbær (with the accent) to Keflavík and depot details to the notes for Blönduós, Selfoss and Egilsstaðir.",
+  "Ferry notes now include checked great-circle distances: Hirtshals-Seyðisfjörður about 1520 km (1560 km via the Faroes), Ålesund-Seyðisfjörður about 1030 km, Rotterdam-Þorlákshöfn about 1980 km (about 2100 km as sailed around Scotland), Stykkishólmur-Brjánslækur about 54 km. The km values are unchanged.",
+  "Added notes on the non-city settlements each road edge passes (Vík, Varmahlíð, Reykjahlíð, Búðardalur and others), confirming that no edge skips a city.",
+  "Checked connectivity: all 14 Icelandic cities are connected by road (the Route 1 ring plus spurs to Keflavík, Húsavík/Þórshöfn, Ólafsvík and the Westfjords loop Borgarnes-Hólmavík-Ísafjörður-Patreksfjörður-Borgarnes), and three ferries link the island to the mainland (Hirtshals DK, Ålesund NO, Rotterdam NL).",
+  "All coordinates are kept: each of the 14 cities is within about 0.01 degrees of the real town centre."
+ ],
+ "sources": "10 WebSearch calls; results were thin and only partly decisive. The racinggames.gg release article (https://racinggames.gg/article/euro-truck-simulator-2-iceland-dlc-released-14-cities-new-ferries-and-special-transport-routes) confirms 14 cities, three mainland ferries from Hirtshals, Rotterdam and Ålesund, Hirtshals-Seyðisfjörður as a Smyril Line model, the fictional Ålesund-Seyðisfjörður route, Rotterdam Europoort-Þorlákshöfn, the domestic Stykkishólmur-Brjánslækur ferry, the Reyðarfjörður aluminium plant, and a Blönduós-Akureyri Special Transport route. patched.gg (https://patched.gg/games/euro-truck-simulator-2/iceland-dlc-release) gives the 10 Nov 2026 release, 14 cities and settlements, and the Cruising Iceland event with Patreksfjörður. The SCS blogs: https://blog.scssoft.com/2026/05/iceland-custom-depots.html (MS Stein quarries in Selfoss, Patreksfjörður and Blönduós; dynamic log loading) and https://blog.scssoft.com/2026/05/iceland-fjords.html. https://simulationdaily.com/news/euro-truck-simulator-2-iceland-depots/ covers the silicon metal factory. The wiki page https://trucksimulator.wiki.gg/wiki/Euro_Truck_Simulator_2:_Iceland showed only a pre-release snippet (Akureyri, Húsavík, Ísafjörður, Reykjahlíð and Vík í Mýrdal as mentioned, status unknown). The Baldur route is confirmed at https://www.vegagerdin.is/en/the-transportation-system/public-transport/ferries/baldur-stykkisholmur. No search result gave the full 14-city list, so it rests on the original dataset's game-checklists source (https://game-checklists.com/ets2/iceland-dlc-checklist/), which I could not re-fetch. No search result mentioned Þórshöfn. Road km come from real geography; sea km were checked with great-circle calculations."
+}
