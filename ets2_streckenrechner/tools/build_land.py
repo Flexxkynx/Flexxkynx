@@ -10,8 +10,8 @@ import sys
 sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(__file__)))
 from ets2proj import to_game  # noqa: E402
 
-LON_MIN, LON_MAX, LAT_MIN, LAT_MAX = -11.0, 44.0, 33.5, 72.0
-SKIP = {'Ireland', 'Iceland', 'Faeroe Is.', 'Greenland', 'Isle of Man', 'Jersey', 'Guernsey'}
+LON_MIN, LON_MAX, LAT_MIN, LAT_MAX = -25.0, 44.0, 33.5, 72.0
+SKIP = {'Ireland', 'Faeroe Is.', 'Greenland', 'Isle of Man', 'Jersey', 'Guernsey'}
 TOL = 180.0          # simplification tolerance in game metres (~3.5 km real)
 MIN_AREA = 2.0e6     # drop islands smaller than this (game m^2)
 
