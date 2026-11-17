@@ -14,12 +14,20 @@
         <button class="btn" id="addVia" type="button">+ Zwischenstopp</button>
         <button class="btn" id="swap" type="button">⇅ Tauschen</button>
         <button class="btn" id="copy" type="button">Route kopieren</button>
+        <button class="btn" id="random" type="button">Zufällige Tour</button>
       </div>
     </section>
 
     <section class="panel result o2" aria-live="polite" id="result"></section>
 
-    <details class="panel o4" id="setBox">
+    <section class="panel finder o3" aria-label="Firma finden">
+      <div class="sub-h"><span class="label">Nächste Firma finden</span><span class="note" id="coFrom"></span></div>
+      <input id="coIn" type="text" list="coList" autocomplete="off" placeholder="Firma, z. B. Tree-ET oder Ika Bohag" aria-label="Firma">
+      <datalist id="coList"></datalist>
+      <ul class="hits" id="coHits"></ul>
+    </section>
+
+    <details class="panel o5" id="setBox">
       <summary>Einstellungen</summary>
       <div class="settings">
         <div class="grid2">
@@ -46,13 +54,13 @@
       </div>
     </details>
 
-    <details class="panel o5">
+    <details class="panel o6">
       <summary>So wird gerechnet</summary>
       <div class="about" id="about"></div>
     </details>
   </div>
 
-  <section class="panel mapbox o3" aria-label="Karte">
+  <section class="panel mapbox o4" aria-label="Karte">
     <svg id="map" role="img" aria-label="Karte des ETS2-Straßennetzes"></svg>
     <div class="mapctl">
       <button type="button" id="zin" aria-label="Hineinzoomen">+</button>
@@ -71,7 +79,9 @@
 (function () {
 'use strict';
 const D = JSON.parse(document.getElementById('ets2-data').textContent);
-const C = D.cities.map((c, i) => ({ i, name: c[0], cc: c[1], x: c[2], z: c[3], dlc: c[4], aliases: c[5] ? c[5].split('|') : [], uk: !!c[6] }));
+const C = D.cities.map((c, i) => ({ i, name: c[0], cc: c[1], x: c[2], z: c[3], dlc: c[4], aliases: c[5] ? c[5].split('|') : [], uk: !!c[6],
+  companies: c[7] ? c[7].split('|') : [], dealers: c[8] ? c[8].split('|') : [] }));
+const tier = c => c.companies.length >= 9 ? 3 : c.companies.length >= 5 ? 2 : 1;
 const E = D.edges.map((e, i) => ({ i, a: e[0], b: e[1], km: e[2], kind: e[3], road: e[4] || '', dlc: e[5] }));
 const ADJ = C.map(() => []);
 E.forEach(e => { ADJ[e.a].push(e); ADJ[e.b].push(e); });
@@ -198,7 +208,7 @@ function wireCombo(inp, list, k) {
 }
 
 /* ---------- routing ---------- */
-function dijkstra(src, dst) {
+function dijkstra(src, dst, all) {
   const n = C.length, dist = new Float64Array(n).fill(Infinity), prev = new Int32Array(n).fill(-1);
   const heap = [[0, src]]; dist[src] = 0;
   const push = it => { heap.push(it); let i = heap.length - 1; while (i > 0) { const p = (i - 1) >> 1; if (heap[p][0] <= heap[i][0]) break; [heap[p], heap[i]] = [heap[i], heap[p]]; i = p; } };
@@ -214,11 +224,16 @@ function dijkstra(src, dst) {
       if (nd < dist[v]) { dist[v] = nd; prev[v] = e.i; push([nd, v]); }
     }
   }
+  if (all) return { dist, prev };
+  return pathTo(src, dst, prev, dist);
+}
+function pathTo(src, dst, prev, dist) {
   if (!isFinite(dist[dst])) return null;
   const path = [];
   for (let v = dst; v !== src;) { const e = E[prev[v]]; path.push({ e, from: e.a === v ? e.b : e.a, to: v }); v = path[path.length - 1].from; }
   return path.reverse();
 }
+const pathKm = p => p.reduce((s, st) => s + (st.e.kind > 0 ? (D.ferryCounts ? st.e.km : 0) : st.e.km * S.factor), 0);
 
 function compute() {
   if (stops[0] == null || stops[stops.length - 1] == null) return { error: 'Wähl einen Start und ein Ziel.' };
@@ -277,6 +292,18 @@ function renderResult(r) {
   const chips = el('div', 'chips');
   r.countries.forEach(cc => chips.appendChild(el('span', 'chip', cc)));
   box.appendChild(chips);
+  const dst = C[r.stops[r.stops.length - 1]];
+  if (dst.companies.length || dst.dealers.length) {
+    const dd = el('details');
+    const sm2 = el('summary', 'label', 'In ' + dst.name + ': ' + dst.companies.length + (dst.companies.length === 1 ? ' Firma' : ' Firmen') + (dst.dealers.length ? ', ' + dst.dealers.length + ' Händler' : ''));
+    sm2.style.cursor = 'pointer';
+    dd.appendChild(sm2);
+    const cc = el('div', 'cochips'); cc.style.marginTop = '8px';
+    dst.companies.forEach(n => cc.appendChild(el('span', 'cochip', n)));
+    dst.dealers.forEach(n => cc.appendChild(el('span', 'cochip dealer', n)));
+    dd.appendChild(cc);
+    box.appendChild(dd);
+  }
 
   const wrapT = el('div', 'legs-wrap');
   const tbl = el('table', 'legs');
@@ -315,8 +342,10 @@ const gLand = sv('g'), gEdge = sv('g'), gRoute = sv('g'), gDot = sv('g'), gLab =
 [gLand, gEdge, gRoute, gDot, gLab, gHit].forEach(g => svg.appendChild(g));
 D.land.forEach(l => gLand.appendChild(sv('path', { d: l.d, class: 'land' })));
 const edgeEls = E.map(e => { const a = C[e.a], b = C[e.b]; const p = sv('path', { d: 'M' + a.x + ' ' + a.z + 'L' + b.x + ' ' + b.z, class: 'edge' + (e.kind ? ' ferry' : '') }); gEdge.appendChild(p); return p; });
-const dotEls = C.map(c => { const p = sv('path', { d: 'M' + c.x + ' ' + c.z + 'h0', class: 'dot' }); gDot.appendChild(p); return p; });
-const labEls = C.map(c => { const t = sv('text', { x: c.x, y: c.z, 'text-anchor': 'middle' }); t.textContent = c.name; gLab.appendChild(t); return t; });
+const dotEls = C.map(c => { const p = sv('path', { d: 'M' + c.x + ' ' + c.z + 'h0', class: 'dot t' + tier(c) }); gDot.appendChild(p); return p; });
+const labEls = C.map(c => { const t = sv('text', { x: c.x, y: c.z, 'text-anchor': 'middle', class: 't' + tier(c) }); t.textContent = c.name; gLab.appendChild(t); return t; });
+// big cities claim label space first, like on a printed map
+const LABEL_ORDER = C.slice().sort((a, b) => b.companies.length - a.companies.length || a.name.localeCompare(b.name));
 C.forEach(c => { const h = sv('path', { d: 'M' + c.x + ' ' + c.z + 'h0', class: 'hit' }); h.dataset.i = c.i; const tt = sv('title'); tt.textContent = c.name + ' (' + c.cc + ')'; h.appendChild(tt); gHit.appendChild(h); });
 
 const ALL = (() => { let x0 = Infinity, x1 = -Infinity, z0 = Infinity, z1 = -Infinity; C.forEach(c => { x0 = Math.min(x0, c.x); x1 = Math.max(x1, c.x); z0 = Math.min(z0, c.z); z1 = Math.max(z1, c.z); }); return { x0, x1, z0, z1 }; })();
@@ -344,21 +373,20 @@ function fit(b, pad) {
 }
 let routeNodes = new Set();
 function drawLabels(upp) {
-  // show every label when zoomed in, only route and stop labels when zoomed out
-  const showAll = upp < 55;
+  // route and stop labels always show; other cities fill the free space, biggest first
   const placed = [];
+  const fits = (c, force) => {
+    const sx = c.x / upp, sy = c.z / upp, w = c.name.length * 7 + 6;
+    const hit = placed.some(p => Math.abs(p[0] - sx) < (w + p[2]) / 2 && Math.abs(p[1] - sy) < 16);
+    if (!hit || force) placed.push([sx, sy, w]);
+    return !hit || force;
+  };
+  const shown = new Set();
+  C.forEach(c => { if (routeNodes.has(c.i)) { fits(c, true); shown.add(c.i); } });
+  LABEL_ORDER.forEach(c => { if (!shown.has(c.i) && cityOn(c.i) && fits(c, false)) shown.add(c.i); });
   C.forEach(c => {
-    const t = labEls[c.i];
-    const imp = routeNodes.has(c.i);
-    let show = imp || showAll;
-    if (show && !imp) {
-      // simple collision check in screen space
-      const sx = c.x / upp, sy = c.z / upp, w = c.name.length * 7;
-      if (placed.some(p => Math.abs(p[0] - sx) < (w + p[2]) / 2 && Math.abs(p[1] - sy) < 15)) show = false;
-      else placed.push([sx, sy, w]);
-    }
-    t.style.display = show ? '' : 'none';
-    t.classList.toggle('big', stops.includes(c.i));
+    labEls[c.i].style.display = shown.has(c.i) ? '' : 'none';
+    labEls[c.i].classList.toggle('big', stops.includes(c.i));
   });
 }
 function drawMap(r) {
@@ -444,11 +472,19 @@ function openPop(ci, cx, cy) {
   const c = C[ci];
   pop.textContent = '';
   pop.appendChild(el('div', 't', c.name));
-  pop.appendChild(el('div', 'd', c.cc + ' · ' + D.dlcs[c.dlc] + (cityOn(ci) ? '' : ' (abgewählt)')));
-  const mk = (txt, fn) => { const b = el('button', 'btn', txt); b.type = 'button'; b.onclick = () => { fn(); closePop(); renderStops(); update(); }; pop.appendChild(b); };
-  mk('Als Start', () => { stops[0] = ci; });
-  mk('Als Ziel', () => { stops[stops.length - 1] = ci; });
-  mk('Als Zwischenstopp', () => { stops.splice(stops.length - 1, 0, ci); });
+  pop.appendChild(el('div', 'd', c.cc + ' · ' + (D.dlcs[c.dlc] === 'Base' ? 'Grundspiel' : D.dlcs[c.dlc]) + (cityOn(ci) ? '' : ' (abgewählt)')));
+  if (c.companies.length || c.dealers.length) {
+    const cos = el('div', 'cos');
+    if (c.companies.length) { cos.appendChild(el('b', null, c.companies.length + (c.companies.length === 1 ? ' Firma: ' : ' Firmen: '))); cos.appendChild(document.createTextNode(c.companies.join(', '))); }
+    if (c.dealers.length) { cos.appendChild(el('br')); cos.appendChild(el('b', null, 'Händler: ')); cos.appendChild(document.createTextNode(c.dealers.join(', '))); }
+    pop.appendChild(cos);
+  }
+  const row = el('div', 'row');
+  const mk = (txt, fn) => { const b = el('button', 'btn', txt); b.type = 'button'; b.onclick = () => { fn(); closePop(); renderStops(); update(); }; row.appendChild(b); };
+  mk('Start', () => { stops[0] = ci; });
+  mk('Ziel', () => { stops[stops.length - 1] = ci; });
+  mk('Zwischenstopp', () => { stops.splice(stops.length - 1, 0, ci); });
+  pop.appendChild(row);
   pop.hidden = false;
   const box = svg.parentElement.getBoundingClientRect();
   let x = cx - box.left + 10, y = cy - box.top + 10;
@@ -505,6 +541,55 @@ $('copy').onclick = () => {
   try { navigator.clipboard.writeText(txt).then(() => done(true), () => done(false)); } catch (e) { done(false); }
 };
 
+/* ---------- company finder ---------- */
+const COMPANIES = (() => { const m = new Map(); C.forEach(c => c.companies.forEach(n => m.set(n, (m.get(n) || 0) + 1))); return m; })();
+(() => {
+  const dl = $('coList');
+  [...COMPANIES.keys()].sort((a, b) => a.localeCompare(b, 'de')).forEach(n => { const o = el('option'); o.value = n; dl.appendChild(o); });
+})();
+function renderFinder() {
+  const hits = $('coHits'), q = norm($('coIn').value);
+  hits.textContent = '';
+  const start = stops[0];
+  $('coFrom').textContent = start != null ? 'ab ' + C[start].name : '';
+  if (!q) return;
+  const name = [...COMPANIES.keys()].find(n => norm(n) === q) || [...COMPANIES.keys()].find(n => norm(n).startsWith(q));
+  if (!name) { hits.appendChild(el('li', 'note', 'Keine Firma mit diesem Namen gefunden.')); return; }
+  const at = C.filter(c => c.companies.includes(name) && cityOn(c.i));
+  if (start == null || !cityOn(start)) {
+    at.sort((a, b) => a.name.localeCompare(b.name, 'de')).slice(0, 12).forEach(c => addHit(c, null));
+    hits.insertBefore(el('li', 'note', name + ' gibt es in ' + at.length + (at.length === 1 ? ' Stadt' : ' Städten') + '. Wähl einen Start für die Entfernung.'), hits.firstChild);
+    return;
+  }
+  const { dist, prev } = dijkstra(start, null, true);
+  const rows = at.map(c => { const p = pathTo(start, c.i, prev, dist); return { c, km: c.i === start ? 0 : p ? pathKm(p) : Infinity }; })
+    .sort((a, b) => a.km - b.km);
+  hits.appendChild(el('li', 'note', name + ': ' + at.length + (at.length === 1 ? ' Standort' : ' Standorte') + ', die nächsten zuerst.'));
+  rows.slice(0, 8).forEach(x => addHit(x.c, x.km));
+  function addHit(c, km) {
+    const li = el('li');
+    li.appendChild(el('span', 'nm', c.name + ' · ' + c.cc));
+    li.appendChild(el('span', 'km', km == null ? '' : isFinite(km) ? (km === 0 ? 'hier' : '≈ ' + NF.format(km) + ' km') : 'keine Route'));
+    const b = el('button', 'btn', 'Als Ziel'); b.type = 'button';
+    b.onclick = () => { stops[stops.length - 1] = c.i; renderStops(); update(); if (last && last.bounds) fit(last.bounds); };
+    li.appendChild(b);
+    hits.appendChild(li);
+  }
+}
+$('coIn').addEventListener('input', renderFinder);
+
+/* ---------- random tour ---------- */
+$('random').onclick = () => {
+  const on = C.filter(c => cityOn(c.i) && c.companies.length);
+  for (let tries = 0; tries < 40; tries++) {
+    const a = on[Math.floor(Math.random() * on.length)], b = on[Math.floor(Math.random() * on.length)];
+    if (a === b) continue;
+    const p = dijkstra(a.i, b.i);
+    const km = p ? pathKm(p) : 0;
+    if (km >= 250 && km <= 1600) { stops = [a.i, b.i]; renderStops(); update(); if (last && last.bounds) fit(last.bounds); return; }
+  }
+};
+
 /* ---------- about ---------- */
 (function about() {
   const a = $('about');
@@ -518,6 +603,7 @@ function update() {
   const r = compute();
   renderResult(r);
   drawMap(r);
+  renderFinder();
   if (!r.error) {
     try { history.replaceState(null, '', '#r-' + r.stops.join('-')); } catch (e) { /* ignore */ }
     if (firstFit) { fit(r.bounds); firstFit = false; }

@@ -1,9 +1,10 @@
 """Merge the researched region files into one road network for the calculator.
 
-usage: python3 build_data.py SRC_DIR OUT_DIR [radio_arrays.json]
+usage: python3 build_data.py SRC_DIR OUT_DIR
 
 SRC_DIR holds regions/<key>.json (cities + roads per map region), ferries.json,
-calibration.json and inventory.json. Writes OUT_DIR/network.json and
+calibration.json, patches.json (corrections) and game_cities.json (in-game positions,
+companies and dealers, made by make_game_cities.py). Writes OUT_DIR/network.json and
 OUT_DIR/REPORT.md.
 """
 import json
@@ -22,7 +23,10 @@ DLCS = ['Base', 'Going East!', 'Scandinavia', 'Vive la France !', 'Italia', 'Bey
 DEFAULT_WIND = 1.25          # road length / straight line when no road km is known
 WIND_MIN, WIND_MAX = 1.0, 3.3     # mountain and fjord roads reach 2-3
 UK_SCALE = 0.75             # UK game distances are 1/0.75 longer than mainland ones
-RADIO_MAX_OFF = 4000.0       # accept in-game coordinates only this close to the projection (game m)
+GAME_MAX_OFF = 8000.0        # match a game city by position only this close (game m)
+# dlcGuard values in the game data -> map DLC (guards for mixed areas are left as researched)
+GUARD_DLC = {0: 'Base', 1: 'Going East!', 2: 'Scandinavia', 3: 'Vive la France !', 4: 'Italia', 6: 'Beyond the Baltic Sea',
+             9: 'Road to the Black Sea', 11: 'Iberia', 16: 'West Balkans', 20: 'Greece', 23: 'Nordic Horizons', 26: 'Iceland'}
 
 # ferry ports that are not cities of their own in the game -> the city that owns the port
 PORTS = {
@@ -33,15 +37,6 @@ PORTS = {
     ('haparanda', 'SE'): ('tornio', 'FI'),
 }
 
-RADIO_CC = {
-    'uk': 'GB', 'scotland': 'GB', 'wales': 'GB', 'germany': 'DE', 'netherlands': 'NL', 'belgium': 'BE',
-    'luxembourg': 'LU', 'france': 'FR', 'switzerland': 'CH', 'austria': 'AT', 'liecht': 'LI', 'italy': 'IT',
-    'spain': 'ES', 'catalonia': 'ES', 'basque': 'ES', 'galicia': 'ES', 'portugal': 'PT', 'poland': 'PL',
-    'czech': 'CZ', 'slovakia': 'SK', 'hungary': 'HU', 'denmark': 'DK', 'sweden': 'SE', 'norway': 'NO',
-    'finland': 'FI', 'estonia': 'EE', 'latvia': 'LV', 'lithuania': 'LT', 'russia': 'RU', 'romania': 'RO',
-    'bulgaria': 'BG', 'turkey': 'TR', 'greece': 'GR', 'slovenia': 'SI', 'croatia': 'HR', 'bosnia': 'BA',
-    'serbia': 'RS', 'montenegro': 'ME', 'albania': 'AL', 'macedonia': 'MK', 'kosovo': 'XK', 'iceland': 'IS',
-}
 
 
 def norm(s):
@@ -73,31 +68,7 @@ def hav(lat1, lon1, lat2, lon2):
     return 2 * 6371.0 * math.asin(math.sqrt(a))
 
 
-def radio_cc(country):
-    base = country.split('-')[0].split('_')[0]
-    return RADIO_CC.get(base)
-
-
-def load_radio(path):
-    if not path or not os.path.exists(path):
-        return {}
-    arrays = json.load(open(path))
-    out = {}
-    for key in ('cities', 'cities_fr', 'cities_btbs', 'cities_balkan_e'):
-        for c in arrays.get(key, []):
-            cc = radio_cc(c['country'])
-            if not cc:
-                continue
-            try:
-                x, z = float(c['x']), float(c['z'])
-            except (TypeError, ValueError):
-                continue
-            for nm in {c['realName'], c['gameName']}:
-                out.setdefault((norm(nm), cc), []).append((x, z))
-    return out
-
-
-def main(src, out_dir, radio_path=None):
+def main(src, out_dir):
     log = []
     regions = {}
     rdir = os.path.join(src, 'regions')
@@ -106,7 +77,10 @@ def main(src, out_dir, radio_path=None):
             regions[fn[:-5]] = json.load(open(os.path.join(rdir, fn)))
     ferries = json.load(open(os.path.join(src, 'ferries.json'))) if os.path.exists(os.path.join(src, 'ferries.json')) else {'connections': []}
     calib = json.load(open(os.path.join(src, 'calibration.json'))) if os.path.exists(os.path.join(src, 'calibration.json')) else {'pairs': []}
-    radio = load_radio(radio_path)
+    patches = json.load(open(os.path.join(src, 'patches.json'))) if os.path.exists(os.path.join(src, 'patches.json')) else {}
+    gpath = os.path.join(src, 'game_cities.json')
+    game = json.load(open(gpath, encoding='utf-8')) if os.path.exists(gpath) else []
+    regions['patch'] = {'cities': [dict(c, conf='high', note='added from game data') for c in patches.get('add_city', [])], 'roads': []}
 
     # ---- cities
     cities, by_key, by_alias = [], {}, {}
@@ -153,22 +127,38 @@ def main(src, out_dir, radio_path=None):
             return cand[0]
         return None
 
-    # ---- game coordinates
-    used_radio = 0
-    for c in cities:
+    # ---- game coordinates, DLC, companies (from the game data)
+    taken = set()
+    gmatch = {}
+    for i, c in enumerate(cities):
         x, z, uk = to_game(c['lon'], c['lat'])
-        c['uk'] = uk
-        best = None
-        for nm in [c['name']] + c['aliases']:
-            for gx, gz in radio.get((norm(nm), c['cc']), []):
-                d = math.hypot(gx - x, gz - z)
-                if d < RADIO_MAX_OFF and (best is None or d < best[0]):
-                    best = (d, gx, gz)
-        if best:
-            x, z = best[1], best[2]
-            used_radio += 1
+        c['uk'] = uk or c['cc'] == 'GB'
         c['x'], c['z'] = round(x), round(z)
-        c['src'] = 'game' if best else 'proj'
+        c['src'] = 'proj'
+        c['companies'], c['dealers'] = [], []
+        keys = {norm(c['name'])} | {norm(a) for a in c['aliases']}
+        hits = [j for j, g in enumerate(game) if g['cc'] == c['cc'] and norm(g['label']) in keys and j not in taken]
+        if len(hits) == 1:
+            gmatch[i] = hits[0]
+            taken.add(hits[0])
+    for i, c in enumerate(cities):
+        if i in gmatch:
+            continue
+        best = min(((math.hypot(g['x'] - c['x'], g['z'] - c['z']), j) for j, g in enumerate(game)
+                    if g['cc'] == c['cc'] and j not in taken), default=None)
+        if best and best[0] < GAME_MAX_OFF:
+            gmatch[i] = best[1]
+            taken.add(best[1])
+    for i, j in gmatch.items():
+        c, g = cities[i], game[j]
+        c['x'], c['z'], c['src'] = g['x'], g['z'], 'game'
+        c['companies'], c['dealers'] = g['companies'], g['dealers']
+        if norm(g['label']) != norm(c['name']) and g['label'] not in c['aliases']:
+            c['aliases'] = sorted(set(c['aliases']) | {g['label']})
+        if g['guard'] in GUARD_DLC and GUARD_DLC[g['guard']] != c['dlc']:
+            log.append(f'DLC of {c["name"]} changed from {c["dlc"]} to {GUARD_DLC[g["guard"]]} (game data)')
+            c['dlc'] = GUARD_DLC[g['guard']]
+    game_only = [f'{g["label"]} ({g["cc"]})' for j, g in enumerate(game) if j not in taken]
 
     # ---- edges
     edges = {}
@@ -210,6 +200,38 @@ def main(src, out_dir, radio_path=None):
             continue
         add_edge(a, b, f.get('sea_km'), 2 if f.get('kind') == 'train' else 1, '', f.get('confidence'), 'ferries',
                  f.get('dlc') if f.get('dlc') in DLCS else None)
+
+    # ---- patches: remove/add edges, remove cities (bridging roads through them)
+    removed = set()
+    for r in patches.get('remove_edge', []):
+        a, b = resolve(r['a'], r['acc']), resolve(r['b'], r['bcc'])
+        if a is None or b is None or edges.pop((min(a, b), max(a, b), 0), None) is None:
+            log.append(f'patch: road {r["a"]} - {r["b"]} to remove not found')
+    for r in patches.get('add_edge', []):
+        a, b = resolve(r['a'], r['acc']), resolve(r['b'], r['bcc'])
+        if a is None or b is None:
+            unresolved.append(f'patch: {r["a"]} - {r["b"]}')
+            continue
+        add_edge(a, b, r['km'], 0, r.get('road', ''), 'high', 'patch')
+    for r in patches.get('remove_city', []):
+        x = resolve(r['name'], r['cc'])
+        if x is None:
+            log.append(f'patch: city {r["name"]} to remove not found')
+            continue
+        removed.add(x)
+        nb = [(e['b'] if e['a'] == x else e['a'], statistics.median(e['kms']) if e['kms'] else None, e['road'])
+              for e in edges.values() if e['kind'] == 0 and x in (e['a'], e['b'])]
+        X = cities[x]
+        for i1 in range(len(nb)):
+            for i2 in range(i1 + 1, len(nb)):
+                (p, kp, rp), (q, kq, rq) = nb[i1], nb[i2]
+                P, Q = cities[p], cities[q]
+                via = hav(P['lat'], P['lon'], X['lat'], X['lon']) + hav(X['lat'], X['lon'], Q['lat'], Q['lon'])
+                if kp and kq and via <= 1.3 * hav(P['lat'], P['lon'], Q['lat'], Q['lon']) and (min(p, q), max(p, q), 0) not in edges:
+                    add_edge(p, q, kp + kq, 0, rp or rq, 'medium', 'bridge')
+                    log.append(f'bridged {P["name"]} - {Q["name"]} ({kp + kq} km) through removed {X["name"]}')
+        for k in [k for k, e in edges.items() if x in (e['a'], e['b'])]:
+            del edges[k]
 
     # ---- edge lengths (raw = scale 1)
     for e in edges.values():
@@ -301,7 +323,8 @@ def main(src, out_dir, radio_path=None):
         parent[find(e['a'])] = find(e['b'])
     comps = {}
     for i in range(len(cities)):
-        comps.setdefault(find(i), []).append(cities[i]['name'])
+        if i not in removed:
+            comps.setdefault(find(i), []).append(cities[i]['name'])
     comps = sorted(comps.values(), key=len, reverse=True)
     degree = [0] * len(cities)
     for e in edges.values():
@@ -309,12 +332,13 @@ def main(src, out_dir, radio_path=None):
         degree[e['b']] += 1
 
     # ---- output (cities sorted by name for stable ids)
-    order = sorted(range(len(cities)), key=lambda i: (norm(cities[i]['name']), cities[i]['cc']))
+    order = sorted((i for i in range(len(cities)) if i not in removed), key=lambda i: (norm(cities[i]['name']), cities[i]['cc']))
     new_id = {old: new for new, old in enumerate(order)}
     out_c = []
     for old in order:
         c = cities[old]
-        out_c.append([c['name'], c['cc'], c['x'], c['z'], DLCS.index(c['dlc']), '|'.join(c['aliases']), 1 if c['uk'] else 0])
+        out_c.append([c['name'], c['cc'], c['x'], c['z'], DLCS.index(c['dlc']), '|'.join(c['aliases']), 1 if c['uk'] else 0,
+                      '|'.join(c['companies']), '|'.join(c['dealers'])])
     out_e = []
     for e in sorted(edges.values(), key=lambda e: (new_id[e['a']], new_id[e['b']])):
         km = round(e['km']) if e['kind'] == 0 else round(e['sea_km'])
@@ -327,19 +351,26 @@ def main(src, out_dir, radio_path=None):
     # ---- report
     R = []
     R.append('# Datenbericht ETS2 Streckenrechner\n')
-    R.append(f'- Städte: {len(cities)} (davon {used_radio} mit echten Spielkoordinaten, Rest per Projektion)')
+    kept = [c for i, c in enumerate(cities) if i not in removed]
+    R.append(f'- Städte: {len(kept)} (davon {sum(1 for c in kept if c["src"] == "game")} mit Position aus den Spieldaten)')
+    R.append(f'- Firmenstandorte: {sum(len(c["companies"]) for c in kept)}, Lkw-Händler: {sum(len(c["dealers"]) for c in kept)}')
     R.append(f'- Verbindungen: {sum(1 for e in edges.values() if e["kind"] == 0)} Straßen, '
              f'{sum(1 for e in edges.values() if e["kind"] == 1)} Fähren, {sum(1 for e in edges.values() if e["kind"] == 2)} Zug')
     R.append(f'- Maßstab aus Kalibrierung: {scale:.2f} (Festland, {len(ratios)} Paare), {scale_uk:.2f} (UK, {len(ratios_uk)} Paare)')
     R.append(f'- Zusammenhangskomponenten: {len(comps)}')
     R.append('\n## Städte pro DLC\n')
     for d in DLCS:
-        R.append(f'- {d}: {sum(1 for c in cities if c["dlc"] == d)}')
+        R.append(f'- {d}: {sum(1 for c in kept if c["dlc"] == d)}')
     if len(comps) > 1:
         R.append('\n## Nicht verbundene Teile\n')
         for comp in comps[1:]:
             R.append('- ' + ', '.join(comp))
-    iso = [cities[i]['name'] for i in range(len(cities)) if degree[i] == 0]
+    iso = [cities[i]['name'] for i in range(len(cities)) if degree[i] == 0 and i not in removed]
+    no_game = [f'{c["name"]} ({c["cc"]})' for c in kept if c['src'] != 'game']
+    if game_only or no_game:
+        R.append('\n## Abgleich mit den Spieldaten\n')
+        R.append('- Nur in den Spieldaten: ' + (', '.join(game_only) or 'keine'))
+        R.append('- Nicht in den Spieldaten: ' + (', '.join(no_game) or 'keine'))
     if iso:
         R.append('\n## Städte ohne Verbindung\n\n' + ', '.join(iso))
     if unresolved:
@@ -361,4 +392,4 @@ def main(src, out_dir, radio_path=None):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
+    main(sys.argv[1], sys.argv[2])

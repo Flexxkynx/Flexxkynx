@@ -19,14 +19,19 @@
   --sign-blue-ink: #ffffff;
   --sign-green: #15774a;
   --danger: #b4232a;
-  --map-water: #cddbea;
-  --map-land: #f6f7f9;
-  --map-border: #c2cbd6;
-  --map-road: #8d9aab;
-  --map-ferry: #4f7fb3;
-  --map-city: #2c3a4c;
-  --map-off: #c4ccd6;
-  --halo: #f6f7f9;
+  /* the map keeps the dark in-game look in both themes */
+  --map-water: #121d29;
+  --map-land: #233040;
+  --map-border: #3a4b5f;
+  --map-road: #74879d;
+  --map-ferry: #5a97da;
+  --map-city: #dbe4ee;
+  --map-off: #33414f;
+  --map-ink: #f1f5f9;
+  --map-panel: #1a2633;
+  --map-line: #364a5f;
+  --map-muted: #9fb0c3;
+  --halo: #121d29;
   --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --font-body: "Barlow", "Segoe UI", system-ui, -apple-system, sans-serif;
   --radius: 6px;
@@ -36,8 +41,6 @@
     --bg: #0c131c; --panel: #131e2b; --panel-2: #182536; --ink: #e6edf5; --muted: #95a3b6; --line: #253548;
     --accent: #ffa733; --accent-ink: #ffc46e; --accent-soft: #33260f;
     --sign-blue: #22599f; --sign-blue-ink: #ffffff; --sign-green: #1e8a56; --danger: #ff6b6b;
-    --map-water: #0b1826; --map-land: #182638; --map-border: #2c3e55; --map-road: #4f6580; --map-ferry: #5f8fc4;
-    --map-city: #c3cfdd; --map-off: #34465d; --halo: #182638;
     color-scheme: dark;
   }
 }
@@ -45,8 +48,6 @@
   --bg: #0c131c; --panel: #131e2b; --panel-2: #182536; --ink: #e6edf5; --muted: #95a3b6; --line: #253548;
   --accent: #ffa733; --accent-ink: #ffc46e; --accent-soft: #33260f;
   --sign-blue: #22599f; --sign-blue-ink: #ffffff; --sign-green: #1e8a56; --danger: #ff6b6b;
-  --map-water: #0b1826; --map-land: #182638; --map-border: #2c3e55; --map-road: #4f6580; --map-ferry: #5f8fc4;
-  --map-city: #c3cfdd; --map-off: #34465d; --halo: #182638;
   color-scheme: dark;
 }
 
@@ -90,7 +91,7 @@ button, input, select { font: inherit; color: inherit; }
 @media (max-width: 860px) {
   .layout { grid-template-columns: minmax(0, 1fr); }
   .col.left { display: contents; }
-  .o1 { order: 1; } .o2 { order: 2; } .o3 { order: 3; } .o4 { order: 4; } .o5 { order: 5; }
+  .o1 { order: 1; } .o2 { order: 2; } .o3 { order: 3; } .o4 { order: 4; } .o5 { order: 5; } .o6 { order: 6; }
 }
 
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
@@ -187,34 +188,58 @@ button, input, select { font: inherit; color: inherit; }
 #map .edge.off { stroke: var(--map-off); }
 #map .route { stroke: var(--accent); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; fill: none; vector-effect: non-scaling-stroke; }
 #map .route.ferry { stroke-dasharray: 2 9; stroke-width: 4; }
-#map .dot { stroke: var(--map-city); stroke-width: 5; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+#map .dot { stroke: var(--map-city); stroke-width: 4.5; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+#map .dot.t2 { stroke-width: 6.5; }
+#map .dot.t3 { stroke-width: 8.5; }
 #map .dot.off { stroke: var(--map-off); }
 #map .dot.on { stroke: var(--accent); stroke-width: 9; }
 #map .hit { stroke: transparent; stroke-width: 22; stroke-linecap: round; vector-effect: non-scaling-stroke; cursor: pointer; }
 #map text {
-  font-family: var(--font-display); font-weight: 600; fill: var(--ink);
+  font-family: var(--font-display); font-weight: 600; fill: var(--map-ink);
   paint-order: stroke; stroke: var(--halo); stroke-width: 3px; stroke-linejoin: round; pointer-events: none;
 }
-#map text.big { font-weight: 700; }
+#map text.big { font-weight: 700; fill: var(--accent); }
+#map text.t3 { font-weight: 700; }
 .mapctl { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
 .mapctl button {
-  width: 36px; height: 36px; border-radius: var(--radius); border: 1px solid var(--line);
-  background: var(--panel); cursor: pointer; font-size: 18px; font-weight: 600; display: grid; place-items: center;
+  width: 36px; height: 36px; border-radius: var(--radius); border: 1px solid var(--map-line);
+  background: var(--map-panel); color: var(--map-ink); cursor: pointer; font-size: 18px; font-weight: 600; display: grid; place-items: center;
 }
 .legend {
   position: absolute; left: 10px; bottom: 10px; display: flex; gap: 12px; flex-wrap: wrap;
-  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 5px 10px; font-size: 12px; color: var(--muted);
+  background: var(--map-panel); border: 1px solid var(--map-line); border-radius: var(--radius); padding: 5px 10px; font-size: 12px; color: var(--map-muted);
   max-width: calc(100% - 20px);
 }
 .legend i { display: inline-block; width: 18px; height: 0; border-top: 3px solid var(--accent); vertical-align: middle; margin-right: 5px; }
 .legend i.road { border-top: 2px solid var(--map-road); }
 .legend i.ferry { border-top: 2px dashed var(--map-ferry); }
 .pop {
-  position: absolute; z-index: 20; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
-  box-shadow: 0 10px 30px rgba(0,0,0,.2); padding: 8px; display: flex; flex-direction: column; gap: 6px; min-width: 170px;
+  position: absolute; z-index: 20; background: var(--map-panel); color: var(--map-ink); border: 1px solid var(--map-line); border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35); padding: 10px; display: flex; flex-direction: column; gap: 6px; width: min(260px, calc(100% - 20px));
 }
-.pop .t { font-family: var(--font-display); font-weight: 700; font-size: 17px; }
-.pop .d { font-size: 12px; color: var(--muted); margin-top: -4px; }
+.pop .t { font-family: var(--font-display); font-weight: 700; font-size: 18px; }
+.pop .d { font-size: 12px; color: var(--map-muted); margin-top: -4px; }
+.pop .btn { background: transparent; border-color: var(--map-line); color: var(--map-ink); text-align: left; }
+.pop .btn:hover { border-color: var(--accent); }
+.pop .cos { font-size: 12px; color: var(--map-muted); max-height: 92px; overflow-y: auto; line-height: 1.5; }
+.pop .cos b { color: var(--map-ink); font-weight: 600; }
+.pop .row { display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* Company finder and company lists */
+.finder { padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.finder input {
+  width: 100%; height: 40px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel-2); padding: 0 10px; font-size: 16px;
+}
+.finder input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px var(--accent-soft); }
+.hits { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.hits li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 10px; align-items: center; padding: 7px 2px; border-top: 1px solid var(--line); }
+.hits .nm { font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
+.hits .km { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+.hits .btn { padding: 3px 10px; }
+.cochips { display: flex; flex-wrap: wrap; gap: 5px; }
+.cochip { font-size: 13px; border-radius: 999px; padding: 1px 9px; background: var(--panel-2); border: 1px solid var(--line); }
+.cochip.dealer { border-color: var(--sign-blue); }
+.sub-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 
 /* Settings */
 details.panel > summary {

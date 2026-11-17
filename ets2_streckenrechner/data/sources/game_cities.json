@@ -1,0 +1,6814 @@
+[
+{
+"label": "Durrës",
+"cc": "AL",
+"lon": 19.5809,
+"lat": 41.4761,
+"x": 36192,
+"z": 52017,
+"guard": 16,
+"companies": [
+"Container port",
+"Marina"
+],
+"dealers": []
+},
+{
+"label": "Fier",
+"cc": "AL",
+"lon": 20.0183,
+"lat": 40.9443,
+"x": 38262,
+"z": 54941,
+"guard": 16,
+"companies": [
+"CNP"
+],
+"dealers": []
+},
+{
+"label": "Tirana",
+"cc": "AL",
+"lon": 20.0792,
+"lat": 41.5726,
+"x": 38275,
+"z": 51323,
+"guard": 16,
+"companies": [
+"Betunija",
+"Celler Construction Group",
+"Eumefa",
+"Jastuk",
+"Sanbuilders",
+"Slava Auto",
+"Stokes"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Vlorë",
+"cc": "AL",
+"lon": 19.635,
+"lat": 40.6091,
+"x": 36736,
+"z": 56975,
+"guard": 16,
+"companies": [
+"Betunija",
+"CNP",
+"Eumefa",
+"Fallow Cargo",
+"Shuttle Cola"
+],
+"dealers": []
+},
+{
+"label": "Graz",
+"cc": "AT",
+"lon": 15.5237,
+"lat": 47.1305,
+"x": 18665,
+"z": 20391,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"FCP",
+"LkwLog GmbH",
+"RT Log",
+"Steinbruch",
+"Tree-ET"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Innsbruck",
+"cc": "AT",
+"lon": 11.2964,
+"lat": 47.2106,
+"x": 2511,
+"z": 19582,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"RT Log",
+"Steinbruch",
+"Trameri"
+],
+"dealers": []
+},
+{
+"label": "Klagenfurt am Wörthersee",
+"cc": "AT",
+"lon": 14.3244,
+"lat": 46.6192,
+"x": 14047,
+"z": 23287,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"Kathode",
+"SellPlan",
+"Tradeaux",
+"Trameri",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Linz",
+"cc": "AT",
+"lon": 14.1915,
+"lat": 48.2733,
+"x": 13636,
+"z": 13905,
+"guard": 0,
+"companies": [
+"DomDepo",
+"ITCC",
+"Posped",
+"RT Log"
+],
+"dealers": []
+},
+{
+"label": "Salzburg",
+"cc": "AT",
+"lon": 13.0067,
+"lat": 47.8848,
+"x": 9146,
+"z": 16019,
+"guard": 0,
+"companies": [
+"Renat",
+"RT Log",
+"Sanbuilders",
+"SellPlan",
+"Shuttle Cola",
+"Steinbruch",
+"Tree-ET"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Vienna",
+"cc": "AT",
+"lon": 16.1133,
+"lat": 48.2599,
+"x": 20825,
+"z": 13966,
+"guard": 0,
+"companies": [
+"CNP",
+"EuroAcres",
+"EuroGoodies",
+"NS Oil",
+"SellPlan",
+"Stokes"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Banja Luka",
+"cc": "BA",
+"lon": 17.3545,
+"lat": 44.848,
+"x": 26087,
+"z": 33213,
+"guard": 16,
+"companies": [
+"AI Automotive",
+"Bosfir Komerc",
+"Brawen Transport",
+"ITCC",
+"Jastuk",
+"Radus",
+"Syllurgy",
+"Vesna"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Bihać",
+"cc": "BA",
+"lon": 16.0877,
+"lat": 44.9214,
+"x": 21009,
+"z": 32916,
+"guard": 16,
+"companies": [
+"Bosfir Komerc",
+"Shuttle Cola",
+"Syllurgy",
+"Vesna"
+],
+"dealers": []
+},
+{
+"label": "Karakaj",
+"cc": "BA",
+"lon": 19.3797,
+"lat": 44.6997,
+"x": 34238,
+"z": 33679,
+"guard": 16,
+"companies": [
+"Aluxion"
+],
+"dealers": []
+},
+{
+"label": "Mostar",
+"cc": "BA",
+"lon": 17.8766,
+"lat": 43.4703,
+"x": 28483,
+"z": 40986,
+"guard": 16,
+"companies": [
+"Aluxion",
+"Betunija",
+"Low Field",
+"Slava Auto"
+],
+"dealers": []
+},
+{
+"label": "Sarajevo",
+"cc": "BA",
+"lon": 18.4705,
+"lat": 43.9181,
+"x": 30802,
+"z": 38326,
+"guard": 16,
+"companies": [
+"AI Automotive",
+"Balkan Loco",
+"Eumefa",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Tuzla",
+"cc": "BA",
+"lon": 18.8349,
+"lat": 44.6708,
+"x": 32062,
+"z": 33967,
+"guard": 16,
+"companies": [
+"Betunija",
+"Jastuk",
+"Sanbuilders",
+"Slava Auto",
+"Stokes",
+"SysChema"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Zenica",
+"cc": "BA",
+"lon": 17.9805,
+"lat": 44.3075,
+"x": 28717,
+"z": 36197,
+"guard": 16,
+"companies": [
+"Bosfir Komerc",
+"Fallow Cargo",
+"ITCC",
+"SCS Paper",
+"Syllurgy",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Antwerp",
+"cc": "BE",
+"lon": 4.0364,
+"lat": 51.2286,
+"x": -21707,
+"z": -5708,
+"guard": 0,
+"companies": [
+"Container port",
+"Euroflow Ports",
+"SellPlan",
+"WGCC"
+],
+"dealers": []
+},
+{
+"label": "Brussels",
+"cc": "BE",
+"lon": 3.878,
+"lat": 50.6157,
+"x": -22779,
+"z": -2367,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"FCP",
+"Sanbuilders",
+"TransiNet",
+"WGCC"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Liège",
+"cc": "BE",
+"lon": 5.5142,
+"lat": 50.5349,
+"x": -17072,
+"z": -1088,
+"guard": 0,
+"companies": [
+"Euroflow Ports",
+"Shuttle Cola",
+"Steinbruch",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Burgas",
+"cc": "BG",
+"lon": 27.4525,
+"lat": 42.7543,
+"x": 68297,
+"z": 40860,
+"guard": 9,
+"companies": [
+"CNP",
+"Container port",
+"Rock Eater",
+"Радус",
+"Стоманена Роза"
+],
+"dealers": []
+},
+{
+"label": "Karlovo",
+"cc": "BG",
+"lon": 24.9791,
+"lat": 42.8272,
+"x": 58056,
+"z": 42038,
+"guard": 9,
+"companies": [
+"Sporklift",
+"Train Foundry",
+"Добра ферма"
+],
+"dealers": []
+},
+{
+"label": "Kozloduy",
+"cc": "BG",
+"lon": 23.8591,
+"lat": 43.9589,
+"x": 52658,
+"z": 36227,
+"guard": 9,
+"companies": [
+"Nucléon"
+],
+"dealers": []
+},
+{
+"label": "Pernik",
+"cc": "BG",
+"lon": 22.5916,
+"lat": 42.4806,
+"x": 48398,
+"z": 45213,
+"guard": 18,
+"companies": [
+"Стоманена Роза"
+],
+"dealers": []
+},
+{
+"label": "Pirdop",
+"cc": "BG",
+"lon": 24.4711,
+"lat": 42.8589,
+"x": 55938,
+"z": 42141,
+"guard": 9,
+"companies": [
+"Rock Eater",
+"Стоманена Роза"
+],
+"dealers": []
+},
+{
+"label": "Pleven",
+"cc": "BG",
+"lon": 25.0193,
+"lat": 43.636,
+"x": 57594,
+"z": 37438,
+"guard": 9,
+"companies": [
+"Balkan Loco",
+"Renat",
+"Добра ферма",
+"ДомДепо",
+"Радус"
+],
+"dealers": []
+},
+{
+"label": "Plovdiv",
+"cc": "BG",
+"lon": 24.8891,
+"lat": 42.1113,
+"x": 58235,
+"z": 46149,
+"guard": 9,
+"companies": [
+"Sporklift",
+"Volvo Trucks",
+"ТТК"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Ruse",
+"cc": "BG",
+"lon": 25.9539,
+"lat": 44.0117,
+"x": 61067,
+"z": 34765,
+"guard": 9,
+"companies": [
+"Balkan Loco",
+"BHV",
+"CGLA",
+"Kaarfor",
+"Ocean Solutions Group",
+"Радус"
+],
+"dealers": []
+},
+{
+"label": "Sofia",
+"cc": "BG",
+"lon": 23.3194,
+"lat": 42.9043,
+"x": 51154,
+"z": 42470,
+"guard": 9,
+"companies": [
+"FLE",
+"Ika Bohag",
+"Rock Eater",
+"Shuttle Cola",
+"Subse",
+"Добра ферма",
+"Радус",
+"ТТК",
+"Цемелтекс"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Varna",
+"cc": "BG",
+"lon": 28.064,
+"lat": 43.4605,
+"x": 70093,
+"z": 36442,
+"guard": 9,
+"companies": [
+"Ocean Solutions Group",
+"Rock Eater",
+"Радус",
+"ТТК"
+],
+"dealers": []
+},
+{
+"label": "Veliko Tarnovo",
+"cc": "BG",
+"lon": 25.7344,
+"lat": 43.3137,
+"x": 60763,
+"z": 38839,
+"guard": 9,
+"companies": [
+"Balkan Loco",
+"Renat",
+"Subse"
+],
+"dealers": []
+},
+{
+"label": "Bern",
+"cc": "CH",
+"lon": 7.4627,
+"lat": 46.8522,
+"x": -12304,
+"z": 20468,
+"guard": 0,
+"companies": [
+"Charmey",
+"EuroAcres",
+"RT Log",
+"Sanbuilders",
+"SellPlan",
+"Steinbruch",
+"Tree-ET"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Geneva",
+"cc": "CH",
+"lon": 6.1486,
+"lat": 46.1941,
+"x": -17780,
+"z": 23605,
+"guard": 0,
+"companies": [
+"Charmey",
+"EuroAcres",
+"Kathode",
+"RT Log",
+"SellPlan"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Zürich",
+"cc": "CH",
+"lon": 8.2997,
+"lat": 47.4199,
+"x": -8804,
+"z": 17578,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"Kathode",
+"NS Oil",
+"RT Log",
+"Steinbruch",
+"Stokes"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Brno",
+"cc": "CZ",
+"lon": 16.5284,
+"lat": 49.142,
+"x": 22274,
+"z": 8945,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"LkwLog GmbH",
+"Sanbuilders",
+"Trameri"
+],
+"dealers": []
+},
+{
+"label": "Ostrava",
+"cc": "CZ",
+"lon": 18.1935,
+"lat": 49.7747,
+"x": 28231,
+"z": 5169,
+"guard": 1,
+"companies": [
+"ITCC",
+"Kaarfor",
+"NBFC",
+"TransiNet"
+],
+"dealers": []
+},
+{
+"label": "Prague",
+"cc": "CZ",
+"lon": 14.3452,
+"lat": 50.0319,
+"x": 14300,
+"z": 3959,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"Scout",
+"SellPlan",
+"Steinbruch",
+"Tradeaux"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Berlin",
+"cc": "DE",
+"lon": 13.0231,
+"lat": 52.4737,
+"x": 9906,
+"z": -9929,
+"guard": 0,
+"companies": [
+"Deutsche Frachthäfen",
+"EuroGoodies",
+"FCP",
+"NBFC",
+"NS Oil",
+"Sanbuilders"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Bremen",
+"cc": "DE",
+"lon": 8.4029,
+"lat": 53.0791,
+"x": -5545,
+"z": -14272,
+"guard": 0,
+"companies": [
+"AI Automotive",
+"Container port",
+"Deutsche Frachthäfen",
+"EuroAcres",
+"Shuttle Cola",
+"TDC Auto Terminal"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Cologne",
+"cc": "DE",
+"lon": 6.7315,
+"lat": 50.8726,
+"x": -12549,
+"z": -2454,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"ITCC",
+"LkwLog GmbH",
+"RT Log",
+"Sanbuilders",
+"SellPlan"
+],
+"dealers": []
+},
+{
+"label": "Dortmund",
+"cc": "DE",
+"lon": 6.9761,
+"lat": 51.6582,
+"x": -11204,
+"z": -6772,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"Ika Bohag",
+"ITCC",
+"LkwLog GmbH",
+"Sanbuilders",
+"Steinbruch"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Dresden",
+"cc": "DE",
+"lon": 13.5337,
+"lat": 51.0764,
+"x": 11492,
+"z": -1989,
+"guard": 0,
+"companies": [
+"Deutsche Frachthäfen",
+"EuroAcres",
+"NS Oil",
+"SellPlan",
+"Trameri"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Duisburg",
+"cc": "DE",
+"lon": 6.2448,
+"lat": 51.555,
+"x": -13802,
+"z": -6487,
+"guard": 0,
+"companies": [
+"CNP",
+"Container port",
+"Deutsche Frachthäfen",
+"ITCC",
+"Kaarfor",
+"LkwLog GmbH"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Düsseldorf",
+"cc": "DE",
+"lon": 6.3715,
+"lat": 51.2317,
+"x": -13577,
+"z": -4619,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"FCP",
+"FLE",
+"ITCC",
+"Kathode",
+"Tradeaux"
+],
+"dealers": []
+},
+{
+"label": "Erfurt",
+"cc": "DE",
+"lon": 10.977,
+"lat": 51.0639,
+"x": 2485,
+"z": -2260,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"SellPlan",
+"Steinbruch",
+"Stokes"
+],
+"dealers": []
+},
+{
+"label": "Frankfurt am Main",
+"cc": "DE",
+"lon": 8.8097,
+"lat": 50.124,
+"x": -5584,
+"z": 2497,
+"guard": 0,
+"companies": [
+"DomDepo",
+"FLE",
+"Ika Bohag",
+"LkwLog GmbH",
+"NS Oil",
+"Sanbuilders",
+"TransiNet",
+"WGCC"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Hamburg",
+"cc": "DE",
+"lon": 9.4972,
+"lat": 53.5031,
+"x": -1690,
+"z": -16356,
+"guard": 0,
+"companies": [
+"AI Automotive",
+"Container port",
+"Deutsche Frachthäfen",
+"NS Oil",
+"RT Log"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Hanover",
+"cc": "DE",
+"lon": 9.5643,
+"lat": 52.2168,
+"x": -2004,
+"z": -9085,
+"guard": 0,
+"companies": [
+"AI Automotive",
+"FCP",
+"Hannover Expo",
+"Sanbuilders",
+"Scania",
+"Steinbruch",
+"Tradeaux"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Kassel",
+"cc": "DE",
+"lon": 9.2743,
+"lat": 51.2561,
+"x": -3420,
+"z": -3747,
+"guard": 0,
+"companies": [
+"AI Automotive",
+"EuroGoodies",
+"Kaarfor",
+"Tradeaux",
+"TransiNet"
+],
+"dealers": []
+},
+{
+"label": "Kiel",
+"cc": "DE",
+"lon": 10.2407,
+"lat": 54.4648,
+"x": 1137,
+"z": -21609,
+"guard": 0,
+"companies": [
+"Ika Bohag",
+"Kaarfor",
+"LkwLog GmbH",
+"Ocean Solutions Group",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Leipzig",
+"cc": "DE",
+"lon": 12.2413,
+"lat": 51.3376,
+"x": 6995,
+"z": -3598,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"FCP",
+"FLE",
+"Renat",
+"Sanbuilders",
+"Tree-ET"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Magdeburg",
+"cc": "DE",
+"lon": 11.4084,
+"lat": 52.1512,
+"x": 4303,
+"z": -8320,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"Granoro",
+"Kaarfor",
+"LkwLog GmbH",
+"Steinbruch",
+"Vitas Power"
+],
+"dealers": []
+},
+{
+"label": "Mannheim",
+"cc": "DE",
+"lon": 8.2473,
+"lat": 49.4734,
+"x": -7937,
+"z": 5981,
+"guard": 0,
+"companies": [
+"Sanbuilders",
+"Steinbruch",
+"TransiNet",
+"Tree-ET",
+"WGCC"
+],
+"dealers": []
+},
+{
+"label": "Munich",
+"cc": "DE",
+"lon": 11.561,
+"lat": 48.0996,
+"x": 3757,
+"z": 14599,
+"guard": 0,
+"companies": [
+"BCP",
+"Ika Bohag",
+"Kaarfor",
+"Kathode",
+"Sanbuilders",
+"Steinbruch",
+"TransiNet"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Nuremberg",
+"cc": "DE",
+"lon": 10.9343,
+"lat": 49.5113,
+"x": 1849,
+"z": 6498,
+"guard": 0,
+"companies": [
+"AI Automotive",
+"CNP",
+"Deutsche Frachthäfen",
+"Kathode",
+"LkwLog GmbH",
+"RT Log",
+"Sanbuilders",
+"SellPlan",
+"Tree-ET",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Osnabrück",
+"cc": "DE",
+"lon": 7.7817,
+"lat": 52.2711,
+"x": -8077,
+"z": -9925,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"ITCC",
+"LkwLog GmbH"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Rostock",
+"cc": "DE",
+"lon": 11.9321,
+"lat": 54.0619,
+"x": 6555,
+"z": -19033,
+"guard": 0,
+"companies": [
+"Deutsche Frachthäfen",
+"Granoro",
+"Marina",
+"RT Log",
+"SellPlan",
+"Vitas Power"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Stuttgart",
+"cc": "DE",
+"lon": 9.2032,
+"lat": 48.8597,
+"x": -4736,
+"z": 9745,
+"guard": 0,
+"companies": [
+"BCP",
+"FLE",
+"Sanbuilders",
+"Stokes"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Travemünde",
+"cc": "DE",
+"lon": 10.8322,
+"lat": 54.1248,
+"x": 2955,
+"z": -19569,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"Marina",
+"RT Log"
+],
+"dealers": []
+},
+{
+"label": "Werlte",
+"cc": "DE",
+"lon": 7.3581,
+"lat": 52.7417,
+"x": -9247,
+"z": -12721,
+"guard": 15,
+"companies": [
+"Krone"
+],
+"dealers": []
+},
+{
+"label": "Winsen",
+"cc": "DE",
+"lon": 10.4058,
+"lat": 53.3094,
+"x": 1267,
+"z": -15051,
+"guard": 19,
+"companies": [
+"Feldbinder"
+],
+"dealers": []
+},
+{
+"label": "Aalborg",
+"cc": "DK",
+"lon": 9.8458,
+"lat": 56.9981,
+"x": 857,
+"z": -36021,
+"guard": 2,
+"companies": [
+"Freyr",
+"Ika Bohag",
+"Nordic Crown",
+"Norrsken",
+"NS Oil",
+"Polar Fish",
+"Vitas Power"
+],
+"dealers": []
+},
+{
+"label": "Aarhus",
+"cc": "DK",
+"lon": 10.1038,
+"lat": 56.0693,
+"x": 1296,
+"z": -30708,
+"guard": 2,
+"companies": [
+"Container port",
+"Drekkar Trans",
+"Ika Bohag",
+"Nordic Crown",
+"Sanbuilders",
+"TQG",
+"WGCC"
+],
+"dealers": []
+},
+{
+"label": "Copenhagen",
+"cc": "DK",
+"lon": 12.1629,
+"lat": 55.7394,
+"x": 7681,
+"z": -28494,
+"guard": 2,
+"companies": [
+"FLE",
+"Nordic Crown",
+"Norrfood",
+"NS Oil",
+"Renar Logistik",
+"Renor"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Esbjerg",
+"cc": "DK",
+"lon": 8.2932,
+"lat": 55.4338,
+"x": -4699,
+"z": -27576,
+"guard": 2,
+"companies": [
+"Agronord",
+"Container port",
+"Freyr",
+"Konstnorr",
+"Marina",
+"Polaris Lines",
+"Vitas Power"
+],
+"dealers": []
+},
+{
+"label": "Frederikshavn",
+"cc": "DK",
+"lon": 10.4054,
+"lat": 57.3961,
+"x": 2712,
+"z": -38162,
+"guard": 2,
+"companies": [
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Gedser",
+"cc": "DK",
+"lon": 11.8067,
+"lat": 54.5871,
+"x": 6271,
+"z": -22020,
+"guard": 2,
+"companies": [
+"Konstnorr",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Hirtshals",
+"cc": "DK",
+"lon": 9.9665,
+"lat": 57.5096,
+"x": 1425,
+"z": -38894,
+"guard": 2,
+"companies": [
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Odense",
+"cc": "DK",
+"lon": 10.211,
+"lat": 55.3282,
+"x": 1359,
+"z": -26494,
+"guard": 2,
+"companies": [
+"BHV",
+"Drekkar Trans",
+"Ika Bohag",
+"Nordic Crown",
+"Norrfood",
+"Primel"
+],
+"dealers": []
+},
+{
+"label": "Kunda",
+"cc": "EE",
+"lon": 26.569,
+"lat": 59.4951,
+"x": 49785,
+"z": -52325,
+"guard": 6,
+"companies": [
+"BLT",
+"Estonian Paper AS"
+],
+"dealers": []
+},
+{
+"label": "Narva",
+"cc": "EE",
+"lon": 28.1517,
+"lat": 59.3855,
+"x": 54382,
+"z": -52483,
+"guard": 6,
+"companies": [
+"Renar Logistik",
+"Õnnelik talu"
+],
+"dealers": []
+},
+{
+"label": "Paldiski",
+"cc": "EE",
+"lon": 23.9809,
+"lat": 59.2762,
+"x": 42570,
+"z": -50032,
+"guard": 6,
+"companies": [
+"BLT",
+"Cemeltex",
+"NS Oil",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Pärnu",
+"cc": "EE",
+"lon": 24.474,
+"lat": 58.3993,
+"x": 44627,
+"z": -45258,
+"guard": 6,
+"companies": [
+"BHV",
+"Marina",
+"Renar Logistik",
+"Suprema",
+"Õnnelik talu"
+],
+"dealers": []
+},
+{
+"label": "Tallinn",
+"cc": "EE",
+"lon": 24.6429,
+"lat": 59.3842,
+"x": 44388,
+"z": -50889,
+"guard": 6,
+"companies": [
+"AeroBaltica",
+"Ateria",
+"Balteus Yachts",
+"Baltic Metallurgy",
+"Container port",
+"Lintukainen Oy",
+"Marina",
+"NCH",
+"NS Oil",
+"Polaris Lines",
+"Renar Logistik",
+"Scania"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Tartu",
+"cc": "EE",
+"lon": 26.6446,
+"lat": 58.4414,
+"x": 50947,
+"z": -46428,
+"guard": 6,
+"companies": [
+"BLT",
+"DAF Trucks",
+"Lintukainen Oy",
+"Radus",
+"Renat",
+"Suprema",
+"Vanha Kivi",
+"Õnnelik talu"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "A Coruña",
+"cc": "ES",
+"lon": -9.2768,
+"lat": 43.0896,
+"x": -82022,
+"z": 26694,
+"guard": 11,
+"companies": [
+"ACC",
+"Cantera Ibérica",
+"CNP",
+"Exomar",
+"Ika Bohag",
+"Lavish Foods",
+"Logística Atlântica",
+"Marina",
+"RT Log",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Albacete",
+"cc": "ES",
+"lon": -1.9401,
+"lat": 38.9387,
+"x": -58305,
+"z": 58445,
+"guard": 11,
+"companies": [
+"BHV",
+"Huerta del Mar Menor, S.L.",
+"Logística Atlântica",
+"SuperCesta",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Algeciras",
+"cc": "ES",
+"lon": -5.8509,
+"lat": 36.0145,
+"x": -79943,
+"z": 70262,
+"guard": 11,
+"companies": [
+"Cesta, S.L.",
+"CNP",
+"Eolo Lines",
+"Ocean Solutions Group",
+"Transportes Caballería",
+"TS Atlas"
+],
+"dealers": []
+},
+{
+"label": "Almaraz",
+"cc": "ES",
+"lon": -6.0009,
+"lat": 39.7023,
+"x": -74584,
+"z": 49517,
+"guard": 11,
+"companies": [
+"Iberatómica"
+],
+"dealers": []
+},
+{
+"label": "Almería",
+"cc": "ES",
+"lon": -2.5196,
+"lat": 36.9168,
+"x": -63592,
+"z": 69241,
+"guard": 11,
+"companies": [
+"Canteras del Sur",
+"Eolo Lines",
+"FLE",
+"Logística Atlântica",
+"Vitas Power"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Badajoz",
+"cc": "ES",
+"lon": -7.4488,
+"lat": 38.6414,
+"x": -82524,
+"z": 53476,
+"guard": 11,
+"companies": [
+"APP",
+"Casa Olivera",
+"Engeron",
+"Lavish Foods",
+"SuperCesta"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Bailén",
+"cc": "ES",
+"lon": -4.1294,
+"lat": 37.9294,
+"x": -69288,
+"z": 61685,
+"guard": 11,
+"companies": [
+"DomDepo"
+],
+"dealers": []
+},
+{
+"label": "Barcelona",
+"cc": "ES",
+"lon": 2.0732,
+"lat": 41.4143,
+"x": -38266,
+"z": 48073,
+"guard": 11,
+"companies": [
+"Cesta, S.L.",
+"CGLA",
+"Construcciones Elcano, S.L.",
+"FLE",
+"NS Chemicals",
+"Ortiz",
+"RT Log",
+"Transportes Caballería",
+"TS Atlas"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Bilbao",
+"cc": "ES",
+"lon": -3.3049,
+"lat": 43.2581,
+"x": -58108,
+"z": 32930,
+"guard": 11,
+"companies": [
+"ACC",
+"Gallia Ferries",
+"Logística Atlântica",
+"NS Oil",
+"Spinelli",
+"TS Atlas",
+"Vitas Power"
+],
+"dealers": []
+},
+{
+"label": "Burgos",
+"cc": "ES",
+"lon": -3.8836,
+"lat": 42.2843,
+"x": -61834,
+"z": 37707,
+"guard": 11,
+"companies": [
+"Cantera Ibérica",
+"Construcciones Elcano, S.L.",
+"DomDepo",
+"Exomar",
+"Shuttle Cola",
+"Tree-ET",
+"Vitas Power"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Ciudad Real",
+"cc": "ES",
+"lon": -4.2482,
+"lat": 38.8386,
+"x": -68446,
+"z": 56455,
+"guard": 11,
+"companies": [
+"APP",
+"Engeron",
+"Vitas Power"
+],
+"dealers": []
+},
+{
+"label": "Córdoba",
+"cc": "ES",
+"lon": -5.2144,
+"lat": 37.7323,
+"x": -74352,
+"z": 61463,
+"guard": 11,
+"companies": [
+"BHV",
+"Casa Olivera",
+"Exomar",
+"RT Log",
+"Shuttle Cola"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "El Ejido",
+"cc": "ES",
+"lon": -3.3823,
+"lat": 36.7743,
+"x": -67667,
+"z": 69066,
+"guard": 11,
+"companies": [
+"Huerta del Mar Menor, S.L."
+],
+"dealers": []
+},
+{
+"label": "Gijón",
+"cc": "ES",
+"lon": -6.3727,
+"lat": 43.3054,
+"x": -70228,
+"z": 29244,
+"guard": 11,
+"companies": [
+"ACC",
+"APP",
+"Ocean Solutions Group",
+"TS Atlas"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Granada",
+"cc": "ES",
+"lon": -4.0713,
+"lat": 37.1591,
+"x": -70182,
+"z": 66082,
+"guard": 11,
+"companies": [
+"Agregados, S.A.",
+"Cesta, S.L.",
+"Engeron"
+],
+"dealers": []
+},
+{
+"label": "Huelva",
+"cc": "ES",
+"lon": -7.3038,
+"lat": 37.0368,
+"x": -84687,
+"z": 62564,
+"guard": 11,
+"companies": [
+"CNP",
+"Eolo Lines",
+"Huerta del Mar Menor, S.L.",
+"Lavish Foods"
+],
+"dealers": []
+},
+{
+"label": "León",
+"cc": "ES",
+"lon": -6.0389,
+"lat": 42.3651,
+"x": -70426,
+"z": 34796,
+"guard": 11,
+"companies": [
+"Cesta, S.L.",
+"CGLA",
+"Logística Atlântica",
+"Vitas Power"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Lleida",
+"cc": "ES",
+"lon": 0.2742,
+"lat": 41.6831,
+"x": -45506,
+"z": 45104,
+"guard": 11,
+"companies": [
+"Casa Olivera",
+"Nos Pâturages"
+],
+"dealers": []
+},
+{
+"label": "Madrid",
+"cc": "ES",
+"lon": -4.0334,
+"lat": 40.2735,
+"x": -65398,
+"z": 48701,
+"guard": 11,
+"companies": [
+"ACC",
+"APP",
+"BHV",
+"Cesta, S.L.",
+"Comoto",
+"Construcciones Elcano, S.L.",
+"FLE",
+"Lavish Foods",
+"NS Oil",
+"RT Log",
+"SCS Paper",
+"Shuttle Cola",
+"Transportes Caballería"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Mengíbar",
+"cc": "ES",
+"lon": -3.7363,
+"lat": 37.7563,
+"x": -67815,
+"z": 63120,
+"guard": 11,
+"companies": [
+"Casa Olivera"
+],
+"dealers": []
+},
+{
+"label": "Murcia",
+"cc": "ES",
+"lon": -1.1673,
+"lat": 37.9033,
+"x": -56252,
+"z": 65083,
+"guard": 11,
+"companies": [
+"ACC",
+"Canteras del Sur",
+"Huerta del Mar Menor, S.L.",
+"Ika Bohag",
+"Lavish Foods",
+"Shuttle Cola",
+"Transportes Caballería"
+],
+"dealers": []
+},
+{
+"label": "Málaga",
+"cc": "ES",
+"lon": -4.5154,
+"lat": 36.5783,
+"x": -73044,
+"z": 68810,
+"guard": 11,
+"companies": [
+"APP",
+"Cesta, S.L.",
+"Construcciones Elcano, S.L.",
+"FLE",
+"Shuttle Cola",
+"TS Atlas",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Navia",
+"cc": "ES",
+"lon": -7.536,
+"lat": 43.2751,
+"x": -74862,
+"z": 27975,
+"guard": 11,
+"companies": [
+"SCS Paper"
+],
+"dealers": []
+},
+{
+"label": "O Barco",
+"cc": "ES",
+"lon": -7.6367,
+"lat": 42.1128,
+"x": -77272,
+"z": 34180,
+"guard": 11,
+"companies": [
+"Cantera Ibérica",
+"DomDepo"
+],
+"dealers": []
+},
+{
+"label": "Pamplona",
+"cc": "ES",
+"lon": -1.9206,
+"lat": 42.6964,
+"x": -53292,
+"z": 37432,
+"guard": 11,
+"companies": [
+"Nos Pâturages",
+"Vitas Power"
+],
+"dealers": []
+},
+{
+"label": "Port de Sagunt",
+"cc": "ES",
+"lon": -0.3643,
+"lat": 39.7021,
+"x": -50526,
+"z": 55689,
+"guard": 11,
+"companies": [
+"ACC",
+"CGLA",
+"TDC Auto Terminal"
+],
+"dealers": []
+},
+{
+"label": "Puertollano",
+"cc": "ES",
+"lon": -4.3917,
+"lat": 38.3433,
+"x": -69813,
+"z": 59054,
+"guard": 11,
+"companies": [
+"Agregados, S.A.",
+"Engeron",
+"NS Chemicals"
+],
+"dealers": []
+},
+{
+"label": "Salamanca",
+"cc": "ES",
+"lon": -6.1493,
+"lat": 40.7639,
+"x": -73476,
+"z": 43468,
+"guard": 11,
+"companies": [
+"Cesta, S.L.",
+"Logística Atlântica",
+"Nos Pâturages",
+"SCS Paper",
+"Vitas Power"
+],
+"dealers": []
+},
+{
+"label": "Santander",
+"cc": "ES",
+"lon": -4.2514,
+"lat": 43.2619,
+"x": -61881,
+"z": 31907,
+"guard": 11,
+"companies": [
+"ACC",
+"Cantera Ibérica",
+"Construcciones Elcano, S.L.",
+"TDC Auto Terminal",
+"Transportes Caballería"
+],
+"dealers": []
+},
+{
+"label": "Seville",
+"cc": "ES",
+"lon": -6.2574,
+"lat": 37.2447,
+"x": -79726,
+"z": 62836,
+"guard": 11,
+"companies": [
+"ACC",
+"Cesta, S.L.",
+"DAF Trucks",
+"Engeron",
+"Huerta del Mar Menor, S.L.",
+"Logística Atlântica",
+"RT Log",
+"Shuttle Cola",
+"SuperCesta",
+"Vitas Power"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Soria",
+"cc": "ES",
+"lon": -2.9522,
+"lat": 41.6842,
+"x": -58874,
+"z": 42028,
+"guard": 11,
+"companies": [
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Tarragona",
+"cc": "ES",
+"lon": 1.0729,
+"lat": 41.0886,
+"x": -42819,
+"z": 49122,
+"guard": 11,
+"companies": [
+"CNP",
+"TDC Auto Terminal",
+"TS Atlas"
+],
+"dealers": []
+},
+{
+"label": "Teruel",
+"cc": "ES",
+"lon": -1.2845,
+"lat": 40.3164,
+"x": -53707,
+"z": 51356,
+"guard": 11,
+"companies": [
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Valencia",
+"cc": "ES",
+"lon": -0.5048,
+"lat": 39.3691,
+"x": -51533,
+"z": 57437,
+"guard": 11,
+"companies": [
+"APP",
+"Huerta del Mar Menor, S.L.",
+"Marina",
+"Ortiz",
+"TS Atlas"
+],
+"dealers": []
+},
+{
+"label": "Valladolid",
+"cc": "ES",
+"lon": -5.0801,
+"lat": 41.4835,
+"x": -67923,
+"z": 40788,
+"guard": 11,
+"companies": [
+"Agregados, S.A.",
+"Comoto",
+"Ika Bohag",
+"Ortiz",
+"Spinelli",
+"Transportes Caballería"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Vandellòs",
+"cc": "ES",
+"lon": 0.4846,
+"lat": 40.7702,
+"x": -45658,
+"z": 50423,
+"guard": 11,
+"companies": [
+"Iberatómica"
+],
+"dealers": []
+},
+{
+"label": "Vigo",
+"cc": "ES",
+"lon": -9.429,
+"lat": 41.9621,
+"x": -84722,
+"z": 32581,
+"guard": 11,
+"companies": [
+"Cantera Ibérica",
+"Marina",
+"Ocean Solutions Group",
+"TDC Auto Terminal",
+"Transportes Caballería",
+"TS Atlas"
+],
+"dealers": []
+},
+{
+"label": "Villarreal",
+"cc": "ES",
+"lon": -0.2823,
+"lat": 40.0745,
+"x": -49730,
+"z": 53664,
+"guard": 11,
+"companies": [
+"DomDepo"
+],
+"dealers": []
+},
+{
+"label": "Zaragoza",
+"cc": "ES",
+"lon": -0.957,
+"lat": 41.6793,
+"x": -50628,
+"z": 44024,
+"guard": 11,
+"companies": [
+"APP",
+"Ortiz",
+"RT Log",
+"SCS Paper",
+"SuperCesta",
+"Train Foundry"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Helsinki",
+"cc": "FI",
+"lon": 25.0623,
+"lat": 60.2074,
+"x": 44945,
+"z": -55712,
+"guard": 6,
+"companies": [
+"AeroBaltica",
+"Ateria",
+"Container port",
+"IBP",
+"Ika Bohag",
+"Maatila Egres",
+"Marina",
+"Polaris Lines",
+"Renat",
+"SAL",
+"Vanha Kivi"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Ivalo",
+"cc": "FI",
+"lon": 27.3918,
+"lat": 68.5657,
+"x": 43279,
+"z": -104669,
+"guard": 23,
+"companies": [
+"Byggpro",
+"Lintukainen Oy",
+"Metallis",
+"Mjölnir Mining",
+"SAL",
+"TQG"
+],
+"dealers": []
+},
+{
+"label": "Joensuu",
+"cc": "FI",
+"lon": 29.7933,
+"lat": 62.8015,
+"x": 55114,
+"z": -72587,
+"guard": 23,
+"companies": [
+"Ateria",
+"Freyr",
+"Mjölnir Mining",
+"NOFEBA",
+"SAL",
+"Trameri",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Jyväskylä",
+"cc": "FI",
+"lon": 25.4728,
+"lat": 62.2044,
+"x": 44465,
+"z": -67217,
+"guard": 23,
+"companies": [
+"Lintukainen Oy",
+"Renar Logistik",
+"Sanbuilders",
+"Suprema",
+"Vitas Power",
+"Väinämöinen Oy"
+],
+"dealers": []
+},
+{
+"label": "Kajaani",
+"cc": "FI",
+"lon": 27.5886,
+"lat": 64.1304,
+"x": 48135,
+"z": -79079,
+"guard": 23,
+"companies": [
+"BHV",
+"Byggpro",
+"Fjoste",
+"Maatila Egres",
+"Primel",
+"Renor",
+"SAL"
+],
+"dealers": []
+},
+{
+"label": "Kokkola",
+"cc": "FI",
+"lon": 22.9869,
+"lat": 63.7003,
+"x": 36959,
+"z": -74962,
+"guard": 23,
+"companies": [
+"DAF Trucks",
+"Fjoste",
+"Maatila Egres",
+"NS Oil",
+"Polaris Lines",
+"Renar Logistik",
+"Suprema",
+"WGCC"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Kotka",
+"cc": "FI",
+"lon": 27.0525,
+"lat": 60.4731,
+"x": 50245,
+"z": -58066,
+"guard": 6,
+"companies": [
+"Container port",
+"Lintukainen Oy",
+"NS Oil",
+"Renar Logistik",
+"Vanha Kivi"
+],
+"dealers": []
+},
+{
+"label": "Kouvola",
+"cc": "FI",
+"lon": 26.6678,
+"lat": 60.9221,
+"x": 48776,
+"z": -60429,
+"guard": 6,
+"companies": [
+"Lintukainen Oy",
+"Maatila Egres",
+"NCH",
+"Radus",
+"SAL",
+"Viljo paperitehdas Oy"
+],
+"dealers": []
+},
+{
+"label": "Kuopio",
+"cc": "FI",
+"lon": 27.5021,
+"lat": 62.8632,
+"x": 49162,
+"z": -71814,
+"guard": 23,
+"companies": [
+"Ika Bohag",
+"Marina",
+"NOFEBA",
+"SAL",
+"Viljo paperitehdas Oy",
+"WGCC"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Kuusamo",
+"cc": "FI",
+"lon": 28.7978,
+"lat": 65.8892,
+"x": 49212,
+"z": -89699,
+"guard": 23,
+"companies": [
+"Lintukainen Oy",
+"Polar Fish",
+"Renar Logistik",
+"Suprema",
+"Väinämöinen Oy"
+],
+"dealers": []
+},
+{
+"label": "Lahti",
+"cc": "FI",
+"lon": 25.4857,
+"lat": 61.0359,
+"x": 45453,
+"z": -60577,
+"guard": 6,
+"companies": [
+"Ateria",
+"BHV",
+"Renar Logistik",
+"Suprema"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Lappeenranta",
+"cc": "FI",
+"lon": 28.2133,
+"lat": 61.3213,
+"x": 52577,
+"z": -63412,
+"guard": 23,
+"companies": [
+"Kivisydän Betoni",
+"Lintukainen Oy",
+"SAL",
+"Suprema",
+"TQG",
+"Viljo paperitehdas Oy"
+],
+"dealers": []
+},
+{
+"label": "Loviisa",
+"cc": "FI",
+"lon": 26.1138,
+"lat": 60.3955,
+"x": 47717,
+"z": -57208,
+"guard": 6,
+"companies": [
+"UKKO Voima"
+],
+"dealers": []
+},
+{
+"label": "Mikkeli",
+"cc": "FI",
+"lon": 27.1475,
+"lat": 61.7539,
+"x": 49299,
+"z": -65355,
+"guard": 23,
+"companies": [
+"BHV",
+"Borealis Shipyard",
+"Freyr",
+"Renar Logistik",
+"Renor",
+"Suprema"
+],
+"dealers": []
+},
+{
+"label": "Naantali",
+"cc": "FI",
+"lon": 21.6089,
+"lat": 60.5214,
+"x": 35110,
+"z": -56383,
+"guard": 6,
+"companies": [
+"IBP",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Olkiluoto",
+"cc": "FI",
+"lon": 21.4179,
+"lat": 61.1683,
+"x": 34255,
+"z": -60028,
+"guard": 6,
+"companies": [
+"UKKO Voima"
+],
+"dealers": []
+},
+{
+"label": "Oulu",
+"cc": "FI",
+"lon": 25.2645,
+"lat": 64.8812,
+"x": 41760,
+"z": -82484,
+"guard": 23,
+"companies": [
+"Ateria",
+"Container port",
+"Kathode",
+"SAL",
+"Scania",
+"Suprema",
+"Väinämöinen Oy",
+"WGCC"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Pori",
+"cc": "FI",
+"lon": 21.6944,
+"lat": 61.4537,
+"x": 34862,
+"z": -61728,
+"guard": 24,
+"companies": [
+"Baltic Metallurgy",
+"Container port",
+"Lintukainen Oy",
+"NS Chemicals",
+"SAL"
+],
+"dealers": []
+},
+{
+"label": "Rovaniemi",
+"cc": "FI",
+"lon": 24.9384,
+"lat": 66.2555,
+"x": 39885,
+"z": -90332,
+"guard": 23,
+"companies": [
+"Lintukainen Oy",
+"Norse Rail",
+"Sanbuilders",
+"Suprema"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Tampere",
+"cc": "FI",
+"lon": 23.6892,
+"lat": 61.49,
+"x": 40239,
+"z": -62511,
+"guard": 6,
+"companies": [
+"Finnish Tyres",
+"Ika Bohag",
+"Radus",
+"Renar Logistik",
+"Suprema",
+"Viljo paperitehdas Oy"
+],
+"dealers": []
+},
+{
+"label": "Tornio",
+"cc": "FI",
+"lon": 23.974,
+"lat": 65.7378,
+"x": 38012,
+"z": -87027,
+"guard": 23,
+"companies": [
+"Associated Nordic Ports",
+"Fjoste",
+"Konstnorr",
+"Lintukainen Oy",
+"Mjölnir Mining",
+"Renar Logistik"
+],
+"dealers": []
+},
+{
+"label": "Turku",
+"cc": "FI",
+"lon": 22.1688,
+"lat": 60.4327,
+"x": 36718,
+"z": -56026,
+"guard": 6,
+"companies": [
+"AeroBaltica",
+"Balteus Yachts",
+"Ladoga Auto",
+"NCH",
+"Renar Logistik",
+"Vanha Kivi"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Vaasa",
+"cc": "FI",
+"lon": 21.3052,
+"lat": 63.0925,
+"x": 32998,
+"z": -71037,
+"guard": 23,
+"companies": [
+"Ateria",
+"BHV",
+"Byggpro",
+"Konstnorr",
+"NS Oil",
+"Polaris Lines",
+"Trameri"
+],
+"dealers": []
+},
+{
+"label": "Ajaccio",
+"cc": "FR",
+"lon": 8.6783,
+"lat": 41.9763,
+"x": -10032,
+"z": 48601,
+"guard": 3,
+"companies": [
+"BHV",
+"Huilant",
+"Kaarfor",
+"Lisette Logistics",
+"Marina",
+"MVM carrière",
+"Tradeaux"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Bastia",
+"cc": "FR",
+"lon": 9.2788,
+"lat": 42.7902,
+"x": -7139,
+"z": 44166,
+"guard": 3,
+"companies": [
+"BHV",
+"Dans le Jardin",
+"FLE",
+"GNT",
+"Kaarfor",
+"MVM carrière"
+],
+"dealers": []
+},
+{
+"label": "Bayonne",
+"cc": "FR",
+"lon": -1.7527,
+"lat": 43.3748,
+"x": -51735,
+"z": 33817,
+"guard": 3,
+"companies": [
+"Globeur",
+"Ika Bohag"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Bonifacio",
+"cc": "FR",
+"lon": 9.1152,
+"lat": 41.3679,
+"x": -8470,
+"z": 52235,
+"guard": 3,
+"companies": [
+"Marina"
+],
+"dealers": []
+},
+{
+"label": "Bordeaux",
+"cc": "FR",
+"lon": -0.7645,
+"lat": 44.7159,
+"x": -46139,
+"z": 27254,
+"guard": 3,
+"companies": [
+"BHV",
+"Bâtisse",
+"DAF Trucks",
+"Dans le Jardin",
+"Globeur",
+"Huilant",
+"Ika Bohag",
+"Lisette Logistics",
+"MVM carrière",
+"ÉCO"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Bourges",
+"cc": "FR",
+"lon": 2.2434,
+"lat": 47.1039,
+"x": -31952,
+"z": 16256,
+"guard": 3,
+"companies": [
+"Dans le Jardin",
+"Globeur",
+"Gomme du Monde",
+"Nos Pâturages"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Brest",
+"cc": "FR",
+"lon": -4.8736,
+"lat": 48.2611,
+"x": -56772,
+"z": 3849,
+"guard": 3,
+"companies": [
+"Bâtisse",
+"FLE",
+"Ika Bohag",
+"Marina",
+"Subse",
+"Tradeaux"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Calais",
+"cc": "FR",
+"lon": 1.6554,
+"lat": 50.8509,
+"x": -30340,
+"z": -5006,
+"guard": 0,
+"companies": [
+"LkwLog GmbH",
+"NBFC",
+"Stokes"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Calvi",
+"cc": "FR",
+"lon": 8.6239,
+"lat": 42.429,
+"x": -10036,
+"z": 45997,
+"guard": 3,
+"companies": [
+"Bâtisse",
+"FLE",
+"Marina",
+"Renar Logistik"
+],
+"dealers": []
+},
+{
+"label": "Civaux",
+"cc": "FR",
+"lon": 0.5344,
+"lat": 46.5215,
+"x": -39030,
+"z": 18272,
+"guard": 3,
+"companies": [
+"Nucléon"
+],
+"dealers": []
+},
+{
+"label": "Clermont-Ferrand",
+"cc": "FR",
+"lon": 2.9884,
+"lat": 45.6868,
+"x": -30448,
+"z": 24678,
+"guard": 3,
+"companies": [
+"Bâtisse",
+"FLE",
+"Gomme du Monde",
+"Ika Bohag",
+"Nos Pâturages",
+"Subse",
+"Tradeaux"
+],
+"dealers": []
+},
+{
+"label": "Dijon",
+"cc": "FR",
+"lon": 4.7086,
+"lat": 47.3028,
+"x": -22470,
+"z": 16636,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"Stokes"
+],
+"dealers": []
+},
+{
+"label": "Golfech",
+"cc": "FR",
+"lon": 0.8394,
+"lat": 44.2013,
+"x": -40396,
+"z": 31452,
+"guard": 3,
+"companies": [
+"Nucléon"
+],
+"dealers": []
+},
+{
+"label": "L'Île-Rousse",
+"cc": "FR",
+"lon": 8.8638,
+"lat": 42.6794,
+"x": -8915,
+"z": 44656,
+"guard": 3,
+"companies": [
+"Eolo Lines"
+],
+"dealers": []
+},
+{
+"label": "La Rochelle",
+"cc": "FR",
+"lon": -1.2944,
+"lat": 46.0275,
+"x": -46576,
+"z": 19513,
+"guard": 3,
+"companies": [
+"Bâtisse",
+"Chimi",
+"Huilant",
+"Kaarfor",
+"Lisette Logistics",
+"Marina"
+],
+"dealers": []
+},
+{
+"label": "Lacq",
+"cc": "FR",
+"lon": -0.958,
+"lat": 43.1227,
+"x": -48854,
+"z": 35956,
+"guard": 3,
+"companies": [
+"Huilant"
+],
+"dealers": []
+},
+{
+"label": "Le Havre",
+"cc": "FR",
+"lon": -0.0591,
+"lat": 49.4626,
+"x": -37894,
+"z": 1496,
+"guard": 3,
+"companies": [
+"BHB - La Raffinerie",
+"Globeur",
+"Nos Pâturages",
+"Port de Conteneur",
+"Voitureux",
+"ÉCO"
+],
+"dealers": []
+},
+{
+"label": "Le Mans",
+"cc": "FR",
+"lon": -0.0985,
+"lat": 47.9767,
+"x": -39750,
+"z": 9699,
+"guard": 3,
+"companies": [
+"BHV",
+"BOISSERIE J-P",
+"Bâtisse",
+"Dans le Jardin",
+"Lisette Logistics",
+"MVM carrière",
+"Wilnet Transport",
+"ÉCO"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Lille",
+"cc": "FR",
+"lon": 2.8312,
+"lat": 50.5289,
+"x": -26539,
+"z": -2480,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"Tradeaux",
+"Trameri"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Limoges",
+"cc": "FR",
+"lon": 1.2001,
+"lat": 45.654,
+"x": -37417,
+"z": 23612,
+"guard": 3,
+"companies": [
+"BHV",
+"BOISSERIE J-P",
+"Kaarfor",
+"MVM carrière",
+"Volvo Trucks",
+"Wilnet Transport",
+"ÉCO"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Lyon",
+"cc": "FR",
+"lon": 4.6707,
+"lat": 45.7115,
+"x": -23878,
+"z": 25558,
+"guard": 0,
+"companies": [
+"Bâtisse",
+"Kaarfor",
+"Steinbruch",
+"Tradeaux",
+"Trameri"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Marseille",
+"cc": "FR",
+"lon": 5.2313,
+"lat": 43.3509,
+"x": -23472,
+"z": 39191,
+"guard": 3,
+"companies": [
+"BHB - La Raffinerie",
+"BOISSERIE J-P",
+"Dans le Jardin",
+"Eolo Lines",
+"Marina",
+"Port de Conteneur",
+"Wilnet Transport",
+"ÉCO"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Metz",
+"cc": "FR",
+"lon": 6.0218,
+"lat": 49.0562,
+"x": -16295,
+"z": 7444,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"Posped",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Montpellier",
+"cc": "FR",
+"lon": 3.5378,
+"lat": 43.7169,
+"x": -30052,
+"z": 36107,
+"guard": 3,
+"companies": [
+"BHV",
+"Bâtisse",
+"Chimi",
+"Dans le Jardin",
+"FLE",
+"Globeur",
+"Ika Bohag",
+"Kaarfor",
+"MVM carrière",
+"ÉCO"
+],
+"dealers": []
+},
+{
+"label": "Nantes",
+"cc": "FR",
+"lon": -1.8114,
+"lat": 47.0974,
+"x": -47171,
+"z": 13142,
+"guard": 3,
+"companies": [
+"BHV",
+"Dans le Jardin",
+"FLE",
+"Kaarfor",
+"Subse",
+"Wilnet Transport",
+"ÉCO"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Nice",
+"cc": "FR",
+"lon": 7.124,
+"lat": 43.695,
+"x": -15521,
+"z": 38186,
+"guard": 3,
+"companies": [
+"BHV",
+"Kaarfor",
+"Lisette Logistics",
+"MVM carrière",
+"Tradeaux"
+],
+"dealers": []
+},
+{
+"label": "Paluel",
+"cc": "FR",
+"lon": 1.0274,
+"lat": 49.8372,
+"x": -33608,
+"z": 205,
+"guard": 3,
+"companies": [
+"Nucléon"
+],
+"dealers": []
+},
+{
+"label": "Paris",
+"cc": "FR",
+"lon": 2.2111,
+"lat": 48.783,
+"x": -30428,
+"z": 6866,
+"guard": 0,
+"companies": [
+"BHV",
+"Bâtisse",
+"FLE",
+"Ika Bohag",
+"Lisette Logistics",
+"Tradeaux",
+"Voitureux"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Porto-Vecchio",
+"cc": "FR",
+"lon": 9.2893,
+"lat": 41.5958,
+"x": -7627,
+"z": 50990,
+"guard": 3,
+"companies": [
+"Dans le Jardin",
+"Eolo Lines",
+"MVM carrière",
+"Wilnet Transport"
+],
+"dealers": []
+},
+{
+"label": "Reims",
+"cc": "FR",
+"lon": 3.864,
+"lat": 49.1785,
+"x": -24055,
+"z": 5660,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"Kaarfor",
+"Steinbruch"
+],
+"dealers": []
+},
+{
+"label": "Rennes",
+"cc": "FR",
+"lon": -1.9551,
+"lat": 47.9984,
+"x": -46540,
+"z": 8045,
+"guard": 3,
+"companies": [
+"Bâtisse",
+"Globeur",
+"Ika Bohag",
+"Lisette Logistics",
+"Voitureux"
+],
+"dealers": []
+},
+{
+"label": "Roscoff",
+"cc": "FR",
+"lon": -4.1315,
+"lat": 48.5331,
+"x": -53698,
+"z": 3100,
+"guard": 3,
+"companies": [
+"Gallia Ferries",
+"Lisette Logistics"
+],
+"dealers": []
+},
+{
+"label": "Saint-Alban-du-Rhône",
+"cc": "FR",
+"lon": 4.275,
+"lat": 45.0655,
+"x": -25954,
+"z": 28966,
+"guard": 3,
+"companies": [
+"Nucléon"
+],
+"dealers": []
+},
+{
+"label": "Saint-Laurent",
+"cc": "FR",
+"lon": 1.1697,
+"lat": 47.4308,
+"x": -35650,
+"z": 13684,
+"guard": 3,
+"companies": [
+"Nucléon"
+],
+"dealers": []
+},
+{
+"label": "Strasbourg",
+"cc": "FR",
+"lon": 7.6128,
+"lat": 48.5103,
+"x": -10787,
+"z": 11178,
+"guard": 0,
+"companies": [
+"Kaarfor",
+"Posped",
+"Steinbruch",
+"Trameri",
+"WGCC"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Toulouse",
+"cc": "FR",
+"lon": 1.317,
+"lat": 43.5192,
+"x": -39214,
+"z": 35646,
+"guard": 3,
+"companies": [
+"BHV",
+"FLE",
+"Tradeaux",
+"Wilnet Transport"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Aberdeen",
+"cc": "GB",
+"lon": -2.5778,
+"lat": 57.092,
+"x": -38847,
+"z": -55290,
+"guard": 0,
+"companies": [
+"NBFC",
+"Stokes",
+"Tree-ET"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Birmingham",
+"cc": "GB",
+"lon": -2.2821,
+"lat": 52.3836,
+"x": -45951,
+"z": -20443,
+"guard": 0,
+"companies": [
+"BCP",
+"Posped",
+"Sanbuilders",
+"Tree-ET"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Cambridge",
+"cc": "GB",
+"lon": -0.1325,
+"lat": 52.0956,
+"x": -36823,
+"z": -16140,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"Kaarfor",
+"TransiNet"
+],
+"dealers": []
+},
+{
+"label": "Cardiff",
+"cc": "GB",
+"lon": -3.674,
+"lat": 51.3844,
+"x": -54005,
+"z": -14719,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"Steinbruch",
+"Stokes"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Carlisle",
+"cc": "GB",
+"lon": -3.3021,
+"lat": 54.8495,
+"x": -45889,
+"z": -39594,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"Posped",
+"Trameri"
+],
+"dealers": []
+},
+{
+"label": "Dover",
+"cc": "GB",
+"lon": 0.9556,
+"lat": 51.1178,
+"x": -33322,
+"z": -7904,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"LkwLog GmbH"
+],
+"dealers": []
+},
+{
+"label": "Edinburgh",
+"cc": "GB",
+"lon": -3.522,
+"lat": 55.8626,
+"x": -44901,
+"z": -47239,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"Kaarfor",
+"Sanbuilders"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Felixstowe",
+"cc": "GB",
+"lon": 1.0633,
+"lat": 51.9353,
+"x": -31665,
+"z": -13857,
+"guard": 0,
+"companies": [
+"LkwLog GmbH",
+"Tradeaux",
+"Tree-ET"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Glasgow",
+"cc": "GB",
+"lon": -4.8566,
+"lat": 55.8325,
+"x": -50385,
+"z": -48492,
+"guard": 0,
+"companies": [
+"DAF Trucks",
+"EuroGoodies",
+"ITCC",
+"Steinbruch",
+"WGCC"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Grimsby",
+"cc": "GB",
+"lon": -0.4573,
+"lat": 53.4716,
+"x": -36118,
+"z": -26595,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"Tradeaux",
+"WGCC"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Liverpool",
+"cc": "GB",
+"lon": -3.3711,
+"lat": 53.4048,
+"x": -48872,
+"z": -29112,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"NBFC",
+"Trameri"
+],
+"dealers": []
+},
+{
+"label": "London",
+"cc": "GB",
+"lon": -0.5046,
+"lat": 51.4286,
+"x": -39547,
+"z": -11584,
+"guard": 0,
+"companies": [
+"NBFC",
+"Posped",
+"Sanbuilders",
+"SellPlan",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Manchester",
+"cc": "GB",
+"lon": -2.5798,
+"lat": 53.3489,
+"x": -45549,
+"z": -27835,
+"guard": 0,
+"companies": [
+"FCP",
+"LkwLog GmbH",
+"Scania",
+"Tree-ET",
+"WGCC"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Newcastle upon Tyne",
+"cc": "GB",
+"lon": -1.8812,
+"lat": 54.9432,
+"x": -39778,
+"z": -38808,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"Sanbuilders",
+"SellPlan"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Plymouth",
+"cc": "GB",
+"lon": -4.5378,
+"lat": 50.3022,
+"x": -60042,
+"z": -7903,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"Stokes",
+"Trameri"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Sheffield",
+"cc": "GB",
+"lon": -1.8991,
+"lat": 53.293,
+"x": -42689,
+"z": -26707,
+"guard": 0,
+"companies": [
+"ITCC",
+"SellPlan",
+"Steinbruch",
+"TransiNet"
+],
+"dealers": []
+},
+{
+"label": "Southampton",
+"cc": "GB",
+"lon": -1.7277,
+"lat": 50.7066,
+"x": -46339,
+"z": -7543,
+"guard": 0,
+"companies": [
+"SellPlan",
+"TransiNet",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Swansea",
+"cc": "GB",
+"lon": -4.3935,
+"lat": 51.5646,
+"x": -56896,
+"z": -16902,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"Kaarfor",
+"Posped",
+"Trameri"
+],
+"dealers": []
+},
+{
+"label": "Argostoli",
+"cc": "GR",
+"lon": 20.5112,
+"lat": 38.0421,
+"x": 41635,
+"z": 71501,
+"guard": 20,
+"companies": [
+"Hotel Artemia",
+"Icaria",
+"Low Field",
+"Medas",
+"Rock Eater"
+],
+"dealers": []
+},
+{
+"label": "Athens",
+"cc": "GR",
+"lon": 23.76,
+"lat": 38.1186,
+"x": 56247,
+"z": 69610,
+"guard": 20,
+"companies": [
+"CNP",
+"Eolo Lines",
+"Icaria",
+"Medas",
+"Ocean Solutions Group",
+"Rock Eater",
+"Villco",
+"Δημητρίου A.E."
+],
+"dealers": []
+},
+{
+"label": "Chania",
+"cc": "GR",
+"lon": 23.7464,
+"lat": 35.4816,
+"x": 58011,
+"z": 84890,
+"guard": 20,
+"companies": [
+"Hotel Artemia",
+"Icaria",
+"Δημητρίου A.E.",
+"Συγκομιδή"
+],
+"dealers": []
+},
+{
+"label": "Chios",
+"cc": "GR",
+"lon": 26.0163,
+"lat": 38.476,
+"x": 66065,
+"z": 66169,
+"guard": 20,
+"companies": [
+"Hotel Artemia",
+"Icaria",
+"NS Chemicals",
+"Χριστόπουλος Οικοδομικά"
+],
+"dealers": []
+},
+{
+"label": "Heraklion",
+"cc": "GR",
+"lon": 25.4409,
+"lat": 35.169,
+"x": 66232,
+"z": 85645,
+"guard": 20,
+"companies": [
+"Eumefa",
+"Icaria",
+"Villco",
+"Χριστόπουλος Οικοδομικά"
+],
+"dealers": []
+},
+{
+"label": "Ioannina",
+"cc": "GR",
+"lon": 20.7709,
+"lat": 39.7812,
+"x": 42021,
+"z": 61377,
+"guard": 20,
+"companies": [
+"Brawen Transport",
+"Shuttle Cola",
+"Villco"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Kalamata",
+"cc": "GR",
+"lon": 22.3649,
+"lat": 36.998,
+"x": 50618,
+"z": 76796,
+"guard": 20,
+"companies": [
+"Eliarchos",
+"Icaria",
+"Lefko Cotton",
+"Marina",
+"Villco",
+"Χριστόπουλος Οικοδομικά"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Kavala",
+"cc": "GR",
+"lon": 24.5809,
+"lat": 41.0535,
+"x": 57735,
+"z": 52341,
+"guard": 20,
+"companies": [
+"Icaria",
+"Marina",
+"Rock Eater",
+"SysChema",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Lamia",
+"cc": "GR",
+"lon": 22.4298,
+"lat": 39.004,
+"x": 49741,
+"z": 65179,
+"guard": 20,
+"companies": [
+"Brawen Transport",
+"Low Field",
+"Rock Eater",
+"Χριστόπουλος Οικοδομικά"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Larissa",
+"cc": "GR",
+"lon": 22.5537,
+"lat": 39.5522,
+"x": 49966,
+"z": 61971,
+"guard": 20,
+"companies": [
+"Eumefa",
+"Fallow Cargo",
+"Lefko Cotton",
+"Subse",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Mitilini",
+"cc": "GR",
+"lon": 26.1739,
+"lat": 39.1588,
+"x": 66168,
+"z": 62155,
+"guard": 20,
+"companies": [
+"CNP",
+"Eliarchos",
+"Hotel Artemia",
+"Icaria",
+"Low Field",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Patras",
+"cc": "GR",
+"lon": 21.6504,
+"lat": 38.1194,
+"x": 46744,
+"z": 70621,
+"guard": 20,
+"companies": [
+"Fallow Cargo",
+"Low Field",
+"Δημητρίου A.E.",
+"Χριστόπουλος Οικοδομικά"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Rhodes",
+"cc": "GR",
+"lon": 28.096,
+"lat": 36.3972,
+"x": 77442,
+"z": 76519,
+"guard": 20,
+"companies": [
+"Celler Construction Group",
+"Hotel Artemia",
+"Icaria",
+"Marina"
+],
+"dealers": []
+},
+{
+"label": "Thessaloniki",
+"cc": "GR",
+"lon": 23.007,
+"lat": 40.6266,
+"x": 51284,
+"z": 55601,
+"guard": 20,
+"companies": [
+"Brawen Transport",
+"Celler Construction Group",
+"CNP",
+"Container port",
+"DAF Trucks",
+"Lefko Cotton",
+"Medas",
+"Sanbuilders",
+"Syllurgy"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Trikala",
+"cc": "GR",
+"lon": 21.847,
+"lat": 39.5327,
+"x": 46870,
+"z": 62393,
+"guard": 20,
+"companies": [
+"Brawen Transport",
+"Lefko Cotton",
+"Villco",
+"Συγκομιδή"
+],
+"dealers": []
+},
+{
+"label": "Osijek",
+"cc": "HR",
+"lon": 18.7317,
+"lat": 45.6018,
+"x": 31380,
+"z": 28699,
+"guard": 16,
+"companies": [
+"DunaVia",
+"Shuttle Cola",
+"Slava Auto",
+"Subse",
+"SysChema",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Rijeka",
+"cc": "HR",
+"lon": 14.421,
+"lat": 45.4001,
+"x": 14366,
+"z": 30216,
+"guard": 16,
+"companies": [
+"Adrica",
+"Container port",
+"EuroGoodies",
+"Ika Bohag",
+"Stokes"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Split",
+"cc": "HR",
+"lon": 16.3296,
+"lat": 43.5768,
+"x": 22115,
+"z": 40563,
+"guard": 16,
+"companies": [
+"Adrica",
+"EuroGoodies",
+"Marina",
+"Sanbuilders"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Zadar",
+"cc": "HR",
+"lon": 15.2013,
+"lat": 44.2385,
+"x": 17476,
+"z": 36837,
+"guard": 16,
+"companies": [
+"Adrica",
+"Betunija",
+"Celler Construction Group",
+"CNP",
+"Marina",
+"Shuttle Cola"
+],
+"dealers": []
+},
+{
+"label": "Zagreb",
+"cc": "HR",
+"lon": 16.2655,
+"lat": 45.9686,
+"x": 21618,
+"z": 26950,
+"guard": 16,
+"companies": [
+"CNP",
+"Fallow Cargo",
+"Scania",
+"Slava Auto",
+"Train Foundry",
+"Villco"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Budapest",
+"cc": "HU",
+"lon": 19.1361,
+"lat": 47.4986,
+"x": 32368,
+"z": 17863,
+"guard": 1,
+"companies": [
+"Kaarfor",
+"NBFC",
+"Tradeaux",
+"Trameri"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Debrecen",
+"cc": "HU",
+"lon": 21.5766,
+"lat": 47.4479,
+"x": 41641,
+"z": 17464,
+"guard": 1,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"Sanbuilders",
+"TransiNet"
+],
+"dealers": []
+},
+{
+"label": "Pécs",
+"cc": "HU",
+"lon": 18.1656,
+"lat": 46.0446,
+"x": 29040,
+"z": 26291,
+"guard": 1,
+"companies": [
+"BCP",
+"EuroAcres",
+"Tradeaux"
+],
+"dealers": []
+},
+{
+"label": "Szeged",
+"cc": "HU",
+"lon": 20.1966,
+"lat": 46.2718,
+"x": 36881,
+"z": 24546,
+"guard": 1,
+"companies": [
+"EuroAcres",
+"LkwLog GmbH",
+"Posped",
+"Trameri"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Akureyri",
+"cc": "IS",
+"lon": -19.0586,
+"lat": 65.6759,
+"x": -61825,
+"z": -104145,
+"guard": 26,
+"companies": [
+"Borealis Shipyard",
+"Fjallafæði hf",
+"Kathode",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Blönduós",
+"cc": "IS",
+"lon": -20.7322,
+"lat": 65.6569,
+"x": -65429,
+"z": -105903,
+"guard": 26,
+"companies": [
+"Blátt Vöruhús",
+"Byggpro",
+"MS Stein",
+"Víkingabýli"
+],
+"dealers": []
+},
+{
+"label": "Borgarnes",
+"cc": "IS",
+"lon": -22.3689,
+"lat": 64.5351,
+"x": -72043,
+"z": -102095,
+"guard": 26,
+"companies": [
+"Alumcore",
+"Blátt Vöruhús",
+"Byggpro",
+"Sanbuilders",
+"Víkingabýli"
+],
+"dealers": []
+},
+{
+"label": "Egilsstaðir",
+"cc": "IS",
+"lon": -15.3604,
+"lat": 65.2126,
+"x": -54919,
+"z": -97863,
+"guard": 26,
+"companies": [
+"Alumcore",
+"Blátt Vöruhús",
+"Djúpsjór Vinnsla",
+"Mjölnir Mining",
+"Stórmarkaður"
+],
+"dealers": []
+},
+{
+"label": "Hólmavík",
+"cc": "IS",
+"lon": -22.0718,
+"lat": 65.7123,
+"x": -68086,
+"z": -107731,
+"guard": 26,
+"companies": [
+"Blátt Vöruhús",
+"Stórmarkaður"
+],
+"dealers": []
+},
+{
+"label": "Höfn í Hornafirði",
+"cc": "IS",
+"lon": -15.9995,
+"lat": 64.233,
+"x": -58667,
+"z": -93307,
+"guard": 26,
+"companies": [
+"Blátt Vöruhús",
+"Djúpsjór Vinnsla",
+"Stórmarkaður",
+"Víkingabýli"
+],
+"dealers": []
+},
+{
+"label": "Húsavík",
+"cc": "IS",
+"lon": -18.2576,
+"lat": 66.2384,
+"x": -58672,
+"z": -106245,
+"guard": 26,
+"companies": [
+"Fjallafæði hf",
+"Kísilverksmiðja",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Keflavík",
+"cc": "IS",
+"lon": -23.2227,
+"lat": 63.7599,
+"x": -76117,
+"z": -99256,
+"guard": 26,
+"companies": [
+"BHV",
+"Blátt Vöruhús",
+"Borealis Shipyard",
+"Stórmarkaður"
+],
+"dealers": []
+},
+{
+"label": "Patreksfjörður",
+"cc": "IS",
+"lon": -25.4546,
+"lat": 65.5414,
+"x": -75570,
+"z": -111005,
+"guard": 26,
+"companies": [
+"Blátt Vöruhús",
+"Djúpsjór Vinnsla",
+"MS Stein"
+],
+"dealers": []
+},
+{
+"label": "Reykjavík",
+"cc": "IS",
+"lon": -22.1063,
+"lat": 63.9804,
+"x": -73031,
+"z": -98960,
+"guard": 26,
+"companies": [
+"Alumcore",
+"Blátt Vöruhús",
+"Container port",
+"Ika Bohag",
+"NS Oil",
+"Renor",
+"Víkingabýli"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Selfoss",
+"cc": "IS",
+"lon": -20.8487,
+"lat": 63.7879,
+"x": -70767,
+"z": -96442,
+"guard": 26,
+"companies": [
+"Blátt Vöruhús",
+"Byggpro",
+"Fjallafæði hf",
+"Konstnorr",
+"MS Stein",
+"Víkingabýli"
+],
+"dealers": []
+},
+{
+"label": "Ísafjörður",
+"cc": "IS",
+"lon": -24.1827,
+"lat": 66.1693,
+"x": -71094,
+"z": -112566,
+"guard": 26,
+"companies": [
+"Djúpsjór Vinnsla",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Ólafsvík",
+"cc": "IS",
+"lon": -24.4786,
+"lat": 64.7507,
+"x": -75926,
+"z": -105821,
+"guard": 26,
+"companies": [
+"Blátt Vöruhús",
+"Djúpsjór Vinnsla",
+"Renor"
+],
+"dealers": []
+},
+{
+"label": "Þórshöfn",
+"cc": "IS",
+"lon": -15.6643,
+"lat": 66.3441,
+"x": -52913,
+"z": -104211,
+"guard": 26,
+"companies": [
+"Blátt Vöruhús",
+"Djúpsjór Vinnsla",
+"Víkingabýli"
+],
+"dealers": []
+},
+{
+"label": "Ancona",
+"cc": "IT",
+"lon": 13.4516,
+"lat": 43.7181,
+"x": 10324,
+"z": 39738,
+"guard": 4,
+"companies": [
+"Cantiere Navale",
+"CNP",
+"Exomar",
+"Ika Bohag",
+"Libellula",
+"Marina",
+"Terminal Container"
+],
+"dealers": []
+},
+{
+"label": "Bari",
+"cc": "IT",
+"lon": 16.6653,
+"lat": 41.1665,
+"x": 23805,
+"z": 54331,
+"guard": 4,
+"companies": [
+"ACI SRL",
+"Marina",
+"Quadrelli SpA",
+"Terminal Container",
+"Trasporti Mediterraneo"
+],
+"dealers": []
+},
+{
+"label": "Bologna",
+"cc": "IT",
+"lon": 11.1285,
+"lat": 44.7019,
+"x": 1120,
+"z": 33783,
+"guard": 4,
+"companies": [
+"ACI SRL",
+"Exomar",
+"Ika Bohag",
+"Ini",
+"Libellula",
+"PIAC",
+"PP Chimica Italia"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Cagliari",
+"cc": "IT",
+"lon": 9.0454,
+"lat": 39.2356,
+"x": -9761,
+"z": 64452,
+"guard": 4,
+"companies": [
+"AA - Auto di Alonso",
+"ACI SRL",
+"Costruzione di Edifici",
+"Eolo Lines",
+"Marina",
+"TE Logistica",
+"Trasporti Mediterraneo"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Cassino",
+"cc": "IT",
+"lon": 13.9754,
+"lat": 41.544,
+"x": 12294,
+"z": 52215,
+"guard": 4,
+"companies": [
+"PIAC",
+"Spinelli"
+],
+"dealers": []
+},
+{
+"label": "Catania",
+"cc": "IT",
+"lon": 14.9586,
+"lat": 37.598,
+"x": 16471,
+"z": 75032,
+"guard": 4,
+"companies": [
+"ACC",
+"CNP",
+"DAF Trucks",
+"FUI SpA",
+"Ika Bohag",
+"Ini",
+"Marina",
+"Quadrelli SpA",
+"Trasporti Mediterraneo"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Catanzaro",
+"cc": "IT",
+"lon": 16.5985,
+"lat": 38.9822,
+"x": 23792,
+"z": 66926,
+"guard": 4,
+"companies": [
+"ACI SRL",
+"Cargotras",
+"Costruzione di Edifici",
+"FUI SpA",
+"Ini"
+],
+"dealers": []
+},
+{
+"label": "Florence",
+"cc": "IT",
+"lon": 11.1843,
+"lat": 43.815,
+"x": 1082,
+"z": 38843,
+"guard": 4,
+"companies": [
+"Costruzione di Edifici",
+"FUI SpA",
+"Ika Bohag",
+"Marmo SpA",
+"Scania",
+"TE Logistica",
+"Tesoro Gustoso"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Genoa",
+"cc": "IT",
+"lon": 8.8899,
+"lat": 44.3121,
+"x": -8033,
+"z": 35376,
+"guard": 4,
+"companies": [
+"ACI SRL",
+"Costruzione di Edifici",
+"Ini",
+"Marina",
+"Terminal Container",
+"Trasporti Mediterraneo"
+],
+"dealers": []
+},
+{
+"label": "Livorno",
+"cc": "IT",
+"lon": 10.3377,
+"lat": 43.5444,
+"x": -2468,
+"z": 40181,
+"guard": 4,
+"companies": [
+"Cargotras",
+"CNP",
+"Libellula",
+"Marmo SpA",
+"S.A.L. S.R.L.",
+"Terminal Container"
+],
+"dealers": []
+},
+{
+"label": "Messina",
+"cc": "IT",
+"lon": 15.3799,
+"lat": 38.2978,
+"x": 18376,
+"z": 70964,
+"guard": 4,
+"companies": [
+"Cantiere Navale",
+"Eolo Lines",
+"TE Logistica"
+],
+"dealers": []
+},
+{
+"label": "Milan",
+"cc": "IT",
+"lon": 9.0709,
+"lat": 45.3728,
+"x": -6816,
+"z": 29418,
+"guard": 0,
+"companies": [
+"ACI SRL",
+"Cargotras",
+"Cesare Supermercato",
+"Ika Bohag",
+"Libellula",
+"Scania",
+"Spinelli",
+"Tesoro Gustoso"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Naples",
+"cc": "IT",
+"lon": 14.2252,
+"lat": 40.8739,
+"x": 13318,
+"z": 56077,
+"guard": 4,
+"companies": [
+"CNP",
+"Eolo Lines",
+"Fattoria Felice",
+"Ika Bohag",
+"Ini",
+"Marina",
+"PIAC",
+"TE Logistica",
+"Terminal Container",
+"Tesoro Gustoso",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Olbia",
+"cc": "IT",
+"lon": 9.5064,
+"lat": 40.8706,
+"x": -7016,
+"z": 55215,
+"guard": 4,
+"companies": [
+"Cantiere Navale",
+"Cargotras",
+"Exomar",
+"FUI SpA",
+"Marina",
+"Marmo SpA",
+"PP Chimica Italia"
+],
+"dealers": []
+},
+{
+"label": "Palermo",
+"cc": "IT",
+"lon": 13.2994,
+"lat": 38.2575,
+"x": 8976,
+"z": 71112,
+"guard": 4,
+"companies": [
+"Cargotras",
+"Cesare Supermercato",
+"Costruzione di Edifici",
+"Eolo Lines",
+"Marmo SpA"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Parma",
+"cc": "IT",
+"lon": 10.1305,
+"lat": 44.6327,
+"x": -2907,
+"z": 33934,
+"guard": 4,
+"companies": [
+"Ini",
+"PIAC",
+"Spinelli",
+"TE Logistica",
+"Tesoro Gustoso"
+],
+"dealers": []
+},
+{
+"label": "Pescara",
+"cc": "IT",
+"lon": 14.1017,
+"lat": 42.4853,
+"x": 12898,
+"z": 46828,
+"guard": 4,
+"companies": [
+"AA - Auto di Alonso",
+"Cargotras",
+"Cesare Supermercato",
+"Costruzione di Edifici",
+"Ika Bohag",
+"Ini",
+"Quadrelli SpA",
+"S.A.L. S.R.L."
+],
+"dealers": []
+},
+{
+"label": "Rome",
+"cc": "IT",
+"lon": 12.5388,
+"lat": 41.9956,
+"x": 6261,
+"z": 49479,
+"guard": 4,
+"companies": [
+"AA - Auto di Alonso",
+"ACI SRL",
+"Exomar",
+"Fattoria Felice",
+"FUI SpA",
+"Ika Bohag",
+"Ini",
+"PP Chimica Italia",
+"Tesoro Gustoso",
+"Trasporti Mediterraneo"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Sassari",
+"cc": "IT",
+"lon": 8.4581,
+"lat": 40.8095,
+"x": -11554,
+"z": 55190,
+"guard": 4,
+"companies": [
+"Cargotras",
+"Cesare Supermercato",
+"Costruzione di Edifici",
+"Eolo Lines",
+"Marmo SpA",
+"S.A.L. S.R.L.",
+"TE Logistica"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Suzzara",
+"cc": "IT",
+"lon": 10.6337,
+"lat": 44.947,
+"x": -781,
+"z": 32277,
+"guard": 4,
+"companies": [
+"Comoto",
+"Ini"
+],
+"dealers": []
+},
+{
+"label": "Taranto",
+"cc": "IT",
+"lon": 17.149,
+"lat": 40.5063,
+"x": 25990,
+"z": 58071,
+"guard": 4,
+"companies": [
+"AA - Auto di Alonso",
+"ACC",
+"CNP",
+"Costruzione di Edifici",
+"Exomar",
+"Ini",
+"Marina",
+"Vitas Power"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Terni",
+"cc": "IT",
+"lon": 12.6214,
+"lat": 42.572,
+"x": 6717,
+"z": 46192,
+"guard": 4,
+"companies": [
+"ACC",
+"PP Chimica Italia",
+"S.A.L. S.R.L."
+],
+"dealers": []
+},
+{
+"label": "Trieste",
+"cc": "IT",
+"lon": 13.4548,
+"lat": 45.8599,
+"x": 10594,
+"z": 27547,
+"guard": 0,
+"companies": [
+"Terminal Container"
+],
+"dealers": []
+},
+{
+"label": "Turin",
+"cc": "IT",
+"lon": 7.6324,
+"lat": 45.0165,
+"x": -12697,
+"z": 30912,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"FCP",
+"SellPlan",
+"TransiNet"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Venice",
+"cc": "IT",
+"lon": 12.0794,
+"lat": 45.3883,
+"x": 5090,
+"z": 30059,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"LkwLog GmbH",
+"SellPlan"
+],
+"dealers": []
+},
+{
+"label": "Verona",
+"cc": "IT",
+"lon": 10.7979,
+"lat": 45.4545,
+"x": 39,
+"z": 29433,
+"guard": 0,
+"companies": [
+"BCP",
+"EuroAcres",
+"Kaarfor",
+"Posped"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Villa San Giovanni",
+"cc": "IT",
+"lon": 15.5775,
+"lat": 38.3477,
+"x": 19266,
+"z": 70669,
+"guard": 4,
+"companies": [
+"Eolo Lines"
+],
+"dealers": []
+},
+{
+"label": "Kaunas",
+"cc": "LT",
+"lon": 23.9706,
+"lat": 54.9021,
+"x": 45564,
+"z": -25368,
+"guard": 6,
+"companies": [
+"AeroBaltica",
+"Baltomorsk",
+"BHV",
+"BLT",
+"Cemeltex",
+"NS Chemicals",
+"Suprema"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Klaipėda",
+"cc": "LT",
+"lon": 21.2137,
+"lat": 55.6647,
+"x": 36343,
+"z": -28740,
+"guard": 6,
+"companies": [
+"Baltomorsk",
+"Cemeltex",
+"Container port",
+"GNT",
+"Marina",
+"Noskonitta",
+"NS Oil"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Mažeikiai",
+"cc": "LT",
+"lon": 22.3117,
+"lat": 56.3322,
+"x": 39434,
+"z": -32830,
+"guard": 6,
+"companies": [
+"IBP"
+],
+"dealers": []
+},
+{
+"label": "Panevėžys",
+"cc": "LT",
+"lon": 24.3477,
+"lat": 55.6962,
+"x": 46202,
+"z": -29983,
+"guard": 6,
+"companies": [
+"BHV",
+"Cemeltex",
+"GNT",
+"Suprema"
+],
+"dealers": []
+},
+{
+"label": "Utena",
+"cc": "LT",
+"lon": 25.7567,
+"lat": 55.5106,
+"x": 50778,
+"z": -29561,
+"guard": 6,
+"companies": [
+"Agrominta UAB",
+"BLT",
+"DomDepo",
+"Noskonitta",
+"Vanha Kivi"
+],
+"dealers": []
+},
+{
+"label": "Vilnius",
+"cc": "LT",
+"lon": 25.4857,
+"lat": 54.718,
+"x": 50562,
+"z": -24992,
+"guard": 6,
+"companies": [
+"AeroBaltica",
+"BHV",
+"GNT",
+"Ika Bohag",
+"NCH",
+"Noskonitta",
+"Vilniaus Popieriaus Fabrikas",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Šiauliai",
+"cc": "LT",
+"lon": 23.4226,
+"lat": 55.856,
+"x": 43189,
+"z": -30524,
+"guard": 6,
+"companies": [
+"Baltic Metallurgy",
+"BHV",
+"BLT",
+"Renat"
+],
+"dealers": []
+},
+{
+"label": "Luxembourg",
+"cc": "LU",
+"lon": 5.7949,
+"lat": 49.7386,
+"x": -16641,
+"z": 3509,
+"guard": 0,
+"companies": [
+"ITCC",
+"LkwLog GmbH",
+"Primel",
+"Sanbuilders",
+"SellPlan",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Daugavpils",
+"cc": "LV",
+"lon": 26.5858,
+"lat": 55.8608,
+"x": 53075,
+"z": -31926,
+"guard": 6,
+"companies": [
+"Baltomorsk",
+"Evikši ZS",
+"GNT",
+"Lateds",
+"Latvijas Vagonu Rūpnīca",
+"NS Oil",
+"Renat"
+],
+"dealers": []
+},
+{
+"label": "Liepāja",
+"cc": "LV",
+"lon": 21.0133,
+"lat": 56.4847,
+"x": 35330,
+"z": -33320,
+"guard": 6,
+"companies": [
+"Baltic Metallurgy",
+"Cemeltex",
+"Evikši ZS",
+"Polaris Lines",
+"Rosmark"
+],
+"dealers": []
+},
+{
+"label": "Riga",
+"cc": "LV",
+"lon": 24.1496,
+"lat": 56.9768,
+"x": 44678,
+"z": -37110,
+"guard": 6,
+"companies": [
+"AeroBaltica",
+"Balteus Yachts",
+"Evikši ZS",
+"Latvijas Vagonu Rūpnīca",
+"Marina",
+"NCH",
+"NS Chemicals",
+"Renat",
+"Rosmark",
+"Vanha Kivi"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Rēzekne",
+"cc": "LV",
+"lon": 27.3939,
+"lat": 56.5315,
+"x": 54953,
+"z": -36095,
+"guard": 6,
+"companies": [
+"Baltomorsk",
+"Renat",
+"Rosmark",
+"Suprema"
+],
+"dealers": []
+},
+{
+"label": "Valmiera",
+"cc": "LV",
+"lon": 25.3813,
+"lat": 57.5432,
+"x": 47973,
+"z": -40804,
+"guard": 6,
+"companies": [
+"Baltomorsk",
+"Cemeltex",
+"DomDepo",
+"Evikši ZS",
+"GNT",
+"Lateds",
+"NS Oil"
+],
+"dealers": []
+},
+{
+"label": "Ventspils",
+"cc": "LV",
+"lon": 21.5976,
+"lat": 57.3874,
+"x": 36680,
+"z": -38582,
+"guard": 6,
+"companies": [
+"Baltomorsk",
+"Evikši ZS",
+"GNT",
+"NS Oil",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Bijelo Polje",
+"cc": "ME",
+"lon": 19.7983,
+"lat": 43.215,
+"x": 36468,
+"z": 42022,
+"guard": 16,
+"companies": [
+"Crno Drvo",
+"EuroGoodies",
+"Radus",
+"Subse",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Nikšić",
+"cc": "ME",
+"lon": 19.0848,
+"lat": 43.0194,
+"x": 33588,
+"z": 43319,
+"guard": 16,
+"companies": [
+"Aluxion",
+"EuroGoodies"
+],
+"dealers": []
+},
+{
+"label": "Podgorica",
+"cc": "ME",
+"lon": 19.1498,
+"lat": 42.6984,
+"x": 33961,
+"z": 45136,
+"guard": 16,
+"companies": [
+"Aluxion",
+"EuroGoodies",
+"Fallow Cargo",
+"FLE",
+"Rock Eater",
+"Shuttle Cola",
+"Slava Auto"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Bitola",
+"cc": "MK",
+"lon": 21.6375,
+"lat": 41.2267,
+"x": 45069,
+"z": 52764,
+"guard": 22,
+"companies": [
+"RIMAF",
+"Rock Eater",
+"Subse",
+"Vesna"
+],
+"dealers": []
+},
+{
+"label": "Skopje",
+"cc": "MK",
+"lon": 21.4017,
+"lat": 42.0395,
+"x": 43657,
+"z": 48210,
+"guard": 16,
+"companies": [
+"AI Automotive",
+"Balkan Loco",
+"Brawen Transport",
+"FLE",
+"ITCC",
+"Rock Eater",
+"Subse",
+"Villco"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Amsterdam",
+"cc": "NL",
+"lon": 4.5607,
+"lat": 52.2819,
+"x": -19043,
+"z": -11331,
+"guard": 0,
+"companies": [
+"DAF Trucks",
+"ITCC",
+"NS Oil",
+"Primel",
+"Stokes",
+"Stronghold",
+"TDC Auto Terminal"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Eindhoven",
+"cc": "NL",
+"lon": 5.1168,
+"lat": 51.5586,
+"x": -17701,
+"z": -7012,
+"guard": 0,
+"companies": [
+"DAF Trucks",
+"Kathode",
+"LkwLog GmbH",
+"Primel"
+],
+"dealers": []
+},
+{
+"label": "Groningen",
+"cc": "NL",
+"lon": 6.2007,
+"lat": 53.2054,
+"x": -12841,
+"z": -15769,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"Ika Bohag",
+"Primel",
+"Sanbuilders",
+"Stokes",
+"Suikersmij"
+],
+"dealers": []
+},
+{
+"label": "Rotterdam",
+"cc": "NL",
+"lon": 4.6476,
+"lat": 51.9605,
+"x": -19003,
+"z": -9489,
+"guard": 0,
+"companies": [
+"CNP",
+"Container port",
+"Posped",
+"Sanbuilders",
+"SellPlan"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Alta",
+"cc": "NO",
+"lon": 23.1637,
+"lat": 70.1719,
+"x": 33179,
+"z": -112936,
+"guard": 23,
+"companies": [
+"Byggpro",
+"Norrsken",
+"Polar Fish"
+],
+"dealers": []
+},
+{
+"label": "Andenes",
+"cc": "NO",
+"lon": 16.1558,
+"lat": 69.5892,
+"x": 19059,
+"z": -108520,
+"guard": 23,
+"companies": [
+"Byggpro",
+"Norrfood",
+"Renar Logistik"
+],
+"dealers": []
+},
+{
+"label": "Bergen",
+"cc": "NO",
+"lon": 5.3744,
+"lat": 60.252,
+"x": -10372,
+"z": -55798,
+"guard": 2,
+"companies": [
+"DAF Trucks",
+"Drekkar Trans",
+"GNT",
+"Nordic Crown",
+"Polar Fish",
+"Polaris Lines"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Bodø",
+"cc": "NO",
+"lon": 14.1315,
+"lat": 67.1336,
+"x": 14685,
+"z": -93912,
+"guard": 23,
+"companies": [
+"Associated Nordic Ports",
+"Borealis Shipyard",
+"FLE",
+"Freyr",
+"Norrfood",
+"Primel"
+],
+"dealers": []
+},
+{
+"label": "Dombås",
+"cc": "NO",
+"lon": 8.6712,
+"lat": 62.0208,
+"x": -270,
+"z": -64886,
+"guard": 23,
+"companies": [
+"Byggpro",
+"Renar Logistik",
+"Renor"
+],
+"dealers": []
+},
+{
+"label": "Hamar",
+"cc": "NO",
+"lon": 10.8089,
+"lat": 60.8433,
+"x": 5055,
+"z": -57720,
+"guard": 23,
+"companies": [
+"Ika Bohag",
+"MS Stein",
+"NOFEBA",
+"Norrsken",
+"Nutri Mølle"
+],
+"dealers": []
+},
+{
+"label": "Honningsvåg",
+"cc": "NO",
+"lon": 25.8224,
+"lat": 71.2343,
+"x": 37582,
+"z": -120000,
+"guard": 23,
+"companies": [
+"Konstnorr",
+"Polar Fish",
+"Primel",
+"Renar Logistik"
+],
+"dealers": []
+},
+{
+"label": "Kristiansand",
+"cc": "NO",
+"lon": 7.8452,
+"lat": 58.1241,
+"x": -4638,
+"z": -42912,
+"guard": 2,
+"companies": [
+"Agronord",
+"BHV",
+"Bjork",
+"GNT",
+"MS Stein",
+"NS Chemicals",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Kristiansund",
+"cc": "NO",
+"lon": 7.4584,
+"lat": 62.924,
+"x": -2971,
+"z": -70375,
+"guard": 23,
+"companies": [
+"BHV",
+"FLE",
+"Renar Logistik",
+"Renor"
+],
+"dealers": []
+},
+{
+"label": "Lillehammer",
+"cc": "NO",
+"lon": 10.5227,
+"lat": 61.0995,
+"x": 4353,
+"z": -59234,
+"guard": 23,
+"companies": [
+"Freyr",
+"Renar Logistik",
+"Sag & Tre",
+"TQG",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Mo i Rana",
+"cc": "NO",
+"lon": 13.8969,
+"lat": 66.1256,
+"x": 14063,
+"z": -87993,
+"guard": 23,
+"companies": [
+"Agronord",
+"Associated Nordic Ports",
+"Fjoste",
+"Renor"
+],
+"dealers": []
+},
+{
+"label": "Narvik",
+"cc": "NO",
+"lon": 16.974,
+"lat": 68.3377,
+"x": 20957,
+"z": -101088,
+"guard": 23,
+"companies": [
+"BHV",
+"Kathode",
+"Metallis",
+"Norse Rail",
+"Sanbuilders"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Oslo",
+"cc": "NO",
+"lon": 10.6608,
+"lat": 60.0885,
+"x": 4391,
+"z": -53431,
+"guard": 0,
+"companies": [
+"Container port",
+"Ika Bohag",
+"Konstnorr",
+"Marina",
+"MS Stein",
+"Norrfood",
+"NS Oil",
+"Polaris Lines",
+"Renar Logistik",
+"Sag & Tre"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Stavanger",
+"cc": "NO",
+"lon": 5.6544,
+"lat": 58.9104,
+"x": -10561,
+"z": -48096,
+"guard": 2,
+"companies": [
+"Ika Bohag",
+"MS Stein",
+"Nordic Crown",
+"NS Oil",
+"Polar Fish",
+"Polaris Lines",
+"Renar Logistik"
+],
+"dealers": []
+},
+{
+"label": "Steinkjer",
+"cc": "NO",
+"lon": 11.0713,
+"lat": 63.8879,
+"x": 6718,
+"z": -75199,
+"guard": 23,
+"companies": [
+"Konstnorr",
+"MS Stein",
+"Renar Logistik",
+"Sag & Tre"
+],
+"dealers": []
+},
+{
+"label": "Svolvær",
+"cc": "NO",
+"lon": 13.5846,
+"lat": 68.2325,
+"x": 13567,
+"z": -100434,
+"guard": 23,
+"companies": [
+"Borealis Shipyard",
+"GNT",
+"Polar Fish"
+],
+"dealers": []
+},
+{
+"label": "Tromsø",
+"cc": "NO",
+"lon": 18.7871,
+"lat": 70.1087,
+"x": 24355,
+"z": -111824,
+"guard": 23,
+"companies": [
+"BHV",
+"Drekkar Trans",
+"FLE",
+"Marina",
+"Norrfood",
+"NS Oil"
+],
+"dealers": []
+},
+{
+"label": "Trondheim",
+"cc": "NO",
+"lon": 9.8237,
+"lat": 63.4835,
+"x": 3401,
+"z": -73060,
+"guard": 23,
+"companies": [
+"Associated Nordic Ports",
+"DAF Trucks",
+"Konstnorr",
+"Metallis",
+"MS Stein",
+"Norrfood",
+"Sag & Tre",
+"Skog Paperworks"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Ålesund",
+"cc": "NO",
+"lon": 5.8205,
+"lat": 62.2796,
+"x": -7677,
+"z": -67181,
+"guard": 27,
+"companies": [
+"Container port",
+"GNT",
+"Polar Fish",
+"Shuttle Cola",
+"WGCC"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Białystok",
+"cc": "PL",
+"lon": 23.1676,
+"lat": 53.1311,
+"x": 44098,
+"z": -15103,
+"guard": 1,
+"companies": [
+"EuroAcres",
+"ITCC",
+"TransiNet",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Gdańsk",
+"cc": "PL",
+"lon": 18.5698,
+"lat": 54.3327,
+"x": 28343,
+"z": -20639,
+"guard": 1,
+"companies": [
+"BCP",
+"EuroAcres",
+"LkwLog GmbH",
+"Sanbuilders",
+"WGCC"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Katowice",
+"cc": "PL",
+"lon": 18.9217,
+"lat": 50.2352,
+"x": 30729,
+"z": 2439,
+"guard": 1,
+"companies": [
+"Posped",
+"Steinbruch",
+"Stokes",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Kraków",
+"cc": "PL",
+"lon": 19.9474,
+"lat": 50.059,
+"x": 34470,
+"z": 3207,
+"guard": 1,
+"companies": [
+"EuroAcres",
+"Sanbuilders",
+"Tradeaux",
+"Trameri"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Lublin",
+"cc": "PL",
+"lon": 22.5797,
+"lat": 51.2171,
+"x": 43244,
+"z": -4125,
+"guard": 1,
+"companies": [
+"EuroGoodies",
+"Kaarfor",
+"LkwLog GmbH",
+"Posped"
+],
+"dealers": []
+},
+{
+"label": "Olsztyn",
+"cc": "PL",
+"lon": 20.4621,
+"lat": 53.7798,
+"x": 34758,
+"z": -17906,
+"guard": 1,
+"companies": [
+"EuroGoodies",
+"FCP",
+"SellPlan",
+"Tradeaux",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Poznań",
+"cc": "PL",
+"lon": 16.81,
+"lat": 52.3354,
+"x": 22863,
+"z": -9132,
+"guard": 0,
+"companies": [
+"FCP",
+"Kaarfor",
+"Stokes",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Szczecin",
+"cc": "PL",
+"lon": 14.5196,
+"lat": 53.3982,
+"x": 15053,
+"z": -15070,
+"guard": 0,
+"companies": [
+"EuroGoodies",
+"ITCC",
+"TransiNet"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Warsaw",
+"cc": "PL",
+"lon": 21.0596,
+"lat": 52.2524,
+"x": 37445,
+"z": -9456,
+"guard": 1,
+"companies": [
+"Posped",
+"Sanbuilders",
+"Stokes",
+"Trameri"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Wrocław",
+"cc": "PL",
+"lon": 16.9413,
+"lat": 51.0662,
+"x": 23503,
+"z": -1971,
+"guard": 0,
+"companies": [
+"EuroAcres",
+"EuroGoodies",
+"Steinbruch",
+"Trameri"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Łódź",
+"cc": "PL",
+"lon": 19.4234,
+"lat": 51.7411,
+"x": 32014,
+"z": -6164,
+"guard": 1,
+"companies": [
+"EuroGoodies",
+"LkwLog GmbH",
+"Posped",
+"SellPlan"
+],
+"dealers": []
+},
+{
+"label": "Beja",
+"cc": "PT",
+"lon": -8.356,
+"lat": 37.773,
+"x": -87970,
+"z": 56991,
+"guard": 11,
+"companies": [
+"Huerta del Mar Menor, S.L."
+],
+"dealers": []
+},
+{
+"label": "Coimbra",
+"cc": "PT",
+"lon": -8.9282,
+"lat": 39.8581,
+"x": -86585,
+"z": 44727,
+"guard": 11,
+"companies": [
+"ACC",
+"Agregados, S.A.",
+"APP"
+],
+"dealers": []
+},
+{
+"label": "Cortiçadas de Lavre",
+"cc": "PT",
+"lon": -8.7719,
+"lat": 38.4507,
+"x": -88519,
+"z": 52658,
+"guard": 11,
+"companies": [
+"Cortiça Prima"
+],
+"dealers": []
+},
+{
+"label": "Evora",
+"cc": "PT",
+"lon": -8.3021,
+"lat": 38.2264,
+"x": -86917,
+"z": 54569,
+"guard": 11,
+"companies": [
+"Exomar"
+],
+"dealers": []
+},
+{
+"label": "Faro",
+"cc": "PT",
+"lon": -8.5011,
+"lat": 36.7437,
+"x": -90480,
+"z": 62466,
+"guard": 11,
+"companies": [
+"APP",
+"BHV"
+],
+"dealers": []
+},
+{
+"label": "Guarda",
+"cc": "PT",
+"lon": -7.9409,
+"lat": 40.2409,
+"x": -81792,
+"z": 44009,
+"guard": 11,
+"companies": [
+"Cantera Ibérica",
+"Exomar"
+],
+"dealers": []
+},
+{
+"label": "Lisbon",
+"cc": "PT",
+"lon": -9.7967,
+"lat": 38.5395,
+"x": -92711,
+"z": 50653,
+"guard": 11,
+"companies": [
+"Ika Bohag",
+"Logística Atlântica",
+"Marina",
+"Ortiz",
+"Scania",
+"Shuttle Cola",
+"Transportes Caballería",
+"TS Atlas"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Olhão",
+"cc": "PT",
+"lon": -8.1261,
+"lat": 36.8475,
+"x": -88642,
+"z": 62441,
+"guard": 11,
+"companies": [
+"EPPA",
+"Marina"
+],
+"dealers": []
+},
+{
+"label": "Ponte de Sor",
+"cc": "PT",
+"lon": -8.6335,
+"lat": 38.9529,
+"x": -87010,
+"z": 50102,
+"guard": 11,
+"companies": [
+"Cortiça Prima"
+],
+"dealers": []
+},
+{
+"label": "Porto",
+"cc": "PT",
+"lon": -9.0364,
+"lat": 40.7832,
+"x": -85325,
+"z": 39531,
+"guard": 11,
+"companies": [
+"Cortiça Prima",
+"EPPA",
+"Ika Bohag",
+"Logística Atlântica",
+"TS Atlas"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Setúbal",
+"cc": "PT",
+"lon": -9.2613,
+"lat": 37.9917,
+"x": -91467,
+"z": 54457,
+"guard": 11,
+"companies": [
+"NS Chemicals",
+"Ocean Solutions Group",
+"SCS Paper"
+],
+"dealers": []
+},
+{
+"label": "Sines",
+"cc": "PT",
+"lon": -9.1955,
+"lat": 37.6471,
+"x": -91831,
+"z": 56448,
+"guard": 11,
+"companies": [
+"Cortiça Prima",
+"NS Chemicals",
+"NS Oil",
+"TS Atlas",
+"Vitas Power"
+],
+"dealers": []
+},
+{
+"label": "Bacău",
+"cc": "RO",
+"lon": 26.856,
+"lat": 46.8119,
+"x": 62137,
+"z": 18474,
+"guard": 9,
+"companies": [
+"Brawen Transport"
+],
+"dealers": []
+},
+{
+"label": "Brașov",
+"cc": "RO",
+"lon": 25.6685,
+"lat": 46.0374,
+"x": 58252,
+"z": 23533,
+"guard": 9,
+"companies": [
+"NS Oil",
+"Renat",
+"Rock Eater",
+"Subse",
+"Timber Turtle",
+"Volvo Trucks"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Bucharest",
+"cc": "RO",
+"lon": 26.0806,
+"lat": 44.5448,
+"x": 61121,
+"z": 31684,
+"guard": 9,
+"companies": [
+"Brawen Transport",
+"Cemeltex",
+"DomDepo",
+"FLE",
+"Ika Bohag",
+"Kaarfor",
+"Log n Stick",
+"Sporklift"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Cernavodă",
+"cc": "RO",
+"lon": 28.2214,
+"lat": 44.589,
+"x": 69579,
+"z": 29995,
+"guard": 9,
+"companies": [
+"Marina",
+"Nucléon"
+],
+"dealers": []
+},
+{
+"label": "Cluj-Napoca",
+"cc": "RO",
+"lon": 23.8126,
+"lat": 47.1466,
+"x": 50303,
+"z": 18257,
+"guard": 9,
+"companies": [
+"Cemeltex",
+"DomDepo",
+"Fallow Cargo",
+"FLE",
+"Sporklift"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Constanța",
+"cc": "RO",
+"lon": 28.7074,
+"lat": 44.3716,
+"x": 71732,
+"z": 30850,
+"guard": 9,
+"companies": [
+"CNP",
+"Container port",
+"Kaarfor",
+"Low Field",
+"Rock Eater"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Craiova",
+"cc": "RO",
+"lon": 23.767,
+"lat": 44.5004,
+"x": 51918,
+"z": 33208,
+"guard": 9,
+"companies": [
+"Balkan Loco",
+"Kaarfor",
+"Oţel Impecabil",
+"Rump"
+],
+"dealers": []
+},
+{
+"label": "Călărași",
+"cc": "RO",
+"lon": 27.3114,
+"lat": 44.4822,
+"x": 66074,
+"z": 31238,
+"guard": 9,
+"companies": [
+"CGLA",
+"Oţel Impecabil",
+"SCS Paper"
+],
+"dealers": []
+},
+{
+"label": "Galați",
+"cc": "RO",
+"lon": 27.8409,
+"lat": 45.6273,
+"x": 67046,
+"z": 24453,
+"guard": 9,
+"companies": [
+"BHV",
+"Container port",
+"Log n Stick",
+"Low Field",
+"Oţel Impecabil",
+"RIMAF",
+"Rock Eater",
+"Subse"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Hunedoara",
+"cc": "RO",
+"lon": 23.2494,
+"lat": 45.802,
+"x": 49017,
+"z": 26095,
+"guard": 9,
+"companies": [
+"Kaarfor",
+"Log n Stick",
+"Oţel Impecabil",
+"Rock Eater",
+"Timber Turtle"
+],
+"dealers": []
+},
+{
+"label": "Iași",
+"cc": "RO",
+"lon": 27.6802,
+"lat": 47.3479,
+"x": 64746,
+"z": 14944,
+"guard": 9,
+"companies": [
+"BHV",
+"DAF Trucks",
+"DomDepo",
+"Kaarfor",
+"Oţel Impecabil",
+"RIMAF",
+"Shuttle Cola"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Mangalia",
+"cc": "RO",
+"lon": 28.5584,
+"lat": 43.9526,
+"x": 71578,
+"z": 33311,
+"guard": 9,
+"companies": [
+"Ocean Solutions Group"
+],
+"dealers": []
+},
+{
+"label": "Pitești",
+"cc": "RO",
+"lon": 24.9418,
+"lat": 44.98,
+"x": 56247,
+"z": 29892,
+"guard": 9,
+"companies": [
+"CNP",
+"DomDepo",
+"Dulcis",
+"Kaarfor",
+"Scania",
+"Spinelli"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Reșița",
+"cc": "RO",
+"lon": 21.9037,
+"lat": 45.3625,
+"x": 43990,
+"z": 29135,
+"guard": 9,
+"companies": [
+"Oţel Impecabil",
+"Renat",
+"Train Foundry"
+],
+"dealers": []
+},
+{
+"label": "Timișoara",
+"cc": "RO",
+"lon": 21.2936,
+"lat": 45.7306,
+"x": 41402,
+"z": 27270,
+"guard": 9,
+"companies": [
+"Cemeltex",
+"DomDepo",
+"Fallow Cargo",
+"FLE",
+"NS Oil",
+"Shuttle Cola"
+],
+"dealers": []
+},
+{
+"label": "Târgu Mureș",
+"cc": "RO",
+"lon": 24.6951,
+"lat": 46.7357,
+"x": 53960,
+"z": 20137,
+"guard": 9,
+"companies": [
+"Fallow Cargo",
+"Kaarfor",
+"NS Oil",
+"Rock Eater"
+],
+"dealers": []
+},
+{
+"label": "Belgrade",
+"cc": "RS",
+"lon": 20.6792,
+"lat": 44.9219,
+"x": 39347,
+"z": 32055,
+"guard": 16,
+"companies": [
+"AI Automotive",
+"DunaVia",
+"Eumefa",
+"Ika Bohag",
+"PIAC",
+"Rock Eater",
+"Sanbuilders",
+"SCS Paper",
+"Shuttle Cola",
+"Syllurgy",
+"SysChema",
+"Vesna",
+"Villco",
+"Vitas Power"
+],
+"dealers": [
+"Iveco"
+]
+},
+{
+"label": "Kragujevac",
+"cc": "RS",
+"lon": 20.9191,
+"lat": 44.097,
+"x": 40681,
+"z": 36662,
+"guard": 16,
+"companies": [
+"AI Automotive",
+"CGLA",
+"Jastuk",
+"PIAC",
+"Rock Eater",
+"Syllurgy",
+"Timber Turtle"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Niš",
+"cc": "RS",
+"lon": 21.9816,
+"lat": 43.5044,
+"x": 45301,
+"z": 39644,
+"guard": 16,
+"companies": [
+"AI Automotive",
+"CNP",
+"Eumefa",
+"FLE",
+"Jastuk",
+"Radus",
+"Syllurgy",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Novi Sad",
+"cc": "RS",
+"lon": 19.8845,
+"lat": 45.358,
+"x": 36013,
+"z": 29811,
+"guard": 16,
+"companies": [
+"Betunija",
+"Brawen Transport",
+"CNP",
+"DunaVia",
+"Sanbuilders",
+"Shuttle Cola",
+"Vesna",
+"Villco"
+],
+"dealers": []
+},
+{
+"label": "Kaliningrad",
+"cc": "RU",
+"lon": 20.4623,
+"lat": 54.7182,
+"x": 34365,
+"z": -23202,
+"guard": 6,
+"companies": [
+"Зелёные Поля OOO",
+"Ладога авто",
+"НС Ойл",
+"ПК Медведь",
+"Росмарк",
+"Супрема",
+"Цемелтекс"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Luga",
+"cc": "RU",
+"lon": 29.9065,
+"lat": 58.7781,
+"x": 60046,
+"z": -50065,
+"guard": 6,
+"companies": [
+"Балтоморск",
+"ДомДепо",
+"НС Химия",
+"Росмарк"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Pskov",
+"cc": "RU",
+"lon": 28.4978,
+"lat": 57.842,
+"x": 56968,
+"z": -44022,
+"guard": 6,
+"companies": [
+"Балтоморск",
+"БЛТ",
+"Муромец",
+"НС Ойл",
+"Супрема"
+],
+"dealers": []
+},
+{
+"label": "Saint Petersburg",
+"cc": "RU",
+"lon": 30.3087,
+"lat": 59.9875,
+"x": 59774,
+"z": -57061,
+"guard": 6,
+"companies": [
+"DAF Trucks",
+"Балтеус Яхты",
+"Балтоморск",
+"БЛТ",
+"Зелёные Поля OOO",
+"ИКА мебель",
+"Контейнерный пункт",
+"Ладога авто",
+"НКХ",
+"ПК Медведь",
+"Радус",
+"Сирин Эйр",
+"Финские шины"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Sosnovy Bor",
+"cc": "RU",
+"lon": 28.4746,
+"lat": 59.7207,
+"x": 54949,
+"z": -54534,
+"guard": 6,
+"companies": [
+"Североатом"
+],
+"dealers": []
+},
+{
+"label": "Vyborg",
+"cc": "RU",
+"lon": 28.6776,
+"lat": 60.717,
+"x": 54465,
+"z": -60242,
+"guard": 6,
+"companies": [
+"Балтоморск",
+"ДомДепо",
+"Росмарк",
+"Старый Камень"
+],
+"dealers": []
+},
+{
+"label": "Arvidsjaur",
+"cc": "SE",
+"lon": 19.0521,
+"lat": 65.4203,
+"x": 26423,
+"z": -84119,
+"guard": 23,
+"companies": [
+"Mjölnir Mining",
+"Renar Logistik",
+"Sanbuilders"
+],
+"dealers": []
+},
+{
+"label": "Borlänge",
+"cc": "SE",
+"lon": 15.2499,
+"lat": 60.3615,
+"x": 17362,
+"z": -54626,
+"guard": 23,
+"companies": [
+"Agronord",
+"Bjork",
+"Fjoste",
+"Ika Bohag",
+"Norrsken",
+"Scania",
+"Skog Paperworks"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Falun",
+"cc": "SE",
+"lon": 15.6598,
+"lat": 60.636,
+"x": 18499,
+"z": -56205,
+"guard": 23,
+"companies": [
+"BHV",
+"Bjork",
+"Byggpro",
+"Freyr",
+"Norrfood",
+"Norrsken"
+],
+"dealers": []
+},
+{
+"label": "Gothenburg",
+"cc": "SE",
+"lon": 11.9053,
+"lat": 57.8232,
+"x": 7364,
+"z": -40345,
+"guard": 2,
+"companies": [
+"Agronord",
+"BHV",
+"Bjork",
+"Norrsken",
+"NS Oil",
+"Polar Fish",
+"Polaris Lines",
+"Volvo Trucks",
+"VPC"
+],
+"dealers": [
+"Volvo"
+]
+},
+{
+"label": "Gävle",
+"cc": "SE",
+"lon": 17.3987,
+"lat": 60.6368,
+"x": 23343,
+"z": -56312,
+"guard": 23,
+"companies": [
+"BHV",
+"Container port",
+"Konstnorr",
+"Norrfood",
+"Norse Rail",
+"Primel",
+"Renor",
+"Skog Paperworks"
+],
+"dealers": []
+},
+{
+"label": "Haparanda",
+"cc": "SE",
+"lon": 23.633,
+"lat": 65.7406,
+"x": 37203,
+"z": -86944,
+"guard": 23,
+"companies": [
+"Ika Bohag"
+],
+"dealers": []
+},
+{
+"label": "Helsingborg",
+"cc": "SE",
+"lon": 12.6933,
+"lat": 55.9986,
+"x": 9405,
+"z": -29903,
+"guard": 2,
+"companies": [
+"BHV",
+"GNT",
+"Konstnorr",
+"Norrfood",
+"Primel"
+],
+"dealers": []
+},
+{
+"label": "Jönköping",
+"cc": "SE",
+"lon": 14.1758,
+"lat": 57.7238,
+"x": 14177,
+"z": -39596,
+"guard": 2,
+"companies": [
+"BHV",
+"Freyr",
+"GNT",
+"Nordic Stenbrott",
+"Norrfood",
+"TQG"
+],
+"dealers": []
+},
+{
+"label": "Kalmar",
+"cc": "SE",
+"lon": 16.2605,
+"lat": 56.6744,
+"x": 20559,
+"z": -33654,
+"guard": 2,
+"companies": [
+"Agronord",
+"GNT",
+"Ika Bohag",
+"Nordic Stenbrott",
+"Norrfood",
+"NS Oil"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Kapellskär",
+"cc": "SE",
+"lon": 19.03,
+"lat": 59.6684,
+"x": 28187,
+"z": -50983,
+"guard": 2,
+"companies": [
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Karesuando",
+"cc": "SE",
+"lon": 22.1454,
+"lat": 68.485,
+"x": 32105,
+"z": -102668,
+"guard": 23,
+"companies": [
+"Mjölnir Mining",
+"Renar Logistik",
+"Renor"
+],
+"dealers": []
+},
+{
+"label": "Karlskrona",
+"cc": "SE",
+"lon": 15.1551,
+"lat": 56.1917,
+"x": 17146,
+"z": -30883,
+"guard": 2,
+"companies": [
+"Drekkar Trans",
+"Norrfood",
+"Norrsken",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Karlstad",
+"cc": "SE",
+"lon": 13.7669,
+"lat": 59.2167,
+"x": 13088,
+"z": -48114,
+"guard": 2,
+"companies": [
+"Agronord",
+"Norrsken",
+"NS Oil",
+"Renor",
+"TQG"
+],
+"dealers": []
+},
+{
+"label": "Kiruna",
+"cc": "SE",
+"lon": 19.8835,
+"lat": 67.8134,
+"x": 27490,
+"z": -98284,
+"guard": 23,
+"companies": [
+"Bjork",
+"Konstnorr",
+"Metallis",
+"Nordic Stenbrott",
+"Norse Rail",
+"Renor"
+],
+"dealers": []
+},
+{
+"label": "Linköping",
+"cc": "SE",
+"lon": 15.5908,
+"lat": 58.3433,
+"x": 18411,
+"z": -43113,
+"guard": 2,
+"companies": [
+"BHV",
+"Bjork",
+"Drekkar Trans",
+"Ika Bohag",
+"Konstnorr",
+"Nordic Stenbrott",
+"Norrfood"
+],
+"dealers": [
+"MAN"
+]
+},
+{
+"label": "Lulea",
+"cc": "SE",
+"lon": 21.7414,
+"lat": 65.7179,
+"x": 32728,
+"z": -86334,
+"guard": 23,
+"companies": [
+"Byggpro",
+"Fjoste",
+"Mjölnir Mining",
+"Primel",
+"Renar Logistik",
+"WGCC"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Malmö",
+"cc": "SE",
+"lon": 13.1384,
+"lat": 55.5819,
+"x": 10745,
+"z": -27501,
+"guard": 2,
+"companies": [
+"Drekkar Trans",
+"Ika Bohag",
+"Konstnorr",
+"Norrsken",
+"NS Chemicals"
+],
+"dealers": []
+},
+{
+"label": "Nynäshamn",
+"cc": "SE",
+"lon": 17.8628,
+"lat": 58.8529,
+"x": 25032,
+"z": -46175,
+"guard": 2,
+"companies": [
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Skellefteå",
+"cc": "SE",
+"lon": 20.3156,
+"lat": 64.8876,
+"x": 29687,
+"z": -81217,
+"guard": 23,
+"companies": [
+"Byggpro",
+"Fjoste",
+"Konstnorr",
+"Renar Logistik",
+"Renor",
+"Sanbuilders"
+],
+"dealers": []
+},
+{
+"label": "Stockholm",
+"cc": "SE",
+"lon": 17.7736,
+"lat": 59.1887,
+"x": 24699,
+"z": -48078,
+"guard": 2,
+"companies": [
+"BHV",
+"Ika Bohag",
+"Konstnorr",
+"Marina",
+"Norrfood",
+"Norrsken",
+"NS Chemicals",
+"Scania"
+],
+"dealers": [
+"Scania"
+]
+},
+{
+"label": "Sundsvall",
+"cc": "SE",
+"lon": 17.1529,
+"lat": 62.2963,
+"x": 22379,
+"z": -65817,
+"guard": 23,
+"companies": [
+"Alumcore",
+"Associated Nordic Ports",
+"Bjork",
+"Nordic Stenbrott",
+"NS Oil",
+"Skog Paperworks",
+"WGCC"
+],
+"dealers": []
+},
+{
+"label": "Södertälje",
+"cc": "SE",
+"lon": 17.3497,
+"lat": 58.8914,
+"x": 23525,
+"z": -46340,
+"guard": 2,
+"companies": [
+"Scania"
+],
+"dealers": []
+},
+{
+"label": "Trelleborg",
+"cc": "SE",
+"lon": 13.1708,
+"lat": 55.3009,
+"x": 10808,
+"z": -25907,
+"guard": 2,
+"companies": [
+"Freyr",
+"Polaris Lines"
+],
+"dealers": []
+},
+{
+"label": "Umeå",
+"cc": "SE",
+"lon": 19.6577,
+"lat": 63.9213,
+"x": 28432,
+"z": -75501,
+"guard": 23,
+"companies": [
+"Agronord",
+"Drekkar Trans",
+"Ika Bohag",
+"Konstnorr",
+"Nordic Crown",
+"Polar Fish",
+"TQG"
+],
+"dealers": []
+},
+{
+"label": "Uppsala",
+"cc": "SE",
+"lon": 17.5833,
+"lat": 59.8191,
+"x": 24021,
+"z": -51654,
+"guard": 2,
+"companies": [
+"Drekkar Trans",
+"GNT",
+"Ika Bohag",
+"Norrfood",
+"Primel"
+],
+"dealers": []
+},
+{
+"label": "Västerås",
+"cc": "SE",
+"lon": 16.5094,
+"lat": 59.6301,
+"x": 20984,
+"z": -50488,
+"guard": 2,
+"companies": [
+"Konstnorr",
+"Norrfood",
+"Renar Logistik"
+],
+"dealers": []
+},
+{
+"label": "Växjö",
+"cc": "SE",
+"lon": 14.7743,
+"lat": 56.8803,
+"x": 15965,
+"z": -34790,
+"guard": 2,
+"companies": [
+"BHV",
+"Bjork",
+"Drekkar Trans",
+"Nordic Stenbrott",
+"Norrfood",
+"Renar Logistik"
+],
+"dealers": []
+},
+{
+"label": "Örebro",
+"cc": "SE",
+"lon": 15.1479,
+"lat": 59.2712,
+"x": 17088,
+"z": -48395,
+"guard": 2,
+"companies": [
+"BHV",
+"Ika Bohag",
+"Nordic Crown",
+"Norrsken"
+],
+"dealers": []
+},
+{
+"label": "Örnsköldsvik",
+"cc": "SE",
+"lon": 18.3911,
+"lat": 63.1865,
+"x": 25430,
+"z": -71074,
+"guard": 23,
+"companies": [
+"Associated Nordic Ports",
+"NOFEBA",
+"NS Oil",
+"Renor"
+],
+"dealers": []
+},
+{
+"label": "Östersund",
+"cc": "SE",
+"lon": 14.4915,
+"lat": 63.1994,
+"x": 15345,
+"z": -70948,
+"guard": 23,
+"companies": [
+"Bjork",
+"Konstnorr",
+"Metallis",
+"Nordic Crown",
+"Nordic Stenbrott",
+"Norse Rail",
+"TQG"
+],
+"dealers": []
+},
+{
+"label": "Koper",
+"cc": "SI",
+"lon": 13.6268,
+"lat": 45.5297,
+"x": 11234,
+"z": 29437,
+"guard": 16,
+"companies": [
+"Container port",
+"EuroGoodies",
+"TDC Auto Terminal"
+],
+"dealers": []
+},
+{
+"label": "Ljubljana",
+"cc": "SI",
+"lon": 14.6767,
+"lat": 46.1527,
+"x": 15398,
+"z": 25945,
+"guard": 16,
+"companies": [
+"AI Automotive",
+"Balkan Loco",
+"Brawen Transport",
+"ITCC",
+"Villco"
+],
+"dealers": [
+"Renault"
+]
+},
+{
+"label": "Maribor",
+"cc": "SI",
+"lon": 15.5262,
+"lat": 46.6372,
+"x": 18694,
+"z": 23190,
+"guard": 16,
+"companies": [
+"Balkan Loco",
+"Eumefa",
+"ITCC",
+"Stokes"
+],
+"dealers": [
+"DAF"
+]
+},
+{
+"label": "Novo Mesto",
+"cc": "SI",
+"lon": 15.017,
+"lat": 45.8691,
+"x": 16727,
+"z": 27559,
+"guard": 16,
+"companies": [
+"Larus"
+],
+"dealers": []
+},
+{
+"label": "Banská Bystrica",
+"cc": "SK",
+"lon": 19.3236,
+"lat": 48.765,
+"x": 32658,
+"z": 10660,
+"guard": 1,
+"companies": [
+"EuroGoodies",
+"Posped",
+"Stokes",
+"Tree-ET"
+],
+"dealers": []
+},
+{
+"label": "Bratislava",
+"cc": "SK",
+"lon": 17.1749,
+"lat": 48.0947,
+"x": 24823,
+"z": 14811,
+"guard": 0,
+"companies": [
+"BCP",
+"Posped",
+"Tree-ET",
+"WGCC"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Košice",
+"cc": "SK",
+"lon": 21.262,
+"lat": 48.705,
+"x": 39844,
+"z": 10474,
+"guard": 1,
+"companies": [
+"BCP",
+"ITCC",
+"LkwLog GmbH",
+"SellPlan"
+],
+"dealers": []
+},
+{
+"label": "Edirne",
+"cc": "TR",
+"lon": 26.4719,
+"lat": 41.8214,
+"x": 65096,
+"z": 46809,
+"guard": 9,
+"companies": [
+"Balkan Loco",
+"Baltrak Lojistik",
+"BHV",
+"Cemeltex",
+"DomDepo",
+"Kaarfor",
+"Low Field",
+"Subse"
+],
+"dealers": []
+},
+{
+"label": "Istanbul",
+"cc": "TR",
+"lon": 28.9045,
+"lat": 41.3575,
+"x": 75753,
+"z": 47624,
+"guard": 9,
+"companies": [
+"Baltrak Lojistik",
+"Fallow Cargo",
+"FLE",
+"Log n Stick",
+"NS Oil",
+"Rock Eater",
+"SCS Paper",
+"Trade Market Istanbul"
+],
+"dealers": [
+"Mercedes-Benz"
+]
+},
+{
+"label": "Tekirdağ",
+"cc": "TR",
+"lon": 27.1707,
+"lat": 41.2179,
+"x": 68590,
+"z": 49743,
+"guard": 9,
+"companies": [
+"Baltrak Lojistik",
+"DomDepo",
+"Log n Stick",
+"Marina",
+"Radus",
+"RIMAF",
+"Rock Eater"
+],
+"dealers": []
+},
+{
+"label": "Pristina",
+"cc": "XK",
+"lon": 21.2105,
+"lat": 42.8498,
+"x": 42461,
+"z": 43659,
+"guard": 16,
+"companies": [
+"Betunija",
+"Celler Construction Group",
+"Sanbuilders",
+"Slava Auto",
+"Stokes",
+"Villco"
+],
+"dealers": [
+"Volvo"
+]
+}
+]

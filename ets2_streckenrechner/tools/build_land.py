@@ -43,12 +43,18 @@ def ring(arcs, idxs):
     return out
 
 
-def clip(poly, lon_min=LON_MIN):
-    """Sutherland-Hodgman against the lon/lat box."""
-    edges = [(lambda p: p[0] >= lon_min, lambda a, b: _ix(a, b, 0, lon_min)),
-             (lambda p: p[0] <= LON_MAX, lambda a, b: _ix(a, b, 0, LON_MAX)),
-             (lambda p: p[1] >= LAT_MIN, lambda a, b: _ix(a, b, 1, LAT_MIN)),
-             (lambda p: p[1] <= LAT_MAX, lambda a, b: _ix(a, b, 1, LAT_MAX))]
+# European Russia only; no Svalbard, Jan Mayen, Orkney or Shetland (not in the game)
+BOX = {'Russia': (0.0, 62.0, 40.0, 72.0), 'Norway': (0.0, LON_MAX, LAT_MIN, 72.5),
+       'United Kingdom': (LON_MIN, LON_MAX, LAT_MIN, 58.75)}
+
+
+def clip(poly, box=(LON_MIN, LON_MAX, LAT_MIN, LAT_MAX)):
+    """Sutherland-Hodgman against a lon/lat box."""
+    lo0, lo1, la0, la1 = box
+    edges = [(lambda p: p[0] >= lo0, lambda a, b: _ix(a, b, 0, lo0)),
+             (lambda p: p[0] <= lo1, lambda a, b: _ix(a, b, 0, lo1)),
+             (lambda p: p[1] >= la0, lambda a, b: _ix(a, b, 1, la0)),
+             (lambda p: p[1] <= la1, lambda a, b: _ix(a, b, 1, la1))]
     for inside, inter in edges:
         if not poly:
             break
@@ -143,8 +149,11 @@ def main(src, dst, net_path=None):
         parts = []
         for poly in polys:
             for k, r in enumerate(poly):
-                # Russia's far east crosses the antimeridian; keep only its European part
-                pts = clip(ring(arcs, r), 0.0 if name == 'Russia' else LON_MIN)
+                pts = ring(arcs, r)
+                if max(p[0] for p in pts) - min(p[0] for p in pts) > 180:
+                    # ring crosses the antimeridian (Russia): unwrap so it has no jump
+                    pts = [(lon + 360 if lon < 0 else lon, lat) for lon, lat in pts]
+                pts = clip(pts, BOX.get(name, (LON_MIN, LON_MAX, LAT_MIN, LAT_MAX)))
                 if len(pts) < 3:
                     continue
                 gp = [to_game(lon, lat)[:2] for lon, lat in pts]

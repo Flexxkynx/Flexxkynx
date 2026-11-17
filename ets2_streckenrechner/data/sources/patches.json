@@ -1,0 +1,227 @@
+{
+  "_comment": "Corrections applied after the region files. Cities checked against the game data in game_cities.json; roads from the route QA pass.",
+  "remove_city": [
+    {
+      "name": "Cartagena",
+      "cc": "ES",
+      "why": "not a city in the game data"
+    },
+    {
+      "name": "Mérida",
+      "cc": "ES",
+      "why": "not a city in the game data (inaccessible town); roads through it are bridged"
+    }
+  ],
+  "add_city": [
+    {
+      "name": "Aarhus",
+      "cc": "DK",
+      "dlc": "Scandinavia",
+      "aliases": [
+        "Århus"
+      ],
+      "lat": 56.157,
+      "lon": 10.211
+    },
+    {
+      "name": "Karlstad",
+      "cc": "SE",
+      "dlc": "Scandinavia",
+      "aliases": [],
+      "lat": 59.379,
+      "lon": 13.503
+    },
+    {
+      "name": "Haparanda",
+      "cc": "SE",
+      "dlc": "Nordic Horizons",
+      "aliases": [],
+      "lat": 65.836,
+      "lon": 24.134
+    },
+    {
+      "name": "Ciudad Real",
+      "cc": "ES",
+      "dlc": "Iberia",
+      "aliases": [],
+      "lat": 38.985,
+      "lon": -3.927
+    },
+    {
+      "name": "Mengíbar",
+      "cc": "ES",
+      "dlc": "Iberia",
+      "aliases": [
+        "Mengibar"
+      ],
+      "lat": 37.969,
+      "lon": -3.808
+    }
+  ],
+  "remove_edge": [
+    {
+      "a": "Odense",
+      "acc": "DK",
+      "b": "Aalborg",
+      "bcc": "DK",
+      "why": "E45 passes Aarhus"
+    },
+    {
+      "a": "Esbjerg",
+      "acc": "DK",
+      "b": "Aalborg",
+      "bcc": "DK",
+      "why": "E45 passes Aarhus"
+    },
+    {
+      "a": "Örebro",
+      "acc": "SE",
+      "b": "Oslo",
+      "bcc": "NO",
+      "why": "E18 passes Karlstad"
+    },
+    {
+      "a": "Luleå",
+      "acc": "SE",
+      "b": "Tornio",
+      "bcc": "FI",
+      "why": "E4 passes Haparanda"
+    },
+    {
+      "a": "Madrid",
+      "acc": "ES",
+      "b": "Puertollano",
+      "bcc": "ES",
+      "why": "A-41 passes Ciudad Real"
+    },
+    {
+      "a": "Bailén",
+      "acc": "ES",
+      "b": "Granada",
+      "bcc": "ES",
+      "why": "A-44 passes Mengíbar"
+    }
+  ],
+  "add_edge": [
+    {
+      "a": "Aalborg",
+      "acc": "DK",
+      "b": "Aarhus",
+      "bcc": "DK",
+      "km": 118,
+      "road": "E45"
+    },
+    {
+      "a": "Aarhus",
+      "acc": "DK",
+      "b": "Odense",
+      "bcc": "DK",
+      "km": 145,
+      "road": "E45 / E20"
+    },
+    {
+      "a": "Aarhus",
+      "acc": "DK",
+      "b": "Esbjerg",
+      "bcc": "DK",
+      "km": 155,
+      "road": "E45 / E20"
+    },
+    {
+      "a": "Oslo",
+      "acc": "NO",
+      "b": "Karlstad",
+      "bcc": "SE",
+      "km": 220,
+      "road": "E18"
+    },
+    {
+      "a": "Karlstad",
+      "acc": "SE",
+      "b": "Örebro",
+      "bcc": "SE",
+      "km": 113,
+      "road": "E18"
+    },
+    {
+      "a": "Luleå",
+      "acc": "SE",
+      "b": "Haparanda",
+      "bcc": "SE",
+      "km": 130,
+      "road": "E4"
+    },
+    {
+      "a": "Haparanda",
+      "acc": "SE",
+      "b": "Tornio",
+      "bcc": "FI",
+      "km": 5,
+      "road": "E4"
+    },
+    {
+      "a": "Madrid",
+      "acc": "ES",
+      "b": "Ciudad Real",
+      "bcc": "ES",
+      "km": 195,
+      "road": "A-4 / A-41"
+    },
+    {
+      "a": "Ciudad Real",
+      "acc": "ES",
+      "b": "Puertollano",
+      "bcc": "ES",
+      "km": 40,
+      "road": "A-41"
+    },
+    {
+      "a": "Bailén",
+      "acc": "ES",
+      "b": "Mengíbar",
+      "bcc": "ES",
+      "km": 23,
+      "road": "A-44"
+    },
+    {
+      "a": "Mengíbar",
+      "acc": "ES",
+      "b": "Granada",
+      "bcc": "ES",
+      "km": 100,
+      "road": "A-44"
+    },
+    {
+      "a": "Grimsby",
+      "acc": "GB",
+      "b": "Cambridge",
+      "bcc": "GB",
+      "km": 245,
+      "road": "M180 / M18 / A1(M) / A14"
+    },
+    {
+      "a": "Dover",
+      "acc": "GB",
+      "b": "Felixstowe",
+      "bcc": "GB",
+      "km": 220,
+      "road": "M20 / M25 / A12"
+    },
+    {
+      "a": "Aarhus",
+      "acc": "DK",
+      "b": "Hamburg",
+      "bcc": "DE",
+      "km": 345,
+      "road": "E45 / A7"
+    },
+    {
+      "a": "Aarhus",
+      "acc": "DK",
+      "b": "Kiel",
+      "bcc": "DE",
+      "km": 300,
+      "road": "E45 / A7 / A215"
+    }
+  ]
+}
