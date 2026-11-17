@@ -451,6 +451,7 @@ const exact = q => { const n = norm(q); return C.find(c => c.nkey === n) || C.fi
 
 /* ---------- route state ---------- */
 let stops = [];
+let rerendering = false;   // blur events fired while the rows are rebuilt must not write stops
 function stopsFromHash() {
   const m = (location.hash || '').match(/^#r-([a-z0-9-]+)$/);
   if (!m) return null;
@@ -466,7 +467,9 @@ function initStops() {
 
 function renderStops() {
   const box = $('stops');
+  rerendering = true;
   box.textContent = '';
+  rerendering = false;
   stops.forEach((ci, k) => {
     const lastK = stops.length - 1;
     const row = el('div', 'stop' + (k === 0 ? ' start' : k === lastK ? ' end' : ''));
@@ -523,12 +526,15 @@ function wireCombo(inp, list, k) {
       draw(); ev.preventDefault();
     } else if (ev.key === 'ArrowUp' && items.length) { sel = (sel - 1 + items.length) % items.length; draw(); ev.preventDefault(); }
     else if (ev.key === 'Enter') { if (sel >= 0 && items[sel]) pick(items[sel]); else { const c = exact(inp.value); if (c) pick(c); } ev.preventDefault(); }
+    else if (ev.key === 'Tab' && sel >= 0 && items[sel]) pick(items[sel]);
     else if (ev.key === 'Escape') close();
   });
   inp.addEventListener('blur', () => {
+    if (rerendering) return;
+    const hl = sel >= 0 ? items[sel] : null;
     close();
-    const c = exact(inp.value);
-    if (c) { if (stops[k] !== c.i) { stops[k] = c.i; inp.value = c.name; inp.classList.remove('bad'); update(); } else inp.classList.remove('bad'); }
+    const c = exact(inp.value) || hl;
+    if (c) { inp.value = c.name; inp.classList.remove('bad'); if (stops[k] !== c.i) { stops[k] = c.i; update(); } }
     else if (!inp.value.trim()) { inp.classList.remove('bad'); if (stops[k] != null) { stops[k] = null; update(); } }
     else { inp.classList.add('bad'); stops[k] = null; update(); }
   });
@@ -789,6 +795,7 @@ svg.addEventListener('pointerdown', ev => {
 svg.addEventListener('pointermove', ev => {
   if (!ptrs.has(ev.pointerId)) return;
   ptrs.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+  if (ptrs.size > 2) return;
   if (pinch && ptrs.size === 2) {
     const [a, b] = [...ptrs.values()];
     zoomAround(pinch.p, pinch.vb, clampK(pinch.d / Math.max(10, Math.hypot(a.x - b.x, a.y - b.y)), pinch.vb));
@@ -806,6 +813,7 @@ svg.addEventListener('pointermove', ev => {
 const endPtr = ev => {
   ptrs.delete(ev.pointerId);
   if (ptrs.size < 2) pinch = null;
+  if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), vb: Object.assign({}, vb), p: toSvg((a.x + b.x) / 2, (a.y + b.y) / 2) }; }
   if (ptrs.size === 1 && !drag) { const q = [...ptrs.values()][0]; drag = { x: q.x, y: q.y, vb: Object.assign({}, vb), target: null }; moved = 99; }
   if (ptrs.size === 0) {
     svg.classList.remove('drag');
