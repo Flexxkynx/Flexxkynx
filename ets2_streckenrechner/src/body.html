@@ -95,7 +95,7 @@ const edgeOn = e => cityOn(e.a) && cityOn(e.b) && (e.dlc < 0 || dlcOn(e.dlc)) &&
 
 /* ---------- search ---------- */
 const norm = s => s.toLowerCase().replace(/ß/g, 'ss').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/œ/g, 'oe')
-  .replace(/ł/g, 'l').replace(/đ/g, 'd').replace(/ı/g, 'i').replace(/þ/g, 'th')
+  .replace(/ł/g, 'l').replace(/[đð]/g, 'd').replace(/ı/g, 'i').replace(/þ/g, 'th')
   .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9а-яёα-ω ]+/g, ' ').replace(/\s+/g, ' ').trim();
 C.forEach(c => { c.keys = [c.name].concat(c.aliases).map(norm); c.nkey = norm(c.name); });
 function search(q) {
@@ -324,7 +324,7 @@ function setVB(nv) {
   // keep aspect ratio of the element so 1 unit is square
   const ar = W / H;
   if (nv.w / nv.h > ar) { const nh = nv.w / ar; nv.y -= (nh - nv.h) / 2; nv.h = nh; } else { const nw = nv.h * ar; nv.x -= (nw - nv.w) / 2; nv.w = nw; }
-  const maxW = (ALL.x1 - ALL.x0) * 2.5, minW = 4000;
+  const maxW = (ALL.x1 - ALL.x0) * 1.6, minW = 4000;
   if (nv.w > maxW) { const k = maxW / nv.w; nv.x += nv.w * (1 - k) / 2; nv.y += nv.h * (1 - k) / 2; nv.w *= k; nv.h *= k; }
   if (nv.w < minW) { const k = minW / nv.w; nv.x -= nv.w * (k - 1) / 2; nv.y -= nv.h * (k - 1) / 2; nv.w *= k; nv.h *= k; }
   vb = nv;

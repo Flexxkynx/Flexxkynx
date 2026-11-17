@@ -1,7 +1,10 @@
 """Build the map background: Natural Earth 1:50m countries (world-atlas npm package)
 clipped to Europe, projected into ETS2 game coordinates and simplified.
 
-usage: python3 build_land.py path/to/countries-50m.json out/land.json
+usage: python3 build_land.py path/to/countries-50m.json out/land.json [network.json]
+
+With network.json the outlines are cut to the cities' bounding box plus a wide margin,
+in game coordinates, so the cut edges stay outside the visible map.
 """
 import json
 import math
@@ -10,7 +13,8 @@ import sys
 sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(__file__)))
 from ets2proj import to_game  # noqa: E402
 
-LON_MIN, LON_MAX, LAT_MIN, LAT_MAX = -25.0, 44.0, 33.5, 72.0
+LON_MIN, LON_MAX, LAT_MIN, LAT_MAX = -32.0, 80.0, 25.0, 82.0
+MARGIN = 0.6         # share of the city extent added on every side
 SKIP = {'Ireland', 'Faeroe Is.', 'Greenland', 'Isle of Man', 'Jersey', 'Guernsey'}
 TOL = 180.0          # simplification tolerance in game metres (~3.5 km real)
 MIN_AREA = 2.0e6     # drop islands smaller than this (game m^2)
@@ -39,9 +43,9 @@ def ring(arcs, idxs):
     return out
 
 
-def clip(poly):
+def clip(poly, lon_min=LON_MIN):
     """Sutherland-Hodgman against the lon/lat box."""
-    edges = [(lambda p: p[0] >= LON_MIN, lambda a, b: _ix(a, b, 0, LON_MIN)),
+    edges = [(lambda p: p[0] >= lon_min, lambda a, b: _ix(a, b, 0, lon_min)),
              (lambda p: p[0] <= LON_MAX, lambda a, b: _ix(a, b, 0, LON_MAX)),
              (lambda p: p[1] >= LAT_MIN, lambda a, b: _ix(a, b, 1, LAT_MIN)),
              (lambda p: p[1] <= LAT_MAX, lambda a, b: _ix(a, b, 1, LAT_MAX))]
@@ -103,7 +107,31 @@ def area(pts):
     return abs(sum(pts[i][0] * pts[i - 1][1] - pts[i - 1][0] * pts[i][1] for i in range(len(pts)))) / 2
 
 
-def main(src, dst):
+def clip_rect(poly, x0, x1, y0, y1):
+    for inside, axis, v in ((lambda p: p[0] >= x0, 0, x0), (lambda p: p[0] <= x1, 0, x1),
+                            (lambda p: p[1] >= y0, 1, y0), (lambda p: p[1] <= y1, 1, y1)):
+        if not poly:
+            break
+        out, prev = [], poly[-1]
+        for cur in poly:
+            if inside(cur):
+                if not inside(prev):
+                    out.append(_ix(prev, cur, axis, v))
+                out.append(cur)
+            elif inside(prev):
+                out.append(_ix(prev, cur, axis, v))
+            prev = cur
+        poly = out
+    return poly
+
+
+def main(src, dst, net_path=None):
+    rect = None
+    if net_path:
+        cs = json.load(open(net_path))['cities']
+        xs, zs = [c[2] for c in cs], [c[3] for c in cs]
+        mx, mz = (max(xs) - min(xs)) * MARGIN, (max(zs) - min(zs)) * MARGIN
+        rect = (min(xs) - mx, max(xs) + mx, min(zs) - mz, max(zs) + mz)
     topo = json.load(open(src))
     arcs = decode(topo)
     out = []
@@ -115,10 +143,15 @@ def main(src, dst):
         parts = []
         for poly in polys:
             for k, r in enumerate(poly):
-                pts = clip(ring(arcs, r))
+                # Russia's far east crosses the antimeridian; keep only its European part
+                pts = clip(ring(arcs, r), 0.0 if name == 'Russia' else LON_MIN)
                 if len(pts) < 3:
                     continue
                 gp = [to_game(lon, lat)[:2] for lon, lat in pts]
+                if rect:
+                    gp = clip_rect(gp, *rect)
+                    if len(gp) < 3:
+                        continue
                 # split rings that straddle the UK scaling seam would be distorted; GB is
                 # handled as a whole by to_game, nothing else crosses it in this box
                 if k == 0 and area(gp) < MIN_AREA:
@@ -134,4 +167,4 @@ def main(src, dst):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1], sys.argv[2])
+    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)

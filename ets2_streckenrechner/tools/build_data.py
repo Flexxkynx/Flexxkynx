@@ -20,9 +20,18 @@ from ets2proj import to_game  # noqa: E402
 DLCS = ['Base', 'Going East!', 'Scandinavia', 'Vive la France !', 'Italia', 'Beyond the Baltic Sea',
         'Road to the Black Sea', 'Iberia', 'West Balkans', 'Greece', 'Nordic Horizons', 'Iceland']
 DEFAULT_WIND = 1.25          # road length / straight line when no road km is known
-WIND_MIN, WIND_MAX = 1.05, 1.75
+WIND_MIN, WIND_MAX = 1.0, 3.3     # mountain and fjord roads reach 2-3
 UK_SCALE = 0.75             # UK game distances are 1/0.75 longer than mainland ones
 RADIO_MAX_OFF = 4000.0       # accept in-game coordinates only this close to the projection (game m)
+
+# ferry ports that are not cities of their own in the game -> the city that owns the port
+PORTS = {
+    ('seydisfjordur', 'IS'): ('egilsstadir', 'IS'), ('thorlakshofn', 'IS'): ('selfoss', 'IS'),
+    ('igoumenitsa', 'GR'): ('ioannina', 'GR'), ('porto torres', 'IT'): ('sassari', 'IT'),
+    ('folkestone', 'GB'): ('dover', 'GB'), ('harwich', 'GB'): ('felixstowe', 'GB'), ('hull', 'GB'): ('grimsby', 'GB'),
+    ('ijmuiden', 'NL'): ('amsterdam', 'NL'), ('europoort', 'NL'): ('rotterdam', 'NL'), ('piraeus', 'GR'): ('athens', 'GR'),
+    ('haparanda', 'SE'): ('tornio', 'FI'),
+}
 
 RADIO_CC = {
     'uk': 'GB', 'scotland': 'GB', 'wales': 'GB', 'germany': 'DE', 'netherlands': 'NL', 'belgium': 'BE',
@@ -37,10 +46,24 @@ RADIO_CC = {
 
 def norm(s):
     s = s.lower().replace('ß', 'ss').replace('ø', 'o').replace('æ', 'ae').replace('œ', 'oe').replace('ł', 'l')
-    s = s.replace('đ', 'd').replace('ı', 'i').replace('þ', 'th')
+    s = s.replace('đ', 'd').replace('ð', 'd').replace('ı', 'i').replace('þ', 'th')
     s = unicodedata.normalize('NFD', s)
     s = ''.join(ch for ch in s if unicodedata.category(ch) != 'Mn')
     return re.sub(r'[^a-z0-9]+', ' ', s).strip()
+
+
+ROAD_RE = re.compile(r'(?<![\w-])((?:[A-Z][A-Za-z]{0,2})-?\s?\d{1,4}[a-z]?)(?![\w-])')
+
+
+def road_numbers(text):
+    """Keep only road numbers such as A7, E45, AP-7, D110, Rv50 from a free-text road field."""
+    out = []
+    for m in ROAD_RE.findall(text or ''):
+        r = re.sub(r'^(E)\s(\d)', r'\1\2', m.strip())
+        if r.upper().startswith(('EUR', 'KM')) or r in out:
+            continue
+        out.append(r)
+    return ' / '.join(out[:3])
 
 
 def hav(lat1, lon1, lat2, lon2):
@@ -122,6 +145,8 @@ def main(src, out_dir, radio_path=None):
         hit = by_alias.get((n, None))
         if hit and len(hit) == 1:
             return next(iter(hit))
+        if (n, cc) in PORTS and PORTS[(n, cc)] in by_key:
+            return by_key[PORTS[(n, cc)]]
         # prefix match for names like "Frankfurt" vs "Frankfurt am Main"
         cand = [i for (k, kcc), i in by_key.items() if kcc == cc and (k.startswith(n + ' ') or n.startswith(k + ' '))]
         if len(cand) == 1:
@@ -152,7 +177,7 @@ def main(src, out_dir, radio_path=None):
     def add_edge(a, b, km, kind, road, conf, origin, dlc=None):
         if a == b:
             return
-        key = (min(a, b), max(a, b), kind > 0)
+        key = (min(a, b), max(a, b), kind)
         e = edges.get(key)
         if e:
             if km:
@@ -160,8 +185,6 @@ def main(src, out_dir, radio_path=None):
             if road and not e['road']:
                 e['road'] = road
             e['origins'].add(origin)
-            if kind == 2:
-                e['kind'] = 2
             return
         edges[key] = {'a': key[0], 'b': key[1], 'kind': kind, 'kms': [km] if km else [], 'road': road or '',
                       'conf': conf, 'origins': {origin}, 'dlc': dlc}
@@ -177,12 +200,13 @@ def main(src, out_dir, radio_path=None):
                 kind = 2
             add_edge(a, b, r.get('km'), kind, (r.get('road') or '').strip(), r.get('conf', 'medium'), rk)
     for f in ferries.get('connections', []):
+        # the region files carry their own web-checked ferries; from the global list only
+        # take routes marked high, so routes the region checks removed do not come back
+        if f.get('confidence') != 'high':
+            continue
         a, b = resolve(f['a'], f.get('acc')), resolve(f['b'], f.get('bcc'))
         if a is None or b is None:
             unresolved.append(f'ferries: {f["a"]} ({f.get("acc")}) - {f["b"]} ({f.get("bcc")})')
-            continue
-        if f.get('confidence') == 'low':
-            log.append(f'skipped low-confidence ferry {f["a"]} - {f["b"]}')
             continue
         add_edge(a, b, f.get('sea_km'), 2 if f.get('kind') == 'train' else 1, '', f.get('confidence'), 'ferries',
                  f.get('dlc') if f.get('dlc') in DLCS else None)
@@ -195,7 +219,7 @@ def main(src, out_dir, radio_path=None):
         if e['kind'] == 0:
             km = statistics.median(e['kms']) if e['kms'] else None
             w = km / e['air_km'] if km and e['air_km'] > 1 else None
-            if w is None or not (0.9 <= w <= 3.0):
+            if w is None or not (0.9 <= w <= 3.5):
                 if km:
                     log.append(f'road km {km} implausible for {A["name"]} - {B["name"]} (air {e["air_km"]:.0f} km); default winding used')
                 w = DEFAULT_WIND
@@ -295,7 +319,7 @@ def main(src, out_dir, radio_path=None):
     for e in sorted(edges.values(), key=lambda e: (new_id[e['a']], new_id[e['b']])):
         km = round(e['km']) if e['kind'] == 0 else round(e['sea_km'])
         dlc = DLCS.index(e['dlc']) if e.get('dlc') else -1
-        out_e.append([new_id[e['a']], new_id[e['b']], max(km, 1), e['kind'], e['road'], dlc])
+        out_e.append([new_id[e['a']], new_id[e['b']], max(km, 1), e['kind'], road_numbers(e['road']) if e['kind'] == 0 else '', dlc])
     net = {'dlcs': DLCS, 'cities': out_c, 'edges': out_e, 'scale': round(scale, 3), 'scaleUk': round(scale_uk, 3)}
     os.makedirs(out_dir, exist_ok=True)
     json.dump(net, open(os.path.join(out_dir, 'network.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
