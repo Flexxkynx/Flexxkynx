@@ -1,0 +1,526 @@
+<header class="wrap top">
+  <div class="sign">
+    <span class="shield">E</span>
+    <h1>ETS2 Streckenrechner</h1>
+    <span class="sub">Kilometer von A nach B im Euro Truck Simulator 2</span>
+  </div>
+</header>
+
+<main class="wrap layout">
+  <div class="col left">
+    <section class="panel stops o1" aria-label="Route">
+      <div id="stops" class="col" style="gap:10px"></div>
+      <div class="row-actions">
+        <button class="btn" id="addVia" type="button">+ Zwischenstopp</button>
+        <button class="btn" id="swap" type="button">⇅ Tauschen</button>
+        <button class="btn" id="copy" type="button">Route kopieren</button>
+      </div>
+    </section>
+
+    <section class="panel result o2" aria-live="polite" id="result"></section>
+
+    <details class="panel o4" id="setBox">
+      <summary>Einstellungen</summary>
+      <div class="settings">
+        <div class="grid2">
+          <div class="field"><label for="sSpeed">Ø-Tempo (km/h)</label><input id="sSpeed" type="number" min="20" max="130" step="1"></div>
+          <div class="field"><label for="sCons">Verbrauch (l/100 km)</label><input id="sCons" type="number" min="10" max="80" step="0.5"></div>
+          <div class="field"><label for="sPrice">Diesel (€/l)</label><input id="sPrice" type="number" min="0" max="5" step="0.01"></div>
+          <div class="field"><label for="sTs">Zeitraffer 1 :</label><input id="sTs" type="number" min="1" max="60" step="1"></div>
+        </div>
+        <div class="checks"><label><input type="checkbox" id="sNoFerry"> Fähren und Zug meiden</label></div>
+        <div>
+          <div class="label" style="margin-bottom:6px">Meine Karten-DLCs</div>
+          <div class="checks" id="dlcs"></div>
+        </div>
+        <div>
+          <div class="label" style="margin-bottom:6px">Kalibrieren</div>
+          <p class="note" style="margin:0 0 8px">Trag ein, wie viele Kilometer das Spiel für die aktuelle Route anzeigt. Alle Strecken werden dann mit demselben Faktor korrigiert.</p>
+          <div class="calib">
+            <div class="field"><label for="sShown">Spiel zeigt (km)</label><input id="sShown" type="number" min="1" step="1"></div>
+            <button class="btn primary" id="calApply" type="button">Übernehmen</button>
+            <button class="btn" id="calReset" type="button">Zurücksetzen</button>
+          </div>
+          <p class="note" id="calInfo" style="margin:8px 0 0"></p>
+        </div>
+      </div>
+    </details>
+
+    <details class="panel o5">
+      <summary>So wird gerechnet</summary>
+      <div class="about" id="about"></div>
+    </details>
+  </div>
+
+  <section class="panel mapbox o3" aria-label="Karte">
+    <svg id="map" role="img" aria-label="Karte des ETS2-Straßennetzes"></svg>
+    <div class="mapctl">
+      <button type="button" id="zin" aria-label="Hineinzoomen">+</button>
+      <button type="button" id="zout" aria-label="Herauszoomen">−</button>
+      <button type="button" id="zfit" aria-label="Auf Route zoomen" title="Auf Route zoomen">◎</button>
+      <button type="button" id="zall" aria-label="Ganze Karte" title="Ganze Karte">⤢</button>
+    </div>
+    <div class="legend"><span><i></i>Route</span><span><i class="road"></i>Straße</span><span><i class="ferry"></i>Fähre / Zug</span></div>
+    <div class="pop" id="pop" hidden></div>
+  </section>
+</main>
+<footer class="wrap" id="foot"></footer>
+
+<script type="application/json" id="ets2-data">__DATA_JSON__</script>
+<script>
+(function () {
+'use strict';
+const D = JSON.parse(document.getElementById('ets2-data').textContent);
+const C = D.cities.map((c, i) => ({ i, name: c[0], cc: c[1], x: c[2], z: c[3], dlc: c[4], aliases: c[5] ? c[5].split('|') : [], uk: !!c[6] }));
+const E = D.edges.map((e, i) => ({ i, a: e[0], b: e[1], km: e[2], kind: e[3], road: e[4] || '', dlc: e[5] }));
+const ADJ = C.map(() => []);
+E.forEach(e => { ADJ[e.a].push(e); ADJ[e.b].push(e); });
+const NF = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 0 });
+const NF1 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
+const NF2 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 2, minimumFractionDigits: 2 });
+const $ = id => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+const SVGNS = 'http://www.w3.org/2000/svg';
+const sv = (tag, attrs) => { const n = document.createElementNS(SVGNS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; };
+
+/* ---------- settings ---------- */
+const KEY = 'ets2-streckenrechner:v1';
+const defaults = { speed: 70, cons: 33, price: 1.65, ts: D.timeScale, factor: 1, noFerry: false, dlcOff: [] };
+let S = Object.assign({}, defaults);
+try { const raw = localStorage.getItem(KEY); if (raw) S = Object.assign(S, JSON.parse(raw)); } catch (e) { /* storage unavailable */ }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* ignore */ } };
+const dlcOn = d => !S.dlcOff.includes(D.dlcs[d]);
+const cityOn = c => dlcOn(C[c].dlc);
+const edgeOn = e => cityOn(e.a) && cityOn(e.b) && (e.dlc < 0 || dlcOn(e.dlc)) && !(S.noFerry && e.kind > 0);
+
+/* ---------- search ---------- */
+const norm = s => s.toLowerCase().replace(/ß/g, 'ss').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/œ/g, 'oe')
+  .replace(/ł/g, 'l').replace(/đ/g, 'd').replace(/ı/g, 'i').replace(/þ/g, 'th')
+  .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9а-яёα-ω ]+/g, ' ').replace(/\s+/g, ' ').trim();
+C.forEach(c => { c.keys = [c.name].concat(c.aliases).map(norm); c.nkey = norm(c.name); });
+function search(q) {
+  const n = norm(q);
+  if (!n) return [];
+  const scored = [];
+  for (const c of C) {
+    let best = 99;
+    c.keys.forEach((k, ki) => {
+      let s = 99;
+      if (k === n) s = 0; else if (k.startsWith(n)) s = 1; else if (k.split(' ').some(w => w.startsWith(n))) s = 2; else if (k.includes(n)) s = 3;
+      if (s < 99 && ki > 0) s += 0.5;
+      if (s < best) best = s;
+    });
+    if (n.length === 2 && c.cc.toLowerCase() === n) best = Math.min(best, 4);
+    if (best < 99) scored.push([best + (cityOn(c.i) ? 0 : 5), c]);
+  }
+  scored.sort((p, q2) => p[0] - q2[0] || p[1].name.localeCompare(q2[1].name, 'de'));
+  return scored.slice(0, 12).map(p => p[1]);
+}
+const exact = q => { const n = norm(q); return C.find(c => c.nkey === n) || C.find(c => c.keys.includes(n)) || null; };
+
+/* ---------- route state ---------- */
+let stops = [];
+function initStops() {
+  const h = (location.hash || '').match(/^#r((?:-\d+){2,6})$/);
+  if (h) {
+    const ids = h[1].slice(1).split('-').map(Number);
+    if (ids.every(i => i >= 0 && i < C.length)) { stops = ids; return; }
+  }
+  const find = n => { const c = exact(n); return c ? c.i : null; };
+  stops = [find(D.example[0]), find(D.example[1])];
+}
+
+function renderStops() {
+  const box = $('stops');
+  box.textContent = '';
+  stops.forEach((ci, k) => {
+    const last = stops.length - 1;
+    const row = el('div', 'stop' + (k === 0 ? ' start' : k === last ? ' end' : ''));
+    row.appendChild(el('span', 'marker', k === 0 ? 'A' : k === last ? 'B' : String(k)));
+    const combo = el('div', 'combo');
+    const inp = el('input');
+    inp.id = 'stop-' + k; inp.type = 'text'; inp.autocomplete = 'off'; inp.spellcheck = false;
+    inp.placeholder = k === 0 ? 'Start, z. B. Calais' : k === last ? 'Ziel, z. B. Wien' : 'Zwischenstopp';
+    inp.setAttribute('role', 'combobox'); inp.setAttribute('aria-expanded', 'false'); inp.setAttribute('aria-autocomplete', 'list');
+    inp.setAttribute('aria-label', k === 0 ? 'Start' : k === last ? 'Ziel' : 'Zwischenstopp ' + k);
+    if (ci != null) inp.value = C[ci].name;
+    combo.appendChild(inp);
+    const list = el('ul', 'list'); list.setAttribute('role', 'listbox'); list.hidden = true; list.id = 'list-' + k;
+    inp.setAttribute('aria-controls', list.id);
+    combo.appendChild(list);
+    row.appendChild(combo);
+    if (k > 0 && k < last) {
+      const rm = el('button', 'iconbtn', '×'); rm.type = 'button'; rm.setAttribute('aria-label', 'Zwischenstopp entfernen');
+      rm.onclick = () => { stops.splice(k, 1); renderStops(); update(); };
+      row.appendChild(rm);
+    } else row.appendChild(el('span'));
+    box.appendChild(row);
+    wireCombo(inp, list, k);
+  });
+}
+
+function wireCombo(inp, list, k) {
+  let items = [], sel = -1;
+  const close = () => { list.hidden = true; inp.setAttribute('aria-expanded', 'false'); };
+  const draw = () => {
+    list.textContent = '';
+    items.forEach((c, j) => {
+      const li = el('li'); li.setAttribute('role', 'option'); li.id = list.id + '-' + j;
+      li.setAttribute('aria-selected', j === sel ? 'true' : 'false');
+      if (!cityOn(c.i)) li.classList.add('off');
+      const left = el('span'); left.appendChild(el('span', null, c.name + ' '));
+      left.appendChild(el('span', 'dlc', cityOn(c.i) ? D.dlcs[c.dlc] : D.dlcs[c.dlc] + ' (aus)'));
+      li.appendChild(left); li.appendChild(el('span', 'cc', c.cc));
+      li.onmousedown = ev => { ev.preventDefault(); pick(c); };
+      list.appendChild(li);
+    });
+    list.hidden = !items.length; inp.setAttribute('aria-expanded', items.length ? 'true' : 'false');
+    if (sel >= 0) inp.setAttribute('aria-activedescendant', list.id + '-' + sel); else inp.removeAttribute('aria-activedescendant');
+  };
+  const pick = c => { stops[k] = c.i; inp.value = c.name; inp.classList.remove('bad'); close(); update(); };
+  inp.addEventListener('input', () => { items = search(inp.value); sel = items.length ? 0 : -1; draw(); });
+  inp.addEventListener('focus', () => { inp.select(); });
+  inp.addEventListener('keydown', ev => {
+    if (ev.key === 'ArrowDown' && items.length) { sel = (sel + 1) % items.length; draw(); ev.preventDefault(); }
+    else if (ev.key === 'ArrowUp' && items.length) { sel = (sel - 1 + items.length) % items.length; draw(); ev.preventDefault(); }
+    else if (ev.key === 'Enter') { if (sel >= 0 && items[sel]) pick(items[sel]); else { const c = exact(inp.value); if (c) pick(c); } ev.preventDefault(); }
+    else if (ev.key === 'Escape') close();
+  });
+  inp.addEventListener('blur', () => {
+    close();
+    const c = exact(inp.value);
+    if (c) { if (stops[k] !== c.i) { stops[k] = c.i; inp.value = c.name; update(); } inp.classList.remove('bad'); }
+    else if (!inp.value.trim()) { if (stops[k] != null) { stops[k] = null; update(); } inp.classList.remove('bad'); }
+    else inp.classList.add('bad');
+  });
+}
+
+/* ---------- routing ---------- */
+function dijkstra(src, dst) {
+  const n = C.length, dist = new Float64Array(n).fill(Infinity), prev = new Int32Array(n).fill(-1);
+  const heap = [[0, src]]; dist[src] = 0;
+  const push = it => { heap.push(it); let i = heap.length - 1; while (i > 0) { const p = (i - 1) >> 1; if (heap[p][0] <= heap[i][0]) break; [heap[p], heap[i]] = [heap[i], heap[p]]; i = p; } };
+  const pop = () => { const top = heap[0], last = heap.pop(); if (heap.length) { heap[0] = last; let i = 0; for (;;) { const l = 2 * i + 1, r = l + 1; let m = i; if (l < heap.length && heap[l][0] < heap[m][0]) m = l; if (r < heap.length && heap[r][0] < heap[m][0]) m = r; if (m === i) break; [heap[m], heap[i]] = [heap[i], heap[m]]; i = m; } } return top; };
+  while (heap.length) {
+    const [d, u] = pop();
+    if (d > dist[u]) continue;
+    if (u === dst) break;
+    for (const e of ADJ[u]) {
+      if (!edgeOn(e)) continue;
+      const v = e.a === u ? e.b : e.a;
+      const nd = d + e.km * (e.kind > 0 ? D.ferryCost : 1);
+      if (nd < dist[v]) { dist[v] = nd; prev[v] = e.i; push([nd, v]); }
+    }
+  }
+  if (!isFinite(dist[dst])) return null;
+  const path = [];
+  for (let v = dst; v !== src;) { const e = E[prev[v]]; path.push({ e, from: e.a === v ? e.b : e.a, to: v }); v = path[path.length - 1].from; }
+  return path.reverse();
+}
+
+function compute() {
+  const set = stops.filter(s => s != null);
+  if (set.length < 2) return { error: 'Wähl einen Start und ein Ziel.' };
+  for (const s of set) if (!cityOn(s)) return { error: C[s].name + ' gehört zum DLC „' + D.dlcs[C[s].dlc] + '“, den du in den Einstellungen abgewählt hast.' };
+  const legs = [];
+  for (let i = 0; i < set.length - 1; i++) {
+    if (set[i] === set[i + 1]) continue;
+    const p = dijkstra(set[i], set[i + 1]);
+    if (!p) return { error: 'Zwischen ' + C[set[i]].name + ' und ' + C[set[i + 1]].name + ' gibt es mit deinen Einstellungen keine Verbindung.' + (S.noFerry ? ' Erlaube Fähren oder wähl ein anderes Ziel.' : ' Prüf deine DLC-Auswahl.') };
+    legs.push({ from: set[i], to: set[i + 1], steps: p });
+  }
+  if (!legs.length) return { error: 'Start und Ziel sind dieselbe Stadt.' };
+  let road = 0, ferry = 0, ferryN = 0;
+  const countries = [];
+  legs.forEach(l => l.steps.forEach(s => {
+    if (s.e.kind > 0) { ferry += s.e.km; ferryN++; } else road += s.e.km * S.factor;
+    [C[s.from].cc, C[s.to].cc].forEach(cc => { if (countries[countries.length - 1] !== cc) countries.push(cc); });
+  }));
+  const uniq = countries.filter((c, i) => countries.indexOf(c) === i);
+  return { legs, road, ferry, ferryN, countries: uniq, stops: set };
+}
+
+/* ---------- result rendering ---------- */
+const fmtH = h => { const m = Math.round(h * 60); return Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0') + ' h'; };
+const fmtM = m => m < 60 ? Math.round(m) + ' min' : fmtH(m / 60);
+function badges(road, kind) {
+  const w = el('span', 'badges');
+  if (kind > 0) { w.appendChild(el('span', 'rb ferry', kind === 2 ? 'Zug' : 'Fähre')); return w; }
+  road.split(/[\/,]/).map(s => s.trim()).filter(Boolean).slice(0, 3).forEach(r => w.appendChild(el('span', 'rb' + (/^E\s?\d/.test(r) ? ' e' : ''), r)));
+  return w;
+}
+let last = null;
+function renderResult(r) {
+  const box = $('result');
+  box.textContent = '';
+  last = r;
+  if (r.error) {
+    box.appendChild(el('div', 'label', 'Strecke'));
+    box.appendChild(el('p', 'warn', r.error));
+    return;
+  }
+  const total = r.road + (D.ferryCounts ? r.ferry : 0);
+  box.appendChild(el('div', 'route-name', r.stops.map(s => C[s].name).join(' → ')));
+  const t = el('div', 'total');
+  t.appendChild(el('span', 'num', '≈ ' + NF.format(total)));
+  t.appendChild(el('span', 'unit', 'km im Spiel'));
+  box.appendChild(t);
+  if (r.ferryN) box.appendChild(el('p', 'note', (D.ferryCounts ? 'Davon ' : 'Plus ') + NF.format(r.ferry) + ' km mit ' + (r.ferryN === 1 ? 'einer Fähre oder dem Zug' : r.ferryN + ' Fähren oder Zügen') + ' (Überfahrt ohne Fahren). Straße: ' + NF.format(r.road) + ' km.'));
+  const hours = r.road / S.speed;
+  const liters = r.road * S.cons / 100;
+  const facts = el('div', 'facts');
+  [[fmtH(hours), 'Fahrzeit im Spiel'], [fmtM(hours * 60 / S.ts), 'echte Zeit am PC'], [NF.format(liters) + ' l', NF.format(liters * S.price) + ' € Diesel']]
+    .forEach(([b, s]) => { const f = el('div', 'fact'); f.appendChild(el('b', null, b)); f.appendChild(el('span', null, s)); facts.appendChild(f); });
+  box.appendChild(facts);
+  const chips = el('div', 'chips');
+  r.countries.forEach(cc => chips.appendChild(el('span', 'chip', cc)));
+  box.appendChild(chips);
+
+  const wrapT = el('div', 'legs-wrap');
+  const tbl = el('table', 'legs');
+  const tb = el('tbody');
+  let cum = 0;
+  const addStop = ci => { const tr = el('tr'); const td = el('td', 'stopname', C[ci].name); td.colSpan = 3; tr.appendChild(td); tb.appendChild(tr); };
+  addStop(r.legs[0].from);
+  r.legs.forEach(l => {
+    l.steps.forEach(s => {
+      const km = s.e.kind > 0 ? s.e.km : s.e.km * S.factor;
+      if (s.e.kind === 0 || D.ferryCounts) cum += km;
+      const tr = el('tr');
+      const td = el('td');
+      td.appendChild(el('span', 'city', '→ ' + C[s.to].name));
+      td.appendChild(badges(s.e.road, s.e.kind));
+      tr.appendChild(td);
+      tr.appendChild(el('td', 'km', NF.format(km) + ' km'));
+      tr.appendChild(el('td', 'sum', NF.format(cum)));
+      tb.appendChild(tr);
+    });
+    if (l !== r.legs[r.legs.length - 1]) { const tr = el('tr'); const td = el('td', 'note', 'Zwischenstopp'); td.colSpan = 3; tr.appendChild(td); tb.appendChild(tr); }
+  });
+  tbl.appendChild(tb); wrapT.appendChild(tbl);
+  const det = el('details');
+  const sm = el('summary', 'label', 'Etappen (' + r.legs.reduce((a, l) => a + l.steps.length, 0) + ')');
+  sm.style.cursor = 'pointer';
+  det.appendChild(sm); det.appendChild(wrapT);
+  det.open = true;
+  box.appendChild(det);
+  box.appendChild(el('p', 'note', 'Richtwert. Das Spiel kann je nach Firma, Ladeort und gewählter Route um rund 10 % abweichen. Mit „Kalibrieren“ in den Einstellungen passt du die Werte an dein Spiel an.'));
+}
+
+/* ---------- map ---------- */
+const svg = $('map');
+const gLand = sv('g'), gEdge = sv('g'), gRoute = sv('g'), gDot = sv('g'), gLab = sv('g'), gHit = sv('g');
+[gLand, gEdge, gRoute, gDot, gLab, gHit].forEach(g => svg.appendChild(g));
+D.land.forEach(l => gLand.appendChild(sv('path', { d: l.d, class: 'land' })));
+const edgeEls = E.map(e => { const a = C[e.a], b = C[e.b]; const p = sv('path', { d: 'M' + a.x + ' ' + a.z + 'L' + b.x + ' ' + b.z, class: 'edge' + (e.kind ? ' ferry' : '') }); gEdge.appendChild(p); return p; });
+const dotEls = C.map(c => { const p = sv('path', { d: 'M' + c.x + ' ' + c.z + 'h0', class: 'dot' }); gDot.appendChild(p); return p; });
+const labEls = C.map(c => { const t = sv('text', { x: c.x, y: c.z, 'text-anchor': 'middle' }); t.textContent = c.name; gLab.appendChild(t); return t; });
+C.forEach(c => { const h = sv('path', { d: 'M' + c.x + ' ' + c.z + 'h0', class: 'hit' }); h.dataset.i = c.i; const tt = sv('title'); tt.textContent = c.name + ' (' + c.cc + ')'; h.appendChild(tt); gHit.appendChild(h); });
+
+const ALL = (() => { let x0 = Infinity, x1 = -Infinity, z0 = Infinity, z1 = -Infinity; C.forEach(c => { x0 = Math.min(x0, c.x); x1 = Math.max(x1, c.x); z0 = Math.min(z0, c.z); z1 = Math.max(z1, c.z); }); return { x0, x1, z0, z1 }; })();
+let vb = { x: 0, y: 0, w: 1, h: 1 };
+function setVB(nv) {
+  const W = svg.clientWidth || 600, H = svg.clientHeight || 400;
+  // keep aspect ratio of the element so 1 unit is square
+  const ar = W / H;
+  if (nv.w / nv.h > ar) { const nh = nv.w / ar; nv.y -= (nh - nv.h) / 2; nv.h = nh; } else { const nw = nv.h * ar; nv.x -= (nw - nv.w) / 2; nv.w = nw; }
+  const maxW = (ALL.x1 - ALL.x0) * 2.5, minW = 4000;
+  if (nv.w > maxW) { const k = maxW / nv.w; nv.x += nv.w * (1 - k) / 2; nv.y += nv.h * (1 - k) / 2; nv.w *= k; nv.h *= k; }
+  if (nv.w < minW) { const k = minW / nv.w; nv.x -= nv.w * (k - 1) / 2; nv.y -= nv.h * (k - 1) / 2; nv.w *= k; nv.h *= k; }
+  vb = nv;
+  svg.setAttribute('viewBox', [vb.x, vb.y, vb.w, vb.h].map(v => v.toFixed(1)).join(' '));
+  const upp = vb.w / W; // game units per css pixel
+  gLab.setAttribute('font-size', (13 * upp).toFixed(1));
+  labEls.forEach(t => t.setAttribute('dy', (-9 * upp).toFixed(1)));
+  drawLabels(upp);
+}
+function fit(b, pad) {
+  const p = pad || 0.12;
+  const w = Math.max(b.x1 - b.x0, 6000), h = Math.max(b.z1 - b.z0, 6000);
+  setVB({ x: (b.x0 + b.x1) / 2 - w * (0.5 + p), y: (b.z0 + b.z1) / 2 - h * (0.5 + p), w: w * (1 + 2 * p), h: h * (1 + 2 * p) });
+}
+let routeNodes = new Set();
+function drawLabels(upp) {
+  // show every label when zoomed in, only route and stop labels when zoomed out
+  const showAll = upp < 55;
+  const placed = [];
+  C.forEach(c => {
+    const t = labEls[c.i];
+    const imp = routeNodes.has(c.i);
+    let show = imp || showAll;
+    if (show && !imp) {
+      // simple collision check in screen space
+      const sx = c.x / upp, sy = c.z / upp, w = c.name.length * 7;
+      if (placed.some(p => Math.abs(p[0] - sx) < (w + p[2]) / 2 && Math.abs(p[1] - sy) < 15)) show = false;
+      else placed.push([sx, sy, w]);
+    }
+    t.style.display = show ? '' : 'none';
+    t.classList.toggle('big', stops.includes(c.i));
+  });
+}
+function drawMap(r) {
+  E.forEach(e => edgeEls[e.i].classList.toggle('off', !edgeOn(e)));
+  C.forEach(c => dotEls[c.i].classList.toggle('off', !cityOn(c.i)));
+  gRoute.textContent = '';
+  routeNodes = new Set();
+  if (r && !r.error) {
+    let b = { x0: Infinity, x1: -Infinity, z0: Infinity, z1: -Infinity };
+    r.legs.forEach(l => l.steps.forEach(s => {
+      const a = C[s.from], c = C[s.to];
+      gRoute.appendChild(sv('path', { d: 'M' + a.x + ' ' + a.z + 'L' + c.x + ' ' + c.z, class: 'route' + (s.e.kind ? ' ferry' : '') }));
+      [a, c].forEach(n => { routeNodes.add(n.i); b.x0 = Math.min(b.x0, n.x); b.x1 = Math.max(b.x1, n.x); b.z0 = Math.min(b.z0, n.z); b.z1 = Math.max(b.z1, n.z); });
+    }));
+    r.bounds = b;
+  }
+  stops.forEach(s => { if (s != null) routeNodes.add(s); });
+  C.forEach(c => dotEls[c.i].classList.toggle('on', stops.includes(c.i)));
+  drawLabels(vb.w / (svg.clientWidth || 600));
+}
+
+// pan & zoom
+const toSvg = (cx, cy) => { const pt = svg.createSVGPoint(); pt.x = cx; pt.y = cy; return pt.matrixTransform(svg.getScreenCTM().inverse()); };
+function zoomAt(cx, cy, k) {
+  const p = toSvg(cx, cy);
+  setVB({ x: p.x - (p.x - vb.x) * k, y: p.y - (p.y - vb.y) * k, w: vb.w * k, h: vb.h * k });
+}
+svg.addEventListener('wheel', ev => { ev.preventDefault(); zoomAt(ev.clientX, ev.clientY, Math.exp(ev.deltaY * (ev.deltaMode ? 0.05 : 0.0015))); }, { passive: false });
+const ptrs = new Map();
+let drag = null, moved = 0, pinch = null;
+svg.addEventListener('pointerdown', ev => {
+  ptrs.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+  svg.setPointerCapture(ev.pointerId);
+  if (ptrs.size === 1) { drag = { x: ev.clientX, y: ev.clientY, vb: Object.assign({}, vb), target: ev.target }; moved = 0; }
+  if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), vb: Object.assign({}, vb), cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2 }; drag = null; }
+});
+svg.addEventListener('pointermove', ev => {
+  if (!ptrs.has(ev.pointerId)) return;
+  ptrs.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+  if (pinch && ptrs.size === 2) {
+    const [a, b] = [...ptrs.values()];
+    const k = pinch.d / Math.max(10, Math.hypot(a.x - b.x, a.y - b.y));
+    vb = Object.assign({}, pinch.vb);
+    zoomAt(pinch.cx, pinch.cy, k);
+    moved = 99;
+    return;
+  }
+  if (!drag) return;
+  const dx = ev.clientX - drag.x, dy = ev.clientY - drag.y;
+  moved = Math.max(moved, Math.hypot(dx, dy));
+  if (moved < 4) return;
+  svg.classList.add('drag');
+  const upp = drag.vb.w / svg.clientWidth;
+  setVB({ x: drag.vb.x - dx * upp, y: drag.vb.y - dy * upp, w: drag.vb.w, h: drag.vb.h });
+});
+const endPtr = ev => {
+  ptrs.delete(ev.pointerId);
+  if (ptrs.size < 2) pinch = null;
+  if (ptrs.size === 0) {
+    svg.classList.remove('drag');
+    if (drag && moved < 4 && ev.type === 'pointerup') {
+      const t = drag.target;
+      if (t && t.dataset && t.dataset.i != null) openPop(+t.dataset.i, ev.clientX, ev.clientY); else closePop();
+    }
+    drag = null;
+  }
+};
+svg.addEventListener('pointerup', endPtr);
+svg.addEventListener('pointercancel', endPtr);
+$('zin').onclick = () => { const r = svg.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, 0.6); };
+$('zout').onclick = () => { const r = svg.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, 1 / 0.6); };
+$('zall').onclick = () => fit(ALL, 0.03);
+$('zfit').onclick = () => { if (last && last.bounds) fit(last.bounds); else fit(ALL, 0.03); };
+
+// city popover
+const pop = $('pop');
+function closePop() { pop.hidden = true; }
+function openPop(ci, cx, cy) {
+  const c = C[ci];
+  pop.textContent = '';
+  pop.appendChild(el('div', 't', c.name));
+  pop.appendChild(el('div', 'd', c.cc + ' · ' + D.dlcs[c.dlc] + (cityOn(ci) ? '' : ' (abgewählt)')));
+  const mk = (txt, fn) => { const b = el('button', 'btn', txt); b.type = 'button'; b.onclick = () => { fn(); closePop(); renderStops(); update(); }; pop.appendChild(b); };
+  mk('Als Start', () => { stops[0] = ci; });
+  mk('Als Ziel', () => { stops[stops.length - 1] = ci; });
+  mk('Als Zwischenstopp', () => { stops.splice(stops.length - 1, 0, ci); });
+  pop.hidden = false;
+  const box = svg.parentElement.getBoundingClientRect();
+  let x = cx - box.left + 10, y = cy - box.top + 10;
+  x = Math.min(x, box.width - pop.offsetWidth - 10); y = Math.min(y, box.height - pop.offsetHeight - 10);
+  pop.style.left = Math.max(10, x) + 'px'; pop.style.top = Math.max(10, y) + 'px';
+}
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape') closePop(); });
+
+/* ---------- settings UI ---------- */
+function bindNum(id, key, min, max) {
+  const inp = $(id);
+  inp.value = S[key];
+  inp.addEventListener('change', () => {
+    const v = parseFloat(String(inp.value).replace(',', '.'));
+    if (isFinite(v) && v >= min && v <= max) { S[key] = v; save(); update(); } else inp.value = S[key];
+  });
+}
+bindNum('sSpeed', 'speed', 20, 130);
+bindNum('sCons', 'cons', 10, 80);
+bindNum('sPrice', 'price', 0, 5);
+bindNum('sTs', 'ts', 1, 60);
+$('sNoFerry').checked = S.noFerry;
+$('sNoFerry').onchange = ev => { S.noFerry = ev.target.checked; save(); update(); };
+const dlcBox = $('dlcs');
+D.dlcs.forEach((name, d) => {
+  const lab = el('label');
+  const cb = el('input'); cb.type = 'checkbox'; cb.id = 'dlc-' + d; cb.checked = dlcOn(d);
+  if (name === 'Base') { cb.checked = true; cb.disabled = true; }
+  cb.onchange = () => { S.dlcOff = S.dlcOff.filter(n => n !== name); if (!cb.checked) S.dlcOff.push(name); save(); update(); };
+  lab.appendChild(cb); lab.appendChild(el('span', null, name === 'Base' ? 'Grundspiel' : name));
+  dlcBox.appendChild(lab);
+});
+function calInfo() { $('calInfo').textContent = S.factor === 1 ? 'Kein Korrekturfaktor aktiv.' : 'Korrekturfaktor ' + NF2.format(S.factor) + ' ist aktiv.'; }
+$('calApply').onclick = () => {
+  const shown = parseFloat(String($('sShown').value).replace(',', '.'));
+  if (!last || last.error || !(shown > 0)) { $('calInfo').textContent = 'Berechne zuerst eine Route und trag dann die Kilometer aus dem Spiel ein.'; return; }
+  const rawRoad = last.road / S.factor, ferry = D.ferryCounts ? last.ferry : 0;
+  const f = (shown - ferry) / rawRoad;
+  if (!(f > 0.5 && f < 2)) { $('calInfo').textContent = 'Der Wert weicht zu stark ab (Faktor ' + NF2.format(f) + '). Prüf Start, Ziel und Zwischenstopps.'; return; }
+  S.factor = Math.round(f * 1000) / 1000; save(); update(); calInfo();
+};
+$('calReset').onclick = () => { S.factor = 1; save(); update(); calInfo(); };
+calInfo();
+
+/* ---------- buttons ---------- */
+$('addVia').onclick = () => { stops.splice(stops.length - 1, 0, null); renderStops(); const inp = $('stop-' + (stops.length - 2)); if (inp) inp.focus(); };
+$('swap').onclick = () => { stops.reverse(); renderStops(); update(); };
+$('copy').onclick = () => {
+  if (!last || last.error) return;
+  const total = last.road + (D.ferryCounts ? last.ferry : 0);
+  const txt = 'ETS2: ' + last.stops.map(s => C[s].name).join(' → ') + ' ≈ ' + NF.format(total) + ' km' + (last.ferryN ? ' (inkl. Fähre/Zug ' + NF.format(last.ferry) + ' km)' : '');
+  const b = $('copy');
+  const done = ok => { b.textContent = ok ? 'Kopiert' : 'Kopieren nicht möglich'; setTimeout(() => { b.textContent = 'Route kopieren'; }, 1600); };
+  try { navigator.clipboard.writeText(txt).then(() => done(true), () => done(false)); } catch (e) { done(false); }
+};
+
+/* ---------- about ---------- */
+(function about() {
+  const a = $('about');
+  D.about.forEach(p => { const n = el('p'); n.innerHTML = p; a.appendChild(n); });
+  $('foot').textContent = D.footer;
+})();
+
+/* ---------- main update ---------- */
+let firstFit = true;
+function update() {
+  const r = compute();
+  renderResult(r);
+  drawMap(r);
+  if (!r.error) {
+    try { history.replaceState(null, '', '#r-' + r.stops.join('-')); } catch (e) { /* ignore */ }
+    if (firstFit) { fit(r.bounds); firstFit = false; }
+  }
+}
+initStops();
+renderStops();
+fit(ALL, 0.03);
+update();
+new ResizeObserver(() => setVB(Object.assign({}, vb))).observe(svg);
+window.addEventListener('hashchange', () => { initStops(); renderStops(); update(); if (last && last.bounds) fit(last.bounds); });
+})();
+</script>

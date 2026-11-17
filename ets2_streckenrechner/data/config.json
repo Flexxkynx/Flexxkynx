@@ -1,0 +1,16 @@
+{
+  "dataDate": "November 2026",
+  "timeScale": 19,
+  "ferryCost": 1.0,
+  "ferryCounts": false,
+  "example": ["Hamburg", "Milano"],
+  "about": [
+    "<b>Städte.</b> {cities} Städte aus dem Grundspiel und allen Karten-DLCs, Stand {date}. Wo die echte Position im Spiel bekannt ist, wird sie verwendet, sonst die reale Lage, umgerechnet mit der Kartenprojektion des Spiels.",
+    "<b>Straßennetz.</b> {roads} Straßenverbindungen zwischen benachbarten Städten und {ferries} Fähr- und Zugverbindungen. Die kürzeste Route sucht der Rechner selbst, auch über Zwischenstopps.",
+    "<b>Kilometer.</b> ETS2 baut Europa verkleinert nach, Großbritannien etwas größer als das Festland. Jede Etappe ist die Luftlinie im Spiel mal einem Kurvenfaktor der echten Straße mal dem Anzeigemaßstab ({scale} auf dem Festland, {scale_uk} in Großbritannien). Das Ergebnis ist ein Richtwert, keine exakte Navi-Anzeige.",
+    "<b>Fähren und Eurotunnel.</b> Überfahrten werden getrennt ausgewiesen, weil du dabei nicht fährst. Mit „Fähren und Zug meiden“ rechnest du nur über Land.",
+    "<b>Zeit und Diesel.</b> Die Fahrzeit im Spiel ergibt sich aus Kilometern und Ø-Tempo. Die echte Zeit am PC teilt sie durch den Zeitraffer (Standard 1 : {ts}). Diesel rechnet mit deinem Verbrauch und Preis.",
+    "<b>Genauer machen.</b> Nimm einen Auftrag im Spiel, gib Start und Ziel hier ein und trag unter „Kalibrieren“ die Kilometer aus dem Spiel ein. Der Faktor gilt dann für alle Strecken und bleibt in deinem Browser gespeichert."
+  ],
+  "footer": "Fan-Projekt, nicht von SCS Software. {cities} Städte, Datenstand {date}. Landkarte: Natural Earth. Projektion nach truckermudgeon/maps."
+}
