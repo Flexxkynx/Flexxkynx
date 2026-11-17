@@ -44,7 +44,7 @@ def path(a, b, no_ferry=False):
             e = NET['edges'][ei]
             if no_ferry and e[3]:
                 continue
-            nd = d + e[2] * (CFG['ferryCost'] if e[3] else 1)
+            nd = d + e[2] + (e[6] if len(e) > 6 else 0) * CFG['ferryCost']
             if nd < dist.get(v, 1e18):
                 dist[v], prev[v] = nd, (u, ei)
                 heapq.heappush(pq, (nd, v))
@@ -59,8 +59,8 @@ def path(a, b, no_ferry=False):
 
 
 def total(steps):
-    road = sum(e[2] for _, _, e in steps if not e[3])
-    ferry = sum(e[2] for _, _, e in steps if e[3])
+    road = sum(e[2] for _, _, e in steps)
+    ferry = sum(e[6] for _, _, e in steps if len(e) > 6)
     return road + (ferry if CFG['ferryCounts'] else 0), road, ferry
 
 
@@ -84,9 +84,10 @@ def main(argv):
         all_steps += s
     cum = 0
     for u, v, e in all_steps:
-        cum += e[2] if (not e[3] or CFG['ferryCounts']) else 0
+        km = e[2] + (e[6] if CFG['ferryCounts'] and len(e) > 6 else 0)
+        cum += km
         kind = ['', ' Fähre', ' Zug'][e[3]]
-        print(f'{C[u][0]:>22} -> {C[v][0]:<22} {e[2]:5d} km{kind:6} {e[4]:<18} Σ {cum}')
+        print(f'{C[u][0]:>22} -> {C[v][0]:<22} {km:7.0f} km{kind:6} {e[4]:<18} Σ {cum:.0f}')
     t, road, ferry = total(all_steps)
     print(f'TOTAL {round(t)} km (road {round(road)}, ferry {round(ferry)})')
 

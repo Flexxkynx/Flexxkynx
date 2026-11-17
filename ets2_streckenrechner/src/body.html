@@ -61,14 +61,15 @@
   </div>
 
   <section class="panel mapbox o4" aria-label="Karte">
-    <svg id="map" role="img" aria-label="Karte des ETS2-Straßennetzes"></svg>
+    <canvas id="mapc" aria-hidden="true"></canvas>
+    <svg id="map" role="img" aria-label="Karte des ETS2-Straßennetzes mit Route"></svg>
     <div class="mapctl">
       <button type="button" id="zin" aria-label="Hineinzoomen">+</button>
       <button type="button" id="zout" aria-label="Herauszoomen">−</button>
       <button type="button" id="zfit" aria-label="Auf Route zoomen" title="Auf Route zoomen">◎</button>
       <button type="button" id="zall" aria-label="Ganze Karte" title="Ganze Karte">⤢</button>
     </div>
-    <div class="legend"><span><i></i>Route</span><span><i class="road"></i>Straße</span><span><i class="ferry"></i>Fähre / Zug</span></div>
+    <div class="legend"><span><i></i>Route</span><span><i class="fw"></i>Autobahn</span><span><i class="road"></i>Straße</span><span><i class="ferry"></i>Fähre / Zug</span></div>
     <div class="pop" id="pop" hidden></div>
   </section>
 </main>
@@ -79,19 +80,51 @@
 (function () {
 'use strict';
 const D = JSON.parse(document.getElementById('ets2-data').textContent);
-const C = D.cities.map((c, i) => ({ i, name: c[0], cc: c[1], x: c[2], z: c[3], dlc: c[4], aliases: c[5] ? c[5].split('|') : [], uk: !!c[6],
-  companies: c[7] ? c[7].split('|') : [], dealers: c[8] ? c[8].split('|') : [] }));
-const tier = c => c.companies.length >= 9 ? 3 : c.companies.length >= 5 ? 2 : 1;
-const E = D.edges.map((e, i) => ({ i, a: e[0], b: e[1], km: e[2], kind: e[3], road: e[4] || '', dlc: e[5] }));
-const ADJ = C.map(() => []);
-E.forEach(e => { ADJ[e.a].push(e); ADJ[e.b].push(e); });
-const NF = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 0 });
-const NF1 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
-const NF2 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 2, minimumFractionDigits: 2 });
 const $ = id => document.getElementById(id);
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
 const SVGNS = 'http://www.w3.org/2000/svg';
 const sv = (tag, attrs) => { const n = document.createElementNS(SVGNS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; };
+const NF = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 0 });
+const NF2 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 2, minimumFractionDigits: 2 });
+
+/* ---------- data ---------- */
+const norm = s => s.toLowerCase().replace(/ß/g, 'ss').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/œ/g, 'oe')
+  .replace(/ł/g, 'l').replace(/[đð]/g, 'd').replace(/ı/g, 'i').replace(/þ/g, 'th')
+  .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9а-яёα-ω ]+/g, ' ').replace(/\s+/g, ' ').trim();
+const C = D.cities.map((c, i) => ({ i, name: c[0], cc: c[1], x: c[2], z: c[3], dlc: c[4], aliases: c[5] ? c[5].split('|') : [], uk: !!c[6],
+  companies: c[7] ? c[7].split('|') : [], dealers: c[8] ? c[8].split('|') : [] }));
+C.forEach(c => { c.keys = [c.name].concat(c.aliases).map(norm); c.nkey = norm(c.name); c.slug = c.nkey.replace(/ /g, '-'); });
+const BY_SLUG = new Map(C.map(c => [c.slug, c.i]));
+const tier = c => c.companies.length >= 9 ? 3 : c.companies.length >= 5 ? 2 : 1;
+// edges: [a, b, road km, kind (0 road, 1 ferry, 2 train), road numbers, dlc bit mask, ferry km]
+const E = D.edges.map((e, i) => ({ i, a: e[0], b: e[1], km: e[2], kind: e[3], road: e[4] || '', mask: e[5] || 0, fkm: e[6] || 0 }));
+const ADJ = C.map(() => []);
+E.forEach(e => { ADJ[e.a].push(e); ADJ[e.b].push(e); });
+
+// polyline decoding (same algorithm and unit as tools/polyline.py)
+const UNIT = 4;
+function decode(s) {
+  const pts = []; let i = 0, x = 0, z = 0;
+  while (i < s.length) {
+    const v = [0, 0];
+    for (let k = 0; k < 2; k++) {
+      let shift = 0, res = 0, b;
+      do { b = s.charCodeAt(i++) - 63; res |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+      v[k] = (res & 1) ? ~(res >> 1) : (res >> 1);
+    }
+    x += v[0]; z += v[1];
+    pts.push([x * UNIT, z * UNIT]);
+  }
+  return pts;
+}
+const geomCache = new Map();
+function edgeParts(e) {
+  if (!geomCache.has(e.i)) {
+    const g = D.geom && D.geom[e.i];
+    geomCache.set(e.i, g ? g.map(([k, s]) => [k, decode(s)]) : [[e.kind, [[C[e.a].x, C[e.a].z], [C[e.b].x, C[e.b].z]]]]);
+  }
+  return geomCache.get(e.i);
+}
 
 /* ---------- settings ---------- */
 const KEY = 'ets2-streckenrechner:v1';
@@ -99,15 +132,16 @@ const defaults = { speed: 70, cons: 33, price: 1.65, ts: D.timeScale, factor: 1,
 let S = Object.assign({}, defaults);
 try { const raw = localStorage.getItem(KEY); if (raw) S = Object.assign(S, JSON.parse(raw)); } catch (e) { /* storage unavailable */ }
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* ignore */ } };
+let offMask = 0;
+const calcMask = () => { offMask = S.dlcOff.reduce((m, n) => { const d = D.dlcs.indexOf(n); return d > 0 ? m | (1 << d) : m; }, 0); };
+calcMask();
 const dlcOn = d => !S.dlcOff.includes(D.dlcs[d]);
 const cityOn = c => dlcOn(C[c].dlc);
-const edgeOn = e => cityOn(e.a) && cityOn(e.b) && (e.dlc < 0 || dlcOn(e.dlc)) && !(S.noFerry && e.kind > 0);
+const edgeOn = e => cityOn(e.a) && cityOn(e.b) && !(e.mask & offMask) && !(S.noFerry && e.kind > 0);
+const edgeCost = e => e.km * S.factor + e.fkm * D.ferryCost;
+const stepKm = e => e.km * S.factor + (D.ferryCounts ? e.fkm : 0);
 
 /* ---------- search ---------- */
-const norm = s => s.toLowerCase().replace(/ß/g, 'ss').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/œ/g, 'oe')
-  .replace(/ł/g, 'l').replace(/[đð]/g, 'd').replace(/ı/g, 'i').replace(/þ/g, 'th')
-  .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9а-яёα-ω ]+/g, ' ').replace(/\s+/g, ' ').trim();
-C.forEach(c => { c.keys = [c.name].concat(c.aliases).map(norm); c.nkey = norm(c.name); });
 function search(q) {
   const n = norm(q);
   if (!n) return [];
@@ -130,12 +164,15 @@ const exact = q => { const n = norm(q); return C.find(c => c.nkey === n) || C.fi
 
 /* ---------- route state ---------- */
 let stops = [];
+function stopsFromHash() {
+  const m = (location.hash || '').match(/^#r-([a-z0-9-]+)$/);
+  if (!m) return null;
+  const ids = m[1].split('--').map(s => BY_SLUG.get(s));
+  return ids.length >= 2 && ids.every(i => i != null) ? ids : null;
+}
 function initStops() {
-  const h = (location.hash || '').match(/^#r((?:-\d+){2,})$/);
-  if (h) {
-    const ids = h[1].slice(1).split('-').map(Number);
-    if (ids.every(i => i >= 0 && i < C.length)) { stops = ids; return; }
-  }
+  const h = stopsFromHash();
+  if (h) { stops = h; return; }
   const find = n => { const c = exact(n); return c ? c.i : null; };
   stops = [find(D.example[0]), find(D.example[1])];
 }
@@ -144,22 +181,22 @@ function renderStops() {
   const box = $('stops');
   box.textContent = '';
   stops.forEach((ci, k) => {
-    const last = stops.length - 1;
-    const row = el('div', 'stop' + (k === 0 ? ' start' : k === last ? ' end' : ''));
-    row.appendChild(el('span', 'marker', k === 0 ? 'A' : k === last ? 'B' : String(k)));
+    const lastK = stops.length - 1;
+    const row = el('div', 'stop' + (k === 0 ? ' start' : k === lastK ? ' end' : ''));
+    row.appendChild(el('span', 'marker', k === 0 ? 'A' : k === lastK ? 'B' : String(k)));
     const combo = el('div', 'combo');
     const inp = el('input');
     inp.id = 'stop-' + k; inp.type = 'text'; inp.autocomplete = 'off'; inp.spellcheck = false;
-    inp.placeholder = k === 0 ? 'Start, z. B. Calais' : k === last ? 'Ziel, z. B. Wien' : 'Zwischenstopp';
+    inp.placeholder = k === 0 ? 'Start, z. B. Calais' : k === lastK ? 'Ziel, z. B. Wien' : 'Zwischenstopp';
     inp.setAttribute('role', 'combobox'); inp.setAttribute('aria-expanded', 'false'); inp.setAttribute('aria-autocomplete', 'list');
-    inp.setAttribute('aria-label', k === 0 ? 'Start' : k === last ? 'Ziel' : 'Zwischenstopp ' + k);
+    inp.setAttribute('aria-label', k === 0 ? 'Start' : k === lastK ? 'Ziel' : 'Zwischenstopp ' + k);
     if (ci != null) inp.value = C[ci].name;
     combo.appendChild(inp);
     const list = el('ul', 'list'); list.setAttribute('role', 'listbox'); list.hidden = true; list.id = 'list-' + k;
     inp.setAttribute('aria-controls', list.id);
     combo.appendChild(list);
     row.appendChild(combo);
-    if (k > 0 && k < last) {
+    if (k > 0 && k < lastK) {
       const rm = el('button', 'iconbtn', '×'); rm.type = 'button'; rm.setAttribute('aria-label', 'Zwischenstopp entfernen');
       rm.onclick = () => { stops.splice(k, 1); renderStops(); update(); };
       row.appendChild(rm);
@@ -171,7 +208,7 @@ function renderStops() {
 
 function wireCombo(inp, list, k) {
   let items = [], sel = -1;
-  const close = () => { list.hidden = true; inp.setAttribute('aria-expanded', 'false'); };
+  const close = () => { list.hidden = true; inp.setAttribute('aria-expanded', 'false'); items = []; sel = -1; inp.removeAttribute('aria-activedescendant'); };
   const draw = () => {
     list.textContent = '';
     items.forEach((c, j) => {
@@ -179,7 +216,8 @@ function wireCombo(inp, list, k) {
       li.setAttribute('aria-selected', j === sel ? 'true' : 'false');
       if (!cityOn(c.i)) li.classList.add('off');
       const left = el('span'); left.appendChild(el('span', null, c.name + ' '));
-      left.appendChild(el('span', 'dlc', cityOn(c.i) ? D.dlcs[c.dlc] : D.dlcs[c.dlc] + ' (aus)'));
+      const dn = D.dlcs[c.dlc] === 'Base' ? 'Grundspiel' : D.dlcs[c.dlc];
+      left.appendChild(el('span', 'dlc', cityOn(c.i) ? dn : dn + ' (aus)'));
       li.appendChild(left); li.appendChild(el('span', 'cc', c.cc));
       li.onmousedown = ev => { ev.preventDefault(); pick(c); };
       list.appendChild(li);
@@ -193,17 +231,19 @@ function wireCombo(inp, list, k) {
   inp.addEventListener('input', () => { items = search(inp.value); sel = items.length ? 0 : -1; draw(); });
   inp.addEventListener('focus', () => { inp.select(); });
   inp.addEventListener('keydown', ev => {
-    if (ev.key === 'ArrowDown' && items.length) { sel = (sel + 1) % items.length; draw(); ev.preventDefault(); }
-    else if (ev.key === 'ArrowUp' && items.length) { sel = (sel - 1 + items.length) % items.length; draw(); ev.preventDefault(); }
+    if (ev.key === 'ArrowDown') {
+      if (!items.length) { items = search(inp.value); sel = items.length ? 0 : -1; } else sel = (sel + 1) % items.length;
+      draw(); ev.preventDefault();
+    } else if (ev.key === 'ArrowUp' && items.length) { sel = (sel - 1 + items.length) % items.length; draw(); ev.preventDefault(); }
     else if (ev.key === 'Enter') { if (sel >= 0 && items[sel]) pick(items[sel]); else { const c = exact(inp.value); if (c) pick(c); } ev.preventDefault(); }
     else if (ev.key === 'Escape') close();
   });
   inp.addEventListener('blur', () => {
     close();
     const c = exact(inp.value);
-    if (c) { if (stops[k] !== c.i) { stops[k] = c.i; inp.value = c.name; update(); } inp.classList.remove('bad'); }
-    else if (!inp.value.trim()) { if (stops[k] != null) { stops[k] = null; update(); } inp.classList.remove('bad'); }
-    else { inp.classList.add('bad'); if (stops[k] != null) { stops[k] = null; update(); } }
+    if (c) { if (stops[k] !== c.i) { stops[k] = c.i; inp.value = c.name; inp.classList.remove('bad'); update(); } else inp.classList.remove('bad'); }
+    else if (!inp.value.trim()) { inp.classList.remove('bad'); if (stops[k] != null) { stops[k] = null; update(); } }
+    else { inp.classList.add('bad'); stops[k] = null; update(); }
   });
 }
 
@@ -212,15 +252,15 @@ function dijkstra(src, dst, all) {
   const n = C.length, dist = new Float64Array(n).fill(Infinity), prev = new Int32Array(n).fill(-1);
   const heap = [[0, src]]; dist[src] = 0;
   const push = it => { heap.push(it); let i = heap.length - 1; while (i > 0) { const p = (i - 1) >> 1; if (heap[p][0] <= heap[i][0]) break; [heap[p], heap[i]] = [heap[i], heap[p]]; i = p; } };
-  const pop = () => { const top = heap[0], last = heap.pop(); if (heap.length) { heap[0] = last; let i = 0; for (;;) { const l = 2 * i + 1, r = l + 1; let m = i; if (l < heap.length && heap[l][0] < heap[m][0]) m = l; if (r < heap.length && heap[r][0] < heap[m][0]) m = r; if (m === i) break; [heap[m], heap[i]] = [heap[i], heap[m]]; i = m; } } return top; };
+  const popMin = () => { const top = heap[0], lastIt = heap.pop(); if (heap.length) { heap[0] = lastIt; let i = 0; for (;;) { const l = 2 * i + 1, r = l + 1; let m = i; if (l < heap.length && heap[l][0] < heap[m][0]) m = l; if (r < heap.length && heap[r][0] < heap[m][0]) m = r; if (m === i) break; [heap[m], heap[i]] = [heap[i], heap[m]]; i = m; } } return top; };
   while (heap.length) {
-    const [d, u] = pop();
+    const [d, u] = popMin();
     if (d > dist[u]) continue;
     if (u === dst) break;
     for (const e of ADJ[u]) {
       if (!edgeOn(e)) continue;
       const v = e.a === u ? e.b : e.a;
-      const nd = d + e.km * (e.kind > 0 ? D.ferryCost : 1);
+      const nd = d + edgeCost(e);
       if (nd < dist[v]) { dist[v] = nd; prev[v] = e.i; push([nd, v]); }
     }
   }
@@ -233,9 +273,11 @@ function pathTo(src, dst, prev, dist) {
   for (let v = dst; v !== src;) { const e = E[prev[v]]; path.push({ e, from: e.a === v ? e.b : e.a, to: v }); v = path[path.length - 1].from; }
   return path.reverse();
 }
-const pathKm = p => p.reduce((s, st) => s + (st.e.kind > 0 ? (D.ferryCounts ? st.e.km : 0) : st.e.km * S.factor), 0);
+const pathKm = p => p.reduce((s, st) => s + stepKm(st.e), 0);
 
 function compute() {
+  const bad = [...document.querySelectorAll('#stops input.bad')].map(i => i.value.trim()).filter(Boolean);
+  if (bad.length) return { error: '„' + bad[0] + '“ kenne ich nicht. Wähl die Stadt aus der Liste.' };
   if (stops[0] == null || stops[stops.length - 1] == null) return { error: 'Wähl einen Start und ein Ziel.' };
   const set = stops.filter(s => s != null);
   for (const s of set) if (!cityOn(s)) return { error: C[s].name + ' gehört zum DLC „' + D.dlcs[C[s].dlc] + '“, den du in den Einstellungen abgewählt hast.' };
@@ -250,20 +292,20 @@ function compute() {
   let road = 0, ferry = 0, ferryN = 0;
   const countries = [];
   legs.forEach(l => l.steps.forEach(s => {
-    if (s.e.kind > 0) { ferry += s.e.km; ferryN++; } else road += s.e.km * S.factor;
-    [C[s.from].cc, C[s.to].cc].forEach(cc => { if (countries[countries.length - 1] !== cc) countries.push(cc); });
+    road += s.e.km * S.factor;
+    if (s.e.kind > 0) { ferry += s.e.fkm; ferryN++; }
+    [C[s.from].cc, C[s.to].cc].forEach(cc => { if (!countries.includes(cc)) countries.push(cc); });
   }));
-  const uniq = countries.filter((c, i) => countries.indexOf(c) === i);
-  return { legs, road, ferry, ferryN, countries: uniq, stops: set };
+  return { legs, road, ferry, ferryN, countries, stops: set };
 }
 
-/* ---------- result rendering ---------- */
+/* ---------- result ---------- */
 const fmtH = h => { const m = Math.round(h * 60); return Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0') + ' h'; };
 const fmtM = m => m < 60 ? Math.round(m) + ' min' : fmtH(m / 60);
 function badges(road, kind) {
   const w = el('span', 'badges');
-  if (kind > 0) { w.appendChild(el('span', 'rb ferry', kind === 2 ? 'Zug' : 'Fähre')); return w; }
   road.split(/[\/,]/).map(s => s.trim()).filter(Boolean).slice(0, 3).forEach(r => w.appendChild(el('span', 'rb' + (/^E\s?\d/.test(r) ? ' e' : ''), r)));
+  if (kind > 0) w.appendChild(el('span', 'rb ferry', kind === 2 ? 'Zug' : 'Fähre'));
   return w;
 }
 let last = null;
@@ -304,17 +346,16 @@ function renderResult(r) {
     dd.appendChild(cc);
     box.appendChild(dd);
   }
-
   const wrapT = el('div', 'legs-wrap');
   const tbl = el('table', 'legs');
   const tb = el('tbody');
   let cum = 0;
   const addStop = ci => { const tr = el('tr'); const td = el('td', 'stopname', C[ci].name); td.colSpan = 3; tr.appendChild(td); tb.appendChild(tr); };
   addStop(r.legs[0].from);
-  r.legs.forEach(l => {
+  r.legs.forEach((l, li) => {
     l.steps.forEach(s => {
-      const km = s.e.kind > 0 ? s.e.km : s.e.km * S.factor;
-      if (s.e.kind === 0 || D.ferryCounts) cum += km;
+      const km = stepKm(s.e);
+      cum += km;
       const tr = el('tr');
       const td = el('td');
       td.appendChild(el('span', 'city', '→ ' + C[s.to].name));
@@ -324,7 +365,7 @@ function renderResult(r) {
       tr.appendChild(el('td', 'sum', NF.format(cum)));
       tb.appendChild(tr);
     });
-    if (l !== r.legs[r.legs.length - 1]) { const tr = el('tr'); const td = el('td', 'note', 'Zwischenstopp'); td.colSpan = 3; tr.appendChild(td); tb.appendChild(tr); }
+    if (li < r.legs.length - 1) { const tr = el('tr'); const td = el('td', 'note', 'Zwischenstopp'); td.colSpan = 3; tr.appendChild(td); tb.appendChild(tr); }
   });
   tbl.appendChild(tb); wrapT.appendChild(tbl);
   const det = el('details');
@@ -333,27 +374,52 @@ function renderResult(r) {
   det.appendChild(sm); det.appendChild(wrapT);
   det.open = true;
   box.appendChild(det);
-  box.appendChild(el('p', 'note', 'Richtwert. Das Spiel kann je nach Firma, Ladeort und Route um 10 bis 15 % abweichen. Mit „Kalibrieren“ in den Einstellungen passt du die Werte an dein Spiel an.'));
+  box.appendChild(el('p', 'note', 'Gemessen auf den echten Straßen des Spiels. Je nach Firma und Ladeort zeigt das Spiel meist bis zu 10 % mehr oder weniger. Mit „Kalibrieren“ in den Einstellungen passt du die Werte an.'));
 }
 
-/* ---------- map ---------- */
+/* ---------- map: canvas for land and roads, svg for route, cities and labels ---------- */
+const box = $('map').parentElement;
+const cv = $('mapc'), ctx = cv.getContext('2d');
 const svg = $('map');
-const gLand = sv('g'), gEdge = sv('g'), gRoute = sv('g'), gDot = sv('g'), gLab = sv('g'), gHit = sv('g');
-[gLand, gEdge, gRoute, gDot, gLab, gHit].forEach(g => svg.appendChild(g));
-D.land.forEach(l => gLand.appendChild(sv('path', { d: l.d, class: 'land' })));
-const edgeEls = E.map(e => { const a = C[e.a], b = C[e.b]; const p = sv('path', { d: 'M' + a.x + ' ' + a.z + 'L' + b.x + ' ' + b.z, class: 'edge' + (e.kind ? ' ferry' : '') }); gEdge.appendChild(p); return p; });
+const gRoute = sv('g'), gDot = sv('g'), gLab = sv('g'), gHit = sv('g');
+[gRoute, gDot, gLab, gHit].forEach(g => svg.appendChild(g));
+const LAND = D.land.map(l => new Path2D(l.d));
+const ROADS = {};
+['local', 'divided', 'freeway'].forEach(k => {
+  const p = new Path2D();
+  (D.roads && D.roads[k] || []).forEach(s => { const pts = decode(s); pts.forEach(([x, z], j) => j ? p.lineTo(x, z) : p.moveTo(x, z)); });
+  ROADS[k] = p;
+});
 const dotEls = C.map(c => { const p = sv('path', { d: 'M' + c.x + ' ' + c.z + 'h0', class: 'dot t' + tier(c) }); gDot.appendChild(p); return p; });
 const labEls = C.map(c => { const t = sv('text', { x: c.x, y: c.z, 'text-anchor': 'middle', class: 't' + tier(c) }); t.textContent = c.name; gLab.appendChild(t); return t; });
-// big cities claim label space first, like on a printed map
 const LABEL_ORDER = C.slice().sort((a, b) => b.companies.length - a.companies.length || a.name.localeCompare(b.name));
 C.forEach(c => { const h = sv('path', { d: 'M' + c.x + ' ' + c.z + 'h0', class: 'hit' }); h.dataset.i = c.i; const tt = sv('title'); tt.textContent = c.name + ' (' + c.cc + ')'; h.appendChild(tt); gHit.appendChild(h); });
 
 const ALL = (() => { let x0 = Infinity, x1 = -Infinity, z0 = Infinity, z1 = -Infinity; C.forEach(c => { x0 = Math.min(x0, c.x); x1 = Math.max(x1, c.x); z0 = Math.min(z0, c.z); z1 = Math.max(z1, c.z); }); return { x0, x1, z0, z1 }; })();
 let vb = { x: 0, y: 0, w: 1, h: 1 }, lastW = 0;
-const MAXW = (ALL.x1 - ALL.x0) * 1.6, MINW = 4000;
+const MAXW = (ALL.x1 - ALL.x0) * 1.6, MINW = 1500;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+let drawPending = false;
+function drawCanvas() {
+  drawPending = false;
+  const W = box.clientWidth, H = box.clientHeight, dpr = window.devicePixelRatio || 1;
+  if (!W || !H) return;
+  if (cv.width !== Math.round(W * dpr) || cv.height !== Math.round(H * dpr)) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); }
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.fillStyle = css('--map-water'); ctx.fillRect(0, 0, cv.width, cv.height);
+  const k = cv.width / vb.w, px = dpr / k, upp = vb.w / W;
+  ctx.setTransform(k, 0, 0, k, -vb.x * k, -vb.y * k);
+  ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+  ctx.fillStyle = css('--map-land'); LAND.forEach(p => ctx.fill(p));
+  ctx.strokeStyle = css('--map-border'); ctx.lineWidth = px; LAND.forEach(p => ctx.stroke(p));
+  if (upp < 45) { ctx.strokeStyle = css('--map-local'); ctx.lineWidth = (upp < 12 ? 1.6 : 1) * px; ctx.stroke(ROADS.local); }
+  ctx.strokeStyle = css('--map-divided'); ctx.lineWidth = (upp < 20 ? 2 : 1.3) * px; ctx.stroke(ROADS.divided);
+  ctx.strokeStyle = css('--map-freeway'); ctx.lineWidth = (upp < 20 ? 2.6 : upp < 80 ? 1.8 : 1.2) * px; ctx.stroke(ROADS.freeway);
+}
+const scheduleDraw = () => { if (!drawPending) { drawPending = true; requestAnimationFrame(drawCanvas); } };
+
 function setVB(nv) {
-  const W = svg.clientWidth || 600, H = svg.clientHeight || 400;
-  // keep aspect ratio of the element so 1 unit is square
+  const W = box.clientWidth || 600, H = box.clientHeight || 400;
   const ar = W / H;
   if (nv.w / nv.h > ar) { const nh = nv.w / ar; nv.y -= (nh - nv.h) / 2; nv.h = nh; } else { const nw = nv.h * ar; nv.x -= (nw - nv.w) / 2; nv.w = nw; }
   if (nv.w > MAXW) { const k = MAXW / nv.w; nv.x += nv.w * (1 - k) / 2; nv.y += nv.h * (1 - k) / 2; nv.w *= k; nv.h *= k; }
@@ -361,19 +427,20 @@ function setVB(nv) {
   vb = nv; lastW = W;
   if (!pop.hidden) closePop();
   svg.setAttribute('viewBox', [vb.x, vb.y, vb.w, vb.h].map(v => v.toFixed(1)).join(' '));
-  const upp = vb.w / W; // game units per css pixel
+  const upp = vb.w / W;
   gLab.setAttribute('font-size', (13 * upp).toFixed(1));
+  gLab.setAttribute('stroke-width', (3.5 * upp).toFixed(1));
   labEls.forEach(t => t.setAttribute('dy', (-9 * upp).toFixed(1)));
   drawLabels(upp);
+  scheduleDraw();
 }
 function fit(b, pad) {
   const p = pad || 0.12;
-  const w = Math.max(b.x1 - b.x0, 6000), h = Math.max(b.z1 - b.z0, 6000);
+  const w = Math.max(b.x1 - b.x0, 3000), h = Math.max(b.z1 - b.z0, 3000);
   setVB({ x: (b.x0 + b.x1) / 2 - w * (0.5 + p), y: (b.z0 + b.z1) / 2 - h * (0.5 + p), w: w * (1 + 2 * p), h: h * (1 + 2 * p) });
 }
 let routeNodes = new Set();
 function drawLabels(upp) {
-  // route and stop labels always show; other cities fill the free space, biggest first
   const placed = [];
   const fits = (c, force) => {
     const sx = c.x / upp, sy = c.z / upp, w = c.name.length * 7 + 6;
@@ -390,30 +457,34 @@ function drawLabels(upp) {
   });
 }
 function drawMap(r) {
-  E.forEach(e => edgeEls[e.i].classList.toggle('off', !edgeOn(e)));
   C.forEach(c => dotEls[c.i].classList.toggle('off', !cityOn(c.i)));
   gRoute.textContent = '';
   routeNodes = new Set();
   if (r && !r.error) {
-    let b = { x0: Infinity, x1: -Infinity, z0: Infinity, z1: -Infinity };
+    const b = { x0: Infinity, x1: -Infinity, z0: Infinity, z1: -Infinity };
+    const ext = (x, z) => { b.x0 = Math.min(b.x0, x); b.x1 = Math.max(b.x1, x); b.z0 = Math.min(b.z0, z); b.z1 = Math.max(b.z1, z); };
+    const cas = sv('g', {}), top = sv('g', {});
     r.legs.forEach(l => l.steps.forEach(s => {
-      const a = C[s.from], c = C[s.to];
-      gRoute.appendChild(sv('path', { d: 'M' + a.x + ' ' + a.z + 'L' + c.x + ' ' + c.z, class: 'route' + (s.e.kind ? ' ferry' : '') }));
-      [a, c].forEach(n => { routeNodes.add(n.i); b.x0 = Math.min(b.x0, n.x); b.x1 = Math.max(b.x1, n.x); b.z0 = Math.min(b.z0, n.z); b.z1 = Math.max(b.z1, n.z); });
+      edgeParts(s.e).forEach(([kind, pts]) => {
+        const d = 'M' + pts.map(p => p[0] + ' ' + p[1]).join('L');
+        pts.forEach(p => ext(p[0], p[1]));
+        if (!kind) cas.appendChild(sv('path', { d, class: 'route-case' }));
+        top.appendChild(sv('path', { d, class: 'route' + (kind ? ' ferry' : '') }));
+      });
+      routeNodes.add(s.from); routeNodes.add(s.to);
     }));
+    gRoute.appendChild(cas); gRoute.appendChild(top);
     r.bounds = b;
   }
   stops.forEach(s => { if (s != null) routeNodes.add(s); });
   C.forEach(c => dotEls[c.i].classList.toggle('on', stops.includes(c.i)));
-  drawLabels(vb.w / (svg.clientWidth || 600));
+  drawLabels(vb.w / (box.clientWidth || 600));
 }
 
 // pan & zoom
 const toSvg = (cx, cy) => { const pt = svg.createSVGPoint(); pt.x = cx; pt.y = cy; return pt.matrixTransform(svg.getScreenCTM().inverse()); };
 const clampK = (k, base) => Math.min(Math.max(k, MINW / base.w), MAXW / base.w);
-function zoomAround(p, base, k) {
-  setVB({ x: p.x - (p.x - base.x) * k, y: p.y - (p.y - base.y) * k, w: base.w * k, h: base.h * k });
-}
+function zoomAround(p, base, k) { setVB({ x: p.x - (p.x - base.x) * k, y: p.y - (p.y - base.y) * k, w: base.w * k, h: base.h * k }); }
 function zoomAt(cx, cy, k) {
   k = clampK(k, vb);
   if (Math.abs(k - 1) < 1e-6) return;
@@ -433,8 +504,7 @@ svg.addEventListener('pointermove', ev => {
   ptrs.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
   if (pinch && ptrs.size === 2) {
     const [a, b] = [...ptrs.values()];
-    const k = clampK(pinch.d / Math.max(10, Math.hypot(a.x - b.x, a.y - b.y)), pinch.vb);
-    zoomAround(pinch.p, pinch.vb, k);
+    zoomAround(pinch.p, pinch.vb, clampK(pinch.d / Math.max(10, Math.hypot(a.x - b.x, a.y - b.y)), pinch.vb));
     moved = 99;
     return;
   }
@@ -443,12 +513,13 @@ svg.addEventListener('pointermove', ev => {
   moved = Math.max(moved, Math.hypot(dx, dy));
   if (moved < 4) return;
   svg.classList.add('drag');
-  const upp = drag.vb.w / svg.clientWidth;
+  const upp = drag.vb.w / box.clientWidth;
   setVB({ x: drag.vb.x - dx * upp, y: drag.vb.y - dy * upp, w: drag.vb.w, h: drag.vb.h });
 });
 const endPtr = ev => {
   ptrs.delete(ev.pointerId);
   if (ptrs.size < 2) pinch = null;
+  if (ptrs.size === 1 && !drag) { const q = [...ptrs.values()][0]; drag = { x: q.x, y: q.y, vb: Object.assign({}, vb), target: null }; moved = 99; }
   if (ptrs.size === 0) {
     svg.classList.remove('drag');
     if (drag && moved < 4 && ev.type === 'pointerup') {
@@ -486,9 +557,9 @@ function openPop(ci, cx, cy) {
   mk('Zwischenstopp', () => { stops.splice(stops.length - 1, 0, ci); });
   pop.appendChild(row);
   pop.hidden = false;
-  const box = svg.parentElement.getBoundingClientRect();
-  let x = cx - box.left + 10, y = cy - box.top + 10;
-  x = Math.min(x, box.width - pop.offsetWidth - 10); y = Math.min(y, box.height - pop.offsetHeight - 10);
+  const bx = box.getBoundingClientRect();
+  let x = cx - bx.left + 10, y = cy - bx.top + 10;
+  x = Math.min(x, bx.width - pop.offsetWidth - 10); y = Math.min(y, bx.height - pop.offsetHeight - 10);
   pop.style.left = Math.max(10, x) + 'px'; pop.style.top = Math.max(10, y) + 'px';
 }
 document.addEventListener('keydown', ev => { if (ev.key === 'Escape') closePop(); });
@@ -513,7 +584,7 @@ D.dlcs.forEach((name, d) => {
   const lab = el('label');
   const cb = el('input'); cb.type = 'checkbox'; cb.id = 'dlc-' + d; cb.checked = dlcOn(d);
   if (name === 'Base') { cb.checked = true; cb.disabled = true; }
-  cb.onchange = () => { S.dlcOff = S.dlcOff.filter(n => n !== name); if (!cb.checked) S.dlcOff.push(name); save(); update(); };
+  cb.onchange = () => { S.dlcOff = S.dlcOff.filter(n => n !== name); if (!cb.checked) S.dlcOff.push(name); calcMask(); save(); update(); };
   lab.appendChild(cb); lab.appendChild(el('span', null, name === 'Base' ? 'Grundspiel' : name));
   dlcBox.appendChild(lab);
 });
@@ -556,17 +627,7 @@ function renderFinder() {
   const name = [...COMPANIES.keys()].find(n => norm(n) === q) || [...COMPANIES.keys()].find(n => norm(n).startsWith(q));
   if (!name) { hits.appendChild(el('li', 'note', 'Keine Firma mit diesem Namen gefunden.')); return; }
   const at = C.filter(c => c.companies.includes(name) && cityOn(c.i));
-  if (start == null || !cityOn(start)) {
-    at.sort((a, b) => a.name.localeCompare(b.name, 'de')).slice(0, 12).forEach(c => addHit(c, null));
-    hits.insertBefore(el('li', 'note', name + ' gibt es in ' + at.length + (at.length === 1 ? ' Stadt' : ' Städten') + '. Wähl einen Start für die Entfernung.'), hits.firstChild);
-    return;
-  }
-  const { dist, prev } = dijkstra(start, null, true);
-  const rows = at.map(c => { const p = pathTo(start, c.i, prev, dist); return { c, km: c.i === start ? 0 : p ? pathKm(p) : Infinity }; })
-    .sort((a, b) => a.km - b.km);
-  hits.appendChild(el('li', 'note', name + ': ' + at.length + (at.length === 1 ? ' Standort' : ' Standorte') + ', die nächsten zuerst.'));
-  rows.slice(0, 8).forEach(x => addHit(x.c, x.km));
-  function addHit(c, km) {
+  const addHit = (c, km) => {
     const li = el('li');
     li.appendChild(el('span', 'nm', c.name + ' · ' + c.cc));
     li.appendChild(el('span', 'km', km == null ? '' : isFinite(km) ? (km === 0 ? 'hier' : '≈ ' + NF.format(km) + ' km') : 'keine Route'));
@@ -574,7 +635,17 @@ function renderFinder() {
     b.onclick = () => { stops[stops.length - 1] = c.i; renderStops(); update(); if (last && last.bounds) fit(last.bounds); };
     li.appendChild(b);
     hits.appendChild(li);
+  };
+  if (start == null || !cityOn(start)) {
+    hits.appendChild(el('li', 'note', name + ' gibt es in ' + at.length + (at.length === 1 ? ' Stadt' : ' Städten') + '. Wähl einen Start für die Entfernung.'));
+    at.sort((a, b) => a.name.localeCompare(b.name, 'de')).slice(0, 12).forEach(c => addHit(c, null));
+    return;
   }
+  const { dist, prev } = dijkstra(start, null, true);
+  const rows = at.map(c => { const p = pathTo(start, c.i, prev, dist); return { c, km: c.i === start ? 0 : p ? pathKm(p) : Infinity }; })
+    .sort((a, b) => a.km - b.km);
+  hits.appendChild(el('li', 'note', name + ': ' + at.length + (at.length === 1 ? ' Standort' : ' Standorte') + ', die nächsten zuerst.'));
+  rows.slice(0, 8).forEach(x => addHit(x.c, x.km));
 }
 $('coIn').addEventListener('input', renderFinder);
 
@@ -591,22 +662,21 @@ $('random').onclick = () => {
 };
 
 /* ---------- about ---------- */
-(function about() {
-  const a = $('about');
-  D.about.forEach(p => { const n = el('p'); n.innerHTML = p; a.appendChild(n); });
-  $('foot').textContent = D.footer;
-})();
+D.about.forEach(p => { const n = el('p'); n.innerHTML = p; $('about').appendChild(n); });
+$('foot').textContent = D.footer;
 
 /* ---------- main update ---------- */
-let firstFit = true;
+let fittedFor = '';
 function update() {
   const r = compute();
   renderResult(r);
   drawMap(r);
   renderFinder();
   if (!r.error) {
-    try { history.replaceState(null, '', '#r-' + r.stops.join('-')); } catch (e) { /* ignore */ }
-    if (firstFit) { fit(r.bounds); firstFit = false; }
+    try { history.replaceState(null, '', '#r-' + r.stops.map(s => C[s].slug).join('--')); } catch (e) { /* ignore */ }
+    // zoom to the route whenever the stops change, not when only settings change
+    const key = r.stops.join(',');
+    if (key !== fittedFor) { fit(r.bounds); fittedFor = key; }
   } else if (location.hash) {
     try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* ignore */ }
   }
@@ -616,11 +686,18 @@ renderStops();
 fit(ALL, 0.03);
 update();
 new ResizeObserver(() => {
-  const W = svg.clientWidth, H = svg.clientHeight;
+  const W = box.clientWidth, H = box.clientHeight;
   if (!W || !H || !lastW) return;
   const upp = vb.w / lastW, cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2;
   setVB({ x: cx - W * upp / 2, y: cy - H * upp / 2, w: W * upp, h: H * upp });
-}).observe(svg);
-window.addEventListener('hashchange', () => { initStops(); renderStops(); update(); if (last && last.bounds) fit(last.bounds); });
+}).observe(box);
+const mq = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+if (mq && mq.addEventListener) mq.addEventListener('change', scheduleDraw);
+new MutationObserver(scheduleDraw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+window.addEventListener('hashchange', () => {
+  const h = stopsFromHash();
+  if (!h) return;
+  stops = h; renderStops(); update(); if (last && last.bounds) fit(last.bounds);
+});
 })();
 </script>

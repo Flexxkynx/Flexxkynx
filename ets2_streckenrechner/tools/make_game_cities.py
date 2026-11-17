@@ -5,6 +5,7 @@ and is generated from the game files; positions are lon/lat in that project's pr
 which ets2proj.to_game turns back into exact game coordinates.
 
 usage: python3 make_game_cities.py ets2-search.geojson ../data/sources/game_cities.json
+Also writes game_ports.json (ferry and train terminals) next to the output.
 """
 import json
 import os
@@ -38,6 +39,15 @@ def main(src, dst):
         c['dealers'] = sorted(c['dealers'], key=str.lower)
         out.append(c)
     json.dump(out, open(dst, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    ports = []
+    for f in feats:
+        p = f['properties']
+        if p['type'] in ('ferry', 'train'):
+            lon, lat = f['geometry']['coordinates']
+            x, z, uk = to_game(lon, lat)
+            ports.append({'label': p['label'], 'cc': p['stateCode'], 'kind': p['type'], 'lon': lon, 'lat': lat, 'x': round(x), 'z': round(z)})
+    json.dump(ports, open(os.path.join(os.path.dirname(dst), 'game_ports.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    print(len(ports), 'ferry and train terminals')
     print(len(out), 'cities,', sum(len(c['companies']) for c in out), 'company sites,',
           sum(len(c['dealers']) for c in out), 'dealers')
 

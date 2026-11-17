@@ -1,0 +1,830 @@
+[
+{
+"label": "Travemünde",
+"cc": "DE",
+"kind": "ferry",
+"lon": 10.8348,
+"lat": 54.022,
+"x": 2931,
+"z": -18988
+},
+{
+"label": "Priwall",
+"cc": "DE",
+"kind": "ferry",
+"lon": 11.0471,
+"lat": 54.1071,
+"x": 3656,
+"z": -19430
+},
+{
+"label": "Travemünde",
+"cc": "DE",
+"kind": "ferry",
+"lon": 11.0122,
+"lat": 54.1117,
+"x": 3543,
+"z": -19462
+},
+{
+"label": "Gedser",
+"cc": "DK",
+"kind": "ferry",
+"lon": 11.8078,
+"lat": 54.5288,
+"x": 6260,
+"z": -21691
+},
+{
+"label": "Rostock",
+"cc": "DE",
+"kind": "ferry",
+"lon": 11.7817,
+"lat": 54.3263,
+"x": 6125,
+"z": -20549
+},
+{
+"label": "Oslo",
+"cc": "NO",
+"kind": "ferry",
+"lon": 10.7241,
+"lat": 60.056,
+"x": 4559,
+"z": -53235
+},
+{
+"label": "Trieste",
+"cc": "IT",
+"kind": "ferry",
+"lon": 13.3999,
+"lat": 45.9203,
+"x": 10386,
+"z": 27199
+},
+{
+"label": "Porto Torres",
+"cc": "IT",
+"kind": "ferry",
+"lon": 8.2677,
+"lat": 40.9087,
+"x": -12321,
+"z": 54546
+},
+{
+"label": "Europort",
+"cc": "NL",
+"kind": "ferry",
+"lon": 3.6022,
+"lat": 51.8795,
+"x": -22647,
+"z": -9578
+},
+{
+"label": "IJmuiden",
+"cc": "NL",
+"kind": "ferry",
+"lon": 4.0587,
+"lat": 52.5599,
+"x": -20514,
+"z": -13139
+},
+{
+"label": "Calais",
+"cc": "FR",
+"kind": "train",
+"lon": 1.6265,
+"lat": 50.5061,
+"x": -30794,
+"z": -3108
+},
+{
+"label": "Calais",
+"cc": "FR",
+"kind": "ferry",
+"lon": 1.4797,
+"lat": 50.9128,
+"x": -30888,
+"z": -5465
+},
+{
+"label": "Dover",
+"cc": "GB",
+"kind": "ferry",
+"lon": 1.156,
+"lat": 51.0441,
+"x": -32502,
+"z": -7179
+},
+{
+"label": "Harwich",
+"cc": "GB",
+"kind": "ferry",
+"lon": 0.8322,
+"lat": 51.8144,
+"x": -32885,
+"z": -13169
+},
+{
+"label": "Hull",
+"cc": "GB",
+"kind": "ferry",
+"lon": -0.4853,
+"lat": 53.7747,
+"x": -35762,
+"z": -28856
+},
+{
+"label": "Folkestone",
+"cc": "GB",
+"kind": "train",
+"lon": 0.4174,
+"lat": 50.9284,
+"x": -36082,
+"z": -7001
+},
+{
+"label": "Tyne",
+"cc": "GB",
+"kind": "ferry",
+"lon": -1.5889,
+"lat": 55.0723,
+"x": -38336,
+"z": -39469
+},
+{
+"label": "Plymouth",
+"cc": "GB",
+"kind": "ferry",
+"lon": -4.6107,
+"lat": 50.218,
+"x": -60545,
+"z": -7384
+},
+{
+"label": "Brăila",
+"cc": "RO",
+"kind": "ferry",
+"lon": 28.0188,
+"lat": 45.1975,
+"x": 68167,
+"z": 26734
+},
+{
+"label": "Smârdan",
+"cc": "RO",
+"kind": "ferry",
+"lon": 28.0508,
+"lat": 45.1367,
+"x": 68354,
+"z": 27051
+},
+{
+"label": "Split",
+"cc": "HR",
+"kind": "ferry",
+"lon": 16.2278,
+"lat": 43.4686,
+"x": 21708,
+"z": 41188
+},
+{
+"label": "Durrës",
+"cc": "AL",
+"kind": "ferry",
+"lon": 19.5532,
+"lat": 41.5123,
+"x": 36061,
+"z": 51818
+},
+{
+"label": "Liepāja",
+"cc": "LV",
+"kind": "ferry",
+"lon": 21.0104,
+"lat": 56.4956,
+"x": 35315,
+"z": -33381
+},
+{
+"label": "Naantali",
+"cc": "FI",
+"kind": "ferry",
+"lon": 21.6417,
+"lat": 60.4686,
+"x": 35229,
+"z": -56090
+},
+{
+"label": "Ventspils",
+"cc": "LV",
+"kind": "ferry",
+"lon": 21.6014,
+"lat": 57.486,
+"x": 36641,
+"z": -39141
+},
+{
+"label": "Paldiski",
+"cc": "EE",
+"kind": "ferry",
+"lon": 23.8781,
+"lat": 59.315,
+"x": 42248,
+"z": -50215
+},
+{
+"label": "Tallinn",
+"cc": "EE",
+"kind": "ferry",
+"lon": 24.6226,
+"lat": 59.4912,
+"x": 44251,
+"z": -51487
+},
+{
+"label": "Helsinki",
+"cc": "FI",
+"kind": "ferry",
+"lon": 25.151,
+"lat": 60.1316,
+"x": 45253,
+"z": -55317
+},
+{
+"label": "Gdynia",
+"cc": "PL",
+"kind": "ferry",
+"lon": 18.5358,
+"lat": 54.5912,
+"x": 28161,
+"z": -22095
+},
+{
+"label": "Gdańsk",
+"cc": "PL",
+"kind": "ferry",
+"lon": 18.7101,
+"lat": 54.3156,
+"x": 28807,
+"z": -20566
+},
+{
+"label": "Porto-Vecchio",
+"cc": "FR",
+"kind": "ferry",
+"lon": 9.3606,
+"lat": 41.5895,
+"x": -7327,
+"z": 51050
+},
+{
+"label": "Ajaccio",
+"cc": "FR",
+"kind": "ferry",
+"lon": 8.6142,
+"lat": 41.843,
+"x": -10368,
+"z": 49338
+},
+{
+"label": "Marseille",
+"cc": "FR",
+"kind": "ferry",
+"lon": 5.4682,
+"lat": 43.1185,
+"x": -22676,
+"z": 40637
+},
+{
+"label": "Roscoff",
+"cc": "FR",
+"kind": "ferry",
+"lon": -4.0969,
+"lat": 48.5826,
+"x": -53502,
+"z": 2863
+},
+{
+"label": "Igoumenitsa",
+"cc": "GR",
+"kind": "ferry",
+"lon": 20.1908,
+"lat": 39.548,
+"x": 39571,
+"z": 62912
+},
+{
+"label": "Igoumenitsa",
+"cc": "GR",
+"kind": "ferry",
+"lon": 20.1917,
+"lat": 39.5606,
+"x": 39570,
+"z": 62840
+},
+{
+"label": "Lixouri",
+"cc": "GR",
+"kind": "ferry",
+"lon": 20.3273,
+"lat": 38.2117,
+"x": 40732,
+"z": 70582
+},
+{
+"label": "Argostoli",
+"cc": "GR",
+"kind": "ferry",
+"lon": 20.4401,
+"lat": 38.0716,
+"x": 41301,
+"z": 71355
+},
+{
+"label": "Patras",
+"cc": "GR",
+"kind": "ferry",
+"lon": 21.625,
+"lat": 38.1756,
+"x": 46600,
+"z": 70306
+},
+{
+"label": "Patras",
+"cc": "GR",
+"kind": "ferry",
+"lon": 21.676,
+"lat": 38.1937,
+"x": 46820,
+"z": 70181
+},
+{
+"label": "Kalamata",
+"cc": "GR",
+"kind": "ferry",
+"lon": 22.4229,
+"lat": 36.8764,
+"x": 50956,
+"z": 77474
+},
+{
+"label": "Kavala",
+"cc": "GR",
+"kind": "ferry",
+"lon": 24.6637,
+"lat": 40.9533,
+"x": 58163,
+"z": 52864
+},
+{
+"label": "Piraeus",
+"cc": "GR",
+"kind": "ferry",
+"lon": 24.0221,
+"lat": 37.8372,
+"x": 57626,
+"z": 71086
+},
+{
+"label": "Chania",
+"cc": "GR",
+"kind": "ferry",
+"lon": 24.0085,
+"lat": 35.5174,
+"x": 59218,
+"z": 84530
+},
+{
+"label": "Chania",
+"cc": "GR",
+"kind": "ferry",
+"lon": 24.0179,
+"lat": 35.5255,
+"x": 59257,
+"z": 84477
+},
+{
+"label": "Mitilini",
+"cc": "GR",
+"kind": "ferry",
+"lon": 26.4831,
+"lat": 39.1184,
+"x": 67563,
+"z": 62171
+},
+{
+"label": "Mitilini",
+"cc": "GR",
+"kind": "ferry",
+"lon": 26.4627,
+"lat": 39.1456,
+"x": 67449,
+"z": 62030
+},
+{
+"label": "Chios",
+"cc": "GR",
+"kind": "ferry",
+"lon": 26.0633,
+"lat": 38.5219,
+"x": 66234,
+"z": 65874
+},
+{
+"label": "Chios",
+"cc": "GR",
+"kind": "ferry",
+"lon": 26.0663,
+"lat": 38.5351,
+"x": 66236,
+"z": 65796
+},
+{
+"label": "Heraklion",
+"cc": "GR",
+"kind": "ferry",
+"lon": 25.4281,
+"lat": 35.3215,
+"x": 66045,
+"z": 84768
+},
+{
+"label": "Rhodes",
+"cc": "GR",
+"kind": "ferry",
+"lon": 28.1821,
+"lat": 36.4313,
+"x": 77801,
+"z": 76250
+},
+{
+"label": "Barcelona",
+"cc": "ES",
+"kind": "ferry",
+"lon": 2.3418,
+"lat": 41.4631,
+"x": -37089,
+"z": 47999
+},
+{
+"label": "Valencia",
+"cc": "ES",
+"kind": "ferry",
+"lon": -0.3697,
+"lat": 39.4884,
+"x": -50805,
+"z": 56890
+},
+{
+"label": "Bilbao",
+"cc": "ES",
+"kind": "ferry",
+"lon": -3.3529,
+"lat": 43.2721,
+"x": -58281,
+"z": 32803
+},
+{
+"label": "Santander",
+"cc": "ES",
+"kind": "ferry",
+"lon": -4.1313,
+"lat": 43.3119,
+"x": -61329,
+"z": 31761
+},
+{
+"label": "Seyðisfjörður",
+"cc": "IS",
+"kind": "ferry",
+"lon": -14.4992,
+"lat": 65.3925,
+"x": -52593,
+"z": -97989
+},
+{
+"label": "Þorlákshöfn",
+"cc": "IS",
+"kind": "ferry",
+"lon": -21.568,
+"lat": 63.6309,
+"x": -72807,
+"z": -96521
+},
+{
+"label": "Stykkishólmur",
+"cc": "IS",
+"kind": "ferry",
+"lon": -23.3912,
+"lat": 64.9653,
+"x": -72997,
+"z": -105529
+},
+{
+"label": "Brjánslækur",
+"cc": "IS",
+"kind": "ferry",
+"lon": -24.2409,
+"lat": 65.423,
+"x": -73432,
+"z": -108885
+},
+{
+"label": "Ancona",
+"cc": "IT",
+"kind": "ferry",
+"lon": 13.632,
+"lat": 43.8012,
+"x": 11071,
+"z": 39279
+},
+{
+"label": "Palermo",
+"cc": "IT",
+"kind": "ferry",
+"lon": 13.2006,
+"lat": 38.3512,
+"x": 8543,
+"z": 70558
+},
+{
+"label": "Naples",
+"cc": "IT",
+"kind": "ferry",
+"lon": 14.1902,
+"lat": 40.7111,
+"x": 13157,
+"z": 57012
+},
+{
+"label": "Messina",
+"cc": "IT",
+"kind": "ferry",
+"lon": 15.3902,
+"lat": 38.3244,
+"x": 18421,
+"z": 70810
+},
+{
+"label": "Villa San Giovanni",
+"cc": "IT",
+"kind": "ferry",
+"lon": 15.5438,
+"lat": 38.3775,
+"x": 19112,
+"z": 70497
+},
+{
+"label": "Bari",
+"cc": "IT",
+"kind": "ferry",
+"lon": 16.8966,
+"lat": 41.2275,
+"x": 24788,
+"z": 53956
+},
+{
+"label": "Cagliari",
+"cc": "IT",
+"kind": "ferry",
+"lon": 8.9822,
+"lat": 39.217,
+"x": -10049,
+"z": 64536
+},
+{
+"label": "Frederikshavn",
+"cc": "DK",
+"kind": "ferry",
+"lon": 10.427,
+"lat": 57.389,
+"x": 2774,
+"z": -38117
+},
+{
+"label": "Hirtshals",
+"cc": "DK",
+"kind": "ferry",
+"lon": 10.1521,
+"lat": 57.5413,
+"x": 1998,
+"z": -39035
+},
+{
+"label": "Gothenburg",
+"cc": "SE",
+"kind": "ferry",
+"lon": 11.9289,
+"lat": 57.835,
+"x": 7437,
+"z": -40410
+},
+{
+"label": "Trelleborg",
+"cc": "SE",
+"kind": "ferry",
+"lon": 13.151,
+"lat": 55.2868,
+"x": 10743,
+"z": -25829
+},
+{
+"label": "Karlskrona",
+"cc": "SE",
+"kind": "ferry",
+"lon": 15.2802,
+"lat": 55.9725,
+"x": 17542,
+"z": -29641
+},
+{
+"label": "Nynäshamn",
+"cc": "SE",
+"kind": "ferry",
+"lon": 17.9168,
+"lat": 58.8123,
+"x": 25199,
+"z": -45950
+},
+{
+"label": "Kapellskär",
+"cc": "SE",
+"kind": "ferry",
+"lon": 19.0503,
+"lat": 59.6918,
+"x": 28238,
+"z": -51120
+},
+{
+"label": "Esbjerg",
+"cc": "DK",
+"kind": "ferry",
+"lon": 8.1891,
+"lat": 55.412,
+"x": -5041,
+"z": -27484
+},
+{
+"label": "Kristiansand",
+"cc": "NO",
+"kind": "ferry",
+"lon": 7.6889,
+"lat": 58.1309,
+"x": -5098,
+"z": -42997
+},
+{
+"label": "Stavanger",
+"cc": "NO",
+"kind": "ferry",
+"lon": 5.2828,
+"lat": 59.0103,
+"x": -11562,
+"z": -48803
+},
+{
+"label": "Bergen",
+"cc": "NO",
+"kind": "ferry",
+"lon": 5.3427,
+"lat": 60.1498,
+"x": -10537,
+"z": -55230
+},
+{
+"label": "Lavik",
+"cc": "NO",
+"kind": "ferry",
+"lon": 5.2216,
+"lat": 60.9336,
+"x": -10281,
+"z": -59724
+},
+{
+"label": "Ytre Oppedal",
+"cc": "NO",
+"kind": "ferry",
+"lon": 5.2781,
+"lat": 60.8459,
+"x": -10192,
+"z": -59205
+},
+{
+"label": "Svolvær",
+"cc": "NO",
+"kind": "ferry",
+"lon": 13.386,
+"lat": 68.2293,
+"x": 13133,
+"z": -100424
+},
+{
+"label": "Skutvik",
+"cc": "NO",
+"kind": "ferry",
+"lon": 14.7387,
+"lat": 67.7283,
+"x": 16078,
+"z": -97415
+},
+{
+"label": "Bognes",
+"cc": "NO",
+"kind": "ferry",
+"lon": 15.2611,
+"lat": 68.1987,
+"x": 17231,
+"z": -100204
+},
+{
+"label": "Skarberget",
+"cc": "NO",
+"kind": "ferry",
+"lon": 15.4881,
+"lat": 68.3081,
+"x": 17724,
+"z": -100857
+},
+{
+"label": "Umeå",
+"cc": "SE",
+"kind": "ferry",
+"lon": 20.4443,
+"lat": 63.5444,
+"x": 30579,
+"z": -73462
+},
+{
+"label": "Vaasa",
+"cc": "FI",
+"kind": "ferry",
+"lon": 20.9478,
+"lat": 63.0133,
+"x": 32111,
+"z": -70503
+},
+{
+"label": "Kanestraum",
+"cc": "NO",
+"kind": "ferry",
+"lon": 7.9181,
+"lat": 62.758,
+"x": -1871,
+"z": -69301
+},
+{
+"label": "Halsa",
+"cc": "NO",
+"kind": "ferry",
+"lon": 8.0229,
+"lat": 62.8023,
+"x": -1573,
+"z": -69529
+},
+{
+"label": "Molde",
+"cc": "NO",
+"kind": "ferry",
+"lon": 6.6499,
+"lat": 62.5491,
+"x": -5312,
+"z": -68457
+},
+{
+"label": "Vestnes",
+"cc": "NO",
+"kind": "ferry",
+"lon": 6.5951,
+"lat": 62.4952,
+"x": -5491,
+"z": -68165
+},
+{
+"label": "Anda",
+"cc": "NO",
+"kind": "ferry",
+"lon": 5.6252,
+"lat": 61.6629,
+"x": -8643,
+"z": -63728
+},
+{
+"label": "Lote",
+"cc": "NO",
+"kind": "ferry",
+"lon": 5.6574,
+"lat": 61.7504,
+"x": -8493,
+"z": -64216
+},
+{
+"label": "Ålesund",
+"cc": "NO",
+"kind": "ferry",
+"lon": 5.6926,
+"lat": 62.2769,
+"x": -8016,
+"z": -67209
+}
+]

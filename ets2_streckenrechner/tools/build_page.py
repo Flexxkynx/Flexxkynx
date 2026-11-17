@@ -26,6 +26,11 @@ data = {
     'example': cfg['example'], 'land': land, 'about': about,
     'footer': cfg['footer'].format(cities=n_c, date=cfg['dataDate']),
 }
+rd = os.path.join(root, 'data', 'roads_display.json')
+if os.path.exists(rd):
+    data['roads'] = json.load(open(rd))
+if net.get('geom'):
+    data['geom'] = net['geom']
 blob = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 head = open(os.path.join(root, 'src', 'head.html'), encoding='utf-8').read()
 body = open(os.path.join(root, 'src', 'body.html'), encoding='utf-8').read().replace('__DATA_JSON__', blob)

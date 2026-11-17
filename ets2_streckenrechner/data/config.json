@@ -9,12 +9,12 @@
   ],
   "about": [
     "<b>Städte.</b> {cities} Städte aus dem Grundspiel und allen Karten-DLCs bis Island, Stand {date}. Position, Firmen und Lkw-Händler jeder Stadt stammen aus den Spieldaten (über TruckSim Maps).",
-    "<b>Straßennetz.</b> {roads} Straßenverbindungen zwischen benachbarten Städten und {ferries} Fähr- und Zugverbindungen. Die kürzeste Route sucht der Rechner selbst, auch über Zwischenstopps.",
-    "<b>Kilometer.</b> ETS2 baut Europa verkleinert nach, Großbritannien etwas größer als das Festland. Jede Etappe ist die Luftlinie im Spiel mal einem Kurvenfaktor der echten Straße mal dem Anzeigemaßstab ({scale} auf dem Festland, {scale_uk} in Großbritannien). Das Ergebnis ist ein Richtwert, keine exakte Navi-Anzeige.",
+    "<b>Echte Straßen.</b> Die Route läuft über das echte Straßennetz des Spiels: rund 230.000 Straßenstücke, dazu alle {ferries} Fähr- und Zuglinien. Daraus sind {roads} Verbindungen zwischen Städten berechnet, jede mit ihrem echten Verlauf.",
+    "<b>Kilometer.</b> Gemessen wird die Länge der Spielstraßen, umgerechnet in die Kilometer, die das Spiel anzeigt (Faktor {scale} auf dem Festland, {scale_uk} in Großbritannien, ermittelt an echten Aufträgen). Firmen liegen nicht genau in der Stadtmitte, deshalb zeigt das Spiel meist bis zu 10 % mehr oder weniger.",
     "<b>Fähren und Eurotunnel.</b> Das Spiel rechnet Überfahrten in die Auftragsdistanz ein, deshalb sind sie in der Summe enthalten und werden zusätzlich getrennt ausgewiesen. Mit „Fähren und Zug meiden“ rechnest du nur über Land.",
     "<b>Zeit und Diesel.</b> Die Fahrzeit im Spiel ergibt sich aus Kilometern und Ø-Tempo. Die echte Zeit am PC teilt sie durch den Zeitraffer (Standard 1 : {ts}). Diesel rechnet mit deinem Verbrauch und Preis.",
     "<b>Firmen.</b> Ein Klick auf eine Stadt in der Karte zeigt ihre Firmen und Händler. „Nächste Firma finden“ sucht ab deinem Start die nächsten Standorte einer Firma.",
     "<b>Genauer machen.</b> Nimm einen Auftrag im Spiel, gib Start und Ziel hier ein und trag unter „Kalibrieren“ die Kilometer aus dem Spiel ein. Der Faktor gilt dann für alle Strecken und bleibt in deinem Browser gespeichert."
   ],
-  "footer": "Fan-Projekt, nicht von SCS Software. {cities} Städte, Datenstand {date}. Spieldaten: TruckSim Maps (truckermudgeon). Landkarte: Natural Earth."
+  "footer": "Fan-Projekt, nicht von SCS Software. {cities} Städte, Datenstand {date}. Spieldaten und Straßen: TruckSim Maps (truckermudgeon). Landkarte: Natural Earth."
 }

@@ -56,3 +56,24 @@
 - bridged Almaraz - Badajoz (202 km) through removed Mérida
 - bridged Almaraz - Sevilla (335 km) through removed Mérida
 - bridged Badajoz - Sevilla (257 km) through removed Mérida
+
+## Straßennetz aus den Spieldaten
+
+- Straßengraph: 1890980 Knoten, 2091559 Kanten, 69 Fähr- und Zuglinien
+- Städteverbindungen: 3431, davon 298 mit Fähre oder Zug
+- Anzeigemaßstab neu angepasst: 17.88 Festland (9 Paare), 13.41 UK (5 Paare)
+- Zusammenhang: 1 Teile
+- Calais → Duisburg: Spiel 436 km, Faktor 19.00 (Festland)
+- Lyon → Calais: Spiel 805 km, Faktor 17.55 (Festland)
+- Calais → Terni: Spiel 1566 km, Faktor 17.86 (Festland)
+- London → Cambridge: Spiel 101 km, Faktor 13.59 (UK)
+- Aberdeen → Glasgow: Spiel 238 km, Faktor 13.41 (UK)
+- Hamburg → Berlin: Spiel 339 km, Faktor 20.25 (Festland)
+- Hamburg → Rostock: Spiel 263 km, Faktor 18.20 (Festland)
+- Erfurt → Praha: Spiel 360 km, Faktor 16.54 (Festland)
+- Madrid → A Coruña: Spiel 622 km, Faktor 17.73 (Festland)
+- Berlin → Madrid: Spiel 2495 km, Faktor 17.90 (Festland)
+- A Coruña → Sagunt: Spiel 1331 km, Faktor 24.51 (Festland)
+- Felixstowe → Edinburgh: Spiel 679 km, Faktor 14.10 (UK)
+- Birmingham → Cardiff: Spiel 228 km, Faktor 12.76 (UK)
+- Glasgow → Carlisle: Spiel 180 km, Faktor 13.02 (UK)

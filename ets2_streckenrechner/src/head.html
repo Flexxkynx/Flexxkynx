@@ -20,11 +20,15 @@
   --sign-green: #15774a;
   --danger: #b4232a;
   /* the map keeps the dark in-game look in both themes */
-  --map-water: #121d29;
-  --map-land: #233040;
+  --map-water: #141f2c;
+  --map-land: #1f2b39;
   --map-border: #3a4b5f;
   --map-road: #74879d;
   --map-ferry: #5a97da;
+  --map-freeway: #b4c3d4;
+  --map-divided: #7f91a6;
+  --map-local: #46576a;
+  --map-route-case: #0b1219;
   --map-city: #dbe4ee;
   --map-off: #33414f;
   --map-ink: #f1f5f9;
@@ -52,6 +56,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html, body { height: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
@@ -180,14 +185,17 @@ button, input, select { font: inherit; color: inherit; }
 /* Map */
 .mapbox { position: relative; overflow: hidden; height: calc(100vh - 110px); min-height: 420px; }
 @media (max-width: 860px) { .mapbox { height: 62vh; min-height: 340px; } }
-#map { display: block; width: 100%; height: 100%; background: var(--map-water); touch-action: none; cursor: grab; user-select: none; }
+#mapc, #map { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+#mapc { background: var(--map-water); }
+#map { background: transparent; touch-action: none; cursor: grab; user-select: none; }
 #map.drag { cursor: grabbing; }
 #map .land { fill: var(--map-land); stroke: var(--map-border); stroke-width: 1; vector-effect: non-scaling-stroke; }
 #map .edge { stroke: var(--map-road); stroke-width: 1.2; vector-effect: non-scaling-stroke; fill: none; }
 #map .edge.ferry { stroke: var(--map-ferry); stroke-dasharray: 4 4; }
 #map .edge.off { stroke: var(--map-off); }
-#map .route { stroke: var(--accent); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; fill: none; vector-effect: non-scaling-stroke; }
-#map .route.ferry { stroke-dasharray: 2 9; stroke-width: 4; }
+#map .route-case { stroke: var(--map-route-case); stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; fill: none; vector-effect: non-scaling-stroke; opacity: .85; }
+#map .route { stroke: var(--accent); stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: none; vector-effect: non-scaling-stroke; }
+#map .route.ferry { stroke: var(--map-ferry); stroke-dasharray: 2 8; stroke-width: 3.5; }
 #map .dot { stroke: var(--map-city); stroke-width: 4.5; stroke-linecap: round; vector-effect: non-scaling-stroke; }
 #map .dot.t2 { stroke-width: 6.5; }
 #map .dot.t3 { stroke-width: 8.5; }
@@ -196,7 +204,7 @@ button, input, select { font: inherit; color: inherit; }
 #map .hit { stroke: transparent; stroke-width: 22; stroke-linecap: round; vector-effect: non-scaling-stroke; cursor: pointer; }
 #map text {
   font-family: var(--font-display); font-weight: 600; fill: var(--map-ink);
-  paint-order: stroke; stroke: var(--halo); stroke-width: 3px; stroke-linejoin: round; pointer-events: none;
+  paint-order: stroke; stroke: var(--halo); stroke-linejoin: round; pointer-events: none;
 }
 #map text.big { font-weight: 700; fill: var(--accent); }
 #map text.t3 { font-weight: 700; }
@@ -211,7 +219,8 @@ button, input, select { font: inherit; color: inherit; }
   max-width: calc(100% - 20px);
 }
 .legend i { display: inline-block; width: 18px; height: 0; border-top: 3px solid var(--accent); vertical-align: middle; margin-right: 5px; }
-.legend i.road { border-top: 2px solid var(--map-road); }
+.legend i.road { border-top: 2px solid var(--map-divided); }
+.legend i.fw { border-top: 3px solid var(--map-freeway); }
 .legend i.ferry { border-top: 2px dashed var(--map-ferry); }
 .pop {
   position: absolute; z-index: 20; background: var(--map-panel); color: var(--map-ink); border: 1px solid var(--map-line); border-radius: var(--radius);
